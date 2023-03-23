@@ -1,13 +1,217 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/default.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
 <body>
-    hello world!
-    안녕
+    <div id="realtime-chat">
+        <header>
+            <div class="coltrols-wrap">
+                <div class="record">
+                    <button type="button" class="active">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                </div>
+                <div class="play-stop">
+                    <button type="button" class="play">play</button>
+                    <button type="button" class="stop">stop</button>
+                </div>
+            </div>
+            <h1>
+                <!-- <img src="images/logo-realtime-chat.png" alt="realtime chat">
+                <img src="images/logo-skt.png" alt="sk telecom"> -->
+            </h1>
+        </header>
+
+        <main>
+            <div class="record-text">
+                <p class="consultant">아 안녕하세요 고객님 방금 전에 통화했던 상담사인데요</p>
+                <p class="user">네</p>
+                <p class="consultant">아 제가 그 내용을 잘못 보고 고객님께 잘못 안내한게 맞아요 너무 죄송합니다. 원래 긍까 우주 패스 올로 자동으로 전환되면 이런 혜택이 있다 라고 설명을 보고 제가 말씀을 드렸어야 되는건데 그때 스탠다드는 구글원이 었어가지구요 고객님. 너무 죄송합니다 고객님.</p>
+                <p class="user">제가 지금 스탠다드 상품을 가입중인데 3월 1일부터 자동으로 ALL로 바뀌는 건가요?</p>
+                <p class="consultant">아 안녕하세요 고객님 방금 전에 통화했던 상담사인데요</p>
+                <p class="user">네</p>
+                <p class="consultant">아 제가 그 내용을 잘못 보고 고객님께 잘못 안내한게 맞아요 너무 죄송합니다. 원래 긍까 우주 패스 올로 자동으로 전환되면 이런 혜택이 있다 라고 설명을 보고 제가 말씀을 드렸어야 되는건데 그때 스탠다드는 구글원이 었어가지구요 고객님. 너무 죄송합니다 고객님.</p>
+                <p class="user">제가 지금 스탠다드 상품을 가입중인데 3월 1일부터 자동으로 ALL로 바뀌는 건가요?</p>
+                <p class="consultant">아 안녕하세요 고객님 방금 전에 통화했던 상담사인데요</p>
+                <p class="user">네</p>
+                <p class="consultant">아 제가 그 내용을 잘못 보고 고객님께 잘못 안내한게 맞아요 너무 죄송합니다. 원래 긍까 우주 패스 올로 자동으로 전환되면 이런 혜택이 있다 라고 설명을 보고 제가 말씀을 드렸어야 되는건데 그때 스탠다드는 구글원이 었어가지구요 고객님. 너무 죄송합니다 고객님.</p>
+                <p class="user">제가 지금 스탠다드 상품을 가입중인데 3월 1일부터 자동으로 ALL로 바뀌는 건가요?</p>
+                <p class="consultant">아 안녕하세요 고객님 방금 전에 통화했던 상담사인데요</p>
+                <p class="user">네</p>
+            </div>
+            <div class="use-info-wrap">
+                <div class="check-wrap">
+                    <div class="ui-form-check-inline">
+                        <label for="a3">다회선</label>
+                        <input type="checkbox" name="" id="a3" class="ui-form-check">
+                    </div>
+                    <div class="ui-form-check-inline">
+                        <label for="a4">유선</label>
+                        <input type="checkbox" name="" id="a4" class="ui-form-check">
+                    </div>
+                    <div class="ui-form-check-inline">
+                        <label for="a5">보안</label>
+                        <input type="checkbox" name="" id="a5" class="ui-form-check" checked>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="row">
+                        <div class="item">
+                            <span>고객명</span>
+                            <strong>김찬호</strong>
+                        </div>
+                        <div class="item">
+                            <span>HP</span>
+                            <strong>010-2745-3400</strong>
+                        </div>
+                        <div class="item">
+                            <span>연령/성별</span>
+                            <strong>32세 / 남성</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="item">
+                            <span>요금제</span>
+                            <strong>5GX 스탠다드</strong>
+                        </div>
+                        <div class="item">
+                            <span>단말</span>
+                            <strong>Galaxy Z filp4</strong>
+                        </div>
+                        <div class="item">
+                            <span>부가서비스</span>
+                            <button type="button">조회</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="btn-group">
+                        <button type="button" disabled>23.03.01 PM 02:35</button>
+                        <button type="button">23.03.01 PM 02:35</button>
+                        <button type="button">23.03.01 PM 02:35</button>
+                        <button type="button" class="active">23.03.01 PM 02:35</button>
+                    </div>
+                    <table>
+                        <colgroup>
+                            <col width="100px">
+                            <col width="100px">
+                            <col width="100px">
+                            <col width="">
+                            <col width="100px">
+                            <col width="100px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>문의유형</th>
+                                <td>혜택문의</td>
+                                <th>Keyword</th>
+                                <td>우주패스ALL, 혜택차이, 쿠폰, 구글원</td>
+                                <th>상태</th>
+                                <td>중립</td>
+                            </tr>
+                            <tr>
+                                <th>요약</th>
+                                <td colspan="5">우주패스 스탠다드 상품이 우주패스 ALL로 변경됨에 따라 달라지는 혜택에 중 구글원 패키지가 새로 추가되는 것인지 문의했고, 우주패스 스탠다드에서 제공되는 혜택이 동일하게 적용됨을 안내</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="context-summary">
+                    <h2>AI Context Summary</h2>
+                    <table>
+                        <colgroup>
+                            <col width="100px">
+                            <col width="100px">
+                            <col width="100px">
+                            <col width="">
+                            <col width="100px">
+                            <col width="100px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>문의유형</th>
+                                <td>혜택문의</td>
+                                <th>Keyword</th>
+                                <td>우주패스ALL, 혜택차이, 쿠폰, 구글원</td>
+                                <th>상태</th>
+                                <td>중립</td>
+                            </tr>
+                            <tr>
+                                <th>요약</th>
+                                <td colspan="5">우주패스 스탠다드 상품이 우주패스 ALL로 변경됨에 따라 달라지는 혜택에 중 구글원 패키지가 새로 추가되는 것인지 문의했고, 우주패스 스탠다드에서 제공되는 혜택이 동일하게 적용됨을 안내</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="ui-tab tracker-tab">
+                    <div class="ui-tab-nav">
+                        <button type="button" class="ui-btn active">Tracker</button>
+                        <button type="button" class="ui-btn">Q&A</button>
+                    </div>
+                    <div class="ui-tab-content-wrap">
+                        <div class="ui-tab-content active">
+                            <dl>
+                                <dt>문의사항 확인완료</dt>
+                            </dl>
+                            <dl>
+                                <dt>질문생성 완료</dt>
+                                <dd>
+                                    <p>우주패스 스탠다드와 우주패스 ALL 혜택차이 알려줘</p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>답변생성 완료</dt>
+                                <dd>
+                                    <a href="#">우주패스 ALL 상품설명</a>
+                                    <a href="#">우주패스 스탠다드 종료안내</a>
+                                    <a href="#">우주패스 구글원 혜택안내</a>
+                                </dd>
+                                <dd>
+                                    <p>
+                                        우주패스 ALL과 우주패스 스탠다드 혜택의 차이점은 다음과 같습니다.<br>
+                                        &nbsp;- 구글원 서비스 이용가능<br>
+                                        &nbsp;- 아마존 5000원 쿠폰제공<br>
+                                        &nbsp;- 아마존 해외직구 무료배송 제공<br>
+                                        &nbsp;- 11번가 SK pay 3000 포인트 지급<br>
+                                        우주패스 스탠다드는 우주패스 ALL 상품명으로 3월 1일부터 변경됨
+                                    </p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>문의사항 확인완료</dt>
+                            </dl>
+                            <dl class="generate">
+                                <dt>질문생성 중</dt>
+                            </dl>
+                        </div>
+                        <div class="ui-tab-content">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            uiTab();
+        });
+        function uiTab() {
+            $('.ui-tab-nav button').on('click', function(){
+                var navIdx = $(this).parent().children('.ui-tab-nav button').index(this);
+                $(this).parent().children('.ui-tab-nav button').removeClass('active');
+                $(this).parent().next().find('> div[class^="ui-tab-content"]').removeClass('active');
+                $(this).addClass('active');
+                $(this).parent().next().find('> div[class^="ui-tab-content"]').eq(navIdx).addClass('active');
+            });
+        }
+    </script>
 </body>
 </html>

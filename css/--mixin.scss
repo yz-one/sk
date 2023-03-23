@@ -1,0 +1,68 @@
+@charset "utf-8";
+@mixin posa-tl($t: 0, $l:0) {
+	position: absolute;
+	top: $t;
+	left: $l;
+}
+@mixin posa-tr($t: 0, $r:0) {
+	position: absolute;
+	top: $t;
+	right: $r;
+}
+@mixin posa-bl($t: 0, $r:0) {
+	position: absolute;
+	bottom: $t;
+	left: $r;
+}
+@mixin posa-br($t: 0, $r:0) {
+	position: absolute;
+	bottom: $t;
+	right: $r;
+}
+@mixin clearfix() {
+	content: '';
+	display: block;
+	clear: both;
+}
+@mixin ct {
+	content: '';
+	display: block;
+}
+@mixin ti {
+	text-indent: -9999px;
+    overflow: hidden;
+}
+@mixin ellipsis {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@mixin ellipsis-line($line: 2) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    white-space: pre-wrap;
+}
+
+@mixin bgi($img, $l:0, $t:0) {
+    background: url(../images/#{$img}.png) $l $t no-repeat;
+}
+
+@mixin customscrollbar {
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: #c4c9ce;
+        border-radius: 10px;
+        background-clip: padding-box;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: ebeef1;
+        border-radius: 10px;
+    }
+}
