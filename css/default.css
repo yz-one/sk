@@ -126,7 +126,7 @@ main .use-info-wrap .feedback .btn-group button, main .use-info-wrap .context-su
 
 main .use-info-wrap .feedback .btn-group button.active, main .use-info-wrap .context-summary .btn-group button.active { border: solid 1px #f04f2a; background-color: #ff5d38; color: #fff; }
 
-main .use-info-wrap .feedback .btn-group button:disabled, main .use-info-wrap .context-summary .btn-group button:disabled { border: solid 1px #c1c2c4; background-color: #c7c8ca; color: #fff; }
+main .use-info-wrap .feedback .btn-group button:disabled, main .use-info-wrap .context-summary .btn-group button:disabled { border: solid 1px #c1c2c4; background-color: #c7c8ca; color: #fff; cursor: default; }
 
 main .use-info-wrap .feedback .btn-group button + button, main .use-info-wrap .context-summary .btn-group button + button { margin-left: 10px; }
 
