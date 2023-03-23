@@ -13,6 +13,9 @@
     padding: 0;
     margin: 0;
 }
+* {
+    box-sizing: border-box;
+}
 .ui-form {
     /* 체크, 라디오 */
     &-check {
@@ -90,7 +93,6 @@ p {
     width: 100%;
     height: 100%;
     min-width: 1020px;
-    min-height: 800px;
     background-color: #f7f8fa;
 }
 header {
@@ -222,6 +224,7 @@ main {
         overflow-y: scroll;
         @include customscrollbar;
         table {
+            width: 100%;
             border: 1px solid #ccc;
             table-layout: fixed;
             border-collapse: collapse;
@@ -259,7 +262,7 @@ main {
         .user-info {
             display: flex;
             flex-direction: column;
-            border-bottom: 1px dashed #000;
+            border-bottom: 1px dashed #a7aab3;
             background-color: #f3f4f6;
             .row {
                 display: flex;
@@ -383,6 +386,49 @@ main {
                                 background-image: url(../images/icon-loading.gif);
                                 margin-right: 0;
                             }
+                        }
+                    }
+                    &.input-answer {
+                        margin-top: 20px;
+                        dd {
+                            display: flex;
+                            align-items: center;
+                            height: 50px;
+                            border-radius: 5px;
+                            border: solid 2px #e1e1e1;
+                            background-color: #fff;
+                            padding: 0 20px;
+                            textarea {
+                                display: block;
+                                border: none;
+                                height: 100%;
+                                flex: 0px 1 1;
+                                -webkit-appearance: none !important;
+                                -moz-appearance: none !important;
+                                appearance: none !important;
+                                resize: none;
+                                &:focus {
+                                    border: none;
+                                    outline: none;
+                                }
+                            }
+                            .btn-send {
+                                display: block;
+                                flex: 20px 0 0;
+                                width: 20px;
+                                height: 20px;
+                                @include ti;
+                                @include bgi(icon-send);
+                            }
+                        }
+                    }
+                    &.question {
+                        margin-top: 20px;
+                        dd {
+                            font-size: 16px;
+                            color: #000;
+                            border-radius: 5px;
+                            background-color: #f6eeec;
                         }
                     }
                     dt {

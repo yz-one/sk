@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
 *[class^="ui-form"] { -webkit-appearance: none !important; -moz-appearance: none !important; appearance: none !important; padding: 0; margin: 0; }
 
+* { box-sizing: border-box; }
+
 .ui-form { /* 체크, 라디오 */ }
 
 .ui-form-check { width: 22px; height: 22px; border: none; border-radius: 0; display: inline-block; }
@@ -26,7 +28,7 @@ p { padding: 0; margin: 0; }
 
 .ui-tab-content-wrap > div[class^="ui-tab-content"].active { display: block; }
 
-#realtime-chat { display: flex; flex-direction: column; width: 100%; height: 100%; min-width: 1020px; min-height: 800px; background-color: #f7f8fa; }
+#realtime-chat { display: flex; flex-direction: column; width: 100%; height: 100%; min-width: 1020px; background-color: #f7f8fa; }
 
 header { display: flex; align-items: center; justify-content: space-between; height: 70px; background-color: #fff; padding: 0 40px; box-shadow: 0px 2px 0 0 rgba(138, 142, 145, 0.1); flex: 70px 0 0; }
 
@@ -88,7 +90,7 @@ main .use-info-wrap::-webkit-scrollbar-thumb { background-color: #c4c9ce; border
 
 main .use-info-wrap::-webkit-scrollbar-track { background-color: ebeef1; border-radius: 10px; }
 
-main .use-info-wrap table { border: 1px solid #ccc; table-layout: fixed; border-collapse: collapse; }
+main .use-info-wrap table { width: 100%; border: 1px solid #ccc; table-layout: fixed; border-collapse: collapse; }
 
 main .use-info-wrap table th, main .use-info-wrap table td { border: 1px solid #e1e1e1; padding: 25px 20px; }
 
@@ -100,7 +102,7 @@ main .use-info-wrap .check-wrap { flex: 0px 0 0; display: flex; align-items: cen
 
 main .use-info-wrap .check-wrap .ui-form-check-inline + .ui-form-check-inline { margin-left: 30px; }
 
-main .use-info-wrap .user-info { display: flex; flex-direction: column; border-bottom: 1px dashed #000; background-color: #f3f4f6; }
+main .use-info-wrap .user-info { display: flex; flex-direction: column; border-bottom: 1px dashed #a7aab3; background-color: #f3f4f6; }
 
 main .use-info-wrap .user-info .row { display: flex; flex: 0px 0 0; }
 
@@ -153,6 +155,20 @@ main .use-info-wrap .ui-tab-content dl { margin: 0; }
 main .use-info-wrap .ui-tab-content dl.generate dt { margin-left: -40px; }
 
 main .use-info-wrap .ui-tab-content dl.generate dt:before { width: 40px; height: 40px; background-image: url(../images/icon-loading.gif); margin-right: 0; }
+
+main .use-info-wrap .ui-tab-content dl.input-answer { margin-top: 20px; }
+
+main .use-info-wrap .ui-tab-content dl.input-answer dd { display: flex; align-items: center; height: 50px; border-radius: 5px; border: solid 2px #e1e1e1; background-color: #fff; padding: 0 20px; }
+
+main .use-info-wrap .ui-tab-content dl.input-answer dd textarea { display: block; border: none; height: 100%; flex: 0px 1 1; -webkit-appearance: none !important; -moz-appearance: none !important; appearance: none !important; resize: none; }
+
+main .use-info-wrap .ui-tab-content dl.input-answer dd textarea:focus { border: none; outline: none; }
+
+main .use-info-wrap .ui-tab-content dl.input-answer dd .btn-send { display: block; flex: 20px 0 0; width: 20px; height: 20px; text-indent: -9999px; overflow: hidden; background: url(../images/icon-send.png) 0 0 no-repeat; }
+
+main .use-info-wrap .ui-tab-content dl.question { margin-top: 20px; }
+
+main .use-info-wrap .ui-tab-content dl.question dd { font-size: 16px; color: #000; border-radius: 5px; background-color: #f6eeec; }
 
 main .use-info-wrap .ui-tab-content dl dt { display: flex; align-items: center; position: relative; font-size: 15px; font-weight: 700; color: #7c8494; margin-left: -29px; padding-bottom: 14px; padding-top: 22px; }
 
