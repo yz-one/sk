@@ -64,7 +64,7 @@ header h1 img + img { margin-left: 20px; }
 
 main { display: flex; flex: auto 1 1; height: calc(100% - 70px); }
 
-main .record-text { flex: 40% 1 1; border-right: 1px solid #e3e3e3; background-color: #fff; box-shadow: 0.6px 0.8px 5px 0 rgba(0, 0, 0, 0.1); padding: 40px; overflow-y: scroll; }
+main .record-text { flex: 40% 1 1; border-right: 1px solid #e3e3e3; background-color: #f1f4f9; box-shadow: 0.6px 0.8px 5px 0 rgba(0, 0, 0, 0.1); padding: 40px; overflow-y: scroll; }
 
 main .record-text::-webkit-scrollbar { width: 6px; }
 
@@ -72,7 +72,9 @@ main .record-text::-webkit-scrollbar-thumb { background-color: #c4c9ce; border-r
 
 main .record-text::-webkit-scrollbar-track { background-color: ebeef1; border-radius: 10px; }
 
-main .record-text p { font-size: 16px; line-height: 26px; letter-spacing: normal; color: #666; position: relative; padding: 25px 40px 25px 100px; }
+main .record-text p { font-size: 16px; line-height: 26px; letter-spacing: normal; color: #666; position: relative; padding: 25px 40px 25px 100px; border: 1px solid #f1f1f1; background-color: #fff; }
+
+main .record-text p + p { border-top: none; }
 
 main .record-text p:before { content: ''; display: block; width: 36px; height: 36px; position: absolute; top: 18px; left: 30px; }
 

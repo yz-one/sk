@@ -185,7 +185,7 @@ main {
     .record-text {
         flex: 40% 1 1;
         border-right: 1px solid #e3e3e3;
-        background-color: #fff;
+        background-color: #f1f4f9;
         box-shadow: 0.6px 0.8px 5px 0 rgba(0, 0, 0, 0.1);
         padding: 40px;
         overflow-y: scroll;
@@ -197,6 +197,11 @@ main {
             color: #666;
             position: relative;
             padding: 25px 40px 25px 100px;
+            border: 1px solid #f1f1f1;
+            background-color: #fff;
+            & + p {
+                border-top: none;
+            }
             &:before {
                 @include ct;
                 width: 36px;
