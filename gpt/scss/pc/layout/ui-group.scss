@@ -1,0 +1,61 @@
+@charset "utf-8";
+//좌우정렬
+.ui-space-between {
+    justify-content: space-between;
+    > div {
+        display: flex;
+        align-items: center;
+        > .ui-form {
+            &-select, &-check-group, &-check-inline, &-check[type=checkbox], &-check[type=radio], &-text, &-text-group {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+// 폼그룹
+.ui-form-group {
+    display: flex;
+    align-items: center;
+    > .ui-form {
+        &-select, &-check-group, &-check-inline, &-check[type=checkbox], &-check[type=radio], &-text, &-text-group {
+            margin-right: 10px;
+        }
+    }
+}
+
+// 테이블
+// table {
+//     table-layout: fixed;
+//     border-collapse: collapse;
+// }
+
+// 텍스트
+.ui-text {
+    &-wrap {
+        display: flex;
+        &.sub-title {
+            @include posa-tr(-23px);
+        }
+    }
+    &-alert {
+        display: flex;
+        align-items: center;
+        &:before {
+            @include ct;
+            width: 16px;
+            height: 16px;
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23FF6B6B'/%3E%3Crect x='7.11121' y='2.66669' width='1.77778' height='8' rx='0.888889' fill='white'/%3E%3Crect x='7.11121' y='11.5556' width='1.77778' height='1.77778' rx='0.888889' fill='white'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            margin-right: 5px;
+        }
+    }
+}
+[class^="ui-text"] {
+    font-family: $spoqa;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.005em;
+    color: #666;
+}

@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* ios css hack */
+@supports (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto))
+and (not (-moz-appearance:none))
+{
+    여기에 작성
+}

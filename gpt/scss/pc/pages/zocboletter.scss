@@ -1,0 +1,2970 @@
+@charset "euc-kr";
+
+// body, table, input, a {
+//     font-family: 'Roboto', 'Noto Sans Korean', sans-serif;
+// }
+.zocboletter-high-mid-news-wrap {
+    padding-top: 72px;
+    table, input, a {
+        font-family: 'Roboto', 'Noto Sans Korean', sans-serif;
+    }
+    .list {
+        overflow: hidden;
+        li {
+            overflow: hidden;
+            position: relative;
+            box-sizing: border-box;
+        }
+        a {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: #d8d8d8;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .icon {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 100%;
+            float: left;
+            > img {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            i {
+                display: block;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                overflow: hidden;
+                text-indent: -9999px;
+                background-size: 100%;
+                &.guide {
+                    background-image: url('/images/pc/zocbo/zocboLetter/new/guide.svg');
+                }
+                &.event {
+                    background-image: url('/images/pc/zocbo/zocboLetter/new/event.svg');
+                }
+                &.new {
+                    background-image: url('/images/pc/zocbo/zocboLetter/new/new.svg');
+                }
+                &.plus {
+                    background-image: url('/images/pc/zocbo/zocboLetter/new/plus.svg');
+                }
+                &.ebs {
+                    background-image: url('/images/pc/zocbo/zocboLetter/new/ebs.svg');
+                }
+                &.pro {
+                    background-image: url('/images/pc/zocbo/zocboLetter/new/pro.svg');
+                }
+                &.free {
+                    background-image: url('/images/pc/zocbo/zocboLetter/new/free.svg');
+                }
+            }
+        }
+        p {
+            box-sizing: border-box;
+            span, strong, em {
+                display: block;
+                color: #000;
+            }
+            strong {
+                .new {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                    vertical-align: 5px;
+                    background: url(/images/pc/zocbo/zocboLetter/ico_new.png)no-repeat 0 0;
+                }
+            }
+        }
+    }
+    .top {
+        padding: 0 0 70px 0;
+        border-bottom: 1px solid #000;
+        .list {
+            margin-top: -8px;
+            li {
+                padding-top: 8px;
+                &:last-child {
+                    a {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            a {
+                padding-bottom: 8px;
+                display: table;
+                width: 723px;
+                .icon, p {
+                    display: table-cell;
+                }
+            }
+            .icon {
+                width: 220px;
+                height: 220px;
+                i {
+                    width: 60px;
+                    height: 26px;
+                    top: 33px;
+                    left: 33px;
+                }
+            }
+            p {
+                width: 100%;
+                padding-left: 38px;
+                vertical-align: middle;
+                span, strong, em {
+                    display: block;
+                    color: #000;
+                }
+                span {
+                    font-size: 18px;
+                    line-height: 18px;
+                    letter-spacing: -0.9px;
+                    margin-bottom: 12px;
+                }
+                strong {
+                    font-size: 30px;
+                    line-height: 30px;
+                    font-weight: 500;
+                    letter-spacing: -0.75px;
+                    margin-bottom: 22px;
+                    i.new {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 10px;
+                        vertical-align: 5px;
+                        background: url(/images/pc/zocbo/zocboLetter/ico_new.png)no-repeat 0 0;
+                    }
+                }
+                em {
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: -0.48px;
+                }
+            }
+        }
+    }
+    .bottom {
+        .list {
+            font-size: 0;
+            padding-top: 38px;
+            margin-bottom: -1px;
+            li {
+                display: inline-block;
+                width: 50%;
+                height: 210px;
+                padding-top: 40px;
+                padding-right: 28px;
+                &:nth-child(even) {
+                    padding-left: 28px;
+                    padding-right: 0;
+                    &:before {
+                        display: none;
+                    }
+                }
+                &:nth-last-child(1), &:nth-last-child(2) {
+                    margin-bottom: -1px;
+                }
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 1px;
+                    height: 100%;
+                    background-color: #d8d8d8;
+                }
+            }
+            .icon {
+                width: 130px;
+                height: 130px;
+                float: left;
+                i {
+                    width: 40px;
+                    height: 17.33px;
+                    top: 20px;
+                    left: 20px;
+                }
+            }
+            p {
+                width: 352px;
+                float: left;
+                padding-left: 20px;
+                span {
+                    font-size: 18px;
+                    line-height: 18px;
+                    letter-spacing: -0.9px;
+                    margin-bottom: 12px;
+                }
+                strong {
+                    font-size: 30px;
+                    line-height: 30px;
+                    font-weight: 500;
+                    letter-spacing: -0.75px;
+                    margin-bottom: 22px;
+                }
+                em {
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: -0.48px;
+                }
+            }
+        }
+    }
+}
+
+/* 업로드일정 visual */
+.topVsu {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background: #e5e1f0;
+}
+
+.topBG {
+	width: 812px;
+	height: 220px;
+	margin: 0 0 0 0;
+	position: relative;
+	left: 0%;
+	top: 0;
+}
+
+.topBG {
+	background: url(/images/pc/zocbo/zocboLetter/letterupload2023rn.png) no-repeat;
+}
+
+#tabMenuUp * {
+	box-sizing: border-box;
+}
+
+#tabMenuUp {
+	height: 64px;
+	background-color: #F9FAFD;
+	border: 1px solid #DADEE7;
+	margin: 0 auto;
+}
+
+#tabMenuUp ul {
+	width: 100%;
+	margin: 0 auto;
+	padding: 16px 0 16px 24px;
+	display: flex;
+}
+
+#tabMenuUp ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#tabMenuUp li+li {
+	margin-left: 8px;
+}
+
+#tabMenuUp ul li {
+	display: flex;
+	align-items: center;
+}
+
+#tabMenuUp ul li a {
+	font-family: "Spoqa Han Sans Neo", Sans-Serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #333;
+	padding: 7px 16px;
+	background-color: #F9FAFD;
+	border: 1px solid #DADEE7;
+	border-radius: 50px;
+	position: relative;
+}
+
+#tabMenuUp ul li.active a {
+	background-color: #4272D2;
+	border: 1px solid #4272D2;
+	color: #fff;
+}
+
+#tabContent .content {
+	padding: 0 40px 0;
+	display: none;
+	background: #fff;
+	text-align: center;
+	margin: 30px auto 43px;
+}
+
+#tabContent .content .title {
+	position: relative;
+	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+#tabContent .content .title>p {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	padding: 35px 0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	font-size: 35px;
+	line-height: 50px;
+	color: #000;
+	font-weight: 600;
+}
+
+#tabContent .content .title.upload-title>p {
+	position: inherit;
+}
+
+#tabContent .content .title>p:before {
+	content: '';
+	position: absolute;
+	top: -9px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #000;
+}
+
+#tabContent .content .title>p:after {
+	content: '';
+	position: absolute;
+	bottom: -9px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #000;
+}
+
+#tabContent .content .uploadTbl {
+	width: 100%;
+	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+	margin-top: 95px;
+	border: 1px solid #000;
+	border-spacing: 0;
+	border-bottom: none;
+}
+
+#tabContent .content .uploadTbl th {
+	font-size: 16px;
+	color: #000;
+	font-weight: 500;
+	background: #f6d57c;
+	text-align: center;
+	padding: 5px 0;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+
+#tabContent .content .uploadTbl td.br {
+	border-right: 1px solid #000 !important;
+}
+
+
+#tabContent .content .uploadTbl th:last-child,
+#tabContent .content .uploadTbl td:last-child {
+	border-right: none;
+}
+
+#tabContent .content .uploadTbl td {
+	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+	padding: 7px 0;
+	font-size: 14px;
+	color: #000;
+	font-weight: 500;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+#tabContent .content .uploadTbl td.sth {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+#tabContent .content .uploadTbl td.tal {
+	text-align: left;
+	padding-left: 15px;
+}
+
+#tabContent .content .uploadBtn {
+	display: block;
+	position: absolute;
+	bottom: -90px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #f7f7f7;
+}
+
+#tabContent .content .uploadBtn img {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+// .common_header {
+// 	background: #f7f7f7;
+// }
+
+// .h_mid {
+// 	background: #f7f7f7;
+// }
+
+// .head_utilMenu {
+// 	background: #f7f7f7;
+// }
+
+/*--------------------------------------------------
+			 버튼스타일
+--------------------------------------------------*/
+/*--------------------------------------------------
+			 버튼스타일
+--------------------------------------------------*/
+// .btnCom {
+// 	display: inline-block;
+// 	*display: inline;
+// 	*zoom: 1;
+// }
+
+// .btnBlack {
+// 	padding: 0 16px 0 16px;
+// 	background: #515560;
+// 	text-align: center;
+// 	font-size: 12px;
+// 	color: #fff !important;
+// }
+
+// .btnBlue {
+// 	padding: 0 16px 0 16px;
+// 	background: #437ddb;
+// 	text-align: center;
+// 	font-size: 12px;
+// 	color: #fff !important;
+// }
+
+// .btnBlack_tp {
+// 	width: 145px;
+// 	height: 43px;
+// 	background: #282e38;
+// 	border: 1px solid #282e38;
+// 	text-align: center;
+// 	font-size: 12px;
+// 	line-height: 46px;
+// 	color: #fff !important;
+// 	font-weight: bold;
+// }
+
+// .btnBlack_tp2 {
+// 	height: 43px;
+// 	padding: 0 19px 0 20px;
+// 	background: #282e38;
+// 	border: 1px solid #282e38;
+// 	text-align: center;
+// 	font-size: 12px;
+// 	line-height: 46px;
+// 	color: #fff !important;
+// 	font-weight: bold;
+// }
+
+// .btnBlack_tp30 {
+// 	width: 87px;
+// 	height: 30px;
+// 	background: #282e38;
+// 	border: 1px solid #282e38;
+// 	text-align: center;
+// 	font-size: 12px;
+// 	line-height: 33px;
+// 	color: #fff !important;
+// }
+
+// .btnPink {
+// 	padding: 0 16px 0 16px;
+// 	background: #e33626;
+// 	text-align: center;
+// 	font-size: 12px;
+// 	color: #fff !important;
+// 	font-weight: bold;
+// }
+
+// .btnWtp {
+// 	padding: 0 16px 0 16px;
+// 	background: #ffffff;
+// 	border: 1px solid #b2bacd;
+// 	text-align: center;
+// 	font-size: 12px;
+// 	color: #666 !important;
+// 	font-weight: bold;
+// }
+
+// .btnWtp_tp {
+// 	width: 145px;
+// 	height: 43px;
+// 	background: #ffffff;
+// 	border: 1px solid #b2bacd;
+// 	text-align: center;
+// 	font-size: 12px;
+// 	line-height: 46px;
+// 	color: #666 !important;
+// 	font-weight: bold;
+// }
+
+// .btnWtp_tp30 {
+// 	width: 87px;
+// 	height: 30px;
+// 	background: #ffffff;
+// 	border: 1px solid #b2bacd;
+// 	text-align: center;
+// 	font-size: 12px;
+// 	line-height: 30px;
+// 	color: #666 !important;
+// 	font-weight: bold;
+// }
+
+// .btnGray {
+// 	padding: 0 16px 0 16px;
+// 	background: #c0c0c0;
+// 	text-align: center;
+// 	font-size: 12px;
+// 	color: #fff !important;
+// }
+
+// .botbtn {
+// 	padding: 30px 0 0 0;
+// 	text-align: center;
+// }
+
+// .botRbtn {
+// 	padding: 20px 0 0 0;
+// 	text-align: right;
+// }
+
+// .botbtn>a:first-child {
+// 	margin-left: 0;
+// }
+
+// .botbtn>a {
+// 	margin-left: 10px;
+// }
+
+// .botbtn input {
+// 	vertical-align: top
+// }
+
+// .csor_none {
+// 	cursor: default;
+// }
+
+// .btn30 {
+// 	height: 30px;
+// 	line-height: 33px;
+// }
+
+// .btn32 {
+// 	height: 32px;
+// 	line-height: 35px;
+// }
+
+// .sbotbtn>a {
+// 	height: 30px;
+// 	line-height: 33px;
+// }
+
+// .listplus {
+// 	width: 9px;
+// 	height: 11px;
+// 	margin-left: 5px; 
+// 	display: inline-block;
+// 	*display: inline;
+// 	*zoom: 1;
+// 	vertical-align: middle;
+// 	background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_listPlus.gif) no-repeat;
+// }
+
+// .rn_itemlist .btnPink {
+// 	background: #e33626;
+// 	border-radius: 20px;
+// 	-moz-border-radius: 20px;
+// 	-webkit-border-radius: 20px;
+// }
+
+// .rn_itemlist .c_f74966 {
+// 	color: #e33626 !important;
+// }
+
+
+/*--------------------------------------------------
+			 contents 
+--------------------------------------------------*/
+// #zocbo_container {
+// 	padding-bottom: 125px;
+// }
+
+// .zocbo_subcnt.w100 {
+// 	width: 100%;
+// }
+
+// .contents_area {
+// 	width: 812px;
+// }
+
+// .divinner {
+// 	width:100% !important;
+// }
+
+// .common_header .zocbo_gnb>li.intGm1>a {
+// 	width: 168px;
+// }
+
+// .common_header .zocbo_gnb>li.intGm2>a {
+// 	width: 169px;
+// }
+
+// .common_header .zocbo_gnb>li.intGm3>a {
+// 	width: 169px;
+// }
+
+// .common_header .zocbo_gnb>li.intGm4>a {
+// 	width: 169px;
+// }
+
+// .common_header .zocbo_gnb>li.intGm5>a {
+// 	width: 169px;
+// }
+
+// .common_header .zocbo_gnb>li.intGm6>a {
+// 	width: 169px;
+// }
+
+// .common_header .zocbo_gnb>li.intGm1>a {width:203px;}
+// .common_header .zocbo_gnb>li.intGm2>a {width:203px;}
+// .common_header .zocbo_gnb>li.intGm3>a {width:204px;}
+// .common_header .zocbo_gnb>li.intGm4>a {width:204px;}
+// .common_header .zocbo_gnb>li.intGm5>a {width:204px;}
+// .common_header .zocbo_gnb>li.intGm6>a {width:204px;}
+// .common_header .zocbo_gnb>li.intGm5>a>.mark {
+// 	position: absolute;
+// 	top: -15px;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	width: 80px;
+// 	background: #fff;
+// 	font-size: 14px;
+// 	padding: 2px 10px;
+// 	line-height: 20px;
+// 	border: 2px solid #000;
+// 	border-radius: 15px;
+// }
+
+// .common_header .zocbo_gnb>li.dth1>a:hover>.mark,
+// .common_header .zocbo_gnb>li.dth1.on>a>.mark {
+// 	background: #fff;
+// 	color: #282e38;
+// }
+
+// .pxsection {
+// 	position: relative; 
+// } 
+
+/* main */ 
+// .mainStn {
+// 	text-align: center;
+// 	position: relative;
+// }
+
+// .mainStn.mt80 {
+// 	margin-top: 80px;
+// }
+
+// .mainStn.mt35 {
+// 	margin-top: 35px;
+// }
+
+// .mainStn.mt15 {
+// 	margin-top: 15px;
+// }
+
+// .mainStn.mb35 {
+// 	margin-bottom: 15px;
+// }
+
+// .mainStn .btnTypeA {
+// 	position: absolute;
+// 	bottom: 55px;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// }
+
+// .mainStn .layerPopA {}
+
+// .mainStntxt {
+// 	padding-top: 98px;
+// 	padding-bottom: 40px;
+// 	text-align: center;
+// 	font-size: 30px;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// 	color: #000;
+// 	line-height: 35px;
+// }
+
+// .mainStntxt.pt0 {
+// 	padding-top: 0;
+// }
+
+// .mainStntxt strong {
+// 	font-weight: 500;
+// }
+
+// .layerPopupWrap {
+// 	position: fixed;
+// 	top: 140px;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	display: none;
+// 	z-index: 100;
+// 	width: 955px;
+// 	height: auto;
+// 	background: #fff;
+// 	box-sizing: border-box;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// }
+
+// .layerPopupWrap .layerPopupCont {
+// 	width: 955px;
+// 	height: auto;
+// }
+
+// .layerPopupWrap .layerPopupCont .title {
+// 	padding: 15px 0;
+// 	text-align: center;
+// 	font-size: 30px;
+// 	font-weight: bold;
+// 	color: #fff;
+// 	background: #000;
+// }
+
+// .layerPopupWrap .layerPopupCont>div {
+// 	font-size: 22px;
+// 	text-align: center;
+// 	padding: 35px 0;
+// 	font-weight: 500;
+// 	border: 1px solid #000;
+// }
+
+// .layerPopupWrap .layerPopupCont>div span {
+// 	font-size: 16px;
+// 	font-weight: 400;
+// 	display: block;
+// 	text-align: center;
+// }
+
+// .layerPopupClose {
+// 	position: absolute;
+// 	top: 20px;
+// 	right: 40px;
+// 	width: 34px;
+// 	height: 35px;
+// 	background: url('/images/pc/zocbo/zocboLetter/btnpopclose.png')no-repeat 0 0;
+// }
+
+// .bglayer {
+// 	display: none;
+// 	position: fixed;
+// 	left: 0;
+// 	top: 0;
+// 	z-index: 99;
+// 	width: 100%;
+// 	height: 100%;
+// 	opacity: 0.6;
+// 	filter: alpha(opacity=60);
+// 	background: #000;
+// }
+
+
+/* 고등 중등 소식// */
+/* 이전 스타일 사용안함// */
+/* 상단// */
+// .topNewsWrap {
+// 	width: 100%;
+// 	padding: 72px 0;
+// 	border-bottom: 1px solid #000;
+// }
+
+// .topNewsWrap .mNewsCont {
+// 	width: 723px;
+// 	padding: 8px 0;
+// 	border-bottom: 1px solid #d8d8d8;
+// }
+
+// .topNewsWrap .mNewsCont:nth-child(2) {
+// 	border-bottom: none;
+// }
+
+// .topNewsWrap .mNewsCont a {
+// 	display: block;
+// 	width: 100%;
+// 	height: 100%;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// }
+
+// .topNewsWrap .mNewsCont a:after {
+// 	content: '';
+// 	display: block;
+// 	clear: both;
+// }
+
+// .topNewsWrap .mNewsCont a .thum {
+// 	float: left;
+// 	position: relative;
+// }
+
+// .topNewsWrap .mNewsCont a .thum .free {
+// 	position: absolute;
+// 	top: 33px;
+// 	left: 33px;
+// 	width: 55px;
+// 	height: 25px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_free.png)no-repeat 0 0;
+// }
+
+// .topNewsWrap .mNewsCont a .thum .ebs {
+// 	position: absolute;
+// 	top: 33px;
+// 	left: 33px;
+// 	width: 55px;
+// 	height: 25px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_ebs.png)no-repeat 0 0;
+// }
+
+// .topNewsWrap .mNewsCont a .thum .event {
+// 	position: absolute;
+// 	top: 33px;
+// 	left: 33px;
+// 	width: 55px;
+// 	height: 25px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_event.png)no-repeat 0 0;
+// }
+
+// .topNewsWrap .mNewsCont a .thum .guide {
+// 	position: absolute;
+// 	top: 33px;
+// 	left: 33px;
+// 	width: 55px;
+// 	height: 25px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_guide.png)no-repeat 0 0;
+// }
+
+// .topNewsWrap .mNewsCont a .thum .new {
+// 	position: absolute;
+// 	top: 33px;
+// 	left: 33px;
+// 	width: 55px;
+// 	height: 25px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_new.png)no-repeat 0 0;
+// }
+
+// .topNewsWrap .mNewsCont a .thum .plus {
+// 	position: absolute;
+// 	top: 33px;
+// 	left: 33px;
+// 	width: 55px;
+// 	height: 25px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_plus.png)no-repeat 0 0;
+// }
+
+// .topNewsWrap .mNewsCont a .thum .pro {
+// 	position: absolute;
+// 	top: 33px;
+// 	left: 33px;
+// 	width: 55px;
+// 	height: 25px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_pro.png)no-repeat 0 0;
+// }
+
+// .topNewsWrap .mNewsCont a .txtCont:hover {
+// 	text-decoration: underline;
+// 	text-underline-position: under;
+// }
+
+// .topNewsWrap .mNewsCont a .txtCont {
+// 	display: inline-block;
+// 	padding: 31px 0 0 40px;
+// }
+
+// .topNewsWrap .mNewsCont a .txtCont strong {
+// 	position: relative;
+// 	display: block;
+// 	font-size: 24px;
+// 	color: #000;
+// 	font-weight: 400;
+// 	line-height: 30px;
+// }
+
+// .topNewsWrap .mNewsCont a .txtCont h2 {
+// 	position: relative;
+// 	font-size: 35px;
+// 	color: #000;
+// 	font-weight: 500;
+// }
+
+// .topNewsWrap .mNewsCont a .txtCont h2 .new {
+// 	display: inline-block;
+// 	width: 20px;
+// 	height: 20px;
+// 	margin-left: 10px;
+// 	vertical-align: 9px;
+// 	background: url('/images/pc/zocbo/zocboLetter/ico_new.png')no-repeat 0 0;
+// }
+
+// .topNewsWrap .mNewsCont a .txtCont p {
+// 	font-size: 20px;
+// 	color: #000;
+// 	line-height: 26px;
+// 	padding-top: 20px;
+// }
+/* //상단 */
+
+/* 하단 리스트// */
+// .leftNewsWrap {
+// 	width: 47%;
+// 	float: left;
+// 	margin-top: 40px;
+// 	position: relative;
+// }
+
+// .leftNewsWrap:after {
+// 	content: '';
+// 	display: block;
+// 	clear: both;
+// }
+
+// .leftNewsWrap:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 0;
+// 	right: -30px;
+// 	width: 1px;
+// 	height: 605px;
+// 	background: #d8d8d8;
+// }
+
+// .leftNewsWrap.short:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 0;
+// 	right: -30px;
+// 	width: 1px;
+// 	height: 425px;
+// 	background: #d8d8d8;
+// }
+
+// .sNewsCont {
+// 	padding: 40px 0;
+// 	border-bottom: 1px solid #d8d8d8;
+// }
+
+// .sNewsCont:last-child {
+// 	border-bottom: none;
+// }
+
+// .sNewsCont a {
+// 	display: block;
+// 	width: 100%;
+// 	height: 100%;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// .sNewsCont a:after {
+// 	content: '';
+// 	display: block;
+// 	clear: both;
+// }
+
+// .sNewsCont a .thumwrap {
+// 	float: left;
+// 	width: 129px;
+// }
+
+// .sNewsCont a .thumwrap .thum {
+// 	position: relative;
+// 	padding-top: 100%;
+// 	overflow: hidden;
+// }
+
+// .sNewsCont a .thumwrap .thum .free {
+// 	position: absolute;
+// 	top: 20px;
+// 	left: 20px;
+// 	width: 35px;
+// 	height: 15px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_frees.png)no-repeat 0 0;
+// 	z-index: 99;
+// }
+
+// .sNewsCont a .thumwrap .thum .ebs {
+// 	position: absolute;
+// 	top: 20px;
+// 	left: 20px;
+// 	width: 35px;
+// 	height: 15px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_ebss.png)no-repeat 0 0;
+// 	z-index: 99;
+// }
+
+// .sNewsCont a .thumwrap .thum .event {
+// 	position: absolute;
+// 	top: 20px;
+// 	left: 20px;
+// 	width: 35px;
+// 	height: 15px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_events.png)no-repeat 0 0;
+// 	z-index: 99;
+// }
+
+// .sNewsCont a .thumwrap .thum .guide {
+// 	position: absolute;
+// 	top: 20px;
+// 	left: 20px;
+// 	width: 35px;
+// 	height: 15px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_guides.png)no-repeat 0 0;
+// 	z-index: 99;
+// }
+
+// .sNewsCont a .thumwrap .thum .new {
+// 	position: absolute;
+// 	top: 20px;
+// 	left: 20px;
+// 	width: 35px;
+// 	height: 15px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_news.png)no-repeat 0 0;
+// 	z-index: 99;
+// }
+
+// .sNewsCont a .thumwrap .thum .plus {
+// 	position: absolute;
+// 	top: 20px;
+// 	left: 20px;
+// 	width: 35px;
+// 	height: 15px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_pluss.png)no-repeat 0 0;
+// 	z-index: 99;
+// }
+
+// .sNewsCont a .thumwrap .thum .pro {
+// 	position: absolute;
+// 	top: 20px;
+// 	left: 20px;
+// 	width: 35px;
+// 	height: 15px;
+// 	background: url(/images/pc/zocbo/zocboLetter/tkt_pros.png)no-repeat 0 0;
+// 	z-index: 99;
+// }
+
+// .sNewsCont a .thumwrap .thum .center {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	transform: translate(50%, 50%);
+// 	-webkit-transform: translate(50%, 50%);
+// 	-ms-transform: translate(50%, 50%);
+// }
+
+// .sNewsCont a .thumwrap .thum .center img {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	max-width: 100%;
+// 	height: auto;
+// 	-webkit-transform: translate(-50%, -50%);
+// 	-ms-transform: translate(-50%, -50%);
+// 	transform: translate(-50%, -50%);
+// }
+
+// .sNewsCont a .txtCont {
+// 	display: inline-block;
+// 	padding: 0 0 0 17px;
+// }
+
+// .sNewsCont a .txtCont strong {
+// 	display: block;
+// 	position: relative;
+// 	font-size: 18px;
+// 	color: #000;
+// 	font-weight: 400;
+// 	line-height: 23px;
+// }
+
+// .sNewsCont a .txtCont h2 {
+// 	position: relative;
+// 	font-size: 30px;
+// 	color: #000;
+// 	font-weight: 500;
+// }
+
+// .sNewsCont a .txtCont h2 .new {
+// 	display: inline-block;
+// 	width: 20px;
+// 	height: 20px;
+// 	margin-left: 10px;
+// 	vertical-align: 5px;
+// 	background: url('/images/pc/zocbo/zocboLetter/ico_new.png')no-repeat 0 0;
+// }
+
+// .sNewsCont a .txtCont p {
+// 	font-size: 16px;
+// 	color: #000;
+// 	line-height: 23px;
+// 	padding-top: 12px;
+// }
+
+// .rightNewsWrap {
+// 	width: 47%;
+// 	float: right;
+// 	margin-top: 40px;
+// }
+
+// .rightNewsWrap:after {
+// 	content: '';
+// 	display: block;
+// 	clear: both;
+// }
+
+/* //하단 리스트 */
+/* //이전 스타일 사용안함 */
+
+/* 미리보는 학교정보// */
+// .remoteSchWrap {
+// 	position: absolute;
+// 	top: 72px;
+// 	right: 0;
+// 	width: 256px;
+// 	height: 456px;
+// 	background: #fff;
+// 	border: 1px solid #d8d8d8;
+// 	box-sizing: border-box;
+// }
+
+// .remoteSchWrap .ttlremoteSch {
+// 	padding: 10px 0;
+// 	margin: 104px 42px 0;
+// 	font-size: 18px;
+// 	font-weight: 400;
+// 	color: #000;
+// 	line-height: 30px;
+// 	text-align: center;
+// 	border-top: 2px solid #000;
+// 	border-bottom: 2px solid #000;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	letter-spacing: -0.54px;
+// }
+
+// .remoteSchWrap .ttlremoteSch:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 49px;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	width: 64px;
+// 	height: 56px;
+// 	background: url('/images/pc/zocbo/zocboLetter/ico_highSch.png')no-repeat center center;
+// }
+
+// .remoteSchWrap .ttlremoteSch span {
+// 	color: #2988eb;
+// 	font-size: 28px;
+// 	font-weight: 500;
+// }
+
+// .remoteSchWrap .ttlremoteSch span.mid {
+// 	color: #21a74a;
+// }
+
+// .remoteSchWrap .remoteSchlist {
+// 	width: 181px;
+// 	margin: 41px auto 50px;
+// }
+
+// .remoteSchWrap .remoteSchlist>li {
+// 	margin-top: 6px;
+// }
+
+// .remoteSchWrap .remoteSchlist>li:first-child {
+// 	margin-top: 0;
+// }
+
+// .remoteSchWrap .remoteSchlist>li .styled-select {
+// 	width: 181px;
+// 	border: 1px solid #000;
+// 	background: url(/images/pc/zocbo/prego1/ts_arrow.jpg) no-repeat right #FFF;
+// }
+
+// .remoteSchWrap .remoteSchlist>li .styled-select select {
+// 	width: 181px;
+// 	padding: 5px 5px 5px 13px;
+// 	font-size: 15px;
+// 	font-weight: 400;
+// 	color: #000;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	letter-spacing: 0;
+// 	/* for Firefox */
+// 	-moz-appearance: none;
+// 	/* for Chrome */
+// 	-webkit-appearance: none;
+// }
+
+/* For IE10 */
+// .remoteSchWrap .remoteSchlist>li .styled-select select::-ms-expand {
+// 	display: none;
+// }
+
+// .remoteSchWrap .btn_remoteSch {
+// 	background: #282e38;
+// 	width: 100%;
+// 	height: 53px;
+// 	border-top: 1px solid #b8b8b8;
+// }
+
+// .remoteSchWrap .btn_remoteSch a {
+// 	display: block;
+// 	width: 100%;
+// 	height: 100%;
+// 	font-size: 20px;
+// 	color: #fff;
+// 	text-align: center;
+// 	line-height: 51px;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+/* //미리보는 학교정보 */
+/* //고등 중등 소식 */
+
+/* 2021-10-05 중등 고등 소식// */
+// .zocboletter-high-mid-news-wrap {
+// 	padding-top: 72px;
+// }
+
+// .zocboletter-high-mid-news-wrap table,
+// .zocboletter-high-mid-news-wrap input,
+// .zocboletter-high-mid-news-wrap a {
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// .zocboletter-high-mid-news-wrap .list {
+// 	overflow: hidden;
+// }
+
+// .zocboletter-high-mid-news-wrap .list li {
+// 	overflow: hidden;
+// 	position: relative;
+// 	box-sizing: border-box;
+// }
+
+// .zocboletter-high-mid-news-wrap .list a {
+// 	display: block;
+// 	overflow: hidden;
+// 	position: relative;
+// 	height: 100%;
+// }
+
+// .zocboletter-high-mid-news-wrap .list a:hover {
+// 	text-decoration: underline;
+// }
+
+// .zocboletter-high-mid-news-wrap .list a:before {
+// 	content: '';
+// 	display: block;
+// 	width: 100%;
+// 	height: 1px;
+// 	background-color: #d8d8d8;
+// 	position: absolute;
+// 	bottom: 0;
+// 	left: 0;
+// }
+
+// .zocboletter-high-mid-news-wrap .list .icon {
+// 	display: block;
+// 	position: relative;
+// 	overflow: hidden;
+// 	background-repeat: no-repeat;
+// 	background-position: 0 0;
+// 	background-size: 100%;
+// 	float: left;
+// }
+
+// .zocboletter-high-mid-news-wrap .list .icon>img {
+// 	display: block;
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+// .zocboletter-high-mid-news-wrap .list .icon i {
+// 	display: block;
+// 	position: absolute;
+// 	background-repeat: no-repeat;
+// 	background-position: 0 0;
+// 	overflow: hidden;
+// 	text-indent: -9999px;
+// 	background-size: 100%;
+// }
+
+// .zocboletter-high-mid-news-wrap .list .icon i.guide {
+// 	background-image: url("/images/pc/zocbo/zocboLetter/new/guide.svg");
+// }
+
+// .zocboletter-high-mid-news-wrap .list .icon i.event {
+// 	background-image: url("/images/pc/zocbo/zocboLetter/new/event.svg");
+// }
+
+// .zocboletter-high-mid-news-wrap .list .icon i.new {
+// 	background-image: url("/images/pc/zocbo/zocboLetter/new/new.svg");
+// }
+
+// .zocboletter-high-mid-news-wrap .list .icon i.plus {
+// 	background-image: url("/images/pc/zocbo/zocboLetter/new/plus.svg");
+// }
+
+// .zocboletter-high-mid-news-wrap .list .icon i.ebs {
+// 	background-image: url("/images/pc/zocbo/zocboLetter/new/ebs.svg");
+// }
+
+// .zocboletter-high-mid-news-wrap .list .icon i.pro {
+// 	background-image: url("/images/pc/zocbo/zocboLetter/new/pro.svg");
+// }
+
+// .zocboletter-high-mid-news-wrap .list .icon i.free {
+// 	background-image: url("/images/pc/zocbo/zocboLetter/new/free.svg");
+// }
+
+// .zocboletter-high-mid-news-wrap .list p {
+// 	box-sizing: border-box;
+// }
+
+// .zocboletter-high-mid-news-wrap .list p span,
+// .zocboletter-high-mid-news-wrap .list p strong,
+// .zocboletter-high-mid-news-wrap .list p em {
+// 	display: block;
+// 	color: #000;
+// }
+
+// .zocboletter-high-mid-news-wrap .list p strong .new {
+// 	display: inline-block;
+// 	width: 20px;
+// 	height: 20px;
+// 	margin-left: 10px;
+// 	vertical-align: 5px;
+// 	background: url(/images/pc/zocbo/zocboLetter/ico_new.png) no-repeat 0 0;
+// }
+
+// .zocboletter-high-mid-news-wrap .top {
+// 	padding: 0 0 70px 0;
+// 	border-bottom: 1px solid #000;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list {
+// 	margin-top: -8px;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list li {
+// 	padding-top: 8px;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list li:last-child a:before {
+// 	display: none;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list a {
+// 	padding-bottom: 8px;
+// 	display: table;
+// 	width: 723px;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list a .icon,
+// .zocboletter-high-mid-news-wrap .top .list a p {
+// 	display: table-cell;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list .icon {
+// 	width: 220px;
+// 	height: 220px;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list .icon i {
+// 	width: 60px;
+// 	height: 26px;
+// 	top: 33px;
+// 	left: 33px;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list p {
+// 	width: 100%;
+// 	padding-left: 38px;
+// 	vertical-align: middle;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list p span,
+// .zocboletter-high-mid-news-wrap .top .list p strong,
+// .zocboletter-high-mid-news-wrap .top .list p em {
+// 	display: block;
+// 	color: #000;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list p span {
+// 	font-size: 18px;
+// 	line-height: 18px;
+// 	letter-spacing: -0.9px;
+// 	margin-bottom: 12px;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list p strong {
+// 	font-size: 30px;
+// 	line-height: 30px;
+// 	font-weight: 500;
+// 	letter-spacing: -0.75px;
+// 	margin-bottom: 22px;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list p strong i.new {
+// 	display: inline-block;
+// 	width: 20px;
+// 	height: 20px;
+// 	margin-left: 10px;
+// 	vertical-align: 5px;
+// 	background: url(/images/pc/zocbo/zocboLetter/ico_new.png) no-repeat 0 0;
+// }
+
+// .zocboletter-high-mid-news-wrap .top .list p em {
+// 	font-size: 16px;
+// 	line-height: 22px;
+// 	letter-spacing: -0.48px;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list {
+// 	font-size: 0;
+// 	padding-top: 38px;
+// 	margin-bottom: -1px;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list li {
+// 	display: inline-block;
+// 	width: 50%;
+// 	height: 210px;
+// 	padding-top: 40px;
+// 	padding-right: 28px;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list li:nth-child(even) {
+// 	padding-left: 28px;
+// 	padding-right: 0;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list li:nth-child(even):before {
+// 	display: none;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list li:nth-last-child(1),
+// .zocboletter-high-mid-news-wrap .bottom .list li:nth-last-child(2) {
+// 	margin-bottom: -1px;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list li:before {
+// 	content: '';
+// 	display: block;
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	width: 1px;
+// 	height: 100%;
+// 	background-color: #d8d8d8;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list .icon {
+// 	width: 130px;
+// 	height: 130px;
+// 	float: left;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list .icon i {
+// 	width: 40px;
+// 	height: 17.33px;
+// 	top: 20px;
+// 	left: 20px;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list p {
+// 	width: 352px;
+// 	float: left;
+// 	padding-left: 20px;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list p span {
+// 	font-size: 18px;
+// 	line-height: 18px;
+// 	letter-spacing: -0.9px;
+// 	margin-bottom: 12px;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list p strong {
+// 	font-size: 30px;
+// 	line-height: 30px;
+// 	font-weight: 500;
+// 	letter-spacing: -0.75px;
+// 	margin-bottom: 22px;
+// }
+
+// .zocboletter-high-mid-news-wrap .bottom .list p em {
+// 	font-size: 16px;
+// 	line-height: 22px;
+// 	letter-spacing: -0.48px;
+// } 
+
+/* //2021-10-05 중등 고등 소식 */
+
+// .container {
+// 	width: 200px;
+// 	height: 150px;
+// 	overflow: hidden;
+// }
+
+// .container>img {
+// 	position: absolute;
+// 	width: 100%;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
+// }
+
+// .overallBlankLink {
+// 	width: 100%;
+// 	height: 100%;
+// 	position: absolute;
+// 	left: 0;
+// 	top: 0;
+// 	background: url(/images/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+// }
+// #tabMenuUp ul li span.uploadIng {
+// 	position: absolute;
+// 	top: -20px;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	width: 110px;
+// 	padding: 3px 0;
+// 	font-size: 14px;
+// 	color: #5f4bb9;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// 	text-align: center;
+// 	background: #fff;
+// 	border: 2px solid #5f4bb9;
+// 	border-radius: 30px;
+// } 
+
+// #tabMenuUp ul li span.uploadClt {
+// 	position: absolute;
+// 	top: -20px;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	width: 110px;
+// 	padding: 3px 0;
+// 	font-size: 14px;
+// 	color: #fff;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// 	text-align: center;
+// 	background: #5f4bb9;
+// 	border: 2px solid #5f4bb9;
+// 	border-radius: 30px;
+// }
+
+// #tabMenuUp ul li span.uploadConIng {
+// 	position: absolute;
+// 	top: -20px;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	width: 110px;
+// 	padding: 3px 0;
+// 	font-size: 14px;
+// 	color: #818181;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// 	text-align: center;
+// 	background: #fff;
+// 	border: 2px solid #818181;
+// 	border-radius: 30px;
+// }
+
+// #tabContent .content .title .date {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	font-size: 18px;
+// 	color: #000;
+// 	font-weight: 600;
+// 	letter-spacing: -0.5px;
+// }
+
+// #tabContent .content .title .subtit {
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	font-size: 18px;
+// 	color: #000;
+// 	font-weight: 600;
+// }
+
+// #tabContent .content .tblTit {
+// 	display: block;
+// 	font-size: 26px;
+// 	font-weight: 600;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	padding-top: 65px;
+// }
+
+// #tabContent .content .uploadTbl.sb {
+// 	border-bottom: 1px solid #777;
+// }
+
+// #tabContent .content .uploadTbl.sb th {
+// 	background: #9bdef4;
+// }
+
+// #tabContent .content .noticeTxt {
+// 	font-size: 16px;
+// 	font-weight: 300;
+// 	line-height: 20px;
+// 	padding-top: 25px;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// .px_inner {
+// 	width: 1020px;
+// 	margin: 0 auto;
+// 	position: relative;
+// }
+
+// #tabContent .noticeTxtlist {
+// 	margin-top: 15px;
+// }
+
+// #tabContent .noticeTxtlist>li {
+// 	font-size: 17px;
+// 	text-align: left;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+/* 아이리포트 */
+// .topVsu {
+// 	width: 100%;
+// 	position: relative;
+// 	overflow: hidden;
+// }
+
+// .topBGireport {
+// 	width: 1920px;
+// 	height: 896px;
+// 	margin: 0 0 0 -960px;
+// 	position: relative;
+// 	left: 50%;
+// 	top: 0;
+// }
+
+// .topBGireport {
+// 	background: url(/images/pc/zocbo/zocboLetter/visual_ireport.jpg) no-repeat;
+// }
+
+// .introtxt {
+// 	position: relative;
+// 	width: 100%;
+// 	height: 355px;
+// 	text-align: center;
+// 	background: #445365;
+// 	padding: 95px 0;
+// 	box-sizing: border-box;
+// }
+
+// .introtxt p {
+// 	color: #fff;
+// 	font-size: 37px;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	letter-spacing: -1px;
+// }
+
+// .introtxt p strong {
+// 	font-weight: 500;
+// 	color: #ffcf8f;
+// }
+
+// .introtxt p span {
+// 	color: #ffcf8f;
+// 	font-weight: 500;
+// }
+
+// .introtxt p.nologincont {
+// 	line-height: 45px;
+// }
+
+// .introtxt p.nologincont span.pt20 {
+// 	display: block;
+// 	padding-top: 25px;
+// }
+
+// .introtxt p.nologincont>strong {
+// 	display: block;
+// 	padding-top: 15px;
+// 	margin-bottom: 15px;
+// 	font-size: 20px;
+// 	color: #fff;
+// 	font-weight: 300;
+// 	letter-spacing: 0;
+// }
+
+// .introtxt p.nologincont>strong a {
+// 	font-size: 20px;
+// 	color: #fff;
+// 	font-weight: 300;
+// 	letter-spacing: 0;
+// 	border-bottom: 1px solid #fff;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// #tabMenuir {
+// 	width: 100%;
+// 	height: 105px;
+// 	background-color: #445365;
+// 	margin: 0 auto;
+// }
+
+// #tabMenuir ul {
+// 	width: 1019px;
+// 	margin: 0 auto;
+// }
+
+// #tabMenuir ul:after {
+// 	content: "";
+// 	display: block;
+// 	clear: both;
+// }
+
+// #tabMenuir ul li {
+// 	float: left;
+// 	width: 49.9%;
+// 	text-align: center;
+// 	box-sizing: border-box;
+// 	position: relative;
+// 	margin-left: 1px;
+// }
+
+// #tabMenuir ul li:first-child {
+// 	margin-left: 0;
+// }
+
+// #tabMenuir ul li a {
+// 	display: block;
+// 	line-height: 105px;
+// 	font-size: 35px;
+// 	background-color: #de766b;
+// 	color: #c64b3c;
+// 	font-weight: 400;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	cursor: pointer;
+// }
+
+// #tabMenuir ul li.active a {
+// 	background-color: #fff;
+// 	color: #de786a;
+// }
+
+// #tabMenuir ul li.active.one {
+// 	float: none;
+// 	display: block;
+// 	margin: 0 auto;
+// }
+
+// #tabContent .contents {
+// 	padding: 70px 0 0;
+// 	display: none;
+// 	background: #fff;
+// 	text-align: center;
+// 	margin: 0 auto;
+// }
+
+// #tabContent .contents .reportAll {
+// 	position: relative;
+// 	width: 1019px;
+// 	text-align: center;
+// 	margin: 0 auto;
+// 	padding-bottom: 46px;
+// }
+
+// #tabContent .contents .reportAll strong {
+// 	color: #de786a;
+// 	font-size: 55px;
+// 	font-weight: 600;
+// 	letter-spacing: -2px;
+// }
+
+// #tabContent .contents .reportAll strong span {
+// 	color: #000;
+// }
+
+// #tabContent .contents .reportAll ul {
+// 	width: 1019px;
+// 	border-top: 3px solid #000;
+// 	border-bottom: 3px solid #000;
+// 	padding: 37px 0 37px;
+// 	margin-top: 35px;
+// 	box-sizing: border-box;
+// }
+
+// #tabContent .contents .reportAll ul:after {
+// 	content: '';
+// 	display: block;
+// 	clear: both;
+// }
+
+// #tabContent .contents .reportAll ul li {
+// 	display: inline-block;
+// 	text-align: center;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	margin-right: 32px;
+// }
+
+// #tabContent .contents .reportAll ul li p {
+// 	font-size: 22px;
+// 	color: #000;
+// }
+
+// #tabContent .contents .reportAll ul li strong {
+// 	font-size: 45px;
+// 	color: #de766b;
+// 	font-weight: 500;
+// }
+
+// #tabContent .contents .reportAll ul li span {
+// 	font-size: 45px;
+// 	color: #000;
+// 	font-weight: 500;
+// }
+
+// #tabContent .contents .reportAll ul li:last-child {
+// 	margin-right: 0;
+// }
+
+// #tabContent .contents .monthDownWrap {
+// 	width: 100%;
+// 	padding-top: 54px;
+// 	padding-bottom: 70px;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont {
+// 	position: relative;
+// 	width: 1019px;
+// 	margin: 0 auto;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .title {
+// 	text-align: left;
+// 	padding-left: 25px;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .title:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 11px;
+// 	left: 0;
+// 	width: 5px;
+// 	height: 70px;
+// 	background: #000;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .title strong {
+// 	font-size: 35px;
+// 	color: #000;
+// 	font-weight: 500;
+// 	letter-spacing: -1px;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .title p {
+// 	font-size: 24px;
+// 	color: #000;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .chart {
+// 	margin: 0 auto;
+// 	height: 400px;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	padding-bottom: 120px;
+// 	padding-top: 50px;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .chart p {
+// 	font-size: 15px;
+// 	color: #868686;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .chart .mark {
+// 	position: relative;
+// 	font-size: 20px;
+// 	color: #000;
+// 	text-align: left;
+// 	padding-left: 90px;
+// 	margin-bottom: 40px;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .chart .mark:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: -4px;
+// 	left: 40px;
+// 	width: 40px;
+// 	height: 43px;
+// 	background: url('/images/pc/zocbo/zocboLetter/ico_mark.png') no-repeat 0 0;
+// 	background-size: 100% 100%;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .chart p span {
+// 	text-decoration: underline;
+// 	font-weight: 500;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .chart ul {
+// 	text-align: center;
+// 	margin: 10px auto 25px;
+// 	width: 100%;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .chart ul li {
+// 	position: relative;
+// 	display: inline-block;
+// 	font-size: 20px;
+// 	color: #000;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	padding-left: 30px;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .chart ul li:first-child {
+// 	margin-right: 30px;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .chart ul li:first-child:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 5px;
+// 	left: 0;
+// 	width: 20px;
+// 	height: 20px;
+// 	border-radius: 20px;
+// 	background: #de776b;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .chart ul li:last-child:after {
+// 	content: '';
+// 	position: absolute;
+// 	top: 5px;
+// 	left: 0;
+// 	width: 20px;
+// 	height: 20px;
+// 	border-radius: 20px;
+// 	box-sizing: border-box;
+// 	background: #fff;
+// 	border: 3px solid #de776b;
+// }
+
+// #tabContent .contents .txtCont {
+// 	padding: 32px 40px;
+// 	text-align: left;
+// 	box-sizing: border-box;
+// 	border: 1px solid #de766b;
+// 	background: #fff;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// #tabContent .contents .txtCont strong {
+// 	display: block;
+// 	font-size: 28px;
+// 	color: #de766b;
+// 	font-weight: 400;
+// }
+
+// #tabContent .contents .txtCont p {
+// 	font-size: 22px;
+// 	color: #000;
+// 	letter-spacing: -0.5px;
+// }
+
+// #tabContent .contents .txtCont.blc {
+// 	border: 1px solid #000;
+// 	background: #aadfef;
+// }
+
+// #tabContent .contents .txtCont.blc strong {
+// 	color: #000;
+// }
+
+// #tabContent .contents .subjectDownWrap {
+// 	width: 100%;
+// 	background: #aadfef;
+// 	padding-top: 54px;
+// 	padding-bottom: 70px;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont {
+// 	position: relative;
+// 	width: 1019px;
+// 	margin: 0 auto;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .title {
+// 	text-align: left;
+// 	padding-left: 25px;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .title:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 11px;
+// 	left: 0;
+// 	width: 5px;
+// 	height: 70px;
+// 	background: #000;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .title strong {
+// 	font-size: 35px;
+// 	color: #000;
+// 	font-weight: 500;
+// 	letter-spacing: -1px;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .title p {
+// 	font-size: 24px;
+// 	color: #000;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .pickTxt {
+// 	position: relative;
+// 	font-size: 20px;
+// 	color: #000;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	text-align: right;
+// 	padding-top: 10px;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .pickTxt:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 2px;
+// 	right: 100px;
+// 	width: 40px;
+// 	height: 37px;
+// 	background: url('/images/pc/zocbo/zocboLetter/ico_sbjmark.png') no-repeat 0 0;
+// 	background-size: 100% 100%;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl {
+// 	width: 100%;
+// 	margin-top: 20px;
+// 	background: #fff;
+// 	margin-bottom: 57px;
+// 	border-top: 3px solid #000;
+// 	border-bottom: 3px solid #000;
+// 	text-align: left;
+// 	border-spacing: 0;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl thead th {
+// 	font-size: 24px;
+// 	color: #000;
+// 	font-weight: 500;
+// 	padding: 10px 0;
+// 	border-bottom: 1px solid #000;
+// 	letter-spacing: -1px;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody th.vab,
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td.vab {
+// 	vertical-align: baseline;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody th.bb,
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td.bb {
+// 	border-bottom: 1px solid #d8d8d8;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody th.bt,
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td.bt {
+// 	border-top: 1px solid #d8d8d8;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td.bt0,
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody th.bt0 {
+// 	border-top: 1px solid #000;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody th {
+// 	font-size: 22px;
+// 	color: #000;
+// 	font-weight: 400;
+// 	letter-spacing: -1px;
+// 	padding: 10px 7px;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td {
+// 	border-left: 1px solid #d8d8d8;
+// 	font-size: 18px;
+// 	color: #000;
+// 	position: relative;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td.pt {
+// 	padding-top: 11px;
+// 	padding-bottom: 8px;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td.ptd {
+// 	padding-top: 8px;
+// 	padding-bottom: 5px;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td.pb0 {
+// 	padding-bottom: 4px !important;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td:nth-child(1) {
+// 	padding: 10px 0;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td.bln {
+// 	border-left: none;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td span {
+// 	display: block;
+// 	height: 30px;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td p.pmrk {
+// 	display: inline;
+// 	position: absolute;
+// 	top: 1px;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	width: 34px;
+// 	height: 31px;
+// 	background: url('/images/pc/zocbo/zocboLetter/ico_sbjmarks.png') no-repeat 0 0;
+// 	background-size: 100% 100%;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td span.bar1 {
+// 	background: #ebd984;
+// 	width: auto;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td span.bar2 {
+// 	background: #aede7a;
+// 	width: auto;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td span.bar3 {
+// 	background: #6ac7ae;
+// 	width: auto;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td span.bar4 {
+// 	background: #7aa3cd;
+// 	width: auto
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td span.bar5 {
+// 	background: #c8afe8;
+// 	width: auto;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td span.bar6 {
+// 	background: #e993c0;
+// 	width: auto;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td p.txt {
+// 	font-size: 14px;
+// 	padding-left: 2px;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td.bgc1 {
+// 	background: #f0f0f0;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td.bgc2 {
+// 	background: #fffef1;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .subjectTbl tbody td p.sum {
+// 	font-weight: 400;
+// 	font-size: 24px;
+// 	text-align: center;
+// 	letter-spacing: -1px;
+// }
+
+// #tabContent .contents .learningWrap {
+// 	width: 100%;
+// 	background: #fdebce;
+// 	padding-top: 54px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont {
+// 	position: relative;
+// 	width: 1019px;
+// 	margin: 0 auto;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartTxt {
+// 	font-size: 15px;
+// 	color: #868686;
+// 	margin-top: 15px;
+// 	margin-bottom: 75px;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .title {
+// 	text-align: left;
+// 	padding-left: 25px;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	margin-bottom: 60px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .title:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 11px;
+// 	left: 0;
+// 	width: 5px;
+// 	height: 70px;
+// 	background: #000;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .title strong {
+// 	font-size: 35px;
+// 	color: #000;
+// 	font-weight: 500;
+// 	letter-spacing: -1px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .title p {
+// 	font-size: 24px;
+// 	color: #000;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont {
+// 	position: relative;
+// 	width: 1019px;
+// 	height: 650px;
+// 	box-sizing: border-box;
+// 	border: 1px solid #000;
+// 	background: #fff;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont:after {
+// 	content: '';
+// 	display: block;
+// 	clear: both;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lCht {
+// 	float: left;
+// 	position: relative;
+// 	width: 508px;
+// 	height: 648px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lCht .chartWrap {
+// 	width: 100%;
+// 	height: 478px !important;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lCht .chartWrap strong {
+// 	display: block;
+// 	font-size: 30px;
+// 	color: #000;
+// 	letter-spacing: -0.5px;
+// 	text-align: center;
+// 	margin: 30px 0 0;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	font-weight: 500;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lCht .chartWrap .chart {
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lCht .chartWrap .chart ul {
+// 	text-align: center;
+// 	margin: 30px auto 25px;
+// 	width: 100%;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lCht .chartWrap .chart ul li {
+// 	position: relative;
+// 	display: inline-block;
+// 	font-size: 20px;
+// 	color: #000;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	padding-left: 30px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lCht .chartWrap .chart ul li:first-child {
+// 	margin-right: 0px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lCht .chartWrap .chart ul li:first-child:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 5px;
+// 	left: 0;
+// 	width: 20px;
+// 	height: 20px;
+// 	border-radius: 20px;
+// 	background: #fff;
+// 	box-sizing: border-box;
+// 	border: 3px solid #52d787;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lCht .chartWrap .chart ul li.cont2:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: 5px;
+// 	left: 0;
+// 	width: 20px;
+// 	height: 20px;
+// 	border-radius: 20px;
+// 	background: #fff;
+// 	box-sizing: border-box;
+// 	border: 3px solid #259eb0;
+// }
+
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lTxt {
+// 	float: right;
+// 	width: 509px;
+// 	height: 648px;
+// 	box-sizing: border-box;
+// 	border-left: 1px dashed #000;
+// 	padding: 48px 56px 0;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lTxt strong {
+// 	display: block;
+// 	text-align: left;
+// 	color: #000;
+// 	padding-bottom: 50px;
+// 	font-size: 30px;
+// 	font-weight: 400;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// 	letter-spacing: -0.5px;
+// 	line-height: 35px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lTxt strong span {
+// 	color: #25b05d;
+// 	font-weight: 500;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .lTxt p {
+// 	color: #000;
+// 	font-size: 22px;
+// 	font-weight: 400;
+// 	text-align: left;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	letter-spacing: -0.5px;
+// 	line-height: 27px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .sjform {
+// 	position: absolute;
+// 	right: 0;
+// 	bottom: 0;
+// 	width: 509px;
+// 	height: 156px;
+// 	background: #282e38;
+// 	border-top: 1px solid #4a4f57;
+// 	padding: 30px 40px;
+// 	box-sizing: border-box;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .sjform:after {
+// 	content: '';
+// 	display: block;
+// 	clear: both;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .sjform strong {
+// 	display: block;
+// 	text-align: left;
+// 	font-size: 30px;
+// 	color: #25b05d;
+// 	font-weight: 500;
+// 	font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+// 	letter-spacing: -0.5px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .sjform p {
+// 	text-align: left;
+// 	font-size: 25px;
+// 	color: #fff;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont .sjform .gobtn {
+// 	float: right;
+// 	background: #fff;
+// 	font-size: 18px;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// 	color: #282e38;
+// 	border-radius: 30px;
+// 	padding: 10px 30px;
+// 	text-align: center;
+// 	margin-top: -52px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont.cont {
+// 	margin-top: 35px;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .chartCont.cont .lTxt strong span,
+// #tabContent .contents .learningWrap .learningCont .chartCont.cont .sjform strong {
+// 	color: #259eb0;
+// }
+
+/* 미로그인 시 샘플 도장 & 박스 */
+// #tabContent .contents .reportAll .sample {
+// 	position: relative;
+// }
+
+// #tabContent .contents .reportAll .sample .smtxtCont {
+// 	position: absolute;
+// 	top: -26px;
+// 	right: 0;
+// 	background: #6f7780;
+// 	padding: 30px;
+// 	line-height: 21px;
+// 	font-size: 16px;
+// 	color: #fff;
+// 	text-align: center;
+// 	font-family: 'NanumBarunGothic', Sans-Serif;
+// }
+
+// #tabContent .contents .reportAll .sample .smtxtCont:after {
+// 	content: '';
+// 	position: absolute;
+// 	top: -20px;
+// 	left: 50%;
+// 	width: 21px;
+// 	height: 20px;
+// 	transform: translateX(-50%);
+// 	transform: rotateX(180deg);
+// 	background: url('/images/pc/zocbo/zocboLetter/ico_markarrow.png')no-repeat center center;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .sample {
+// 	position: relative;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .sample .smtxtCont {
+// 	position: absolute;
+// 	top: -712px;
+// 	right: 270px;
+// 	background: #6f7780;
+// 	padding: 30px;
+// 	line-height: 21px;
+// 	font-size: 16px;
+// 	color: #fff;
+// 	text-align: center;
+// 	font-family: 'NanumBarunGothic', Sans-Serif;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .sample .smtxtCont:after {
+// 	content: '';
+// 	position: absolute;
+// 	top: 123px;
+// 	left: 30%;
+// 	width: 21px;
+// 	height: 20px;
+// 	transform: translateX(-50%);
+// 	background: url('/images/pc/zocbo/zocboLetter/ico_markarrow.png')no-repeat center center;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .sample.stamp {
+// 	position: relative;
+// }
+
+// #tabContent .contents .monthDownWrap .monthDownCont .sample.stamp:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: -562px;
+// 	left: 380px;
+// 	width: 258px;
+// 	height: 189px;
+// 	background: url('/images/pc/zocbo/zocboLetter/stamp.png')no-repeat center center;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .sample {
+// 	position: relative;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .sample .smtxtCont {
+// 	position: absolute;
+// 	top: -1095px;
+// 	right: 230px;
+// 	background: #6f7780;
+// 	padding: 30px 20px;
+// 	line-height: 21px;
+// 	font-size: 16px;
+// 	color: #fff;
+// 	text-align: center;
+// 	font-family: 'NanumBarunGothic', Sans-Serif;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .sample .smtxtCont:after {
+// 	content: '';
+// 	position: absolute;
+// 	top: 123px;
+// 	left: 50%;
+// 	width: 21px;
+// 	height: 20px;
+// 	transform: translateX(-50%);
+// 	background: url('/images/pc/zocbo/zocboLetter/ico_markarrow.png')no-repeat center center;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .sample.stamp {
+// 	position: relative;
+// }
+
+// #tabContent .contents .subjectDownWrap .subjectDownCont .sample.stamp:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: -940px;
+// 	left: 380px;
+// 	width: 258px;
+// 	height: 189px;
+// 	background: url('/images/pc/zocbo/zocboLetter/stamp.png')no-repeat center center;
+// }
+
+
+// #tabContent .contents .learningWrap .learningCont .sample {
+// 	position: relative;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .sample .smtxtCont {
+// 	position: absolute;
+// 	top: -1310px;
+// 	right: 292px;
+// 	background: #6f7780;
+// 	padding: 30px 25px;
+// 	line-height: 21px;
+// 	font-size: 16px;
+// 	color: #fff;
+// 	text-align: center;
+// 	font-family: 'NanumBarunGothic', Sans-Serif;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .sample .smtxtCont:after {
+// 	content: '';
+// 	position: absolute;
+// 	top: 143px;
+// 	left: 34.5%;
+// 	width: 21px;
+// 	height: 20px;
+// 	transform: translateX(-50%);
+// 	background: url('/images/pc/zocbo/zocboLetter/ico_markarrow.png')no-repeat center center;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .sample.stamp {
+// 	position: relative;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .sample.stamp:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: -1110px;
+// 	left: 355px;
+// 	width: 258px;
+// 	height: 189px;
+// 	background: url('/images/pc/zocbo/zocboLetter/stamp.png')no-repeat center center;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .sample .stamp2 {
+// 	position: relative;
+// }
+
+// #tabContent .contents .learningWrap .learningCont .sample .stamp2:before {
+// 	content: '';
+// 	position: absolute;
+// 	top: -530px;
+// 	left: 354px;
+// 	width: 258px;
+// 	height: 189px;
+// 	background: url('/images/pc/zocbo/zocboLetter/stamp.png')no-repeat center center;
+// }
+
+/* 제휴안내 */
+// .cooperInfo {
+// 	padding-left: 30px;
+// }
+
+// .cooperInfo .sbTit {
+// 	font-size: 26px;
+// 	color: #171818;
+// 	font-weight: 600;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// }
+
+// .cooperInfo .sbTit:before {
+// 	content: '';
+// 	display: block;
+// 	clear: both;
+// }
+
+// .cooperInfo .sbTit span {
+// 	display: inline-block;
+// 	float: right;
+// 	font-size: 14px;
+// 	font-weight: 400;
+// 	color: #000;
+// 	line-height: 57px;
+// }
+
+// .cooperInfo .sbTit.bb {
+// 	padding-bottom: 10px;
+// 	border-bottom: 1px solid #171818;
+// }
+
+// .cooperInfo ul {
+// 	margin-top: 15px;
+// }
+
+// .cooperInfo ul:before {
+// 	content: '';
+// 	display: block;
+// 	clear: both;
+// }
+
+// .cooperInfo ul li {
+// 	width: 387px;
+// 	height: 193px;
+// 	float: left;
+// 	margin: 0 17px 17px 0;
+// }
+
+// .cooperInfo ul li:nth-child(1) {
+// 	background: url(/images/pc/zocbo/proposition/b2bImg01.png) no-repeat;
+// }
+
+// .cooperInfo ul li:nth-child(2) {
+// 	background: url(/images/pc/zocbo/proposition/b2bImg02.png) no-repeat;
+// 	margin-right: 0;
+// }
+
+// .cooperInfo ul li:nth-child(3) {
+// 	background: url(/images/pc/zocbo/proposition/b2bImg03.png) no-repeat;
+// }
+
+// .cooperInfo ul li:nth-child(4) {
+// 	background: url(/images/pc/zocbo/proposition/b2bImg04.png) no-repeat;
+// 	margin-right: 0;
+// 	margin-bottom: 80px;
+// }
+
+// .btnArea {
+// 	margin: 60px auto;
+// 	text-align: center;
+// }
+
+// .btnType1 {
+// 	text-align: center;
+// 	font-size: 21px;
+// 	color: #fff;
+// 	font-weight: 600;
+// 	padding: 10px 57px;
+// 	background: #000;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// }
+
+// .btnType2 {
+// 	text-align: center;
+// 	font-size: 21px;
+// 	color: #000;
+// 	font-weight: 400;
+// 	padding: 10px 76px;
+// 	border: 1px solid #000;
+// 	background: #fff;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// }
+
+// .btnType1:hover {
+// 	color: #fff;
+// }
+
+// .coopermail {
+// 	width: 100%;
+// 	margin-top: 30px;
+// }
+
+// .coopermail.mb50 {
+// 	margin-bottom: 50px;
+// }
+
+// .coopermail th {
+// 	font-size: 19px;
+// 	color: #1a1a1a;
+// 	font-weight: 500;
+// 	text-align: left;
+// 	vertical-align: top;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// }
+
+// .coopermail th span {
+// 	font-size: 20px;
+// 	color: #f81818;
+// 	vertical-align: -2px;
+// }
+
+// .coopermail td {
+// 	margin-bottom: 30px;
+// 	display: inline-block;
+// 	position: relative;
+// }
+
+// .coopermail td .textNum {
+// 	display: inline-block;
+// 	position: absolute;
+// 	bottom: 10px;
+// 	right: 10px;
+// 	font-size: 16px;
+// 	color: #bfbfbf;
+// 	font-weight: 300;
+// }
+
+// .coopermail td p {
+// 	font-size: 13px;
+// 	color: #8c8c8c;
+// 	padding-top: 10px;
+// }
+
+// .coopermail td .input {
+// 	padding: 5px;
+// 	box-sizing: border-box;
+// 	border: none;
+// 	font-size: 19px;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// 	border-bottom: 1px solid #bfbfbf !important;
+// }
+
+// .coopermail td .input::placeholder {
+// 	color: #bfbfbf;
+// }
+
+// .coopermail td .input:-ms-input-placeholder {
+// 	color: #bfbfbf;
+// }
+
+// .coopermail td .input:focus {
+// 	color: #1a1a1a;
+// 	border-bottom: 1px solid #1a1a1a !important;
+// 	color: #1a1a1a;
+// }
+
+// .coopermail td textarea:focus {
+// 	border: 1px solid #1a1a1a !important;
+// 	color: #1a1a1a;
+// }
+
+// .coopermail td textarea {
+// 	padding: 5px;
+// 	box-sizing: border-box;
+// 	border: none;
+// 	font-size: 19px;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// 	border: 1px solid #bfbfbf !important;
+// }
+
+// .coopermail td textarea:-ms-input-placeholder {}
+
+// .coopermail td .bar {
+// 	width: 10px;
+// 	height: 1px;
+// 	background: #bfbfbf;
+// 	display: inline-block;
+// 	margin: 0 5px;
+// }
+
+// .coopermail tr .agreeCont {
+// 	font-size: 16px;
+// 	color: #808080;
+// 	font-weight: 400;
+// 	border: 1px solid #bfbfbf;
+// 	box-sizing: border-box;
+// 	padding: 10px;
+// 	margin-top: 10px;
+// 	margin-bottom: 20px;
+// 	line-height: 26px;
+// 	overflow-y: scroll;
+// }
+
+// .coopermail td select.emailSlt {
+// 	width: 152px;
+// 	height: 37px;
+// 	padding: 8px 10px;
+// 	margin-left: 10px;
+// 	border: 1px solid #bfbfbf;
+// 	box-sizing: border-box;
+// 	font-size: 16px;
+// 	color: #a6a6a6;
+// 	background: url(/images/pc/zocbo/proposition/arrow_Sltdown.png)no-repeat 127px center;
+// }
+
+// .file_input_textbox {
+// 	float: left
+// }
+
+// .file_input_textbox:after {
+// 	content: '';
+// 	display: block;
+// 	clear: both;
+// }
+
+// .file_input_div {
+// 	position: relative;
+// 	width: 123px;
+// 	height: 38px;
+// 	overflow: hidden;
+// }
+
+// input[type="button"].file_input_button {
+// 	height: 38px;
+// 	position: absolute;
+// 	top: 0px;
+// 	background-color: #262626;
+// 	cursor: pointer;
+// 	color: #fff;
+// 	border-radius: 30px;
+// 	padding: 5px 25px;
+// 	box-sizing: border-box;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// 	font-weight: 600;
+// 	border: none;
+// 	font-size: 18px;
+// }
+
+// .file_input_hidden {
+// 	font-size: 19px;
+// 	position: absolute;
+// 	right: 0px;
+// 	top: 0px;
+// 	opacity: 0;
+
+// 	filter: alpha(opacity=0);
+// 	-ms-filter: "alpha(opacity=0)";
+// 	-khtml-opacity: 0;
+// 	-moz-opacity: 0;
+// }
+
+// input[type="button"] {
+// 	order-width: 0em;
+// 	margin: 0em;
+// 	padding: auto;
+// 	height: auto;
+// }
+
+// .checks {
+// 	position: relative;
+// 	text-align: center;
+// }
+
+// .checks input[type="checkbox"] {
+// 	position: absolute;
+// 	width: 1px;
+// 	height: 1px;
+// 	padding: 0;
+// 	margin: -1px;
+// 	overflow: hidden;
+// 	clip: rect(0, 0, 0, 0);
+// 	border: 0
+// }
+
+// .checks input[type="checkbox"]+label {
+// 	display: inline-block;
+// 	position: relative;
+// 	cursor: pointer;
+// 	-webkit-user-select: none;
+// 	-moz-user-select: none;
+// 	-ms-user-select: none;
+// 	font-size: 16px;
+// 	color: #000;
+// 	font-family: 'Noto Sans Korean', Sans-Serif;
+// }
+
+// .checks input[type="checkbox"]+label:before {
+// 	content: ' ';
+// 	display: inline-block;
+// 	width: 23px;
+// 	height: 21px;
+// 	line-height: 21px;
+// 	margin: -6px 0 0 0;
+// 	text-align: center;
+// 	vertical-align: middle;
+// 	background: url(/images/pc/zocbo/proposition/blt_checkbox_off.png) no-repeat center center;
+// }
+
+// .checks input[type="checkbox"]+label:active:before,
+// .checks input[type="checkbox"]:checked+label:active:before {
+// 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+// } 
+
+// .checks input[type="checkbox"]:checked+label:before {
+// 	content: '';
+// 	background: url(/images/pc/zocbo/proposition/blt_checkbox_on.png) no-repeat center center;
+// }
+
+
+// select {
+// 	-moz-appearance: none;
+// 	/* Firefox */
+// 	-webkit-appearance: none;
+// 	/* Safari and Chrome */ 
+// 	appearance: none;
+// }
+
+// select::-ms-expand {
+// 	display: none
+// }

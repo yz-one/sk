@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+// 아코디언
+.ui-accordion {
+    &.animate {
+        .ui-accordion-content {
+            transition: max-height .1s ease-in-out;
+        }
+        .ui-accordion-item {
+            &.active {
+                .ui-accordion-content {
+                    transition: max-height .5s ease-in-out;
+                    transition-delay: .1s;
+                }
+            }
+        }
+    }
+    &-item {
+        &.active {
+            .ui-accordion-content {
+                max-height: 1000px;
+            }
+        }
+    }
+    &-btn {}
+    &-content {
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+}

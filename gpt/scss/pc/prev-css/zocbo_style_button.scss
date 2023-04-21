@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/*--------------------------------------------------
+			 버튼스타일
+--------------------------------------------------*/
+.btnCom {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.btnBlack {
+  padding: 0 16px 0 16px;
+  background: #515560;
+  text-align: center;
+  font-size: 12px;
+  color: #fff !important;
+}
+
+.btnBlue {
+  padding: 0 16px 0 16px;
+  background: #437ddb;
+  text-align: center;
+  font-size: 12px;
+  color: #fff !important;
+}
+
+.btnBlack_tp {
+  width: 145px;
+  height: 43px;
+  background: #282e38;
+  border: 1px solid #282e38;
+  text-align: center;
+  font-size: 12px;
+  line-height: 41px;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.btnBlack_tp2 {
+  height: 43px;
+  padding: 0 19px 0 20px;
+  background: #282e38;
+  border: 1px solid #282e38;
+  text-align: center;
+  font-size: 12px;
+  line-height: 46px;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.btnBlack_tp30 {
+  width: 87px;
+  height: 30px;
+  background: #282e38;
+  border: 1px solid #282e38;
+  text-align: center;
+  font-size: 12px;
+  line-height: 33px;
+  color: #fff !important;
+}
+
+.btnPink {
+  padding: 0 16px 0 16px;
+  background: #e33626;
+  text-align: center;
+  font-size: 12px;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.btnWtp {
+  padding: 0 16px 0 16px;
+  background: #ffffff;
+  border: 1px solid #b2bacd;
+  text-align: center;
+  font-size: 12px;
+  color: #666 !important;
+  font-weight: bold;
+}
+
+.btnWtp_tp {
+  width: 145px;
+  height: 43px;
+  background: #ffffff;
+  border: 1px solid #b2bacd;
+  text-align: center;
+  font-size: 12px;
+  line-height: 41px;
+  color: #666 !important;
+  font-weight: bold;
+}
+
+.btnWtp_tp30 {
+  width: 87px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid #b2bacd;
+  text-align: center;
+  font-size: 12px;
+  line-height: 30px;
+  color: #666 !important;
+  font-weight: bold;
+}
+
+.btnGray {
+  padding: 0 16px 0 16px;
+  background: #c0c0c0;
+  text-align: center;
+  font-size: 12px;
+  color: #fff !important;
+}
+
+.botbtn {
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+
+.botRbtn {
+  padding: 20px 0 0 0;
+  text-align: right;
+}
+
+.botbtn > a:first-child {
+  margin-left: 0;
+}
+
+.botbtn > a {
+  margin-left: 10px;
+}
+
+.botbtn input {
+  vertical-align: top;
+}
+
+.csor_none {
+  cursor: default;
+}
+
+.btn30 {
+  height: 30px;
+  line-height: 33px;
+}
+
+.btn32 {
+  height: 32px;
+  line-height: 35px;
+}
+
+.sbotbtn > a {
+  height: 30px;
+  line-height: 33px;
+}
+
+.listplus {
+  width: 9px;
+  height: 11px;
+  margin-left: 5px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_listplus.gif) no-repeat;
+}
+
+.rn_itemlist .btnPink {
+  background: #e33626;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
+
+.rn_itemlist .c_f74966 {
+  color: #e33626 !important;
+}
+
+/*--------------------------------------------------
+			 초등 btnCom
+--------------------------------------------------*/
+#wrapper .btnCom {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+}
+
+#wrapper .botbtnRA {
+  font-size: 0;
+}
+
+#wrapper .botbtnRA > a:first-child {
+  margin-left: 0;
+}
+
+#wrapper .botbtnRA > a {
+  margin-left: 10px;
+}
+
+#wrapper .btn_black {
+  min-width: 59px;
+  height: 29px;
+  padding: 0 5px 0 5px;
+  background: #515560;
+  font-size: 12px;
+  line-height: 29px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+#wrapper .btn_black6 {
+  min-width: 59px;
+  height: 29px;
+  padding: 0 5px 0 5px;
+  background: #666;
+  font-size: 12px;
+  line-height: 29px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+#wrapper .btn162x40 {
+  width: 162px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #333;
+  border: 1px solid #bebebe;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+#wrapper .btn162x40.on {
+  background: #41444c;
+  border: 1px solid #41444c;
+  color: #fff;
+}
+
+#wrapper .btnBlack_tp {
+  width: 145px;
+  height: 43px;
+  background: #525f78;
+  border: 1px solid #282e38;
+  text-align: center;
+  font-size: 12px;
+  line-height: 46px;
+  color: #fff !important;
+}
+
+#wrapper .btnWtp_tp {
+  width: 145px;
+  height: 43px;
+  background: #ffffff;
+  border: 1px solid #b2bacd;
+  text-align: center;
+  font-size: 12px;
+  line-height: 46px;
+  color: #666 !important;
+  font-weight: bold;
+}
+
+#wrapper .btnGray {
+  padding: 0 16px 0 16px;
+  background: #c0c0c0;
+  text-align: center;
+  font-size: 12px;
+  color: #fff !important;
+}
+
+#wrapper .botbtn {
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+
+#wrapper .botbtn > a:first-child {
+  margin-left: 0;
+}
+
+#wrapper .botbtn > a {
+  margin-left: 10px;
+}
+
+#wrapper .csor_none {
+  cursor: default;
+}
+
+#wrapper .btn30 {
+  height: 30px;
+  line-height: 33px;
+}
+
+#wrapper .btn32 {
+  height: 32px;
+  line-height: 35px;
+}
+
+#wrapper .sbotbtn > a {
+  height: 30px;
+  line-height: 33px;
+}
+
+.btn_black6 {
+  min-width: 59px;
+  height: 29px;
+  padding: 0 5px 0 5px;
+  background: #666;
+  font-size: 12px;
+  line-height: 29px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn_black6:hover {
+  color: #fff;
+}
+
+/*--------------------------------------------------
+			 위로가기버튼
+--------------------------------------------------*/
+.btn_top {
+  &::before {
+    width: 19px;
+    height: 11px;
+    content: '';
+    display: block;
+    background: url("/images/pc/zocbo/zocbo_rn/sub/common/btn-topgo-arrow.png") no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  width: 40px;
+  height: 40px;
+  position: fixed; 
+  right: 16px;
+  bottom: 16px;
+  z-index: 1001;
+  display: block;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #DADEE7;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  border-radius: 8px;
+  transition: all .5s;
+}
+
+/* 공통버튼 2022 */
+.btn {
+  height: 32px;
+  line-height: 30px;
+  padding: 0 22px;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  background-color: #515560;
+  border: 1px solid #515560;
+}
+
+.btn.btn-outline {
+  color: #515560;
+  background-color: #fff;
+}
+
+.btn.btn-large {
+  height: 44px;
+  line-height: 42px;
+  background-color: #437ddb;
+  border-color: #437ddb;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=zocbo_style_button.css.map */

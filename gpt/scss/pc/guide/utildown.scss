@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+.z_UtilDownBnr {
+    margin-bottom: 41px;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+.z_UtilDownlist>li {
+    margin-top: 37px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.z_UtilDownlist>li:first-child {
+    margin-top: 0;
+}
+
+.z_UtilDownlist>li .utBox {
+    padding: 52px 45px 54px 45px !important;
+    background: #f4f4f4;
+    border: 1px solid #c5c4c6;
+}
+
+.utBoxDownlist {
+    width: 100%;
+    display: table;
+}
+
+.utBoxDownlist>li {
+    width: 254px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #c5c4c6;
+    border-left: none;
+}
+
+.utBoxDownlist>li:first-child {
+    border-left: 1px solid #c5c4c6;
+}
+
+.utBoxDownlist>li .utBoxttl {
+    height: 52px;
+    border-bottom: 1px solid #c5c4c6;
+    font-size: 22px;
+    color: #282e38;
+    line-height: 52px;
+    text-align: center;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.utBoxDownlist>li .utBoxCnt {
+    border-bottom: 1px solid #c5c4c6;
+}
+
+.utBoxDownlist>li .utBoxCnt .dtBoximgA {
+    margin-top: 34px;
+    text-align: center;
+}
+
+.utBoxDownlist>li.lisub1 .utBoxCnt .dtBoximgA {
+    margin-left: -9px;
+}
+
+.utBoxDownlist>li .utBoxCnt .btn_utdwn {
+    margin: 21px 0 33px 0;
+    text-align: center;
+}
+
+.utBoxDownlist>li .utBoxBot {
+    padding: 17px 0 27px 0;
+    text-align: center;
+    background: #f4f4f4;
+}

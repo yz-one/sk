@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/*--------------------------------------------------
+			 초등 lnb
+--------------------------------------------------*/
+.lnb h2 {
+  padding: 0 0 18px 9px;
+  border-bottom: 2px solid #aaa;
+}
+
+.lnb h2.tp2 {
+  padding: 0 0 18px 0;
+  text-align: center;
+}
+
+.lnbArea > li:first-child {
+  border-top: none;
+}
+
+.lnbArea > li {
+  padding: 24px 0 25px 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.lnbArea > li .deth2ttl {
+  margin-bottom: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.lnbArea > li .deth2 > li > a {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  font-size: 12px;
+  line-height: 23px;
+  color: #333;
+}
+
+.lnbArea > li .deth2 > li.on > a {
+  color: #fe697e;
+  font-weight: bold;
+}
+
+.lnbArea > li .deth2 > li > a:hover {
+  color: #fe697e;
+}
+
+.lnbArea > li .deth2 > li .ref_icn {
+  margin-left: 8px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  line-height: 20px;
+  vertical-align: initial;
+}
+
+.elem_guide {
+  padding-top: 5px;
+}
+
+.vidodown {
+  width: 167px;
+  height: 140px;
+  margin-bottom: 11px;
+  background: url(https://www.zocbo.com/ZocboElem/images/common/bg_vdodown.gif) no-repeat;
+}
+
+.vidodown_cnt {
+  padding: 76px 0 0 0;
+  text-align: center;
+}
+
+.txt_vdodown {
+  margin-bottom: 9px;
+}
+
+.vidodown_btn {
+  font-size: 0;
+}
+
+.vidodown_btn > a:first-child {
+  margin-left: 0;
+  text-align: center;
+}
+
+.vidodown_btn > a {
+  margin-left: 2px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/*--------------------------------------------------
+			 zocbo_lnb
+--------------------------------------------------*/
+.etc_btn {
+  margin: 9px 0 0 0;
+}
+
+.etc_btn a {
+  width: 165px;
+  height: 33px;
+  margin-top: 10px;
+  border: 1px solid #e5e5e5;
+  font-size: 12px;
+  line-height: 33px;
+  color: #30323e;
+  text-align: center;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 400;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.etc_btn a:first-child {
+  margin-top: 0;
+}
+
+.etc_btn a:hover {
+  background: #484848;
+  color: #fff;
+}
+
+.zocbolnb_list > li {
+  padding: 23px 0 19px 10px;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.zocbolnb_list > li .deth2ttl {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+}
+
+.zocbolnb_list > li .deth2ttl > a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.zocbolnb_list > li .deth2ttl span {
+  font-size: 12px;
+}
+
+.zocbolnb_list > li .deth2 {
+  margin-top: 13px;
+}
+
+.lnb_Sblist > li .deth2 > li > a,
+.zocbolnb_list > li .deth2 > li > a {
+  padding-left: 0;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  font-size: 12px;
+  line-height: 23px;
+  color: #666;
+  -webkit-transition: all .33s linear 0s;
+  transition: all .33s linear 0s;
+  word-spacing: -3px;
+}
+
+.zocbolnb_list > li .deth2 > li > a.dm2 {
+  -webkit-transition: all .22s linear 0s;
+  transition: all .22s linear 0s;
+}
+
+.lnb_Sblist > li .deth2 > li > a:hover,
+.zocbolnb_list > li .deth2 > li > a:hover {
+  padding-left: 3px;
+}
+
+.lnb_Sblist > li .deth2 > li > a span.on,
+.lnb_Sblist > li .deth2 > li.on > a,
+.zocbolnb_list > li .deth2 > li > a span.on,
+.zocbolnb_list > li .deth2 > li.on > a {
+  color: #b38eff;
+  font-weight: bold;
+}
+
+.lnb_Sblist > li .deth2 > li > a:hover,
+.zocbolnb_list > li .deth2 > li > a:hover {
+  color: #b38eff;
+  font-weight: bold;
+}
+
+.common_lnb .zocbolnb_list > li .deth2 > li > a span.on,
+.common_lnb .zocbolnb_list > li .deth2 > li.on > a {
+  color: #3579d4;
+  font-weight: bold;
+}
+
+.common_lnb .zocbolnb_list > li .deth2 > li > a:hover {
+  color: #3579d4;
+}
+
+.zocbolnb_list > li .deth2 > li .ref_icn {
+  margin: 0 0 0 4px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  line-height: 20px;
+  vertical-align: inherit;
+}
+
+.zocbolnb_list > li .deth2tp2 {
+  font-size: 0;
+}
+
+.zocbolnb_list > li .deth2tp2 > li {
+  margin-left: 16px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  font-size: 12px;
+  line-height: 23px;
+  color: #666;
+}
+
+.zocbolnb_list > li .deth2tp2 > li > a {
+  color: #666;
+}
+
+.zocbolnb_list > li .deth2tp2 > li:first-child {
+  margin-left: 0;
+}
+
+.zocbolnb_list > li .deth2tp2 > li.on > a,
+.zocbolnb_list > li .deth2tp2 > li > a:hover {
+  color: #b38eff;
+  font-weight: bold;
+}
+
+.lnb_Special .top_Ttl {
+  height: 49px;
+  background: #515560;
+  font-size: 14px;
+  line-height: 49px;
+  color: #fff;
+  text-align: center;
+}
+
+.lnb_Sblist > li {
+  padding: 23px 0 19px 10px;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.lnb_Sblist > li .deth2ttl {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+}
+
+.lnb_Sblist > li .deth2 {
+  margin-top: 13px;
+}
+
+.zocbolnb_list > li .prepareInfo {
+  margin: 13px 50px 0 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  text-align: center;
+}
+
+/*--------------------------------------------------
+			고등 zocbo_lnb
+--------------------------------------------------*/
+.zocbo_high_lnb .zocbolnb_list > li .deth2 > li > a span.on,
+.zocbo_high_lnb .zocbolnb_list > li .deth2 > li.on > a,
+.zocbo_high_lnb .zocbolnb_list > li .deth2 > li > a:hover {
+  color: #4395d1;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------
+			선생님 zocbo_lnb
+--------------------------------------------------*/
+.zocbo_teacher .zocbolnb_list > li .deth2 > li > a span.on,
+.zocbo_teacher .zocbolnb_list > li .deth2 > li.on > a {
+  color: #7dbe0a;
+  font-weight: bold;
+}
+
+.zocbo_teacher .zocbolnb_list > li .deth2 > li > a:hover {
+  color: #7dbe0a;
+}
+/*# sourceMappingURL=zocbo_style_lnb.css.map */

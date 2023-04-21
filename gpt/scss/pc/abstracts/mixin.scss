@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@mixin spr-header-mask($l: 0, $t: 0, $folder: 'common', $img: 'spr-header.png') {
+    @include mask-img(#{$folder},#{$img}, #{$l}, #{$t});
+}
+@mixin spr-header-bg($l: 0, $t: 0, $folder: 'common', $img: 'spr-header.png') {
+    @include bg-img(#{$folder},#{$img}, #{$l}, #{$t});
+}
+@mixin spr-voucher-icon($l: 0, $t: 0, $folder: 'common', $img: 'spr-voucher.svg') {
+    @include bg-img(#{$folder},#{$img}, #{$l}, #{$t});
+}
+@mixin spr-privatelesson-mask($l: 0, $t: 0, $folder: 'common', $img: 'spr-privatelesson.png') {
+    @include mask-img(#{$folder},#{$img}, #{$l}, #{$t});
+}
+@mixin spr-privatelesson-bg($l: 0, $t: 0, $folder: 'common', $img: 'spr-privatelesson.png') {
+    @include bg-img(#{$folder},#{$img}, #{$l}, #{$t});
+}
+@mixin spr-payment($l: 0, $t: 0, $folder: 'common', $img: 'spr-payment.svg') {
+    @include bg-img(#{$folder},#{$img}, #{$l}, #{$t});
+}
+@mixin spr-datepicker($l: 0, $t: 0, $folder: 'common', $img: 'spr-datepicker.svg') {
+    @include bg-img(#{$folder},#{$img}, #{$l}, #{$t});
+}
+
+@mixin spr-personal($l:0, $t:0) {
+    background: url('/images/pc/zocbo/header/spr-personal.png') $l $t no-repeat;
+}
+@mixin spr-voucher($l:0, $t:0) {
+    background: url('/images/pc/zocbo/voucher/spr-voucher.png') $l $t no-repeat;
+}
+@mixin spr-question-bank($l:0, $t:0) {
+    background: url('/images/pc/zocbo/common/spr-question-bank.png') $l $t no-repeat;
+}
+@mixin spr-search($l:0, $t:0) {
+    background: url('/images/pc/zocbo/common/spr-search.png') $l $t no-repeat;
+}
+@mixin spr-layer-popup($l:0, $t:0) {
+    background: url('/images/pc/zocbo/common/spr-layer-popup.png') $l $t no-repeat;
+}
+@mixin spr-cleancenter($l:0, $t:0) {
+    background: url('/images/pc/zocbo/common/spr-cleancenter.png') $l $t no-repeat;
+}

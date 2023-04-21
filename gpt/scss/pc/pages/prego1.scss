@@ -1,0 +1,4105 @@
+@charset "euc-kr";
+
+/* CSS Document */
+#zocbo_wrap {
+    &.zocbo_prego1, &.examsub {
+        #wrap {
+            min-width: 1522px;
+            width: 100%;
+        }
+        
+        #prego1_Wrap {
+            min-width: 1300px;
+            width: 100%;
+            overflow-x:hidden;
+        }
+        
+        #prego1_Wrap.examsub {
+            min-width: 1300px;
+            overflow: hidden;
+        }
+        
+        #top {
+            width: 100%;
+            height: 29px;
+            border-bottom: 1px solid #e8e9eb;
+        }
+        
+        #header {
+            margin: 0 auto;
+            width: 100%;
+            height: 45px;
+            background: url('../images/bg_menu_navi.jpg') repeat-x left top;
+            margin: 30px 0 0 0;
+        }
+        
+        .contWrap {
+            position: relative;
+        }
+        
+        #container {
+            margin: 0 auto;
+            width: 1019px;
+            margin-top: 30px;
+            position: relative;
+        }
+        
+        #container.main {
+            position: relative;
+        }
+        
+        #sidebar {
+            float: left;
+            width: 180px;
+            margin-right: 20px;
+        }
+        
+        #content {
+            float: left;
+            width: 700px;
+            min-height: 300px;
+            margin: 0 0 30px 0;
+        }
+        
+        #footer {
+            clear: both;
+            /* 플롯 속성 종속하지 않음 */
+            text-align: center;
+            margin: 0;
+            padding: 10px 0;
+            border-top: 2px solid #454545;
+        }
+        
+        #footer .copy {
+            margin: 0 auto;
+            width: 900px;
+            height: 100px;
+        }
+        
+        .q_wrap {
+            width: 101px;
+            margin-left: 530px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+        }
+        
+        .zocbo_spmain .q_wrap {
+            top: 427px;
+        }
+        
+        .qmcnt .quicklist>li {
+            margin-top: 5px;
+        }
+        
+        .qmcnt .quicklist>li:first-child {
+            margin-top: 0;
+        }
+        
+        .rainbowbnr {
+            position: absolute;
+            left: 50%;
+        }
+        
+        .zocbo_Mainsoopring .rainbowbnr_main {
+            margin-left: 557px;
+            top: 450px;
+        }
+        
+        .rainbowbnr_main {
+            margin-left: 557px;
+            top: 0;
+        }
+        
+        .rainbowbnr_Tmain {
+            margin-left: 557px;
+            top: 34px;
+        }
+        
+        .inner {
+            width: 1019px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .inner_rn {
+            width: 1019px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .q_sns {
+            margin-bottom: 10px;
+        }
+        
+        .q_sns>li {
+            float: left;
+            margin-left: 10px;
+        }
+        
+        .q_sns>li:first-child {
+            margin-left: 0px;
+        }
+        
+        .dimfull2 {
+            position: fixed !important;
+        }
+        
+        /*--------------------------------------------------
+                     zocbo_header 
+        --------------------------------------------------*/
+        #zocbo_header {
+            width: 100%;
+            position: relative;
+            z-index: 1001;
+        }
+        
+        .h_top {
+            width: 100%;
+            height: 51px;
+            background: #fff;
+            border-bottom: 1px solid #efefef;
+        }
+        
+        .h_mid {
+            width: 100%;
+            height: 101px;
+            background: #fff;
+        }
+        
+        #zocbo_header .h_bot {
+            width: 100%;
+        }
+        
+        .navigation {
+            overflow: hidden;
+        }
+        
+        .navigation>li {
+            margin-left: 31px;
+            float: left;
+        }
+        
+        .navigation>li:first-child {
+            margin-left: 0;
+        }
+        
+        .navigation>li>a {
+            display: block;
+            font-size: 12px;
+            line-height: 52px;
+            color: #696969;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+        }
+        
+        .navigation>li.home>a {
+            width: 13px;
+            height: 52px;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/ico_rnhome.gif) no-repeat 0 18px;
+        }
+        
+        .navigation>li.home.on>a {
+            background: url(https://www.zocbo.com//Images/zocbo_rn/common/ico_rnhomeon.gif) no-repeat 0 18px;
+        }
+        
+        .navigation>li.on a {
+            color: #e33626;
+            font-weight: bold;
+        }
+        
+        .navigation>li>a:hover {
+            color: #e33626;
+        }
+        
+        .h_utildiv {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        
+        .h_util {
+            overflow: hidden;
+        }
+        
+        .h_util>li {
+            margin-left: 18px;
+            float: left;
+        }
+        
+        .h_util>li:first-child {
+            margin-left: 0;
+        }
+        
+        .h_util>li>a {
+            display: block;
+            font-size: 12px;
+            line-height: 52px;
+            color: #969696;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+        }
+        
+        .h_util>li.on a {
+            color: #e33626;
+            font-weight: bold;
+        }
+        
+        .h_util>li>a:hover {
+            color: #e33626;
+        }
+        
+        .common_header .h_mid h1 {
+            padding: 27px 0 26px 0;
+            font-size: 0;
+            text-align: center;
+        }
+        
+        .h_mid h1 {
+            padding: 28px 0 14px 0;
+            font-size: 0;
+            text-align: center;
+        }
+        
+        .h_mid h1 a {
+            margin-right: 12px;
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+        }
+        
+        .h_rightArea {
+            position: absolute;
+            right: 0px;
+            top: 38px;
+        }
+        
+        .h_search {
+            width: 153px;
+            height: 30px;
+            margin-left: 5px;
+            position: relative;
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            border: 1px solid #cfcfcf;
+        }
+        
+        .h_search .sch_ipt {
+            width: 107px;
+            height: 30px;
+            padding: 0 5px 0 5px;
+            border: none;
+            /* font-family: "돋움"; */
+            font-size: 14px;
+            line-height: 40px;
+            color: #000;
+        }
+        
+        .h_search .sch_smit {
+            width: 36px;
+            height: 30px;
+            border: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/search1_rbbt.gif) no-repeat;
+            cursor: pointer;
+        }
+        
+        .h_bot .gnbA {
+            width: 100%;
+            min-height: 66px;
+            position: relative;
+            z-index: 997;
+            border-top: 1px solid #efefef;
+            border-bottom: 1px solid #292c31;
+        }
+        
+        .h_bot .gnbA .inner {
+            z-index: 100;
+        }
+        
+        .head_utilMenu {
+            width: 100%;
+            height: 53px;
+            background: #fff;
+            border-bottom: 1px solid #e9e9e9;
+            overflow: visible;
+        }
+        
+        .head_utilMenu .loginBefore {
+            width: 100%;
+            padding-top: 11px;
+            font-size: 0;
+        }
+        
+        .head_utilMenu .logAf {
+            height: 53px;
+        }
+        
+        .loginBefore>li {
+            margin-left: 5px;
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            vertical-align: top;
+            position: relative;
+            font-size: 12px;
+            color: #696969;
+            line-height: 32px;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+            position: relative;
+            vertical-align: top;
+        }
+        
+        .loginBefore>li:first-child {
+            margin-left: 0;
+        }
+        
+        .loginBefore>li.ipt_com input {
+            width: 132px;
+            height: 30px;
+            padding: 0 10px 0 10px;
+            border: 1px solid #c2c2c2;
+            font-size: 12px;
+            color: #696969;
+            line-height: 36px;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+            position: relative;
+            vertical-align: top;
+            z-index: 3;
+        }
+        
+        .ipt_txt>ul {
+            overflow: hidden;
+        }
+        
+        .ipt_txt>ul>li {
+            margin-left: 20px;
+            float: left;
+            position: relative;
+            font-size: 13px;
+            color: #696969;
+            line-height: 32px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight:400;
+            position: relative;
+        }
+        
+        .ipt_txt>ul>li:first-child {
+            margin-left: 4px;
+        }
+        
+        .ipt_txt>ul>li>a {
+            font-size: 13px;
+            color: #696969;
+            line-height: 32px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight:400;
+        }
+        
+        .ipt_txt>ul>li>a:hover {
+            text-decoration: underline;
+        }
+        
+        .hd_idsave label {
+            margin-left: 4px;
+        }
+        
+        .head_utilMenu .idsave {
+            margin-bottom: 0
+        }
+        
+        .head_utilMenu .idsave .inputCheckBox {
+            position: absolute;
+            left: 0;
+            top: 9px;
+        }
+        
+        .head_utilMenu .logBef .idsave label {
+            padding-left: 16px;
+        }
+        
+        input.ipt_btn[type="submit"] {
+            height: 32px;
+            padding: 0 15px 0 15px !important;
+            background: #515560;
+            font-size: 13px;
+            color: #fff;
+            line-height: 32px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight:400;
+            border: none;
+            cursor: pointer;
+            vertical-align: top;
+        }
+        
+        .h_btnA {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            overflow: visible;
+        }
+        
+        .h_btnA>a {
+            margin-left: 6px;
+            float: left;
+        }
+        
+        .h_btnA>a:first-child {
+            margin-left: 0
+        }
+        
+        .h_btnA .btnCom {
+            width: 110px;
+            height: 32px;
+            padding: 0;
+            font-size: 13px;
+            line-height: 32px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight:400;
+        }
+        
+        .h_btnA .btnWtp {
+            width: 84px;
+            height: 30px;
+            line-height: 32px;
+            vertical-align: top;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight:400;
+        }
+        
+        .h_bCnt {
+            position: relative;
+        }
+        
+        .h_bCnt .bbl_new {
+            position: absolute;
+            right: 19px;
+            top: 34px;
+        }
+        
+        .loginAfter>li {
+            margin-right: 24px;
+            float: left;
+            position: relative;
+            font-size: 12px;
+            color: #696969;
+            line-height: 59px;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+            position: relative;
+        }
+        
+        .loginAfter>li>a {
+            color: #696969;
+        }
+        
+        .loginAfter>li:first-child {
+            margin-right: 35px;
+        }
+        
+        .loginAfter>li:last-child {
+            margin-right: 0;
+        }
+        
+        .loginAfter>li .user {
+            display: block;
+            font-size: 0;
+        }
+        
+        .loginAfter>li .user>span {
+            height: 54px;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            font-size: 12px;
+            color: #696969;
+            line-height: 59px;
+            vertical-align: top;
+        }
+        
+        .loginAfter>li .u_cmico {
+            width: 16px;
+            height: 16px;
+            margin-left: 4px;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+        }
+        
+        .loginAfter>li .user>span.u_Name {
+            font-weight: bold;
+        }
+        
+        .loginAfter>li .ico_option {
+            width: 17px;
+            margin-left: 9px;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/ico_top_option.gif) no-repeat 0 20px;
+        }
+        
+        .loginAfter>li .u_Alarm {
+            min-width: 42px;
+        }
+        
+        .loginAfter>li .u_Access {
+            min-width: 52px;
+        }
+        
+        .loginAfter>li .user2 {
+            display: block;
+            font-size: 0;
+            position: relative;
+        }
+        
+        .loginAfter>li .user2>span {
+            height: 54px;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            font-size: 12px;
+            color: #696969;
+            line-height: 59px;
+            vertical-align: top;
+        }
+        
+        .loginAfter>li .user2 .u_cmico {
+            min-width: 8px;
+            min-height: 8px;
+            width: auto;
+            height: auto;
+            padding: 2px 4px 1px 4px;
+            border-radius: 8px;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            position: absolute;
+            left: 23px;
+            top: 20px;
+            font-size: 11px;
+            color: #fff;
+            line-height: normal;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        
+        .loginAfter>li .ico_Alarm {
+            background: #e33626;
+        }
+        
+        .loginAfter>li .user2 .u_cmico.ico_Access {
+            left: 35px;
+            background: #3579d4;
+        }
+        
+        .loginAfter>li .top_wnote {
+            padding-left: 21px;
+            display: block;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/ico_top_wnote.gif) no-repeat 0 47%;
+            font-weight: bold;
+        }
+        
+        /*--------------------------------------------------
+                     버튼스타일
+        --------------------------------------------------*/
+        .btnCom {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+        }
+        
+        .btnBlack {
+            padding: 0 16px 0 16px;
+            background: #515560;
+            text-align: center;
+            font-size: 12px;
+            color: #fff !important;
+        }
+        
+        .btnBlue {
+            padding: 0 16px 0 16px;
+            background: #437ddb;
+            text-align: center;
+            font-size: 12px;
+            color: #fff !important;
+        }
+        
+        .btnBlack_tp {
+            width: 145px;
+            height: 43px;
+            background: #282e38;
+            border: 1px solid #282e38;
+            text-align: center;
+            font-size: 12px;
+            line-height: 46px;
+            color: #fff !important;
+            font-weight: bold;
+        }
+        
+        .btnBlack_tp2 {
+            height: 43px;
+            padding: 0 19px 0 20px;
+            background: #282e38;
+            border: 1px solid #282e38;
+            text-align: center;
+            font-size: 12px;
+            line-height: 46px;
+            color: #fff !important;
+            font-weight: bold;
+        }
+        
+        .btnBlack_tp30 {
+            width: 87px;
+            height: 30px;
+            background: #282e38;
+            border: 1px solid #282e38;
+            text-align: center;
+            font-size: 12px;
+            line-height: 33px;
+            color: #fff !important;
+        }
+        
+        .btnPink {
+            padding: 0 16px 0 16px;
+            background: #e33626;
+            text-align: center;
+            font-size: 12px;
+            color: #fff !important;
+            font-weight: bold;
+        }
+        
+        .btnWtp {
+            padding: 0 16px 0 16px;
+            background: #ffffff;
+            border: 1px solid #b2bacd;
+            text-align: center;
+            font-size: 12px;
+            color: #666 !important;
+            font-weight: bold;
+        }
+        
+        .btnWtp_tp {
+            width: 145px;
+            height: 43px;
+            background: #ffffff;
+            border: 1px solid #b2bacd;
+            text-align: center;
+            font-size: 12px;
+            line-height: 46px;
+            color: #666 !important;
+            font-weight: bold;
+        }
+        
+        .btnWtp_tp30 {
+            width: 87px;
+            height: 30px;
+            background: #ffffff;
+            border: 1px solid #b2bacd;
+            text-align: center;
+            font-size: 12px;
+            line-height: 30px;
+            color: #666 !important;
+            font-weight: bold;
+        }
+        
+        .btnGray {
+            padding: 0 16px 0 16px;
+            background: #c0c0c0;
+            text-align: center;
+            font-size: 12px;
+            color: #fff !important;
+        }
+        
+        .botbtn {
+            padding: 30px 0 0 0;
+            text-align: center;
+        }
+        
+        .botRbtn {
+            padding: 20px 0 0 0;
+            text-align: right;
+        }
+        
+        .botbtn>a:first-child {
+            margin-left: 0;
+        }
+        
+        .botbtn>a {
+            margin-left: 10px;
+        }
+        
+        .botbtn input {
+            vertical-align: top
+        }
+        
+        .csor_none {
+            cursor: default;
+        }
+        
+        .btn30 {
+            height: 30px;
+            line-height: 33px;
+        }
+        
+        .btn32 {
+            height: 32px;
+            line-height: 35px;
+        }
+        
+        .sbotbtn>a {
+            height: 30px;
+            line-height: 33px;
+        }
+        
+        .listplus {
+            width: 9px;
+            height: 11px;
+            margin-left: 5px;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: middle;
+            background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_listplus.gif) no-repeat;
+        }
+        
+        .rn_itemlist .btnPink {
+            background: #e33626;
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+        }
+        
+        .rn_itemlist .c_f74966 {
+            color: #e33626 !important;
+        }
+        
+        /*--------------------------------------------------
+                     zocbo_gnb 
+        --------------------------------------------------*/
+        .zocbo_gnb {
+            position: relative;
+            z-index: 999;
+            *zoom: 1;
+        }
+        
+        .zocbo_gnb:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .zocbo_gnb>li {
+            float: left;
+            position: relative;
+            vertical-align: top;
+        }
+        
+        .zocbo_gnb>li .gnb_cont {
+            background: #fff;
+            -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+        }
+        
+        .zocbo_gnb>li>a {
+            font-size: 22px;
+            line-height: 66px;
+            color: #000;
+            letter-spacing: -2px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight:500;
+        }
+        
+        #zocbo_header.common_header .zocbo_gnb>li.zctmenu>a {
+            color: #437ddb;
+            position: relative;
+        }
+        
+        #zocbo_header.common_header .zocbo_gnb>li.zctmenu>a:hover,
+        #zocbo_header.common_header .zocbo_gnb>li.zctmenu.on>a {
+            background: #282e38 !important;
+            color: #4dc7f2 !important;
+        }
+        
+        .zocbo_gnb>li.dth1>a .zhspring {
+            position: relative;
+            top: 23px;
+            vertical-align: top;
+        }
+        
+        .zocbo_gnb>li.dth1>a .zhspring img {
+            vertical-align: top;
+        }
+        
+        .zocbo_gnb>li.dth1>a .zhspringOn {
+            display: none;
+        }
+        
+        .zocbo_gnb>li.dth1>a .zhspringOff {
+            display: inline-block;
+        }
+        
+        .zocbo_gnb>li.dth1>a:hover .zhspringOff {
+            display: none;
+        }
+        
+        .zocbo_gnb>li.dth1>a:hover .zhspringOn {
+            display: inline-block;
+        }
+        
+        .zocbo_gnb>li.longtxt>a {
+            padding: 8px 0 6px 0;
+            font-size: 21px;
+            line-height: 26px;
+        }
+        
+        .zocbo_mid .zocbo_gnb>li.on.longtxt>a,
+        .zocbo_gnb>li.longtxt>a:hover {
+            background: #282e38;
+            color: #a3ff00;
+        }
+        
+        .zocbo_gnb>li>a .ubfont {
+            font-size: 21px;
+        }
+        
+        .zocbo_gnb>li.dth1>a {
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+        
+        .zocbo_gnb>li .teaseropen {
+            margin-left: -54px;
+            position: absolute;
+            left: 50%;
+            top: -12px;
+        }
+        
+        .zocbo_gnb>li.dth1>a .ico_matchSvcSch {
+            width: 22px;
+            height: 22px;
+            margin-right: 1px;
+            display: inline-block;
+            background: url(https://www.zocbo.com/MatchSvc/Images/ico_matchSvcSch.png) no-repeat 0 50%;
+        }
+        
+        .zocbo_gnb>li.dth1>a .arrow_matchSvc {
+            width: 9px;
+            height: 14px;
+            display: inline-block;
+            margin-left: 1px;
+            background: url(https://www.zocbo.com/MatchSvc/Images/arrow_matchSvc.png) no-repeat 0 -1px;
+        }
+        
+        #zocbo_header.common_header .zocbo_gnb>li.zctmenu>a:hover .ico_matchSvcSch,
+        #zocbo_header.common_header .zocbo_gnb>li.zctmenu.on>a .ico_matchSvcSch {
+            background: #282e38 url(https://www.zocbo.com/MatchSvc/Images/ico_matchSvcSchon.png) no-repeat 0 50%;
+            color: #4dc7f2 !important;
+        }
+        
+        #zocbo_header.common_header .zocbo_gnb>li.zctmenu>a:hover .arrow_matchSvc,
+        #zocbo_header.common_header .zocbo_gnb>li.zctmenu.on>a .arrow_matchSvc {
+            background: #282e38 url(https://www.zocbo.com/MatchSvc/Images/arrow_matchSvcon.png) no-repeat 0 50%;
+            color: #4dc7f2 !important;
+        }
+        
+        .zocbo_mid .zocbo_gnb>li.on>a,
+        .zocbo_mid .zocbo_gnb>li.dth1>a:hover {
+            background: #282e38;
+            color: #a3ff00;
+        }
+        
+        .zocbo_gnb>li>a.on {
+            background: #282e38;
+            color: #a3ff00;
+        }
+        
+        .gnb_depth1>li.on .gnb_cont {
+            display: block;
+        }
+        
+        .gnb_depth2 {
+            position: relative;
+        }
+        
+        .gnb_depth2>li>a {
+            width: 121px;
+            height: 28px;
+            display: block;
+            border-bottom: 1px solid #e3e3e3;
+            font-size: 12px;
+            line-height: 32px;
+            color: #4a4a4a;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+            text-indent: 11px;
+        }
+        
+        .gnb_depth2>li.on>a,
+        .gnb_depth2>li>a:hover {
+            background: #7836ff url(https://www.zocbo.com/Images/zocbo_rn/common/arrow_gnbtab.png) no-repeat 104px 10px;
+            border-bottom: 1px solid #7836ff;
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .gnb_cont .gnb_depth3 {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50.5%;
+            z-index: 100;
+        }
+        
+        .gnb_cont .ttl_gnb_sub {
+            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000;
+            font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+            font-weight: bold;
+        }
+        
+        .gnb_cont .g_mlist>li>a {
+            display: block;
+            font-size: 12px;
+            line-height: 24px;
+            color: #4a4a4a;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+            position: relative;
+        }
+        
+        .gnb_cont .g_mlist>li>a:hover {
+            background: #7836ff;
+            color: #fff;
+        }
+        
+        .gnb_depth2>li.on .gnb_depth3 {
+            display: block;
+        }
+        
+        .gnb_depth3 .gnb_depth_com {
+            font-size: 0;
+        }
+        
+        .gnb_depth3>li {
+            margin-right: 18px;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: top;
+        }
+        
+        .gnb_depth_com>li {
+            margin-right: 17px;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: top;
+            text-align: left;
+        }
+        
+        .gnb_depth_com2>li {
+            margin-right: 0;
+            text-align: center;
+        }
+        
+        .gnb_close_bg {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+            font-size: 0;
+            text-indent: -9999px;
+            opacity: 0;
+        }
+        
+        .gnb_close_bg.gnb_on {
+            display: block;
+        }
+        
+        .g_mlist_div {
+            font-size: 0;
+        }
+        
+        .g_mlist_tp2 {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: top;
+        }
+        
+        .gnb_depth1>li .gnb_cont {
+            padding: 34px 16px 36px 16px;
+            text-align: left;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 67px;
+            z-index: 1001;
+            background: #fff;
+            border: 1px solid #282e38;
+            border-top: none;
+            transition: all 0.3s;
+        }
+        
+        .zocbo_gnb>li.gd_menu .gnb_cont {
+            padding: 34px 0 36px 34px;
+        }
+        
+        .zocbo_gnb>li.gd_menu .gnb_cont {
+            width: 983px;
+        }
+        
+        .zocbo_gnb>li .gnb_depth3 {
+            width: 830px;
+            left: 153px;
+        }
+        
+        .zocbo_gnb>li.gd_menu .gnb_depth3 {
+            width: 830px;
+            left: 153px;
+            font-size: 0;
+        }
+        
+        .zocbo_ElemS .zocbo_gnb>li.gd_menu .gnb_depth3 {
+            left: 0;
+        }
+        
+        .zocbo_gnb>li.gd_menu .gnb_depth3 .ttl_gnb_sub {
+            padding: 3px 30px 0 30px;
+        }
+        
+        .zocbo_gnb>li.gd_menu .gnb_depth3 .g_mlist>li>a {
+            padding: 3px 30px 0 30px;
+        }
+        
+        .zocbo_gnb>li .gnb_depth_com .ttl_gnb_sub {
+            padding: 3px 16px 0 16px;
+        }
+        
+        .zocbo_gnb>li .gnb_depth_com .g_mlist>li>a {
+            padding: 3px 16px 0 16px;
+        }
+        
+        .zocbo_gnb>li .g_mlist>li>a .icoimg {
+            margin-top: -2px;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: top;
+        }
+        
+        .zocbo_gnb>li .g_mlist_wall2 {
+            margin-top: 25px;
+        }
+        
+        /*--------------------------------------------------
+                     인트로 gnb
+        --------------------------------------------------*/
+        .common_header .zocbo_gnb {
+            text-align: center;
+            font-size: 0;
+        }
+        
+        .common_header .zocbo_gnb>li {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            float: none;
+        }
+        
+        .common_header .zocbo_gnb>li.on>a,
+        .common_header .zocbo_gnb>li.dth1>a:hover {
+            background: #282e38;
+            color: #fff;
+        }
+        
+        .common_header .zocbo_gnb>li.intGm1>a {
+            width: 254px;
+        }
+        
+        .common_header .zocbo_gnb>li.intGm2>a {
+            width: 254px;
+        }
+        
+        .common_header .zocbo_gnb>li.intGm3>a {
+            width: 255px;
+        }
+        
+        .common_header .zocbo_gnb>li.intGm4>a {
+            width: 256px;
+        }
+        
+        .common_header.zocboCustom_gnb .zocbo_gnb>li.intGm1>a {
+            width: auto;
+            min-width: 230px;
+            padding: 0 10px 0 10px;
+        }
+        
+        .common_header.zocboCustom_gnb .zocbo_gnb>li.intGm2>a {
+            width: 250px;
+        }
+        
+        .common_header.zocboCustom_gnb .zocbo_gnb>li.intGm3>a {
+            width: 250px;
+        }
+        
+        /*--------------------------------------------------
+                     족보 중간고사 타이머
+        --------------------------------------------------*/
+        .zocbo_prego1 #btmTimer .time_wrap {
+            width: 212px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .txttime {
+            width: 206px;
+            height: 285px;
+            background: url(https://www.zocbo.com/prego1/images/elem1_before.png) no-repeat center top;
+            /*background: url(/prego1/images/elem120210303.png) no-repeat center top;*/
+        }
+        
+        .txttime.after {
+            background: url(/images/pc/prego1/elem1_after.png) no-repeat center top;
+        }
+        
+        .txttime.after a {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blankRn.png) repeat;
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 8px;
+            text-align: center;
+            line-height: 1em
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .countdown-container {
+            height: 70px
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .countdown-container::after {
+            display: block;
+            height: 0;
+            font-size: 0;
+            visibility: hidden;
+            clear: both;
+            content: ''
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .time {
+            float: left;
+            position: relative;
+            width: 57px;
+            height: 70px;
+            margin-left: 3px;
+            border-radius: 5px;
+            text-align: center;
+            -webkit-perspective: 479px;
+            -moz-perspective: 479px;
+            -ms-perspective: 479px;
+            -o-perspective: 479px;
+            perspective: 479px;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0)
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .count {
+            display: block;
+            position: absolute;
+            top: 0;
+            overflow: hidden;
+            width: 100%;
+            background: #202020;
+            font-family: 'Arial', sans-serif;
+            font-size: 52px;
+            text-align: center;
+            color: #f8f8f8;
+            line-height: 72px;
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-transform-style: flat;
+            -moz-transform-style: flat;
+            -ms-transform-style: flat;
+            -o-transform-style: flat;
+            transform-style: flat
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_cont .count.top {
+            border-radius: 5px 5px 0 0;
+            height: 50%;
+            -webkit-transform-origin: 50% 100%;
+            -moz-transform-origin: 50% 100%;
+            -ms-transform-origin: 50% 100%;
+            -o-transform-origin: 50% 100%;
+            transform-origin: 50% 100%
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .count.bottom {
+            height: 50%;
+            top: 50%;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            border-radius: 0 0 5px 5px;
+            line-height: 0;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            -webkit-transform-origin: 50% 0;
+            -moz-transform-origin: 50% 0;
+            -ms-transform-origin: 50% 0;
+            -o-transform-origin: 50% 0;
+            transform-origin: 50% 0
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .label {
+            display: block;
+            position: absolute;
+            bottom: -17px;
+            left: 28px;
+            width: 100%;
+            font-size: 13px;
+            color: #000
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .count.curr.top {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            -ms-transform: rotateX(0deg);
+            -o-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+            z-index: 3
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .count.next.bottom {
+            -webkit-transform: rotateX(90deg);
+            -moz-transform: rotateX(90deg);
+            -ms-transform: rotateX(90deg);
+            -o-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+            z-index: 2
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .flip .count.curr.top {
+            -webkit-transition: all 250ms ease-in-out;
+            -moz-transition: all 250ms ease-in-out;
+            -ms-transition: all 250ms ease-in-out;
+            -o-transition: all 250ms ease-in-out;
+            transition: all 250ms ease-in-out;
+            -webkit-transform: rotateX(-90deg);
+            -moz-transform: rotateX(-90deg);
+            -ms-transform: rotateX(-90deg);
+            -o-transform: rotateX(-90deg);
+            transform: rotateX(-90deg)
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .flip .count.next.bottom {
+            -webkit-transition: all 250ms ease-in-out 250ms;
+            -moz-transition: all 250ms ease-in-out 250ms;
+            -ms-transition: all 250s ease-in-out 250ms;
+            -o-transition: all 250ms ease-in-out 250ms;
+            transition: all 250ms ease-in-out 250ms;
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            -ms-transform: rotateX(0deg);
+            -o-transform: rotateX(0deg);
+            transform: rotateX(0deg)
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .time.Hour1 {
+            position: relative
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .time.Hour1 .label {
+            display: none
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .time.Min {
+            margin-left: 6px
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .time.Min1 .label {
+            display: none
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .time.Sec {
+            margin-left: 6px
+        }
+        
+        .zocbo_prego1 #btmTimer .time_box .time_count .time.Sec1 .label {
+            display: none
+        }
+        
+        .zocbo_prego1 #btmTimer.gray .time_box .time_count .count {
+            background: #ccc;
+            color: #000
+        }
+        
+        .zocbo_prego1 #btmTimer.gray .time_box .time_count .count.bottom {
+            border-color: #bbb;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.9), transparent);
+            background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), transparent);
+            background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.9), transparent);
+            background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.9), transparent);
+            background-image: -o-linear-gradient(rgba(255, 255, 255, 0.9), transparent)
+        }
+        
+        .zocbo_prego1 #btmTimer.gray .time_box .time_count .label {
+            color: #ccc
+        }
+        
+        .zocbo_prego1 .time_wrap .timer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            z-index: 60;
+            border-top: 1px solid #000
+        }
+        
+        .zocbo_prego1 .time_wrap .timebox {
+            padding-top: 185px;
+            font-size: 0;
+        }
+        
+        .zocbo_prego1 .time_wrap .timebox span {
+            display: inline-block;
+            overflow: hidden;
+            font-size: 45px;
+            line-height: 52px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 500;
+            color: #000;
+            word-spacing: -10px;
+            text-shadow: 0 2px 0 #000;
+        }
+        
+        .zocbo_prego1 .time_wrap .timebox span.etimerColon {
+            width: 10px;
+            background: none;
+        }
+        
+        .zocbo_prego1 .time_wrap [class^='txt_'] {
+            position: absolute
+        }
+        
+        .zocbo_prego1 .time_wrap .txt_m01 {
+            top: 48px;
+            left: 45px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000
+        }
+        
+        .zocbo_prego1 .time_wrap .txt_m02 {
+            top: 16px;
+            left: 220px;
+            font-size: 26px;
+            font-weight: bold;
+            color: #f92460
+        }
+        
+        /*--------------------------------------------------
+                     contents 
+        --------------------------------------------------*/
+        #zocbo_container {
+            padding-bottom: 125px;
+        }
+        
+        .pxsection {
+            position: relative;
+        }
+        
+        .px_inner {
+            width: 1020px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .advanceguide .pxsection1 {
+            height: 758px;
+            background: #009def url(https://www.zocbo.com/prego1/images/topbg_prego1.jpg) no-repeat center top;
+        }
+        
+        .advanceguide .pxsection2 {
+            background: #00537c;
+        }
+        
+        .advanceguide .pxsection3 {
+            height: 289px;
+            background:#00537c url(https://www.zocbo.com/prego1/images/botbg_prego1.jpg) no-repeat center top;
+            position:relative;
+        }
+        
+        .advanceguide .pxsection3::before {
+            width: 100%;
+            height: 49px;
+            content: '';
+            display: block;
+            background: url(https://www.zocbo.com/prego1/images/all_botbg.png) no-repeat center top;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        
+        /* 비쥬얼 */
+        .pxsection1 .elem {
+            position: absolute;
+        }
+        
+        .pxsection1 .elem1 {
+            width: 206px;
+            margin-left:670px;
+            left: 50%;
+            top: 194px;
+            text-align: center;
+            z-index: 99;
+        }
+        
+        .pxsection1 .elem1_2 {
+            width: 100%;
+            left: 0;
+            top: 71px;
+            text-align: center;
+        }
+        
+        .pxsection1 .elem2 {
+            width: 100%;
+            left: 0;
+            top: 154px;
+            text-align: center;
+        }
+        
+        .pxsection1 .elem3 {
+            width: 268px;
+            left: 50%;
+            bottom: -98px;
+            margin-left: -26px;
+            text-align: center;
+            z-index: 9;
+        }
+        
+        /* px2 */
+        .pxsection2 .ttl {
+            padding-top: 61px;
+            text-align: center;
+        }
+        
+        .px2tablist {
+            width: 1019px;
+            margin: 50px auto 0 auto;
+            position: relative;
+            font-size: 0;
+            text-align: center;
+        }
+        
+        .px2tablist>li {
+            display: inline-block;
+            margin-left: 5px;
+        }
+        
+        .px2tablist>li:first-child {
+            margin-left: 0;
+        }
+        
+        .px2tablist>li>a {
+            height: 128px;
+            display: block;
+            position: relative;
+        }
+        
+        .px2tablist>li>a:after {
+            width: 10px;
+            height: 93px;
+            content: '';
+            background: url(https://www.zocbo.com/prego1/images/bg_afttablist.jpg) no-repeat;
+            position: absolute;
+            left: -10px;
+            bottom:0;
+        }
+        
+        .px2tablist>li.li2>a:after,
+        .px2tablist>li.li3>a:after,
+        .px2tablist>li.li4>a:after {
+            width: 10px;
+            height: 93px;
+            content: '';
+            background: url(https://www.zocbo.com/prego1/images/bg_afttablist2.jpg) no-repeat;
+            position: absolute;
+            left: -5px;
+            bottom: 3px;
+        }
+        
+        .px2tablist>li.li1>a {
+            width: 238px;
+            background: url(https://www.zocbo.com/prego1/images/px2tab1.jpg) no-repeat;
+        }
+        
+        .px2tablist>li.li2>a {
+            width: 238px;
+            background: url(https://www.zocbo.com/prego1/images/px2tab2.jpg) no-repeat;
+        }
+        
+        .px2tablist>li.li3>a {
+            width: 264px;
+            background: url(https://www.zocbo.com/prego1/images/px2tab3.jpg) no-repeat;
+        }
+        
+        .px2tablist>li.li4>a {
+            width: 264px;
+            background: url(https://www.zocbo.com/prego1/images/px2tab4.jpg) no-repeat;
+        }
+        
+        .px2tablist>li.li1>a.on {
+            background: url(https://www.zocbo.com/prego1/images/px2tab1on.jpg) no-repeat;
+        }
+        
+        .px2tablist>li.li2>a.on {
+            background: url(https://www.zocbo.com/prego1/images/px2tab2on.jpg) no-repeat;
+        }
+        
+        .px2tablist>li.li3>a.on {
+            background: url(https://www.zocbo.com/prego1/images/px2tab3on.jpg) no-repeat;
+        }
+        
+        .px2tablist>li.li4>a.on {
+            background: url(https://www.zocbo.com/prego1/images/px2tab4on.jpg) no-repeat;
+        }
+        
+        .zpcBox {
+            margin: 0 99px 0 99px;
+            display: none;
+            background: #fff;
+        }
+        
+        .zpcBoxCnt {
+            width: 1019px;
+            padding-bottom:50px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        /* px3 */
+        .zbcCnt {
+            position: relative;
+        }
+        
+        .btn_zbcCnt {
+            text-align: center;
+        }
+        
+        .elem_zbcCnt2 {
+            position: absolute;
+            right: -26px;
+            top: -22px;
+        }
+        
+        .bot_infotxt {
+            margin-top:5px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-size: 22px;
+            line-height: 27px;
+            color:#002658;
+            font-weight: 400;
+            text-align:center;
+        }
+        
+        .pager_com>ul {
+            font-size: 0;
+            text-align: center;
+        }
+        
+        .pager_com>ul>li {
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+            margin-left: 7px;
+        }
+        
+        .pager_com>ul>li:first-child {
+            margin-left: 0;
+        }
+        
+        .pager_com>ul>li>a {
+            width: 335px;
+            height: 172px;
+            display: block;
+        }
+        
+        .pager_com>ul>li.li1>a {
+            background: url(https://www.zocbo.com/prego1/images/pCe_pg1.jpg) no-repeat;
+        }
+        
+        .pager_com>ul>li.li2>a {
+            background: url(https://www.zocbo.com/prego1/images/pCe_pg2.jpg) no-repeat;
+        }
+        
+        .pager_com>ul>li.li3>a {
+            background: url(https://www.zocbo.com/prego1/images/pCe_pg3.jpg) no-repeat;
+        }
+        
+        .pager_com>ul>li.li1>a.active {
+            background: url(https://www.zocbo.com/prego1/images/pCe_pg1on.jpg) no-repeat;
+        }
+        
+        .pager_com>ul>li.li2>a.active {
+            background: url(https://www.zocbo.com/prego1/images/pCe_pg2on.jpg) no-repeat;
+        }
+        
+        .pager_com>ul>li.li3>a.active {
+            background: url(https://www.zocbo.com/prego1/images/pCe_pg3on.jpg) no-repeat;
+        }
+        
+        .prego1_bandarea {
+            position: fixed; 
+            bottom: 0px; 
+            width: 100%; 
+            height:107px;
+            z-index: 999; 
+            background: url(https://www.zocbo.com/prego1/images/bg_prego1_bandarea.jpg) no-repeat center top;
+        }
+        
+        .prego1_bandarea.after {
+            background: url(https://www.zocbo.com/prego1/images/bg_prego1_bandarea_after.jpg) no-repeat center top;
+        }
+        
+        .prego1_bandarea .prego1_bandarea_inner {
+            width:1019px;
+            margin:0 auto;
+            position:relative;
+        }
+        
+        .btn_reservation {
+            position:absolute;
+            right:52px;
+            top:27px;
+        }
+        
+        .btn_Buying {
+            position:absolute;
+            right:-105px;
+            top:27px;
+        }
+        
+        /* 팝업 */
+        .pbpdim {
+            position: fixed;
+            z-index: 9998;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            display: none;
+            background: url(https://www.zocbo.com/zocboRnD/promotion1th/images/pbpdim.png) repeat;
+        }
+        
+        .hackRPop {
+            width: 960px;
+            height: 717px;
+            margin: 0 0 0 -480px;
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 55%;
+            z-index: 9999;
+            background: #fff;
+        }
+        
+        .hackRPop .hackRPopCnt {
+            position: relative;
+        }
+        
+        .hackRPop .hackRPopCnt .close_hackRPop {
+            position: absolute;
+            right: 19px;
+            top: 19px;
+        }
+        
+        .httlarea {
+            height: 75px;
+            background: #010333;
+            text-align: center;
+        }
+        
+        .prevCeDiv2 {
+            width: 960px;
+            margin: 0 auto 0 auto;
+            position: relative;
+        }
+        
+        .prevCeDiv2 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .prevCeDiv2 .bx-wrapper .bx-pager,
+        .bx-wrapper .bx-controls-auto {
+            position: inherit;
+        }
+        
+        .prevCeDiv2 .bx-wrapper .bx-pager.bx-default-pager a {
+            width: 15px;
+            height: 15px;
+            background: #cdcdcd;
+        }
+        
+        .prevCeDiv2 .bx-wrapper .bx-pager.bx-default-pager a:hover,
+        .prevCeDiv2 .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background: #010333;
+        }
+        
+        .event_arrow>a {
+            position: absolute;
+            top: 50%;
+            margin-top: -70px;
+        }
+        
+        .hackRPop .event_arrow>a.bt_pre {
+            left: 35px;
+        }
+        
+        .hackRPop .event_arrow>a.bt_next {
+            right: 35px;
+        }
+        
+        /* 고1 내신 알기 */
+        .topVsu {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .topBG {
+            width: 1920px;
+            height: 297px;
+            margin: 0 0 0 -960px;
+            position: relative;
+            left: 50%;
+            top: 0;
+        }
+        
+        .topBG {
+            background: url(https://www.zocbo.com/prego1/images/topBg_hpregoTopVs.jpg) no-repeat;
+        }
+        
+        .topVsu2 .topBG {
+            background: url(https://www.zocbo.com/prego1/images/topBg_hpregoTopVs2.jpg) no-repeat;
+        }
+        
+        /* 내신완성 */
+        #prego1_Wrap .lnb_Sblist>li .deth2>li>a span.on,
+        #prego1_Wrap .lnb_Sblist>li .deth2>li.on>a,
+        #prego1_Wrap .zocbolnb_list>li .deth2>li>a span.on,
+        #prego1_Wrap .zocbolnb_list>li .deth2>li.on>a {
+            color: #1446d5;
+            font-weight: bold
+        }
+        
+        #prego1_Wrap .lnb_Sblist>li .deth2>li>a:hover,
+        #prego1_Wrap .zocbolnb_list>li .deth2>li>a:hover {
+            color: #1446d5;
+            font-weight: bold
+        }
+        
+        .topTtlBnrBox {
+            height: 229px;
+            position: relative;
+            border: 1px solid #cacaca;
+            border-top: 3px solid #000;
+            background: #fff;
+        }
+        
+        .topTtlBnrBox .tTcntbox {
+            width: 576px;
+            padding: 39px 0 0 40px;
+            position: relative;
+        }
+        
+        .topTtlBnrBox.topTtlBnrBox597 .tTcntbox {
+            width: 597px;
+        }
+        
+        .topTtlBnrBox.topTtlBnrBox638 .tTcntbox {
+            width: 638px;
+        }
+        
+        .topTtlBnrBox.topTtlBnrBox638 .sampledwn {
+            right: 44px;
+        }
+        
+        .topTtlBnrBox.topTtlBnrBox597 .sampledwn {
+            right: 30px;
+        }
+        
+        .topTtlBnrBox.topTtlBnrBox597 .samplevdo {
+            right: 101px;
+        }
+        
+        .topTtlBnrBox .tTcntbox::before {
+            width: 1px;
+            height: 134px;
+            content: '';
+            display: block;
+            background: url(https://www.zocbo.com/prego1/images/1x134dashed.gif) no-repeat center top;
+            position: absolute;
+            right: 0;
+            top: 51px;
+        }
+        
+        .topTtlBnrBox .tTcntbox .ttl {
+            margin-bottom: 14px;
+            font-size: 31px;
+            line-height: 31px;
+            color: #000;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 500;
+            display: table;
+        }
+        
+        .topTtlBnrBox .tTcntbox .ttl span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+        .topTtlBnrBox .tTcntbox .ttl span.sttltxt {
+            font-size: 27px;
+            font-weight: 400;
+        }
+        
+        .topTtlBnrBox .tTcntbox .desc {
+            margin-bottom: 10px;
+            font-size: 19px;
+            line-height: 28px;
+            color: #000;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 400 !important;
+        }
+        
+        .topTtlBnrBox .tTcntbox .desclist>li {
+            font-size: 15px;
+            line-height: 22px;
+            color: #808080;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 400;
+        }
+        
+        .descST1 {
+            color: #022cb6;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        
+        .sampledwn {
+            position: absolute;
+            right: 75px;
+            top: 72px;
+        }
+        
+        .samplevdo {
+            position: absolute;
+            right: 101px;
+            top: 72px;
+        }
+        
+        .asBox {
+            margin-bottom: 50px;
+            position: relative;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        
+        
+        .imgBoxtop {
+            position: relative;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .imgBoxbot {
+            position: relative;
+        }
+        
+        .imgBoxtoplook {
+            width: 160px;
+            height: 32px;
+            position: absolute;
+            right: 41px;
+            top: 18px;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blankRn.png) repeat;
+        }
+        
+        .imgBlankLink {
+            width: 322px;
+            height: 319px;
+            position: absolute;
+            right: 14px;
+            top: 14px;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blankRn.png) repeat;
+        }
+        
+        .asslider {
+            height: 363px;
+            overflow: hidden;
+        }
+        
+        .event_arrow {}
+        
+        .event_arrow>a {
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+        }
+        
+        .event_arrow>a.bt_pre {
+            left: 12px;
+        }
+        
+        .event_arrow>a.bt_next {
+            right: 12px;
+        }
+        
+        .infoBgbot {
+            height: 50px;
+            background: url(https://www.zocbo.com/prego1/images/infoBgbot.jpg) no-repeat center top;
+        }
+        
+        .infoBgbottxt {
+            font-size: 12px;
+            color: #000;
+            line-height: 49px;
+            font-weight: bold;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+            text-align: center;
+        }
+        
+        .infoBgbottxt {}
+        
+        .infoBgbottxt span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .infoBgbottxt span.bb {
+            width: 16px;
+            height: 48px;
+            background: url(https://www.zocbo.com/prego1/images/icon_bb.jpg) no-repeat 0 50%;
+        }
+        
+        .infoBgbottxt span.txt {
+            margin-left: 5px;
+        }
+        
+        .descST1 {
+            color: #022cb6;
+            text-decoration: underline;
+        }
+        
+        .descST2 {
+            color: #e50424;
+        }
+        
+        .itemListTabBox {
+            position: relative;
+        }
+        
+        .itemListtxt {
+            position: absolute;
+            left: 262px;
+            top: 5px;
+        }
+        
+        .itemListtxt>li {
+            font-size: 12px;
+            color: #000;
+            line-height: 20px;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+        }
+        
+        .c_3768c5 {
+            color: #3768c5;
+        }
+        
+        .ascntbox {
+            height: 346px;
+            background: #f1f1f1;
+        }
+        
+        .ascntbox .ttl {
+            padding-top: 28px;
+            text-align: center;
+        }
+        
+        .ebsOplist {
+            margin-top: 23px;
+        }
+        
+        .ebsOplistStyle {
+            border-top: 1px solid #111;
+            border-bottom: 1px solid #d8d8d8;
+        }
+        
+        .ebsOplistStyle thead th {
+            font-size: 14px;
+            height: 58px;
+            background: #f9f9f9;
+            text-align: center;
+            color: #343434;
+            font-weight: normal;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+        }
+        
+        .ebsOplistStyle thead th.last {
+            background: none;
+        }
+        
+        .ebsOplistStyle tbody tr th {
+            font-size: 16px;
+            line-height: 26px;
+            color: #333;
+            border-top: 1px solid #dcdcdc;
+            border-right: 1px solid #dcdcdc;
+            font-weight: normal;
+        }
+        
+        .nnBold {
+            font-family: NanumBarunGothicBold !important;
+        }
+        
+        .ebsOplistStyle tbody tr td {
+            padding: 17px 0 19px 0;
+            border-top: 1px solid #dcdcdc;
+            font-size: 14px;
+            color: #343434;
+            line-height: 23px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            word-break: break-all;
+            text-align: center;
+            word-spacing: 0;
+        }
+        
+        .ebsOplistStyle .opdivision {
+            background: #effafa;
+        }
+        
+        .ebsOplistStyle .td_left2 {
+            padding-left: 10px;
+            text-align: left;
+        }
+        
+        .ebsOplistStyle .td_left20 {
+            padding-left: 20px;
+            text-align: left;
+        }
+        
+        .ebsOplistStyle .td_left30 {
+            padding-left: 30px;
+            text-align: left;
+        }
+        
+        .ebsOplistStyle .td_left35 {
+            padding-left: 35px;
+            text-align: left;
+        }
+        
+        .ebsOplistStyle tbody tr td table tbody tr td {
+            padding: 0 0 0 0;
+            border: none;
+            word-break: break-all;
+        }
+        
+        .ebsOplistStyle .btnCom {
+            height: 30px;
+            font-size: 12px;
+            line-height: 29px;
+            font-weight: normal
+        }
+        
+        .ebsOplistStyle .btnCom:hover {
+            text-decoration: none;
+        }
+        
+        .ebsOplistStyle .btn_listA>li {
+            margin-top: 3px;
+        }
+        
+        .ebsOplistStyle .btn_listA>li:first-child {
+            margin-top: 0;
+        }
+        
+        .ebsOplistStyle .bar_new1 {
+            font-size: 13px;
+            height: 31px;
+            background: #a7c3d7;
+            text-align: left;
+            padding: 0px 0px 0px 20px;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+        }
+        
+        .ebsOplistStyle tbody td select {
+            width: 100%;
+            height: 32px;
+            margin: 0;
+            padding: 0 0 0 10px !important;
+            border: 1px solid #d4d4d4;
+            color: #666;
+            font-size: 12px;
+            line-height: 36px;
+            font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+        }
+        
+        .ebsOpsteptxt .t1 {
+            font-size: 16px;
+            color: #26bed3;
+            line-height: 18px;
+            font-weight: bold;
+            font-family: 'Arial', Verdana, Helvetica, Sans-Serif;
+        }
+        
+        .ebsOpsteptxt .t2 {
+            font-size: 13px;
+            color: #009fbc;
+            line-height: 18px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 400;
+        }
+        
+        .circleComDiv {
+            padding: 43px 0 0 70px;
+        }
+        
+        .circlelist>li {
+            margin-left: 30px;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+        }
+        
+        .circlelist>li:first-child {
+            margin-left: 0;
+        }
+        
+        .circlelist>li .infoC {
+            margin-left: 8px;
+            text-align: center;
+        }
+        
+        .circlelist>li .infoCtxt {
+            margin-top: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #1a1a1a;
+            text-align: center;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            letter-spacing: 0;
+        }
+        
+        .circleCom {
+            margin-top: 6px;
+            position: relative;
+            width: 144px;
+        }
+        
+        .circleCom>canvas {}
+        
+        .circleCom>strong {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin: -28px 0 0 0;
+            font-size: 30px;
+            color: #112559;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .circleCom>strong i {
+            font-size: 22px;
+        }
+        
+        .circlelist>li .currentS {
+            width: 144px;
+            position: absolute;
+            left: 0;
+            top: 142px;
+            text-align: center;
+        }
+        
+        .circlelist>li .currentS .currentSBox {
+            width: 40px;
+            height: 17px;
+            margin: 0 auto;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            font-size: 12px;
+            line-height: 16px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 400;
+            letter-spacing: 0;
+            background: #112559;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .egglist {
+            margin-bottom: 20px;
+        }
+        
+        .egglist .c1_AreaBox {
+            margin: 0 0 0 0;
+        }
+        
+        .egglist .egglistfloat {
+            width: 200px;
+            float: left;
+        }
+        
+        .egglist .c_Abdl>dt {
+            width: 165px;
+        }
+        
+        .egglistfloat>li {
+            width: 360px;
+            font-size: 14px;
+            line-height: 23px;
+            color: #343434;
+            vertical-align: middle;
+            font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+            word-spacing: 0;
+        }
+        
+        .egglistfloat>li>a {
+            font-size: 14px;
+            line-height: 23px;
+            color: #343434;
+            vertical-align: middle;
+            font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+            word-spacing: 0;
+        }
+        
+        .egglistfloat>li>a:hover {
+            color: #e52f2f;
+            font-weight: bold;
+        }
+        
+        .englishgrammar .exCcvdopop {
+            width: 280px;
+            height: 176px;
+            right: 143px;
+            background: url(https://www.zocbo.com/prego1/images/bg_exclamation280x143.png) no-repeat;
+        }
+        
+        .englishgrammar .exCcvdopop .exCv_cnt {
+            padding: 32px 15px 0 15px;
+        }
+        
+        .highMath .exCcvdopop {
+            right: 230px;
+        }
+        
+        .midMath .exCcvdopop {
+            right: 150px;
+        }
+        
+        .c_tpdetd {
+            font-size: 16px;
+            color: #343434;
+            vertical-align: middle;
+            font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+            font-weight: bold;
+            word-spacing: 0;
+        }
+        
+        .mEGList_W .mEGList>li>ul>li>a:hover {
+            color: #e52f2f;
+            font-weight: bold;
+        }
+        
+        .dment_ttl .dmentdl>dt {
+            width: 129px;
+            display: table-cell;
+            text-align: center;
+            font-size: 16px;
+            color: #343434;
+            vertical-align: middle;
+            font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+            font-weight: bold;
+        }
+        
+        .dment_midttl .dmentdl>dt {
+            font-size: 15px;
+            font-weight: normal;
+        }
+        
+        .dmentdl>dt {
+            font-size: 15px;
+            font-weight: normal;
+        }
+        
+        .topbnrLayerPopup {
+            display: none;
+            position: absolute;
+            left: auto;
+            right: 0;
+            top: 0;
+            z-index: 1002;
+        }
+        
+        .topbnrLayerPopup .cnt {
+            position: relative;
+        }
+        
+        .tbPclose {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 37px;
+            top: 35px;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blankRn.png) repeat;
+        }
+        
+        .dwnEnDiv {
+            width: 34px;
+            height: 34px;
+            display: table;
+        }
+        
+        .dwnEnd {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #333;
+            font-size: 10px;
+            color: #000;
+            line-height: 13px;
+            font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+            word-spacing: 1px;
+        }
+        
+        /* 고1 내신 알기 */
+        #zocbo_container.prego1sub {
+            min-width: 1522px;
+            margin-top: 41px;
+            position: relative;
+        }
+        
+        .contentsBox {
+            width: 1019px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .contentsBox .subttl {
+            margin: 41px 0 39px 0;
+            font-size: 35px;
+            font-weight: 500;
+            color: #000;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            letter-spacing: 0;
+        }
+        
+        .contentsBox .subttl .desctxt {
+            padding-left: 7px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #808080;
+        }
+        
+        .contentsBox .subttl2 {
+            margin: 41px 0 19px 0;
+        }
+        
+        .preGo1comTabTop {
+            position: relative;
+        }
+        
+        .preGo1comTab2deth {
+            width: 1019px;
+        }
+        
+        .preGo1comTabTop.fixed {
+            padding-top: 20px;
+            margin-left: -510px;
+            position: fixed;
+            left: 50%;
+            top: 0;
+            z-index: 999;
+            background: #fff;
+        }
+        
+        .preGo1comTab>li {
+            width: 339px;
+            height: 72px;
+            float: left;
+            position: relative;
+        }
+        
+        .preGo1comTab.preGo1comTab2deth>li,
+        .preGo1comTab.preGo1comTab2deth>li:first-child {
+            width: 50%;
+        }
+        
+        .preGo1comTab>li .infobubble {
+            width: 256px;
+            height: 37px;
+            margin-left: -128px;
+            background: url(https://www.zocbo.com/prego1/images/bg_infobubble.png) no-repeat;
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            display: none;
+        }
+        
+        .preGo1comTab>li.on .infobubble {
+            display: block;
+        }
+        
+        .preGo1comTab>li .infobubble .infobubbletxt {
+            font-size: 15px;
+            font-weight: 400;
+            color: #001f69;
+            line-height: 30px;
+            text-align: center;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            letter-spacing: 0;
+        }
+        
+        .preGo1comTab>li:first-child {
+            width: 341px;
+            border: none;
+        }
+        
+        .preGo1comTab>li:first-child>a {
+            border: 1px solid #afafaf;
+        }
+        
+        .preGo1comTab>li>a {
+            height: 70px;
+            background: #ffffff;
+            display: block;
+            font-size: 30px;
+            color: #afafaf;
+            line-height: 73px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 500;
+            text-align: center;
+            border: 1px solid #afafaf;
+            border-left: none;
+        }
+        
+        .preGo1comTab>li.on>a {
+            background: #001f69;
+            color: #fff;
+            border: 1px solid #000;
+            border-left: none;
+        }
+        
+        .preGo1comTab>li.on:first-child>a {
+            border-left: 1px solid #afafaf;
+        }
+        
+        .preGo1comBox {
+            display: none;
+            position: relative;
+        }
+        
+        .lnbremote {
+            width: 200px;
+            margin-left: -761px;
+            position: absolute;
+            left: 50%;
+            top: 14px;
+            z-index: 9;
+        }
+        
+        .lnbremote .lnbremoteDiv {
+            border: 1px solid #1a1a1a;
+        }
+        
+        .prego1BBot {
+            width: 100%;
+            height: 217px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .prego1BBot .cnt {
+            width: 100%;
+            height: 217px;
+            position: relative;
+        }
+        
+        .prego1BBot .cnt .bgArea {
+            width: 1920px;
+            height: 217px;
+            margin-left: -960px;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            background: url(https://www.zocbo.com/prego1/images/prego1BBot.jpg) no-repeat;
+        }
+        
+        .lnbremote.zfixed {
+            position: fixed;
+            top:151px;
+        }
+        
+        .lnbremote:before {
+            content: '';
+            width: 202px;
+            height: 4px;
+            border-bottom: 3px solid #e6e6e6;
+            position: absolute;
+            left: 0px;
+            bottom: -4px;
+        }
+        
+        .lnbremote .ttl {
+            width: 100%;
+            height: 81px;
+            display: table;
+            border-bottom: 1px solid #1a1a1a;
+            background:#fff;
+        }
+        
+        .lnbremote .ttl .ttlcnt {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 500;
+            color: #000;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            letter-spacing: 0;
+            text-align: center;
+        }
+        
+        .lnbremotelist {
+            position: relative;
+        }
+        
+        .lnbremotelist:before {
+            content: '';
+            width: 198px;
+            height: 4px;
+            border-bottom: 3px solid #e6e6e6;
+            position: absolute;
+            left: 0px;
+            bottom: -4px;
+        }
+        
+        .lnbremotelist>li>a {
+            height: 50px;
+            padding-left: 31px;
+            display: block;
+            position: relative;
+            font-size: 18px;
+            line-height: 50px;
+            font-weight: 400;
+            color: #080808;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            letter-spacing: 0;
+            border-top: 1px solid #e6e6e6;
+            background: #fff url(https://www.zocbo.com/prego1/images/arrow_lnbremotelist.png) no-repeat 90% 50%;
+        }
+        
+        .lnbremotelist>li.on>a {
+            background: #063ec6 url(https://www.zocbo.com/prego1/images/arrow_lnbremoteliston.png) no-repeat 90% 50%;
+            color: #fff;
+        }
+        
+        .lnbremotelist2>li>a {
+            height: auto;
+            padding: 19px 0 20px 31px;
+            display: block;
+            position: relative;
+            font-size: 17px;
+            line-height: 21px;
+            font-weight: 400;
+            color: #080808;
+        }
+        
+        .lnbremotelist2>li>a strong {
+            font-size: 21px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+        
+        .lnbremotelist2>li.on>a {
+            background: #063ec6 url(https://www.zocbo.com/prego1/images/arrow_lnbremoteliston.png) no-repeat 90% 50%;
+            color: #fff;
+        }
+        
+        .lnbremotelist>li:first-child>a {
+            border-top: none;
+        }
+        
+        /* 리모콘서치 */
+        .remoteSchWrap {
+            width: 200px;
+            height: 287px;
+            margin-top: 30px;
+            background: #f2f6ff;
+            border: 1px solid #e2e8f3;
+            border-top: 3px solid #063ec6;
+        }
+        
+        .ttlremoteSch {
+            padding: 16px 0 11px 0;
+            font-size: 24px;
+            font-weight: 400;
+            color: #000;
+            line-height: 28px;
+            text-align: center;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            letter-spacing: 0;
+        }
+        
+        .ttlremoteSch span {
+            color: #063ec6;
+            font-weight: 700;
+        }
+        
+        .remoteSchlist {
+            width: 168px;
+            margin: 0 auto;
+        }
+        
+        .remoteSchlist>li {
+            margin-top: 12px;
+        }
+        
+        .remoteSchlist>li:first-child {
+            margin-top: 0;
+        }
+        
+        .overallBlankLink {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blankRn.png) repeat;
+        }
+        
+        .remoteSchlist>li .styled-select {
+            width: 166px;
+            border: 1px solid #000;
+            background: url(https://www.zocbo.com/prego1/images/ts_arrow.jpg) no-repeat right #FFF;
+        }
+        
+        .remoteSchlist>li .styled-select select {
+            width: 165px;
+            padding: 5px 5px 5px 13px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #000;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            letter-spacing: 0;
+            /* for Firefox */
+            -moz-appearance: none;
+            /* for Chrome */
+            -webkit-appearance: none;
+        }
+        
+        /* For IE10 */
+        .remoteSchlist>li .styled-select select::-ms-expand {
+            display: none;
+        }
+        
+        .btn_remoteSch {
+            padding-top: 10px;
+            text-align: center;
+        }
+        
+        .overallBlankLink.oBL1 {
+            width: 209px;
+            height: 42px;
+            left: 84px;
+            top: 255px;
+        }
+        
+        .overallBlankLink.oBL2 {
+            width: 188px;
+            height: 42px;
+            left: 415px;
+            top: 283px;
+        }
+        
+        .pxsecWrap {
+            position: relative;
+        }
+        
+        .hschnav_top {
+            padding-top: 20px;
+            background: #fff;
+        }
+        
+        .hschnav_top.fixed {
+            width: 1019px;
+            margin-left: -510px;
+            position: fixed;
+            left: 50%;
+            top: 147px;
+            z-index: 999;
+        }
+        
+        .tab_yCprl>li {
+            width: 339px;
+            height: 72px;
+            float: left;
+            position: relative;
+        }
+        
+        .tab_yCprl>li .infobubble {
+            width: 256px;
+            height: 37px;
+            margin-left: -128px;
+            background: url(https://www.zocbo.com/prego1/images/bg_infobubble.png) no-repeat;
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            display: none;
+        }
+        
+        .tab_yCprl>li>a.on .infobubble {
+            display: block;
+        }
+        
+        .tab_yCprl>li .infobubble .infobubbletxt {
+            font-size: 15px;
+            font-weight: 400;
+            color: #001f69;
+            line-height: 30px;
+            text-align: center;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            letter-spacing: 0;
+            display: block;
+        }
+        
+        .tab_yCprl>li:first-child {
+            width: 341px;
+            border: none;
+        }
+        
+        .tab_yCprl>li:first-child>a {
+            border: 1px solid #afafaf;
+        }
+        
+        .tab_yCprl>li>a {
+            height: 70px;
+            background: #ffffff;
+            display: block;
+            font-size: 30px;
+            color: #afafaf;
+            line-height: 73px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 500;
+            text-align: center;
+            border: 1px solid #afafaf;
+            border-left: none;
+            position: relative;
+        }
+        
+        .tab_yCprl>li>a.on {
+            background: #001f69;
+            color: #fff;
+            border: 1px solid #000;
+            border-left: none;
+        }
+        
+        .tab_yCprl>li:first-child>a.on {
+            border-left: 1px solid #afafaf;
+        }
+        
+        .preGo1comBoxTP2 {
+            padding-top: 50px;
+            position: relative;
+        }
+        
+        .subttl_gdline {
+            margin: 0 0 50px 0;
+        }
+        
+        .pxslist>li {
+            margin-top: 80px;
+            position: relative;
+        }
+        
+        .pxslist>li:first-child {
+            margin-top: 0;
+        }
+        
+        .sec_promo {
+            position: absolute;
+            left: 77px;
+            top: 613px;
+        }
+        
+        .sec_promo5 {
+            position: absolute;
+            left: 72px;
+            top: 632px;
+        }
+        
+        .sec_promolist>li {
+            width: 196px;
+            margin-right: 26px;
+            float: left;
+        }
+        
+        .sec_promo5 .sec_promolist>li {
+            width: 161px;
+            margin-right: 22px;
+            float: left;
+        }
+        
+        .sec_promolist>li>ul>li {
+            height: 74px;
+            margin-bottom: 10px;
+        }
+        
+        .sec_promolist>li>ul>li a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            perspective: 3500px
+        }
+        
+        .sec_promolist>li>ul>li a span {
+            display: inline-block
+        }
+        
+        .sec_promolist>li>ul>li .wrap_ban {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            -webkit-transition: -webkit-transform 0.6s;
+            /*
+        backface-visibility:hidden;-webkit-backface-visibility:hidden */
+        }
+        
+        .sec_promolist>li>ul>li .wrap_ban.back {
+            visibility: hidden;
+            transform: rotateY(-180deg)
+        }
+        
+        .sec_promolist>li>ul>li li:hover .wrap_ban.front {
+            transform: rotateY(180deg)
+        }
+        
+        .sec_promolist>li>ul>li:hover .wrap_ban.back {
+            transform: rotateY(0)
+        }
+        
+        .sec_promolist>li>ul>li.flipped .wrap_ban.front {
+            visibility: hidden
+        }
+        
+        .sec_promolist>li>ul>li.flipped .wrap_ban.back {
+            visibility: visible
+        }
+        
+        .sbjBlankLink {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blankRn.png) repeat;
+            z-index: 99;
+        }
+        
+        .ksbjBL1 {
+            width: 290px;
+            height: 47px;
+            left: auto;
+            right: 25px;
+            top: auto;
+            bottom: 0;
+        }
+        
+        .ksbjBL2 {
+            width: 290px;
+            height: 47px;
+            left: auto;
+            right: 25px;
+            top: auto;
+            bottom: 0;
+        }
+        
+        .ksbjBL3 {
+            width: 290px;
+            height: 47px;
+            left: auto;
+            right: 25px;
+            top: auto;
+            bottom: 0;
+        }
+        
+        .ksbjBL4 {
+            width: 290px;
+            height: 47px;
+            left: auto;
+            right: 25px;
+            top: auto;
+            bottom: 0;
+        }
+        
+        .ksbjBL5 {
+            width: 290px;
+            height: 47px;
+            left: auto;
+            right: 25px;
+            top: auto;
+            bottom: 0;
+        }
+        
+        .ksbjBL6 {
+            width: 290px;
+            height: 47px;
+            left: auto;
+            right: 25px;
+            top: auto;
+            bottom: 0;
+        }
+        
+        .anchaSBJ {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            top: -280px;
+        }
+        
+        #ksbjBL2.anchaSBJ {
+            top: -280px;
+        }
+        
+        #ksbjBL3.anchaSBJ {
+            top: -280px;
+        }
+        
+        #ksbjBL4.anchaSBJ {
+            top: -230px;
+        }
+        
+        .msoverimg {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .pxslist>li.msover.on .msoverimg {
+            display: block;
+        }
+        
+        .layrACom {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blankRn.png) repeat;
+            display: block;
+        }
+        
+        .layrAC1 {
+            width: 156px;
+            height: 39px;
+            left: 431px;
+            top: 533px;
+        }
+        
+        .layrAC2 {
+            width: 308px;
+            height: 171px;
+            left: 24px;
+            top: 470px;
+        }
+        
+        .layrAC3 {
+            width: 350px;
+            height: 171px;
+            left: 334px;
+            top: 470px;
+        }
+        
+        .layrAC4 {
+            width: 306px;
+            height: 171px;
+            left: 686px;
+            top: 470px;
+        }
+        
+        .layrAC5 {
+            width: 445px;
+            height: 113px;
+            left: 281px;
+            bottom: 209px;
+            right: 0;
+            top: auto;
+        }
+        
+        .layerPopupACom {
+            position: absolute;
+            z-index: 1003;
+            visibility: collapse;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            -webkit-transform: scale(0, 0);
+            -ms-transform: scale(0, 0);
+            transform: scale(0, 0);
+        }
+        
+        .layerPopupACom.box_modal {
+            visibility: visible;
+            -webkit-transform: scale(1, 1);
+            -ms-transform: scale(1, 1);
+            transform: scale(1, 1);
+        }
+        
+        .ss .lPa1 {
+            margin-left: -485px;
+            left: 50%;
+            top: 0;
+        }
+        
+        .ss .lPa2 {
+            left: 395px;
+            top: 260px;
+        }
+        
+        .ss .lPa3 {
+            left: 708px;
+            top: 270px;
+        }
+        
+        .ss .lPa4 {
+            left: 210px;
+            top: 300px;
+        }
+        
+        .ss .lPa5 {
+            left: 250px;
+            top: 125px;
+        }
+        
+        .sc .lPa1 {
+            margin-left: -485px;
+            left: 50%;
+            top: 0;
+        }
+        
+        .sc .lPa2 {
+            left: 395px;
+            top: 315px;
+        }
+        
+        .sc .lPa3 {
+            left: 708px;
+            top: 220px;
+        }
+        
+        .sc .lPa4 {
+            left: 180px;
+            top: 300px;
+        }
+        
+        .sc .lPa5 {
+            left: 250px;
+            top: 125px;
+        }
+        
+        .kH .lPa1 {
+            margin-left: -485px;
+            left: 50%;
+            top: 0;
+        }
+        
+        .kH .lPa2 {
+            left: 395px;
+            top: 395px;
+        }
+        
+        .kH .lPa3 {
+            left: 708px;
+            top: 325px;
+        }
+        
+        .kH .lPa4 {
+            left: 78px;
+            top: 300px;
+        }
+        
+        .kH .lPa5 {
+            left: 250px;
+            top: 125px;
+        }
+        
+        /* 성적표 용어 알기 */
+        .wordstplist>li {
+            position: relative;
+        }
+        
+        .btn_wordAncha {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blankRn.png) repeat;
+            display: block;
+            border: 1px solid transparent;
+        }
+        
+        /* 성적표 용어 알기 */
+        .btn_wordAncha0 {
+            width: 100%;
+            height: 50px;
+            left: 0;
+            right: 0;
+            top: -20px;
+        }
+        
+        .btn_wordAncha1 {
+            width: 53px;
+            height: 23px;
+            left:226px; 
+            top:149px; 
+        }
+        
+        .btn_wordAncha2 {
+            width: 66px;
+            height: 23px;
+            left:435px; 
+            top: 149px;
+        }
+        
+        .btn_wordAncha3 {
+            width: 67px;
+            height: 23px;
+            left:815px; 
+            top: 186px;
+        }
+        
+        .btn_wordAncha4 {
+            width: 31px;
+            height: 23px;
+            left:933px;
+            top: 186px;
+        }
+        
+        .btn_wordAncha5 {
+            width: 166px;
+            height: 23px;
+            left:751px;
+            top: 149px;
+        }
+        
+        .btn_wordAnchaT1 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: -30px;
+        }
+        
+        .btn_wordAnchaT2 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 113px;
+        }
+        
+        .btn_wordAnchaT3 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: -96px;
+        }
+        
+        .btn_wordAnchaT4 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: -96px;
+        }
+        
+        .btn_wordAnchaT5 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: -96px;
+        }
+        
+        .btn_wordAnchaT11 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 67px;
+        }
+        
+        .btn_wordAnchaT22 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 207px;
+        }
+        
+        .btn_wordAnchaT33 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 0;
+        }
+        
+        .btn_wordAnchaT44 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 0
+        }
+        
+        .btn_wordAnchaT55 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 0
+        }
+        
+        /* 입시 용어 알기 */
+        .btn_wordAnchaTP0 {
+            width: 100%;
+            height: 50px;
+            left: 0;
+            right: 0;
+            top: -20px;
+        }
+        
+        .btn_wordAnchaTP1 {
+            width: 122px;
+            height: 125px;
+            left: 25px;
+            top: 330px;
+        }
+        
+        .btn_wordAnchaTP2 {
+            width: 136px;
+            height: 69px;
+            left: 224px;
+            top: 251px;
+        }
+        
+        .btn_wordAnchaTP3 {
+            width: 450px;
+            height: 54px;
+            left: 423px;
+            top: 183px;
+        }
+        
+        .btn_wordAnchaTP4 {
+            width: 450px;
+            height: 54px;
+            left: 423px;
+            top: 258px;
+        }
+        
+        .btn_wordAnchaTP5 {
+            width: 450px;
+            height: 54px;
+            left: 423px;
+            top: 333px;
+        }
+        
+        .btn_wordAnchaTP6 {
+            width: 136px;
+            height: 69px;
+            left: 224px;
+            top: 506px;
+        }
+        
+        .btn_wordAnchaTP7 {
+            width: 450px;
+            height: 54px;
+            left: 423px;
+            top: 514px;
+        }
+        
+        .wordAnchaTP11 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: -28px;
+        }
+        
+        .wordAnchaTP22 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 113px;
+        }
+        
+        .wordAnchaTP33 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 357px;
+        }
+        
+        .wordAnchaTP44 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 579px;
+        }
+        
+        .wordAnchaTP55 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 746px
+        }
+        
+        .wordAnchaTP66 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 914px
+        }
+        
+        .wordAnchaTP77 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 1065px
+        }
+        
+        .wordAnchaTP111 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 68px;
+            z-index: 9;
+        }
+        
+        .wordAnchaTP222 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 209px;
+            z-index: 9;
+        }
+        
+        .wordAnchaTP333 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 453px;
+            z-index: 9;
+        }
+        
+        .wordAnchaTP444 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 676px;
+            z-index: 9;
+        }
+        
+        .wordAnchaTP555 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 842px;
+            z-index: 9;
+        }
+        
+        .wordAnchaTP666 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 1012px;
+            z-index: 9;
+        }
+        
+        .wordAnchaTP777 {
+            width: 170px;
+            height: 94px;
+            left: 3px;
+            top: 1160px;
+            z-index: 9;
+        }
+        
+        .wordAnchaGO1 {
+            width: 563px;
+            height: 58px;
+            left: 195px;
+            top: 338px;
+        }
+        
+        .wordAnchaGO2 {
+            width: 597px;
+            height: 58px;
+            left: 195px;
+            top: 557px;
+        }
+        
+        /* 학교생활기록부 */
+        .wordstplist>li {
+            position: relative;
+        }
+        
+        .bsCm {
+            width: 100%;
+            height: 92px;
+            position: absolute;
+            left: 0;
+            top: -250px;
+        }
+        
+        .subTTL {
+            margin: 0 0 42px 0;
+            font-size: 26px;
+            font-weight: 500;
+            color: #000;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            letter-spacing: 0;
+        }
+        
+        .reportToplist {
+            width: 967px;
+            margin: 0 auto;
+            border: 1px solid #333;
+        }
+        
+        .reportToplist>li {
+            float: left;
+            border-right: 1px solid #333;
+            border-bottom: 1px solid #333;
+        }
+        
+        .reportToplist>li>a {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        .reportToplist>li.li1 {
+            width: 483px;
+            height: 219px;
+            background: url(https://www.zocbo.com/prego1/images/reportTopimg1.jpg) no-repeat;
+        }
+        
+        .reportToplist>li.li2 {
+            width: 483px;
+            height: 219px;
+            background: url(https://www.zocbo.com/prego1/images/reportTopimg2.jpg) no-repeat;
+            border-right: none;
+        }
+        
+        .reportToplist>li.li3 {
+            width: 483px;
+            height: 219px;
+            background: url(https://www.zocbo.com/prego1/images/reportTopimg3.jpg) no-repeat;
+            border-bottom: none;
+        }
+        
+        .reportToplist>li.li4 {
+            width: 483px;
+            height: 219px;
+            background: url(https://www.zocbo.com/prego1/images/reportTopimg4.jpg) no-repeat;
+            border-bottom: none;
+            border-right: none;
+        }
+        
+        .reportToplist>li.li1:hover {
+            background: url(https://www.zocbo.com/prego1/images/reportTopimg1over.jpg) no-repeat;
+        }
+        
+        .reportToplist>li.li2:hover {
+            background: url(https://www.zocbo.com/prego1/images/reportTopimg2over.jpg) no-repeat;
+            border-right: none;
+        }
+        
+        .reportToplist>li.li3:hover {
+            background: url(https://www.zocbo.com/prego1/images/reportTopimg3over.jpg) no-repeat;
+            border-bottom: none;
+        }
+        
+        .reportToplist>li.li4:hover {
+            background: url(https://www.zocbo.com/prego1/images/reportTopimg4over.jpg) no-repeat;
+            border-bottom: none;
+            border-right: none;
+        }
+        
+        .reportTopClick {
+            margin-top: 26px;
+            text-align: center;
+        }
+        
+        .reportbotimfo {
+            margin-top: 55px;
+            text-align: center;
+        }
+        
+        /* 미리보는 대학입시 */
+        .acdlist>li {
+            border-bottom: 1px solid #001340;
+        }
+        
+        .acdlist>li h2 {
+            height: 100px;
+        }
+        
+        .acdlist>li h2 a {
+            height: 99px;
+            display: block;
+            background: url(https://www.zocbo.com/prego1/images/arrow_acdDown.jpg) no-repeat 95% 50%;
+            font-size: 30px;
+            line-height: 99px;
+            font-weight: 500;
+            color: #001340;
+            border-bottom: none;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            letter-spacing: -1px;
+            text-indent: 8px;
+        }
+        
+        .acdlist>li h2 a.selected {
+            background: url(https://www.zocbo.com/prego1/images/arrow_acdUp.jpg) no-repeat 95% 50%;
+            border-bottom: 1px dashed #a4a8b3;
+        }
+        
+        /* 다운로드 레이어 : 2020.12.09 이미아 추가 */
+        .layer {
+            display: none;
+            position: fixed;
+            _position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+        }
+        
+        .layer .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: .5;
+            filter: alpha(opacity=50);
+        }
+        
+        .layer .pop-layer {
+            display: block;
+        }
+        
+        .pop-layer {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 430px;
+            height: auto;
+            background-color: #fff;
+            z-index: 9999;
+        }
+        
+        /*--------------------------------------------------
+                     레이어팝업
+        --------------------------------------------------*/
+        .layer_open {
+            position: fixed;
+            overflow-y: scroll;
+            width: 100%;
+        }
+        
+        .com_Wpop {
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 9999;
+        }
+        
+        .comPopup {
+            border: 1px solid #3f3f3f;
+            position: relative;
+        }
+        
+        .comPopup .pop_header {
+            width: 100%;
+            height: 49px;
+            background: #3f3f3f;
+        }
+        
+        .comPopup .pop_header .ttl {
+            padding-left: 21px;
+            font-size: 15px;
+            line-height: 52px;
+            color: #fff;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 400;
+        }
+        
+        .comPopup .pop_desc {
+            padding: 7px 0 8px 21px;
+            background: #3579d4;
+            font-size: 12px;
+            line-height: 18px;
+            color: #fff;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+        }
+        
+        .comPopup .pop_desc_bot {
+            padding: 7px 0 8px 21px;
+            background: #3579d4;
+            font-size: 11px;
+            line-height: 18px;
+            color: #fff;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+            letter-spacing: -1px;
+        }
+        
+        .comPopup .pop_cnt {
+            padding: 20px 22px 27px 22px;
+            background: #fff;
+        }
+        
+        .comPopup .pop_cnt .pop_cnt_ttl {
+            margin-bottom: 17px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #3579d4;
+            font-weight: bold;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+        }
+        
+        .comPopup .popClose {
+            position: absolute;
+            right: 18px;
+            top: 19px;
+        }
+        
+        .com_Wpop .infotable {
+            margin-bottom: 0;
+        }
+        
+        .com_Wpop .infotable thead th {
+            font-size: 12px;
+            letter-spacing: -1px;
+        }
+        
+        .com_Wpop .infotable td {
+            padding: 5px 12px 5px 12px;
+            letter-spacing: -1px;
+        }
+        
+        .tl_left12 {
+            text-align: left !important;
+            padding-left: 12px !important;
+        }
+        
+        .pop_comlist>li {
+            margin-top: 20px;
+        }
+        
+        .pop_comlist>li:first-child {
+            margin-top: 0px;
+        }
+        
+        .pop_comlist>li .ttl {
+            margin-bottom: 17px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #3579d4;
+            font-weight: bold;
+            /* font-family: "굴림", Gulim, Arial, sans-serif; */
+        }
+        
+        .layer-open {
+            overflow: hidden;
+        }
+        
+        /* popup */
+        .w430 {
+            width: 430px;
+        }
+        
+        #popup {
+            overflow: hidden;
+            font-family: inherit;
+            font-size: 12px;
+        }
+        
+        #popup h2 {
+            position: relative;
+            padding: 15px 0 10px 20px;
+            height: 20px;
+            background: #3f3f3f;
+            color: #fff;
+            font-size: 12px;
+        }
+        
+        #popup span.close {
+            position: absolute;
+            left: auto;
+            right: 20px;
+            top: 13px;
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            font-size: 14px;
+        }
+        
+        #popup a.close {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        #popup span.close a.close {
+            position: static;
+        }
+        
+        .popwrap {}
+        
+        .popwrap:after {
+            display: block;
+            clear: both;
+            content: '';
+        }
+        
+        .popwrap .side {
+            width: 260px;
+            padding: 20px 10px 10px;
+        }
+        
+        .section {
+            padding: 20px;
+        }
+        
+        .section:after {
+            display: block;
+            clear: both;
+            content: ''
+        }
+        
+        .bdr_l {
+            border-left: 1px solid #66758e;
+        }
+        
+        .base {
+            line-height: 18px;
+        }
+        
+        .base .default {
+            width: 100%;
+            display: inline-block;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .base .txt {
+            margin: 0 15px;
+        }
+        
+        .base .question {
+            font-weight: bold;
+        }
+        
+        .base .red {
+            color: #ba0100;
+            font-weight: bold;
+        }
+        
+        /* popup table */
+        .tbtype table {
+            width: 100%;
+            background-color: #f6f6f6;
+            font-size: 11px;
+            margin: 15px 0;
+        }
+        
+        .tbtype table thead {
+            border-bottom: 1px solid #66758e;
+        }
+        
+        .tbtype table th {
+            height: 20px;
+            padding: 5px 0;
+            color: #393f4f;
+            text-align: center;
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
+        
+        .tbtype table .bdr_none {
+            border-right: 0 none;
+        }
+        
+        .tbtype table td {
+            padding: 6px 0 5px 0;
+            text-align: center;
+            border-bottom: 1px solid #fff;
+        }
+        
+        .tbtype table td span.blue {
+            color: #16b5ff;
+            font-weight: bold;
+        }
+        
+        .tbtype table td.tl {
+            padding-left: 5px;
+            text-align: left;
+        }
+        
+        .tbtype table td.sum {
+            background: #e0f0ff;
+            font-weight: bold;
+        }
+        
+        .tbtype table td.sum_all {
+            background: #fff0dd;
+            color: #ee1600;
+            font-weight: bold;
+        }
+        
+        /* popup btn */
+        .brd_btn {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .brd_btn:after {
+            display: block;
+            clear: both;
+            content: ''
+        }
+        
+        .brd_btn li {
+            float: left;
+            padding-left: 4px;
+        }
+        
+        /* Margin */
+        .m0 {
+            margin: 0px !important;
+        }
+        
+        .mt0 {
+            margin-top: 0px !important;
+        }
+        
+        .mt5 {
+            margin-top: 5px !important;
+        }
+        
+        .mt10 {
+            margin-top: 10px !important;
+        }
+        
+        .mt15 {
+            margin-top: 15px !important;
+        }
+        
+        .mt20 {
+            margin-top: 20px !important;
+        }
+        
+        .mt30 {
+            margin-top: 30px !important;
+        }
+        
+        .mb0 {
+            margin-bottom: 0px !important;
+        }
+        
+        .mb10 {
+            margin-bottom: 10px !important;
+        }
+        
+        .mb20 {
+            margin-bottom: 20px !important;
+        }
+        
+        .mb30 {
+            margin-bottom: 30px !important;
+        }
+        
+        /* Padding */
+        .p0 {
+            padding: 0px !important
+        }
+        
+        .pt0 {
+            padding-top: 0px !important;
+        }
+        
+        .pt10 {
+            padding-top: 10px !important;
+        }
+        
+        .pt20 {
+            padding-top: 20px !important;
+        }
+        
+        .pt30 {
+            padding-top: 30px !important;
+        }
+        
+        .pb0 {
+            padding-bottom: 0px !important;
+        }
+        
+        .pb10 {
+            padding-bottom: 10px !important;
+        }
+        
+        .pb20 {
+            padding-bottom: 20px !important;
+        }
+        
+        .pb30 {
+            padding-bottom: 30px !important;
+        }
+        
+        /* 제목 관련 */
+        h1 {
+            font-size: 2em;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        
+        h2 {
+            font-size: 23px;
+            line-height: 23px;
+            margin-bottom: 3px;
+            font-weight: bold;
+        }
+        
+        h3 {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        h4 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        h5 {
+            font-size: 18px;
+            line-height: 20px;
+            font-weight: bold;
+        }
+        
+        h6 {
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        /* 다운로드 레이어 : 2020.12.09 이미아 추가 */
+        
+        /* */
+        /* .systemchartPopWrap {
+            width:100%; height:100%; 
+            position:fixed; left:0; right:0; top:0; bottom:0; z-index:1001;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blank.png) repeat;
+        }*/
+        .systemchartPop {
+            width: 1019px;
+            height: 939px;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+        }
+        
+        .systemchartPop .cnt {
+            position: relative;
+        }
+        
+        .systemchartPop .systemchartPopClose {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 37px;
+            top: 35px;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blankRn.png) repeat;
+        }
+        
+        .kGPop {
+            width: 940px;
+            height: 950px;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+        }
+        
+        .kGPop .cnt {
+            position: relative;
+        }
+        
+        .kGPop .kGClose {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 22px;
+            top: 28px;
+            background: url(https://www.zocbo.com/Images/zocbo_rn/common/blankRn.png) repeat;
+        }
+        
+        
+    }
+}

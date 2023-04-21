@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* spoqa */
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 100;
+    src: url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.eot');
+    src: local('Spoqa Han Sans Neo Thin'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff') format('woff'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 300;
+    src: url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.eot');
+    src: local('Spoqa Han Sans Neo Light'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff') format('woff'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 400;
+    src: url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.eot');
+    src: local('Spoqa Han Sans Neo Regular'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff') format('woff'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 500;
+    src: url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.eot');
+    src: local('Spoqa Han Sans Neo Medium'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff') format('woff'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 700;
+    src: url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.eot');
+    src: local('Spoqa Han Sans Neo Bold'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff') format('woff'),
+    url('/fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+}
+
+/* roboto */
+@font-face {
+    font-family: 'roboto';
+    font-weight: 100;
+    src: url('/fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'roboto';
+    font-weight: 300;
+    src: url('/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'roboto';
+    font-weight: 400;
+    src: url('/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'roboto';
+    font-weight: 500;
+    src: url('/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'roboto';
+    font-weight: 700;
+    src: url('/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'roboto';
+    font-weight: 900;
+    src: url('/fonts/Roboto/Roboto-Black.ttf') format('truetype');
+}
+
+/* for safari */
+@font-face {    
+    font-family: "돋움";
+    src: local("Apple SD Gothic Neo");
+}
+
+@font-face {    
+    font-family: 'Malgun Gothic';
+    src: local("Apple SD Gothic Neo");
+}
+
+@font-face {
+    font-family: Dotum;
+    src: local("Apple SD Gothic Neo");
+}
+
+@font-face {
+    font-family: DotumChe;
+    src: local("Apple SD Gothic Neo");
+}
+
+@font-face {
+    font-family: "굴림";
+    src: local("Apple SD Gothic Neo");
+}
+
+@font-face {
+    font-family: Gulim;
+    src: local("Apple SD Gothic Neo");
+}
+
+@font-face {
+    font-family: GulimChe;
+    src: local("Apple SD Gothic Neo");
+}
+
+@font-face {
+    font-family: AppleGothic;
+    src: local("Apple SD Gothic Neo");
+}
+
+body {
+    font-family: 
+    "Apple SD Gothic Neo",
+    "Malgun Gothic",
+    "Source Sans Pro",
+    Verdana,
+    Arial,
+    sans-serif;
+    -webkit-font-smoothing:antialiased;
+}

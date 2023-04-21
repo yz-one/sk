@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+// 버튼
+.ui-btn {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    line-height: 30px;
+    border: 1px solid #515560;
+    background-color: #515560;
+    padding: 0 20px;
+    font-family: $malgun;
+    font-size: 12px;
+    color: #fff;
+
+    &-group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .ui-btn + .ui-btn {
+            margin-left: 10px;
+        }
+    }
+
+    > i {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: #ccc;
+        margin-right: 5px;
+    }
+
+    &.outline {
+        color: #666;
+        border-color: #b2bacd;
+        background-color: #fff;
+    }
+
+    &.rounded {
+        border-radius: 50px;
+    }
+
+    &.btn-icon {
+        padding: 0 15px 0 10px;
+    }
+}

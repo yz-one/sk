@@ -1,0 +1,99 @@
+@charset "utf-8";
+$malgun : "Malgun Gothic";
+// $malgun : "Apple SD Gothic Neo", "Malgun Gothic", "Source Sans Pro", Verdana, Arial, sans-serif;
+$spoqa : 'Spoqa Han Sans Neo', Sans-Serif;
+$noto : 'Noto Sans Korean', Sans-Serif;
+$device : 'pc';
+
+// HEADER COLOR SET
+$main: (
+  "100": #4272D2,
+  "90": #5580D6,
+  "80": #688EDB,
+  "70": #7B9CDF,
+  "50": #A0B8E8,
+  "40": #B3C7ED,
+  "30": #C6D5F2,
+  "20": #D9E3F6,
+  "10": #ECF1FB,
+) !default;
+$blue: (
+  "100": #3258E1,
+  "30": #C2CDF6,
+  "10": #EBEEFC,
+) !default;
+$green: (
+  "100": #5D9812,
+  "40": #D4ECB8,
+  "30": #CEE0B8,
+  "20": #F4FDE9,
+  "10": #EFF5E7,
+) !default;
+$pink: (
+  "100": #CF4378,
+  "30": #F1C7D7,
+  "10": #FAECF2,
+) !default;
+$mint: (
+  "100": #1DB4C8,
+  "30": #BBE9EF,
+  "10": #E8F7FA,
+) !default;
+$purple: (
+  "100": #9444D3,
+  "30": #DFC7F2,
+  "10": #F4ECFB,
+) !default;
+$cloud: (
+  "100": #1CBCB7,
+  "30": #BBEBE9,
+  "10": #E8F8F8,
+) !default;
+$orange: (
+  "100": #F49300,
+  "30": #FCDFB3,
+  "10": #FEF4E6,
+) !default;
+$yellow: (
+  "100": #E8B500,
+  "30": #F8E9B3,
+  "10": #FDF8E6,
+) !default;
+$blue: (
+  "100": #3258E1,
+  "30": #C2CDF6,
+  "10": #EBEEFC,
+) !default;
+$navy: (
+  "100": #03509F,
+) !default;
+$black: (
+  "100": #000,
+) !default;
+$white: (
+  "100": #fff,
+) !default;
+$gray: (
+  "100": #333333,
+  "90": #363B43,
+  "80": #5C626C,
+  "70": #868C99,
+  "60": #A9ADBB,
+  "50": #BDC3CF,
+  "40": #DADEE7,
+  "30": #ECEEF3,
+  "20": #F2F3F5,
+  "10": #F9FAFD,
+) !default;
+$combination: (
+  "100": #339AF0,
+  "10": #EBF5FE,
+) !default;
+$tutor: (
+  "100": #20C997,
+  "10": #E9FAF5,
+) !default;
+$consulting: (
+  "100": #FF922B,
+  "10": #FFF5EA,
+) !default;

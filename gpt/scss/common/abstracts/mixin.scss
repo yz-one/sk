@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@mixin mask-img($folder, $img, $l, $t) {
+    -webkit-mask-image: url('#{$img-path}/#{$folder}/#{$img}');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position-x: $l;
+    -webkit-mask-position-y: $t;
+            mask: url('#{$img-path}/#{$folder}/#{$img}') no-repeat $l $t;
+}
+
+@mixin bg-img($folder, $img, $l, $t) {
+    background: url('#{$img-path}/#{$folder}/#{$img}') no-repeat $l $t;
+}
+
+@mixin posa-tl($t: 0, $l:0) {
+    position: absolute;
+    top: $t;
+    left: $l;
+}
+@mixin posa-tr($t: 0, $r:0) {
+    position: absolute;
+    top: $t;
+    right: $r;
+}
+@mixin posa-bl($t: 0, $r:0) {
+    position: absolute;
+    bottom: $t;
+    left: $r;
+}
+@mixin posa-br($t: 0, $r:0) {
+    position: absolute;
+    bottom: $t;
+    right: $r;
+}
+@mixin clearfix() {
+    content: '';
+    display: block;
+    clear: both;
+}
+@mixin ct {
+    content: '';
+    display: block;
+}
+@mixin ti {
+    text-indent: -9999px;
+    overflow: hidden;
+}
+@mixin bdrs($r) {
+    border-radius: $r;
+}
+@mixin placeholder($c:'') {
+    &::placeholder {
+        color: $c;
+    }
+}
+@mixin ellipsis($lines: 0) {
+    overflow: hidden;
+    @if ($lines == 1) {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    @else {
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+    }
+}

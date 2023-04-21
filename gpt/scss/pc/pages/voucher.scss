@@ -1,0 +1,3168 @@
+
+/* 이용권 리뉴얼 */
+.voucher-checkbox {
+    display: inline-block;
+    position: relative;
+
+    input[type=checkbox] {
+        opacity: 0;
+        display: block;
+        @include posa-tl();
+
+        &:checked {
+            &+label {
+                &:before {
+                    background-position: -1400px -16px;
+                }
+            }
+        }
+    }
+
+    label {
+        position: relative;
+        font-size: 16px;
+        line-height: 16px;
+        color: #000;
+        display: block;
+        padding-left: 21px;
+
+        &:before {
+            @include ct;
+            width: 16px;
+            height: 16px;
+            @include spr-voucher(-1400px);
+            @include posa-tl(50%);
+            margin-top: -8px;
+        }
+    }
+
+    &.white {
+        input[type=checkbox] {
+            &:checked {
+                &+label {
+                    &:before {
+                        background-position: -1450px -16px;
+                    }
+                }
+            }
+        }
+
+        label {
+            color: #fff;
+
+            &:before {
+                @include spr-voucher(-1450px);
+            }
+        }
+    }
+}
+
+#voucher {
+    * {
+        box-sizing: border-box;
+    }
+
+    h2 {
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #efefef;
+            margin-top: 2px;
+        }
+
+        span {
+            margin-left: 10px;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-size: 19px;
+            line-height: 23px;
+            font-weight: 300;
+            letter-spacing: -0.47px;
+        }
+    }
+
+    .tooltip-wrap {
+        @include posa-br(14px);
+        font-size: 0;
+    }
+
+    .tooltip {
+        display: inline-block;
+        vertical-align: middle;
+        position: static;
+        cursor: default;
+
+        &+.tooltip {
+            margin-left: 10px;
+        }
+
+        i {
+            display: block;
+            position: relative;
+            height: 16px;
+            padding-left: 21px;
+            font-size: 12px;
+            color: #000;
+            font-weight: 400;
+            font-style: normal;
+            z-index: 2;
+
+            &:before {
+                @include ct;
+                width: 16px;
+                height: 16px;
+                @include spr-voucher(-1200px);
+                @include posa-tl;
+            }
+
+            &:after {
+                content: '';
+                display: none;
+                width: 12px;
+                height: 8px;
+                @include spr-voucher(-2200px);
+                @include posa-bl(-10px, 2px);
+            }
+        }
+
+        .tooltip-content {
+            top: 24px;
+            right: 0;
+            left: auto;
+            width: 280px;
+            border: 1px solid #437DDB;
+            padding: 14px 20px;
+            font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Source Sans Pro", Verdana, Arial, sans-serif;
+            z-index: 1;
+
+            &.ex {
+                width: 300px;
+            }
+
+            strong {
+                display: block;
+                font-size: 12px;
+                letter-spacing: -0.025em;
+                color: #0077b6;
+                font-weight: 700;
+                margin-bottom: 5px;
+
+                em {
+                    display: inline-block;
+                    width: 90px;
+                    height: 22px;
+                    @include spr-voucher(-800px);
+                    @include ti;
+                    vertical-align: middle;
+                    margin-right: 7px;
+                }
+            }
+
+            p {
+                font-size: 11px;
+                color: #000;
+                letter-spacing: -0.025em;
+                line-height: 14px;
+                word-break: keep-all;
+
+                &+p {
+                    margin-top: 7px;
+                }
+            }
+        }
+
+        &:hover {
+            i {
+                &:after {
+                    display: block;
+                }
+            }
+
+            .tooltip-content {
+                display: block;
+            }
+        }
+    }
+
+    .select-wrap {
+        padding-left: 20px;
+
+        p {
+            position: relative;
+            font-family: $spoqa;
+            padding-left: 75px;
+            font-size: 0;
+
+            &+p {
+                margin-top: 10px;
+            }
+
+            span,
+            strong,
+            em {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            span {
+                font-size: 18px;
+                @include posa-tl;
+                line-height: 30px;
+            }
+
+            strong {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 30px;
+            }
+
+            em {
+                font-size: 12px;
+                line-height: 15px;
+                height: 15px;
+            }
+        }
+    }
+
+    .icon-recommend {
+        display: block;
+        width: 55px;
+        height: 55px;
+        @include spr-voucher(0, -200px);
+    }
+
+    .content-item {
+        display: flex;
+        width: 100px;
+        height: 107px;
+        align-items: center;
+        justify-content: center;
+        @include spr-voucher(-200px);
+        font-size: 14px;
+        color: #000;
+        vertical-align: middle;
+        text-align: center;
+        letter-spacing: -0.075em;
+        flex-direction: column;
+
+        strong {
+            font-weight: 700;
+            display: block;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        &.basic {
+            background-position: 0 0;
+            color: #fff;
+            position: relative;
+
+            &.plus {
+                margin-right: 25px;
+
+                &:after {
+                    @include ct;
+                    width: 16px;
+                    height: 16px;
+                    @include spr-voucher(-1000px);
+                    @include posa-tr(50%, -20px);
+                    margin-top: -8px;
+                }
+            }
+        }
+
+        &.soopring {
+            background-position: -400px 0;
+            color: #fff;
+            position: relative;
+            margin-left: 25px;
+
+            &:after {
+                @include ct;
+                width: 16px;
+                height: 16px;
+                @include spr-voucher(-1000px);
+                @include posa-tl(50%, -20px);
+                margin-top: -8px;
+            }
+
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 21px;
+                height: 21px;
+                margin-right: 3px;
+                @include spr-voucher(-2000px);
+            }
+        }
+
+        .label {
+            border: 1px solid #65c3e1;
+            background-color: #fff;
+            border-radius: 0;
+            font-size: 11px;
+            font-weight: 400;
+            margin-top: 5px;
+            height: 16px;
+            line-height: 14px;
+            color: #000;
+        }
+    }
+
+    .pro-item-wrap {
+        display: flex;
+        // width: 500px;
+        border: 1px solid #E5C426;
+        padding: 15px 20px;
+        position: relative;
+
+        @media screen and (-ms-high-contrast: active),
+        (-ms-high-contrast: none) {
+            padding: 15px 12px;
+        }
+
+        &:before {
+            @include ct;
+            width: 72px;
+            height: 71px;
+            @include spr-voucher(-600px);
+            @include posa-tl(-4px, -4px);
+        }
+
+        .content-item {
+            &+.content-item {
+                margin-left: 20px;
+
+                @media screen and (-ms-high-contrast: active),
+                (-ms-high-contrast: none) {
+                    margin-left: 18px;
+                }
+            }
+        }
+    }
+
+    .checkbox-wrap {
+        font-size: 0;
+        margin-top: 23px;
+
+        .voucher-checkbox {
+            &+.voucher-checkbox {
+                margin-left: 20px;
+            }
+
+            label {
+                font-family: $spoqa;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .voucher-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 216px;
+        align-items: stretch;
+        position: relative;
+
+        &+h2 {
+            margin-top: 50px;
+        }
+
+        &+.voucher-item {
+            margin-top: 10px;
+        }
+
+        // &:hover {
+        //     box-shadow: 0px 5px 5px #0000001A;
+
+        //     .select-wrap {
+        //         background-color: rgba(232, 85, 71, 1);
+        //         border-top-width: 2px;
+        //         border-bottom-width: 2px;
+
+        //         p {
+        //             color: #fff;
+        //         }
+        //     }
+
+        //     .content-wrap {
+        //         border-width: 2px;
+        //         padding-right: 19px;
+        //     }
+
+        //     .checkbox-wrap {
+        //         .voucher-checkbox {
+        //             label {
+        //                 color: #fff;
+        //             }
+        //         }
+        //     }
+        // }
+
+        >div {
+            border: 1px solid #E85547;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .select-wrap {
+            flex-basis: 224px;
+            flex-shrink: 0;
+            border-right: none;
+            background-color: rgba(232, 85, 71, .3);
+            transition: all .2s ease-in-out;
+
+            p {
+                color: #e85547;
+
+                &+p {
+                    margin-top: 10px;
+                }
+
+                span,
+                strong,
+                em {
+                    display: block;
+                    letter-spacing: -0.025em;
+                    word-spacing: 0;
+                }
+            }
+        }
+
+        .content-wrap {
+            flex-basis: 100%;
+            border-left: none;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 20px;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+                flex-basis: auto;
+            }
+        }
+
+        .checkbox-wrap {
+            .voucher-checkbox {
+                label {
+                    color: #e85547;
+                }
+            }
+        }
+
+        &.normal {
+            .content-wrap {
+                padding: 0 25px;
+            }
+        }
+
+        &.teacher {
+            // &:hover {
+            //     .select-wrap {
+            //         background-color: rgba(84, 130, 0, 1);
+
+            //         p {
+            //             color: #fff;
+            //         }
+            //     }
+
+            //     .checkbox-wrap {
+            //         .voucher-checkbox {
+            //             label {
+            //                 color: #fff;
+            //             }
+            //         }
+            //     }
+            // }
+
+            >div {
+                border-color: #548200;
+            }
+
+            .select-wrap {
+                background-color: rgba(84, 130, 0, 1);
+
+                p {
+                    color: #fff;
+                }
+            }
+
+            .checkbox-wrap {
+                .voucher-checkbox {
+                    label {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &.high {
+            // &:hover {
+            //     .select-wrap {
+            //         background-color: rgba(3, 65, 116, 1);
+
+            //         p {
+            //             color: #fff;
+            //         }
+            //     }
+
+            //     .checkbox-wrap {
+            //         .voucher-checkbox {
+            //             label {
+            //                 color: #fff;
+            //             }
+            //         }
+            //     }
+            // }
+
+            >div {
+                border-color: #034174;
+            }
+
+            .select-wrap {
+                background-color: rgba(3, 65, 116, 1);
+
+                p {
+                    color: #fff;
+                }
+            }
+
+            .checkbox-wrap {
+                .voucher-checkbox {
+                    label {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &.middle {
+            // &:hover {
+            //     .select-wrap {
+            //         background-color: rgba(73, 51, 186, 1);
+
+            //         p {
+            //             color: #fff;
+            //         }
+            //     }
+
+            //     .checkbox-wrap {
+            //         .voucher-checkbox {
+            //             label {
+            //                 color: #fff;
+            //             }
+            //         }
+            //     }
+            // }
+
+            >div {
+                border-color: #4933BA;
+            }
+
+            .select-wrap {
+                background-color: rgba(73, 51, 186, 1);
+
+                p {
+                    color: #fff;
+                }
+            }
+
+            .checkbox-wrap {
+                .voucher-checkbox {
+                    label {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &.soopring {
+
+            // .content-wrap {
+            //     justify-content: space-between;
+            //     width: 500px;
+            // }
+            p {
+                padding-left: 103px;
+
+                &.ex {
+                    padding-left: 0;
+                    height: 22px;
+                    margin-top: 7px;
+
+                    span {
+                        height: 22px;
+                        line-height: 22px;
+                    }
+
+                    &~p {
+                        margin-top: 0;
+                    }
+                }
+
+                &.price {
+                    padding-left: 75px;
+                }
+            }
+        }
+
+        .ico_hitrnpay {
+            position: absolute;
+            left: -38px;
+            top: -18px;
+        }
+
+        .icon-recommend {
+            @include posa-tl(-18px, -38px);
+        }
+
+        .gift-label {
+            width: 136px;
+            height: 40px;
+            padding-top: 5px;
+            position: absolute;
+            left: 47px;
+            top: -16px;
+            background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg-gift-label.png) no-repeat;
+            font-size: 11px;
+            line-height: 13px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .voucher-basic-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .item {
+            width: 320px;
+            border: 1px solid #4272D2;
+
+            &:before {
+                @include ct;
+                width: 100%;
+                height: 3px;
+                background-color: #4272d2;
+                margin-bottom: 20px;
+            }
+        }
+
+        .select-wrap {
+            border-bottom: 1px dashed #707070;
+            padding-bottom: 20px;
+
+            p {
+                color: #4272d2;
+
+                span,
+                strong,
+                em {
+                    height: 30px;
+                    line-height: 30px;
+                }
+
+                em {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .content-wrap {
+            padding: 30px 0;
+        }
+
+        .checkbox-wrap {
+            margin-top: 20px;
+
+            label {
+                color: #4272d2;
+            }
+        }
+
+        .content-item {
+            margin: 0 auto;
+        }
+    }
+
+    &.bar-type {
+        .voucher-wrap {
+            display: flex;
+
+            &>div {
+                width: 50%;
+                margin-left: 12px;
+
+                &:first-child {
+                    margin-left: 0;
+                    margin-right: 12px;
+                }
+
+                .header {
+                    position: relative;
+                    margin-bottom: 15px;
+
+                    h2 {
+                        margin-bottom: 0;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+
+                    .tooltip-wrap {
+                        bottom: 8px;
+                    }
+                }
+
+                .body {
+                    display: flex;
+
+                    .item {
+                        display: inline-block;
+                        width: 160px;
+                        margin-left: 9px;
+                        position: relative;
+
+                        .icon-recommend {
+                            @include posa-tl(-20px, -5px);
+                        }
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        h3 {
+                            text-align: center;
+                            height: 44px;
+                            font-family: $spoqa;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 42px;
+                            color: #061724;
+                            background: #FFFFFF;
+                            border: 1px solid #667684;
+                            border-bottom-color: #BAC0C6;
+                            box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.05);
+                        }
+
+                        ul {
+                            border: 1px solid #667684;
+                            border-top: none;
+                            border-bottom: none;
+
+                            li {
+                                padding: 0 10px;
+
+                                &:last-child {
+                                    >div {
+                                        border: none;
+                                    }
+                                }
+
+                                &.download {
+                                    background-color: #f7f7f7;
+
+                                    >div {
+                                        border: none;
+
+                                        &:before {
+                                            @include spr-voucher(0, -150px);
+                                        }
+                                    }
+                                }
+
+                                &.procontent {
+                                    >div {
+                                        &:before {
+                                            @include spr-voucher(-50px, -150px);
+                                        }
+                                    }
+                                }
+
+                                &.video {
+                                    >div {
+                                        &:before {
+                                            @include spr-voucher(-100px, -150px);
+                                        }
+                                    }
+                                }
+
+                                &.barotest {
+                                    >div {
+                                        &:before {
+                                            @include spr-voucher(-150px, -150px);
+                                        }
+                                    }
+                                }
+
+                                &.performance {
+                                    >div {
+                                        &:before {
+                                            @include spr-voucher(-200px, -150px);
+                                        }
+                                    }
+                                }
+
+                                &.unit {
+                                    >div {
+                                        &:before {
+                                            @include spr-voucher(-250px, -150px);
+                                        }
+                                    }
+                                }
+
+                                &.soopring {
+                                    background-color: #FFF3DC;
+
+                                    >div {
+                                        border: none;
+
+                                        &:before {
+                                            @include spr-voucher(-300px, -150px);
+                                        }
+                                    }
+                                }
+
+                                &.zpayprego1 {
+                                    padding: 0;
+                                    background-color: #fff25f;
+
+                                    >div {
+                                        left: 0;
+                                        border: none;
+
+                                        &:before {
+                                            @include ct;
+                                            width: 44px;
+                                            height: 22px;
+                                            @include posa-tl(50%, 0);
+                                            background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_tagnew.png) no-repeat;
+
+                                        }
+                                    }
+                                }
+
+                                >div {
+                                    padding: 13px 0 13px 50px;
+                                    position: relative;
+                                    border-bottom: 1px dashed #B3B3B3;
+
+                                    &:before {
+                                        @include ct;
+                                        width: 22px;
+                                        height: 22px;
+                                        @include posa-tl(50%, 14px);
+                                        margin-top: -11px;
+                                    }
+                                }
+
+                                span,
+                                strong {
+                                    display: block;
+                                }
+
+                                span {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    color: #000;
+                                }
+
+                                strong {
+                                    font-family: $spoqa;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: #E63B1F;
+                                }
+                            }
+                        }
+
+                        .price-wrap {
+                            background: #E63B1F;
+                            border: 1px solid #BF270E;
+                            height: 121px;
+
+                            .price {
+                                text-align: center;
+                                font-family: $spoqa;
+                                padding: 15px 0;
+                                border-bottom: 1px solid #BF270E;
+
+                                p {
+                                    font-size: 30px;
+                                    height: 38px;
+                                    line-height: 38px;
+                                    font-weight: 700;
+                                    color: #fff;
+
+                                    em {
+                                        font-size: 20px;
+                                    }
+                                }
+
+                                span {
+                                    display: block;
+                                    color: #fff;
+                                    font-size: 15px;
+                                    line-height: 19px;
+                                    font-weight: 300;
+                                }
+                            }
+
+                            .checkbox-wrap {
+                                text-align: center;
+                                padding: 7px 0;
+                                margin-top: 0;
+                                border-top: 1px solid #EE5E47;
+
+                                .voucher-checkbox {
+                                    &+.voucher-checkbox {
+                                        margin-left: 10px;
+                                    }
+
+                                    label {
+                                        padding-left: 18px;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+
+                        .gift-label2 {
+                            width: 143px;
+                            height: 32px;
+                            padding-top: 2px;
+                            margin-left: -72px;
+                            position: absolute;
+                            left: 50%;
+                            bottom: 102px;
+                            background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg-gift-label2.png) no-repeat;
+                            font-size: 10px;
+                            line-height: 12px;
+                            color: #fff;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            &>div.basic-wrap {
+                display: flex;
+                flex-direction: column;
+
+                .body {
+                    display: flex;
+                    flex-grow: 1;
+
+                    .item {
+                        display: flex;
+                        flex-direction: column;
+
+                        .basic-voucher-wrap {
+                            border: 1px solid #667684;
+                            border-top: none;
+                            border-bottom: none;
+                            flex: auto 1 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            div {
+                                position: relative;
+                                width: 100%;
+                                padding-left: 61px;
+
+                                span,
+                                strong {
+                                    display: block;
+                                }
+
+                                span {
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    color: #000;
+                                }
+
+                                strong {
+                                    font-family: $spoqa;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: #017CBC;
+                                }
+
+                                &:before {
+                                    @include ct;
+                                    width: 22px;
+                                    height: 22px;
+                                    @include posa-tl(50%, 25px);
+                                    margin-top: -11px;
+                                    @include spr-voucher(0, -150px);
+                                }
+                            }
+                        }
+
+                        .price-wrap {
+                            background: #008AC4;
+                            border: 1px solid #0170A9;
+
+                            .price {
+                                border-bottom-color: #0170A9;
+                            }
+
+                            .checkbox-wrap {
+                                border-top-color: #2FA9DC;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.voucher-point-contents {
+    margin-top: 51px;
+}
+
+/* 과목별 이용권영역 */
+.voucher-subject>* {
+    box-sizing: border-box;
+}
+
+#voucher.voucher-subject {
+    &.voucher-fixed {
+        padding-top: 177px;
+
+        .subject-top-box {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            margin-left: -510px;
+            background-color: #fff;
+            z-index: 100;
+            -webkit-box-shadow: 0px -50px 0px 0px #fff;
+            box-shadow: 0px -50px 0px 0px #fff;
+            width: 1020px;
+        }
+    }
+
+    h3 {
+        height: 60px;
+        color: #000;
+        font-size: 24px;
+        line-height: 60px;
+        font-weight: 500;
+        font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    }
+}
+
+.subject-top-box {
+    height: 177px;
+    padding: 13px 0 0 20px;
+    margin-top: 15px;
+    border: 1px solid #D2D9DE;
+}
+
+.subject-top-tab {
+    margin-bottom: 22px;
+}
+
+.subject-top-tab>li {
+    width: 145px;
+    margin-right: 22px;
+    float: left;
+}
+
+.subject-top-tab>li:last-child {
+    margin-right: 0;
+}
+
+.subject-top-tab>li button {
+    width: 145px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    background: #EFEFEF;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #707070;
+    text-align: center;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    cursor: pointer;
+}
+
+.subject-top-tab>li.on button {
+    background: #3387C4;
+    color: #fff;
+}
+
+.tab-content>div {
+    display: none;
+}
+
+.tab-content>div.on {
+    display: block;
+}
+
+.probox-ul {
+    font-size: 0;
+}
+
+.probox-ul>li {
+    padding: 0 10px 0 10px;
+    margin: 31px 0 0 0;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #000;
+    border-right: 1px solid #707070;
+    letter-spacing: 0px;
+}
+
+.probox-ul>li:first-child {
+    padding-left: 0;
+    margin-right: 0;
+}
+
+.probox-ul>li:last-child {
+    border: none;
+}
+
+.probox-ul>li.pro-li {
+    margin-top: 0;
+    padding-right: 0;
+    border: none;
+}
+
+.probox {
+    height: 84px;
+    border: 1px solid #E5C426;
+    border-radius: 0px 10px 10px 10px;
+    -webkit-border-radius: 0px 10px 10px 10px;
+    -moz-border-radius: 0px 10px 10px 10px;
+    -o-border-radius: 0px 10px 10px 10px;
+    position: relative;
+}
+
+.probox::before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    background: url(/images/pc/zocbo/voucher/spr-voucher.png) -600px 0 no-repeat;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+}
+
+.probox-list {
+    padding: 28px 0 0 38px;
+    font-size: 0;
+}
+
+.probox-list>li {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #000;
+    border-left: 1px solid #707070;
+    letter-spacing: 0px;
+}
+
+.probox-list>li:first-child {
+    padding-left: 0;
+    border-left: none;
+}
+
+.probox-ul .new {
+    width: 48px;
+    height: 18px;
+    margin-right: 5px;
+    display: inline-block;
+    background: url(/images/pc/zocbo/voucher/spr-voucher.png) -1600px 0 no-repeat;
+    position: relative;
+    top: 4px;
+}
+
+.probox-ul .onetop {
+    width: 36px;
+    height: 13px;
+    margin-right: 5px;
+    display: inline-block;
+    background: url(/images/pc/zocbo/zocbo_rn/common/icon_hnum1.gif) 0 0 no-repeat;
+    position: relative;
+    top: 3px;
+}
+
+.voucher-subject-list {
+    margin: 35px 0 50px 0;
+}
+
+.voucher-subject-list>li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.voucher-subject-list>li:last-child {
+    margin-bottom: 0;
+}
+
+.voucher-subject-list>li .voucher-subject-box {
+    width: 100%;
+    height: 135px;
+    margin-bottom: 10px;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
+
+.voucher-subject-list>li .voucher-subject-box:last-child {
+    margin-bottom: 0;
+}
+
+.voucher-subject-list>li .voucher-subject-box>div {
+    display: flex;
+    height: 133px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-1nd-area {
+    width: 254px;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-2nd-area {
+    width: 255px;
+    background: #F6F6F6;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-3nd-area {
+    width: auto;
+}
+
+.voucher-subject-list>li .voucher-subject-box .icon-recommend {
+    position: absolute;
+    left: -40px;
+    top: -18px;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-1nd-area>p {
+    letter-spacing: 0px;
+    color: #000;
+    text-align: center;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    word-spacing: 0;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-1nd-area>p.day {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-1nd-area>p.price {
+    margin-top: 5px;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-1nd-area>p.details-price {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+.voucher-subject-list>li .voucher-subject-box.tpye1 .pray-info-1nd-area>p.price {
+    color: #548200;
+}
+
+.voucher-subject-list>li .voucher-subject-box.tpye2 .pray-info-1nd-area>p.price {
+    color: #034174;
+}
+
+.voucher-subject-list>li .voucher-subject-box.tpye3 .pray-info-1nd-area>p.price {
+    color: #4933BA;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-2nd-area>p {
+    letter-spacing: 0px;
+    color: #000;
+    text-align: center;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    word-spacing: 0;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-2nd-area>p.list-down {
+    padding-left: 22px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    position: relative;
+    align-self: center;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-2nd-area>p.list-down::before {
+    content: "";
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayGDwonBIG.png) no-repeat 0 50%;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-2nd-area>p.down-number {
+    margin-top: 5px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-2nd-area>p.details-down {
+    width: 175px;
+    height: 22px;
+    margin: 8px auto 0 auto;
+    background: #000;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.voucher-subject-list>li .voucher-subject-box.tpye1 .pray-info-2nd-area>p.down-number {
+    color: #548200;
+}
+
+.voucher-subject-list>li .voucher-subject-box.tpye2 .pray-info-2nd-area>p.down-number {
+    color: #034174;
+}
+
+.voucher-subject-list>li .voucher-subject-box.tpye3 .pray-info-2nd-area>p.down-number {
+    color: #4933BA;
+}
+
+.voucher-subject-list>li .voucher-subject-box .pray-info-3nd-area .sbj-checkbox-wrap {
+    width: 400px;
+    margin-left: 106px;
+    font-size: 0;
+}
+
+.voucher-subject-list>li .voucher-subject-box.tpye1 .pray-info-2nd-area>p.details-down {
+    background: #548200;
+}
+
+.voucher-subject-list>li .voucher-subject-box.tpye2 .pray-info-2nd-area>p.details-down {
+    background: #034174;
+}
+
+.voucher-subject-list>li .voucher-subject-box.tpye3 .pray-info-2nd-area>p.details-down {
+    background: #4933BA;
+}
+
+#voucher .sbj-checkbox-wrap .voucher-checkbox {
+    margin: 0 60px 18px 0;
+}
+
+#voucher .sbj-checkbox-wrap.line-more .voucher-checkbox {
+    margin: 0 60px 9px 0;
+}
+
+#voucher .sbj-checkbox-wrap .voucher-checkbox.gab-different {
+    margin-right: 28px;
+}
+
+#voucher .sbj-checkbox-wrap .voucher-checkbox.gab-different2 {
+    margin-right: 22px;
+}
+
+#voucher .sbj-checkbox-wrap .voucher-checkbox.gab-bottom-zero {
+    margin-bottom: 0;
+}
+
+/* 포인트충전 영역 */
+.voucher-point-contents>* {
+    box-sizing: border-box;
+}
+
+.voucher-point-contents>li {
+    width: 100%;
+    margin-bottom: 42px;
+    display: table;
+    position: relative;
+}
+
+.voucher-point-contents>li .icon-recommend {
+    position: absolute;
+    left: -27px;
+    top: 13px;
+}
+
+.voucher-point-contents>li:last-child {
+    margin-bottom: 0;
+}
+
+.voucher-point-contents>li>div {
+    height: 139px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.voucher-point-contents>li>div.img {
+    width: 751px;
+    height: 139px;
+}
+
+.voucher-point-contents>li>div.purchase {
+    width: auto;
+    text-align: right;
+}
+
+.voucher-point-contents>li>div.purchase input[type="checkbox"] {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0 none;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.voucher-point-contents>li>div.purchase label {
+    display: inline-block;
+    height: 16px;
+    padding-left: 30px;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    color: #000;
+    letter-spacing: -1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.voucher-point .voucher-checkbox label:before {
+    margin-top: 2px;
+}
+
+.voucher-point-contents>li>div.purchase label strong {
+    padding-left: 3px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+/* 이용권 메뉴영역 */
+.voucher-nav {
+    min-width: 1020px;
+    width: 100%;
+    height: 55px;
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #efefef;
+
+    ul {
+        width: 1020px;
+        margin: 0 auto;
+
+        >li {
+            width: 20%;
+            height: 55px;
+            float: left;
+            box-sizing: border-box;
+
+            &:first-child {
+                width: 202px;
+                border-left: 1px solid #d2d9de;
+            }
+
+            a {
+                display: block;
+                border-right: 1px solid #d2d9de;
+                font-size: 20px;
+                color: #0c233f;
+                line-height: 55px;
+                text-align: center;
+                font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+                font-weight: 400;
+                letter-spacing: -1px;
+
+                &:hover,
+                &.active {
+                    background: #3387c4;
+                    border: 1px solid #3387c4;
+                    border-top: none;
+                    border-bottom: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/* 이용권 가이드 */
+.zpayGBox {
+    padding: 25px 0 22px 40px;
+    margin: 50px auto 19px auto;
+    border: 1px solid #d9dfe3;
+}
+
+.zpayGBox .zpayGBlist>li {
+    margin-top: 7px;
+    font-size: 12px;
+    line-height: 27px;
+    color: #687b8a;
+}
+
+.zpayGBox .zpayGBlist>li:first-child {
+    margin-top: 0;
+}
+
+.zpayGBox .zpayGBlist>li .zGDpoint {
+    color: #2268c3;
+}
+
+.zpayGBox .zpayGBlist>li>dl {
+    overflow: hidden;
+}
+
+.zpayGBox .zpayGBlist>li>dl>dt {
+    padding: 0 5px 0 20px;
+    float: left;
+    clear: left;
+}
+
+.zpayGBox .zpayGBlist>li>dl>dd {
+    margin-left: 82px;
+}
+
+.zpayGBox .zpayGBlist>li.zpaySPR>dl>dd {
+    margin-left: 107px;
+}
+
+.zpayGBox .zpayGBlist>li.zpayPG1>dl>dd {
+    margin-left: 115px;
+}
+
+.zpayGBox .zpayGBlist>li>dl>dt,
+.zpayGBox .zpayGBlist>li>dl>dd {
+    font-size: 12px;
+    line-height: 21px;
+    color: #687b8a;
+}
+
+.zpayGBox .zpayGBlist>li>dl>dd a.zpayPgtxt {
+    font-weight: 600;
+    color: #3c6a8d;
+    display: inline-block;
+}
+
+.zpayGBox .zpayGBlist>li>dl>dd .zpGimg {
+    padding: 0 3px 0 7px;
+    margin-top: -2px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.zpayGBox .zpayGBlist>li.zpayGDwon>dl>dt {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayGDwon.gif) no-repeat 0 3px;
+}
+
+.zpayGBox .zpayGBlist>li.zpayGBarotest>dl>dt {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayGBarotest.gif) no-repeat 0 3px;
+}
+
+.zpayGBox .zpayGBlist>li.zpayGE>dl>dt {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayGE.gif) no-repeat 0 3px;
+}
+
+.zpayGBox .zpayGBlist>li.zpayGVD>dl>dt {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayGVD.gif) no-repeat 0 3px;
+}
+
+.zpayGBox .zpayGBlist>li.zpaySPR>dl>dt {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpaySPR.png) no-repeat 0 50%;
+}
+
+.zpayGBox .zpayGBlist>li.zpayPAmaster>dl>dt {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayPAmaster.png) no-repeat 0 2px;
+}
+
+.zpayGBox .zpayGBlist>li.zpayPG1>dl>dt {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayPrego1.png) no-repeat 0 2px;
+}
+
+.zpayGBox .zpayGBlist>li.zpayMTT>dl>dt {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayMTT.png) no-repeat 0 4px;
+}
+
+.zpayGBox .zpayGBlist>li.zpayprevious-freereading>dl>dt {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_previous_freereading.png) no-repeat 0 3px;
+}
+
+/* 이용권 공통 유틸버튼 */
+.zpayCombtn {
+    font-size: 0;
+    text-align: center;
+}
+
+.zpayCombtn>a {
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.zpayCombtn>a:first-child {
+    margin-left: 0;
+}
+
+/* 이용권 띠배너 */
+.rnpaySection2 {
+    width: 100%;
+    height: 101px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/rnpayBandimg.gif) no-repeat center top;
+}
+
+.rnpaySection3 {
+    width: 100%;
+    padding: 50px 0 64px 0;
+    background: #f5f7f9;
+    border-top: 1px solid #fff;
+}
+
+.rnpaySection3 .tmenu>li {
+    border: 1px solid #bec1c8;
+    letter-spacing: -1px;
+    background: #fff;
+    border-top: 0;
+    position: relative;
+}
+
+.rnpaySection3 .tmenu>li:first-child {
+    border-top: 1px solid #bec1c8;
+}
+
+.rnpaySection3 .tmenu>li.active {
+    border: 1px solid #637081;
+}
+
+.rnpaySection3 .tmenu dt span {
+    display: inline-block;
+    font-size: 16px;
+    color: #1b2d3c;
+    height: 43px;
+    
+    font-weight: bold;
+    line-height: 48px;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+}
+
+.rnpaySection3 .tmenu dt span.fstxt {
+    width: 43px;
+    min-height: 43px;
+    margin-right: 10px;
+    text-align: center;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/rnpaybar1x17.gif) no-repeat right center;
+}
+
+.rnpaySection3 .tmenu dt p {
+    font-size: 100%;
+    width: 88%;
+    color: #3a3a3a;
+}
+
+.rnpaySection3 .tmenu dt {
+    min-height: 43px;
+    background: #fff;
+    position: relative;
+}
+
+.rnpaySection3 .tmenu dt a {
+    display: block;
+    cursor: pointer;
+}
+
+.rnpaySection3 .tmenu dl.more-mode dt a {
+    cursor: pointer;
+}
+
+.rnpaySection3 .tmenu dl.more-mode dt em {
+    display: block;
+}
+
+.rnpaySection3 .tmenu dd {
+    padding: 20px 0 40px 0;
+    display: none;
+    border-top: 1px solid #637081;
+    background: #fff;
+}
+
+.rnpaySection3 .tmenu .qAlist>li {
+    width: 94%;
+    float: left;
+    position: relative;
+    font-size: 14px;
+    color: #545f6b;
+    line-height: 28px;
+    
+    word-spacing: 0;
+    letter-spacing: -1px;
+}
+
+.rnpaySection3 .tmenu .qAlist>li:first-child {
+    width: 43px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #1b2d3c;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 300;
+    word-spacing: 0;
+    text-align: center;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_qAlist.gif) no-repeat right 6px;
+}
+
+.rnpaySection3 .tmenu dd li b {
+    font-weight: 600;
+    font-size: 95%;
+    position: absolute;
+    left: 2.5em;
+    top: .6em;
+    color: #333;
+}
+
+.rnpaySection3 .tmenu li dt em {
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    right: 17px;
+    top: 18px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/arrow_up.gif) no-repeat;
+}
+
+.rnpaySection3 .tmenu li dt em.on {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/arrow_down.gif) no-repeat;
+}
+
+.rnpayPlus {
+    position: absolute;
+    right: 2px;
+    top: 10px;
+}
+
+.rnpaySection3 .tmenu>li .qAttl {
+    word-spacing: 0;
+    margin-bottom: 10px;
+}
+
+.rnpaySection3 .tmenu>li .qAttllist>li {
+    word-spacing: 0;
+}
+
+// 이용권 배너
+div[class^="zpaySpringBox"] {
+    .icon-recommend {
+        @include posa-tl(-18px, -12px);
+    }
+    &.top-banner {
+        margin:0;
+		position:absolute;
+		left:0;
+		top:170px;
+    }
+}
+
+/* 수프링 이용권 배너 */
+.zpaySpringBox {
+    width: 1020px;
+    height: 92px;
+    margin: 0 auto 0 auto;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_zpaySpring.jpg) no-repeat;
+    position: relative;
+}
+
+.zpaySpringBox .zpStxtA {
+    padding-left: 116px;
+    height: 92px;
+    display: table;
+}
+
+.zpaySpringBox .zpStxtA>li {
+    height: 92px;
+    padding-right: 21px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.zpaySpringBox .zpStxtA>li.li2.satWrap {
+    padding-right: 0px;
+    width: 510px;
+}
+
+.zpaySpringBox .zpStxtA>li:last-child {
+    padding-right: 0;
+}
+
+.zpaySpringBox .zpStxtA>li.li1 .ttl {
+    font-size: 23px;
+    color: #143236;
+    line-height: 35px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 500;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+
+.zpaySpringBox .zpStxtA>li.li1 .desc {
+    font-size: 15px;
+    color: #326e75;
+    line-height: 20px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    word-spacing: 0;
+    letter-spacing: -1px;
+}
+
+.zpaySpringBox .zpStxtA>li.li1 .desc a.descSer {
+    font-size: 12px;
+    color: #249ba9;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy {
+    margin-top: 2px;
+    display: table;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy>li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy>li.li1 {
+    width: 357px;
+    height: 60px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/info_zpaySpring.gif) no-repeat;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy.sat>li.li1 {
+    width: 510px;
+    height: 60px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/info_zpaySpring2.png) no-repeat;
+    background-size: 510px auto;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .Txt {
+    color: #196f79;
+    font-size: 12px;
+    float: left;
+    padding: 10px 25px;
+    line-height: 19px;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .Txt span {
+    display: inline-block;
+    background: #26acbc;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 1px;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .zSdwn {
+    float: right;
+    margin-right: 25px;
+    line-height: normal;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn {
+    height: 100%;
+    line-height: 55px;
+    padding-left: 25px;
+    margin-left: 19px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayGDwonBIG.gif) no-repeat 0 50%;
+    font-size: 12px;
+    color: #000;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn .zSdwnNumb {
+    padding-left: 4px;
+    font-size: 18px;
+    color: #0196a8;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 500;
+    word-spacing: 0;
+    letter-spacing: -1px;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .zSdwn .zSdwnNumb {
+    font-size: 23px;
+    vertical-align: middle;
+    line-height: 49px;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn .zSdwnNumb span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn .zSdwndesc {
+    padding-left: 13px;
+    color: #196f79;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+}
+
+.zpaySpringBox .zpStxtA>li.li2 .infozSbuy>li.li2>a {
+    padding-left: 9px;
+    font-size: 12px;
+    color: #249ba9;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.zpaySpringBox .zpStxtA>li.li3 .zSchkbox {
+    padding-left: 20px;
+}
+
+.zpaySpringBox .zpStxtA>li.li3 .springbnr {
+    position: absolute;
+    top: -13px;
+    left: 60px;
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: 13px;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+.zpaySpringBox .zpStxtA>li.li3 .zSchkbox input {
+    margin-right: 7px;
+}
+
+.zpaySpringBox .zpStxtA>li.li3 .zSchkbox label {
+    display: inline-block;
+    padding-left: 18px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/chbox_h14Tp2.png) no-repeat;
+    background-position: left 50%;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    cursor: pointer;
+}
+
+.zpaySpringBox .zpStxtA>li.li3 .zSchkbox label span {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+.zpaySpringBox .zpStxtA>li.li3 .zSchkbox input[type="checkbox"]:checked+label {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/chbox_h14Tp2on.png) no-repeat;
+    background-position: left 50%;
+}
+
+.zpaySpringBox .zpStxtA>li.li3 .zSchkbox input[type="checkbox"]:disabled+label {
+    background-position: left 50%;
+}
+
+.zpaySpringBox .zpSdesc {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #249cab;
+}
+
+.zpaySpringBox .zpSdesc .gab {
+    padding-left: 11px;
+}
+
+/* 예비고1 이용권 배너 */
+.zpaySpringBox3 .zpStxtA>li.li5 .zSchkbox input {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0 none;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+.zpaySpringBox3 .zpStxtA > li.li5 .zSchkbox label {
+    display: inline-block;
+    padding-left: 18px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/chbox_h14Tp2.png) no-repeat;
+    background-position: left 50%;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    cursor: pointer;
+}
+
+.zpaySpringBoxWrap {
+    margin: 50px 0 0 0;
+}
+
+.zpaySpringBoxWrap>div {
+    margin-bottom: 30px;
+}
+
+.zpaySpringBoxWrap>div:last-child {
+    margin-bottom: 0;
+}
+
+.zpaySpringBox2 {
+    width: 1020px;
+    height: 92px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_zpaySpring2.jpg) no-repeat;
+    position: relative;
+}
+
+.zpaySpringBox2 .zpStxtA {
+    padding-left: 116px;
+    height: 92px;
+    display: table;
+}
+
+.zpaySpringBox2 .zpStxtA::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 44px;
+    height: 22px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_tagnew.png)no-repeat;
+}
+
+.zpaySpringBox2 .zpStxtA>li {
+    height: 92px;
+    padding-right: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2.satWrap {
+    padding-right: 0px;
+    width: 510px;
+}
+
+.zpaySpringBox2 .zpStxtA>li:last-child {
+    padding-right: 0;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li1 .ttl {
+    font-size: 23px;
+    color: #143236;
+    line-height: 35px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 500;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li1 .desc {
+    font-size: 15px;
+    color: #326e75;
+    line-height: 20px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    word-spacing: 0;
+    letter-spacing: -1px;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li1 .desc a.descSer {
+    font-size: 12px;
+    color: #e63b1f;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy {
+    margin-top: 2px;
+    display: table;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy>li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy>li.li1 {
+    width: 357px;
+    height: 60px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/info_zpaySpring.gif) no-repeat;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy.sat>li.li1 {
+    width: 510px;
+    height: 60px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/info_zpaySpring3.png) no-repeat;
+    background-size: 510px auto;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .Txt {
+    color: #101010;
+    font-size: 12px;
+    float: left;
+    padding: 10px 25px;
+    line-height: 19px;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .Txt span {
+    display: inline-block;
+    background: #e63b1f;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 1px;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .zSdwn {
+    float: right;
+    margin-right: 25px;
+    line-height: normal;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn {
+    height: 100%;
+    line-height: 55px;
+    padding-left: 25px;
+    margin-left: 19px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayGDwonBIG.gif) no-repeat 0 50%;
+    font-size: 12px;
+    color: #000;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn .zSdwnNumb {
+    padding-left: 4px;
+    font-size: 18px;
+    color: #e63b1f;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 500;
+    word-spacing: 0;
+    letter-spacing: -1px;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .zSdwn .zSdwnNumb {
+    font-size: 23px;
+    vertical-align: middle;
+    line-height: 49px;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn .zSdwnNumb span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn .zSdwndesc {
+    padding-left: 13px;
+    color: #196f79;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li2 .infozSbuy>li.li2>a {
+    padding-left: 9px;
+    font-size: 12px;
+    color: #249ba9;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li3 .zSchkbox {
+    padding-left: 20px;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li3 .springbnr {
+    position: absolute;
+    top: -13px;
+    left: 52px;
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: 13px;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li3 .zSchkbox input {
+    margin-right: 7px;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li3 .zSchkbox label {
+    display: inline-block;
+    padding-left: 18px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/chbox_h14Tp2.png) no-repeat;
+    background-position: left 50%;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    cursor: pointer;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li3 .zSchkbox label span {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li3 .zSchkbox input[type="checkbox"]:checked+label {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/chbox_h14Tp2on.png) no-repeat;
+    background-position: left 50%;
+}
+
+.zpaySpringBox2 .zpStxtA>li.li3 .zSchkbox input[type="checkbox"]:disabled+label {
+    background-position: left 50%;
+}
+
+.zpaySpringBox2 .zpSdesc {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #249cab;
+}
+
+.zpaySpringBox2 .zpSdesc .gab {
+    padding-left: 11px;
+}
+
+/* 30일 이용권 배너 */
+.zpaySpringBox3 {
+    width: 1020px;
+    height: 92px;
+    margin: 0 auto 0 auto;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_zpaySpring3.jpg) no-repeat;
+    position: relative;
+}
+
+.zpaySpringBox3 .zpStxtA {
+    padding-left: 116px;
+    height: 92px;
+    display: table;
+}
+
+.zpaySpringBox3 .zpStxtA>li {
+    height: 92px;
+    padding-right: 21px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2.satWrap {
+    padding-right: 0px;
+    width: 540px;
+}
+
+.zpaySpringBox3 .zpStxtA>li:last-child {
+    padding-right: 0;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li1 .ttl {
+    font-size: 23px;
+    color: #143236;
+    line-height: 35px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 500;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li1 .desc {
+    font-size: 15px;
+    color: #ea5f00;
+    line-height: 20px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    word-spacing: 0;
+    letter-spacing: -1px;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li1 .desc a.descSer {
+    font-size: 12px;
+    color: #249ba9;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy {
+    margin-top: 2px;
+    display: table;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy>li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy>li.li1 {
+    width: 357px;
+    height: 60px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/info_zpaySpring.gif) no-repeat;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy.sat>li.li1 {
+    width: 510px;
+    height: 60px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/info_zpaySpring2.png) no-repeat;
+    background-size: 510px auto;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .Txt {
+    color: #196f79;
+    font-size: 12px;
+    float: left;
+    padding: 10px 25px;
+    line-height: 19px;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .Txt span {
+    display: inline-block;
+    background: #ea5f00;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 1px;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .zSdwn {
+    float: right;
+    margin-right: 25px;
+    line-height: normal;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn {
+    height: 100%;
+    line-height: 55px;
+    padding-left: 25px;
+    margin-left: 19px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_zpayGDwonBIG.gif) no-repeat 0 50%;
+    font-size: 12px;
+    color: #000;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn .zSdwnNumb {
+    padding-left: 4px;
+    font-size: 18px;
+    color: #ea5f00;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 500;
+    word-spacing: 0;
+    letter-spacing: -1px;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy.sat>li.li1 .zSdwn .zSdwnNumb {
+    font-size: 23px;
+    vertical-align: middle;
+    line-height: 49px;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn .zSdwnNumb span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy>li.li1 .zSdwn .zSdwndesc {
+    padding-left: 13px;
+    color: #196f79;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li2 .infozSbuy>li.li2>a {
+    padding-left: 9px;
+    font-size: 12px;
+    color: #249ba9;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li5 {
+    width: 164px;
+    text-align: center;
+    padding-left: 0;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li5 .zSchkbox {
+    padding-left: 20px;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li5 .springbnr {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    margin-left: -57px;
+    width: 114px;
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: 13px;
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li5 .zSchkbox input {
+    margin-right: 7px;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li5 .zSchkbox label {
+    display: inline-block;
+    padding-left: 18px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/chbox_h14Tp2.png) no-repeat;
+    background-position: left 50%;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    cursor: pointer;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li5 .zSchkbox label span {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li5 .zSchkbox input[type="checkbox"]:checked+label {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/chbox_h14Tp2on.png) no-repeat;
+    background-position: left 50%;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li5 .zSchkbox input[type="checkbox"]:disabled+label {
+    background-position: left 50%;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li5 .form-input-wrap {
+    justify-content: center;
+}
+
+.zpaySpringBox3 .zpStxtA>li.li5 .form-input-check label {
+    font-family: $spoqa;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+}
+
+.zpaySpringBox3 .zpSdesc {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #249cab;
+}
+
+.zpaySpringBox3 .zpSdesc .gab {
+    padding-left: 11px;
+}
+
+/* 2020 이용권구매 고정바 */
+#useBuybar.rn_2020useBuybar {
+    width: 100%;
+    height: 118px;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    bottom: 0;
+    background: #12304f;
+    border-top: 1px solid #183350;
+}
+
+#useBuybar.rn_2020useBuybar .ucnt {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#useBuybar.rn_2020useBuybar .ucnt .numb_select {
+    padding: 28px 0 7px 45px;
+    display: table;
+}
+
+#useBuybar.rn_2020useBuybar .ucnt .numb_select span {
+    display: table-cell;
+    font-size: 17px;
+    color: #fff;
+    line-height: 24px;
+    font-family: 'NanumBareunGothicLight', Sans-Serif;
+    letter-spacing: 0;
+    word-spacing: 0;
+    vertical-align: bottom;
+}
+
+#useBuybar.rn_2020useBuybar .ucnt .numb_select .numbS {
+    padding-right: 0;
+    color: #fff;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+#useBuybar.rn_2020useBuybar .numb_result {
+    padding-left: 45px;
+    display: table;
+}
+
+#useBuybar.rn_2020useBuybar .numb_result span {
+    padding-right: 0;
+    display: table-cell;
+    font-size: 30px;
+    color: #fff;
+    line-height: 38px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    word-spacing: 0;
+    vertical-align: bottom;
+}
+
+#useBuybar.rn_2020useBuybar .numb_result .numbR {
+    font-size: 30px;
+    line-height: 38px;
+    color: #fff;
+    font-weight: 500;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll {
+    width: 432px;
+    height: 108px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/uBbar1x108.gif) no-repeat 0 50%;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll .paymentToll_list {
+    padding-top: 16px;
+    text-align: right;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll .paymentToll_list>li {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #fff;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll .paymentToll_list>li:first-child {
+    margin-top: 0;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll .paymentToll_list>li .btnCom {
+    width: 140px;
+    height: 39px;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    line-height: 39px;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 500;
+    -webkit-box-shadow: 5px 5px #0c223c;
+    -moz-box-shadow: 5px 5px #0c223c;
+    box-shadow: 5px 5px #0c223c;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll .paymentToll_list>li .btnBasket {
+    margin-right: 8px;
+    background: #2a7bd0;
+    color: #fff;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll .paymentToll_list>li .btnBuy {
+    background: #fff;
+    color: #0d3157;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll_list>li input {
+    margin-right: 7px;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll_list>li label {
+    display: inline-block;
+    height: 20px;
+    padding-left: 18px;
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/chbox_h14.png) no-repeat left top;
+    background-position: left bottom;
+    font-size: 15px;
+    line-height: 26px;
+    color: #fff;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 300;
+    letter-spacing: 0;
+    word-spacing: 0;
+    cursor: pointer;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll_list>li input[type="checkbox"]:checked+label {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/chbox_h14on.png) no-repeat;
+    background-position: left bottom;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll_list>li input[type="checkbox"]:disabled+label {
+    background-position: left bottom;
+}
+
+#useBuybar.rn_2020useBuybar .paymentToll_list>li .lookinner {
+    margin: 4px 0 0 4px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.userbuy_body {
+    background: #f8f8f8;
+}
+
+.userbuy_wpop.rn_buypage {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.userbuy_wpop.rn_buypage .rn_matters_note {
+    margin: 0;
+    height: auto;
+    border: none;
+}
+
+/* 이용권구매 고정바 */
+#useBuybar {
+    width: 100%;
+    min-height: 95px;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    bottom: 0;
+    background: #3579d4;
+}
+
+.ucnt {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ucnt .numb_select {
+    padding: 12px 0 0 45px;
+    display: table;
+}
+
+.ucnt .numb_select span {
+    display: table-cell;
+    font-size: 15px;
+    color: #fff;
+    line-height: 24px;
+    font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    vertical-align: bottom;
+}
+
+.ucnt .numb_select .numbS {
+    padding-right: 6px;
+    color: #fcff00;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.numb_result {
+    padding-left: 45px;
+    display: table;
+}
+
+.numb_result span {
+    padding-right: 6px;
+    display: table-cell;
+    font-size: 30px;
+    color: #fff;
+    line-height: 38px;
+    font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    vertical-align: bottom;
+}
+
+.numb_result .numbR {
+    font-size: 35px;
+    line-height: 38px;
+    color: #fcff00;
+    font-weight: bold;
+}
+
+.paymentToll {
+    position: absolute;
+    right: 0;
+    top: 17px;
+}
+
+.paymentToll .paymentToll_list>li {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.paymentToll .paymentToll_list>li:first-child {
+    margin-top: 0;
+}
+
+.paymentToll .paymentToll_list>li .btnCom {
+    width: 133px;
+    height: 33px;
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.paymentToll .paymentToll_list>li .btnBasket {
+    margin-right: 8px;
+    background: #f9f9f9;
+    color: #282e38;
+}
+
+.paymentToll .paymentToll_list>li .btnBuy {
+    background: #f74966;
+    color: #fff;
+}
+
+.paymentToll_list>li input {
+    margin-right: 7px;
+}
+
+.announcement-box {
+    padding: 29px 0 29px 168px;
+    margin-bottom: 30px;
+    position: relative;
+    background: #eef4f9;
+    border: 1px solid #dae3ea;
+
+    &:before {
+        @include ct;
+        width: 84px;
+        height: 71px;
+        position: absolute;
+        left: 47px;
+        top: 33px;
+        background: url(/images/pc/zocbo/zocbo_rn/sub/common/announcementimg.jpg) no-repeat;
+    }
+
+    &.clude {
+        padding: 29px 0 50px 150px !important;
+    }
+
+    &.clude:before {
+        @include ct;
+        width: 84px;
+        height: 71px;
+        position: absolute;
+        left: 35px;
+        top: 33px;
+        background: url(/images/pc/zocbo/zocbo_rn/sub/common/announcementimg.jpg) no-repeat;
+    }
+
+    .ttl-announcement {
+        margin-top: 10px;
+        font-family: 'Spoqa Han Sans Neo';
+        font-size: 26px;
+        line-height: 33px;
+        color: #195FB3;
+        font-weight: 700;
+        word-spacing: 0;
+    }
+
+    .desc-announcement {
+        margin-top: 6px;
+        font-family: 'Spoqa Han Sans Neo';
+        font-size: 14px;
+        line-height: 140%;
+        color: #000;
+        font-weight: 400;
+        word-spacing: 0;
+    }
+
+    .desc-announcement strong {
+        font-weight: 700;
+    }
+}
+
+.announcement-box2 {
+    padding: 29px 0 29px 164px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 0;
+    right: 90px;
+
+    &:before {
+        @include ct;
+        width: 84px;
+        height: 71px;
+        position: absolute;
+        left: 47px;
+        top: 33px;
+        background: url(/images/pc/zocbo/zocbo_rn/sub/common/clude.png) no-repeat;
+    }
+
+    &:after {
+        @include ct;
+        width: 1px;
+        height: 150px;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        background: #dae3ea;
+    }
+
+    .ttl-announcement {
+        margin-top: 10px;
+        font-family: 'Spoqa Han Sans Neo';
+        font-size: 26px;
+        line-height: 33px;
+        color: #195FB3;
+        font-weight: 700;
+        word-spacing: 0;
+    }
+
+    .desc-announcement {
+        margin-top: 6px;
+        font-family: 'Spoqa Han Sans Neo';
+        font-size: 14px;
+        line-height: 140%;
+        color: #000;
+        font-weight: 400;
+        word-spacing: 0;
+    }
+
+    .desc-announcement strong {
+        font-weight: 700;
+    }
+}
+
+.announcement-doublebox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-bottom: 146px;
+
+    .doublebox-item {
+        width: 496px;
+        height: 140px;
+        padding: 19px 0 0 143px;
+        position: relative;
+        background: #f2eef9;
+        border: 1px solid #e6dff1;
+
+        &:first-child {
+            background: #eef4f9;
+            border: 1px solid #dae3ea;
+
+            &:before {
+                @include ct;
+                width: 84px;
+                height: 71px;
+                position: absolute;
+                left: 33px;
+                top: 33px;
+                background: url(/images/pc/zocbo/zocbo_rn/sub/common/announcementimg.jpg) no-repeat;
+            }
+
+            .ttl-announcement {
+                color: #195FB3;
+            }
+        }
+
+        &:before {
+            @include ct;
+            width: 74px;
+            height: 72px;
+            position: absolute;
+            left: 38px;
+            top: 30px;
+            background: url(/images/pc/zocbo/zocbo_rn/sub/common/announcement-prego1img.jpg) no-repeat;
+        }
+
+        &.img {
+            padding: 0;
+            border: none;
+            &:before {
+                display: none;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .ttl-announcement {
+            font-family: 'Spoqa Han Sans Neo';
+            font-size: 24px;
+            line-height: 33px;
+            color: #7148b7;
+            font-weight: 500;
+        }
+
+        .desc-announcement {
+            margin-top: 6px;
+            font-family: 'Spoqa Han Sans Neo';
+            font-size: 14px;
+            line-height: 20px;
+            color: #000;
+            font-weight: 400;
+        }
+
+        .desc-announcement strong {
+            font-weight: 700;
+        }
+
+    }
+
+}
+
+/* 특별이용권 */
+.voucher-event-wrap {
+    margin-top: 42px;
+    margin-bottom: 44px;
+    .item {
+        position: relative;
+        display: flex;
+        height: 92px;
+        background-color: #f8e5d2;
+        border: 1px solid #EA5F00;
+        .icon-recommend {
+            @include posa-tl(-18px, -12px);
+        }
+        .voucher-event {
+            &-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: auto 0 0;
+                width: 92px;
+                border-right: 1px solid #EA5F00;
+                position: relative;
+                &:before {
+                    @include ct;
+                    width: 1px;
+                    height: 100%;
+                    @include posa-tr();
+                    background-color: #fff;
+                }
+                &:after {
+                    @include ct;
+                    background-image: url("data:image/svg+xml,%3Csvg width='175' height='174' viewBox='0 0 175 174' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_94_23)'%3E%3Cpath d='M172.08 50.39C172.08 23.67 150.42 2 123.69 2C96.96 2 75.3 23.66 75.3 50.39C75.3 77.12 96.96 98.78 123.69 98.78C150.42 98.78 172.08 77.12 172.08 50.39Z' fill='%23EA5F00'/%3E%3Cpath d='M172.08 50.39C172.08 23.67 150.42 2 123.69 2C96.96 2 75.3 23.66 75.3 50.39C75.3 77.12 96.96 98.78 123.69 98.78C150.42 98.78 172.08 77.12 172.08 50.39Z' stroke='%233E3A39' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M160.97 48.4999C159.93 27.9099 142.39 12.0699 121.8 13.1099C101.21 14.1499 85.37 31.6899 86.41 52.2799C87.45 72.8699 104.99 88.7099 125.58 87.6699C146.17 86.6299 162.01 69.0899 160.97 48.4999Z' fill='white'/%3E%3Cpath d='M127.96 87.4699C148.44 85.1099 163.13 66.5999 160.77 46.1199C158.41 25.6399 139.89 10.9499 119.42 13.3099C98.9399 15.6699 84.2499 34.1799 86.6099 54.6599' stroke='%233E3A39' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M124.56 50.22C123.14 51.64 120.84 51.64 119.43 50.22L106.23 37.02C104.81 35.6 104.81 33.3 106.23 31.89C107.65 30.47 109.94 30.47 111.36 31.89L124.56 45.09C125.98 46.51 125.98 48.81 124.56 50.22Z' fill='%23DCDDDD'/%3E%3Cpath d='M124.56 50.22C123.14 51.64 120.84 51.64 119.43 50.22L106.23 37.02C104.81 35.6 104.81 33.3 106.23 31.89C107.65 30.47 109.94 30.47 111.36 31.89L124.56 45.09C125.98 46.51 125.98 48.81 124.56 50.22Z' stroke='%233E3A39' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M144.43 50.13C144.43 52.72 142.33 54.81 139.75 54.81H128.38C125.79 54.81 123.7 52.71 123.7 50.13C123.7 47.55 125.79 45.45 128.38 45.45H139.75C142.34 45.45 144.43 47.55 144.43 50.13Z' fill='%23DCDDDD'/%3E%3Cpath d='M144.43 50.13C144.43 52.72 142.33 54.81 139.75 54.81H128.38C125.79 54.81 123.7 52.71 123.7 50.13C123.7 47.55 125.79 45.45 128.38 45.45H139.75C142.34 45.45 144.43 47.55 144.43 50.13Z' stroke='%233E3A39' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M95.42 50.1299C95.42 49.0299 94.53 48.1399 93.43 48.1399C92.33 48.1399 91.45 49.0299 91.45 50.1299C91.45 51.2299 92.34 52.1199 93.43 52.1199C94.52 52.1199 95.42 51.2299 95.42 50.1299Z' fill='%233E3A39'/%3E%3Cpath d='M155.93 50.1299C155.93 49.0299 155.04 48.1399 153.94 48.1399C152.84 48.1399 151.95 49.0299 151.95 50.1299C151.95 51.2299 152.84 52.1199 153.94 52.1199C155.04 52.1199 155.93 51.2299 155.93 50.1299Z' fill='%233E3A39'/%3E%3Cpath d='M130.6 50.13C130.6 46.31 127.5 43.22 123.69 43.22C119.88 43.22 116.78 46.32 116.78 50.13C116.78 53.94 119.88 57.04 123.69 57.04C127.5 57.04 130.6 53.94 130.6 50.13' fill='%23EA5F00'/%3E%3Cpath d='M124.801 56.9447C128.568 56.3332 131.126 52.7838 130.515 49.0168C129.903 45.2498 126.354 42.6918 122.587 43.3032C118.82 43.9147 116.262 47.4641 116.873 51.2311C117.485 54.9981 121.034 57.5562 124.801 56.9447Z' stroke='%233E3A39' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M130.92 74.3799H2V171.76H130.92V74.3799Z' fill='white'/%3E%3Cpath d='M130.92 74.3799H2V171.76H130.92V74.3799Z' stroke='%233E3A39' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M143 62.3101H14.08V159.69H143V62.3101Z' fill='white'/%3E%3Cpath d='M143 62.3101H14.08V159.69H143V62.3101Z' stroke='%233E3A39' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M34.96 88.8001H14.08V62.3101H142.99V88.8001H46.48' fill='%23F8E5D2'/%3E%3Cpath d='M34.96 88.8001H14.08V62.3101H142.99V88.8001H46.48' stroke='%233E3A39' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M34.16 71.3801C31.58 71.3801 29.49 69.2901 29.49 66.7101V55.5401C29.49 52.9601 31.58 50.8701 34.16 50.8701C36.74 50.8701 38.82 52.9601 38.82 55.5401V66.7101C38.82 69.2901 36.73 71.3801 34.16 71.3801Z' fill='white'/%3E%3Cpath d='M34.16 71.3801C31.58 71.3801 29.49 69.2901 29.49 66.7101V55.5401C29.49 52.9601 31.58 50.8701 34.16 50.8701C36.74 50.8701 38.82 52.9601 38.82 55.5401V66.7101C38.82 69.2901 36.73 71.3801 34.16 71.3801Z' stroke='%233E3A39' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M122.91 71.3801C120.33 71.3801 118.24 69.2901 118.24 66.7101V55.5401C118.24 52.9601 120.33 50.8701 122.91 50.8701C125.49 50.8701 127.58 52.9601 127.58 55.5401V66.7101C127.58 69.2901 125.49 71.3801 122.91 71.3801Z' fill='white'/%3E%3Cpath d='M122.91 71.3801C120.33 71.3801 118.24 69.2901 118.24 66.7101V55.5401C118.24 52.9601 120.33 50.8701 122.91 50.8701C125.49 50.8701 127.58 52.9601 127.58 55.5401V66.7101C127.58 69.2901 125.49 71.3801 122.91 71.3801Z' stroke='%233E3A39' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M26.21 112.77H34.9C37.34 112.77 39.46 113.27 41.28 114.26C43.09 115.25 44.49 116.65 45.46 118.43C46.43 120.22 46.92 122.27 46.92 124.58C46.92 126.89 46.43 128.95 45.46 130.73C44.49 132.51 43.09 133.9 41.28 134.88C39.47 135.86 37.34 136.36 34.9 136.36H26.21V112.77V112.77ZM34.98 131.7C37.14 131.7 38.84 131.08 40.07 129.83C41.3 128.58 41.91 126.83 41.91 124.58C41.91 122.33 41.3 120.57 40.07 119.31C38.84 118.06 37.15 117.43 34.98 117.43H31.21V131.7H34.98Z' fill='%233E3A39'/%3E%3Cpath d='M61.64 122.87H51.11V127.21H61.64V122.87Z' fill='%233E3A39'/%3E%3Cpath d='M66.34 112.77H75.03C77.47 112.77 79.59 113.27 81.41 114.26C83.22 115.25 84.62 116.65 85.59 118.43C86.56 120.22 87.05 122.27 87.05 124.58C87.05 126.89 86.56 128.95 85.59 130.73C84.62 132.51 83.23 133.9 81.41 134.88C79.59 135.86 77.47 136.36 75.03 136.36H66.34V112.77V112.77ZM75.11 131.7C77.27 131.7 78.97 131.08 80.2 129.83C81.43 128.58 82.04 126.83 82.04 124.58C82.04 122.33 81.42 120.57 80.2 119.31C78.97 118.06 77.28 117.43 75.11 117.43H71.34V131.7H75.11Z' fill='%233E3A39'/%3E%3Cpath d='M103.52 131.79H94.83L93.26 136.36H88.09L96.78 112.77H101.98L110.67 136.36H105.09L103.52 131.79V131.79ZM101.98 127.22L99.17 119L96.36 127.22H101.97H101.98Z' fill='%233E3A39'/%3E%3Cpath d='M122.47 128.95V136.36H117.47V128.95L109.08 112.77H114.8L120.19 123.91L125.55 112.77H130.86L122.47 128.95Z' fill='%233E3A39'/%3E%3Cpath d='M123.69 21.8599C124.79 21.8599 125.67 20.9699 125.67 19.8699C125.67 18.7699 124.78 17.8799 123.69 17.8799C122.6 17.8799 121.7 18.7699 121.7 19.8699C121.7 20.9699 122.59 21.8599 123.69 21.8599Z' fill='%233E3A39'/%3E%3Cpath d='M43.07 88.78C43.07 87.55 42.07 86.55 40.84 86.55C39.61 86.55 38.61 87.55 38.61 88.78C38.61 90.01 39.61 91.01 40.84 91.01C42.07 91.01 43.07 90.01 43.07 88.78Z' fill='%233E3A39'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_94_23'%3E%3Crect width='174.08' height='173.77' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 53px;
+                height: 52px;
+                }
+            }
+            &-desc {
+                flex: auto;
+                -webkit-box-shadow: inset 4px 0px 0px 0px #EDCEAF; 
+                box-shadow: inset 4px 0px 0px 0px #EDCEAF;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 25px 0 20px;
+                .title {
+                    span {
+                        font-family: $spoqa;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #ea5f00;
+                    }
+                    strong {
+                        font-size: 23px;
+                        line-height: 36px;
+                        color: #143236;
+                        font-weight: 700;
+                    }
+                }
+                .detail {
+                    width: 520px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: 1px solid #efd2b5;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    padding: 11px 25px;
+                    box-shadow: 3px 4px 0px 0px rgba(122, 62, 62, 0.1);
+                    p {
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #101010;
+                    }
+                    .markup {
+                        background-color: #ea5f00;
+                        font-weight: 700;
+                        color: #fff;
+                        padding: 0 3px;
+                    }
+                    .download {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ea5f00;
+                        font-family: $spoqa;
+                        &:before {
+                            @include ct;
+                            width: 14px;
+                            height: 18px;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='14px' height='18px'%3E%3Cpath fill-rule='evenodd' fill='rgb(38, 38, 38)' d='M0.0,17.999 L0.0,16.999 L13.999,16.999 L13.999,17.999 L0.0,17.999 ZM7.328,13.620 L6.999,13.949 L6.999,13.999 L6.949,13.999 L6.621,14.328 L6.499,14.206 L6.378,14.328 L6.49,13.999 L5.999,13.999 L5.999,13.949 L5.671,13.620 L5.792,13.499 L1.671,9.378 L2.378,8.671 L5.999,12.292 L5.999,0.0 L6.999,0.0 L6.999,12.292 L10.621,8.671 L11.328,9.378 L7.206,13.499 L7.328,13.620 Z'/%3E%3C/svg%3E");
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: 100%;
+                        }
+                        span {
+                            font-family: $malgun;
+                            font-size: 12px;
+                            color: #000;
+                            margin-left: 10px;
+                        }
+                        strong {
+                            margin-left: 6px;
+                            font-size: 24px;
+                            font-weight: 700;
+                        }
+                        em {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            &-price {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex: auto 0 0;
+                width: 165px;
+                background-color: #ea5f00;
+                border-left: 1px solid #fff;
+                position: relative;
+                .label {
+                    @include posa-tl(-13px, 50%);
+                    transform: translateX(-50%);
+                    &.voucher-alert {
+                        display: block;
+                        background-color: #000;
+                        width: 114px;
+                        text-align: center;
+                        height: 26px;
+                        line-height: 26px;
+                        padding: 0 0;
+                        font-family: $spoqa;
+                        font-size: 15px;
+                        color: #fff;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+.form-input-wrap {
+    display: flex;
+    .form-input-check {
+        & + .form-input-check {
+            margin-left: 10px;
+        }
+    }
+}
+.form-input-check {
+    input {
+        background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='13' height='13' stroke='white' stroke-opacity='0.6'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        appearance: none !important;
+        &[type=checkbox] {
+            width: 14px;
+            height: 14px;
+            &:checked {
+                background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.3433 1L5.215 8.57697L1.63333 4.99557L0 6.74972L5.25 12L14 2.71761L12.3433 1Z' fill='white'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+    label {
+        font-size: 12px;
+        color: #fff;
+    }
+}
+.price {
+    font-family: $spoqa;
+    font-size: 30px;
+    color: #fff;
+    em {
+        font-size: 20px;
+    }
+}

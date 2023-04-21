@@ -1,0 +1,4636 @@
+@charset "UTF-8";
+/*--------------------------------------------------
+			 m_popup
+--------------------------------------------------*/
+.m_popup_wrap {
+  width: 360px;
+  margin-left: -442px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 426px;
+  z-index: 99;
+}
+
+.m_popup_cnt {
+  width: 360px;
+  position: relative;
+}
+
+.m_popbot {
+  width: 100%;
+  height: 28px;
+  background: #ccc;
+}
+
+.todaychk {
+  overflow: hidden;
+}
+
+.todaychk > li:first-child {
+  padding: 0 0 0 10px;
+  float: left;
+}
+
+.todaychk > li {
+  padding-right: 10px;
+  font-size: 11px;
+  line-height: 28px;
+  text-align: right;
+  letter-spacing: -1px;
+}
+
+/*--------------------------------------------------
+			 레이어팝업
+--------------------------------------------------*/
+#wrapper .layer_open {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+#wrapper .com_Wpop {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+}
+
+#wrapper .com_Wpop > div {
+  position: relative;
+}
+
+#wrapper .comPopup {
+  border: 1px solid #3f3f3f;
+  position: relative;
+}
+
+#wrapper .comPopup .pop_header {
+  width: 100%;
+  height: 49px;
+  background: #3f3f3f;
+}
+
+#wrapper .comPopup .pop_header .ttl {
+  padding-left: 21px;
+  font-size: 15px;
+  line-height: 52px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 400;
+}
+
+#wrapper .comPopup .pop_desc {
+  padding: 7px 0 8px 21px;
+  background: #3579d4;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+
+#wrapper .comPopup .pop_desc_bot {
+  padding: 7px 0 8px 21px;
+  background: #3579d4;
+  font-size: 11px;
+  line-height: 18px;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+#wrapper .comPopup .pop_cnt {
+  padding: 20px 22px 27px 22px;
+  background: #fff;
+}
+
+#wrapper .comPopup .pop_cnt .pop_cnt_ttl {
+  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3579d4;
+  font-weight: bold;
+}
+
+#wrapper .comPopup .popClose {
+  position: absolute;
+  right: 18px;
+  top: 19px;
+}
+
+#wrapper .com_Wpop .infotable {
+  margin-bottom: 0;
+}
+
+#wrapper .com_Wpop .infotable thead th {
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+#wrapper .com_Wpop .infotable td {
+  padding: 5px 12px 5px 12px;
+  letter-spacing: -1px;
+}
+
+#wrapper .tl_left12 {
+  text-align: left !important;
+  padding-left: 12px !important;
+}
+
+#wrapper .pop_comlist > li {
+  margin-top: 20px;
+}
+
+#wrapper .pop_comlist > li:first-child {
+  margin-top: 0px;
+}
+
+#wrapper .pop_comlist > li .ttl {
+  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3579d4;
+  font-weight: bold;
+}
+
+#wrapper .layer-open {
+  overflow: hidden;
+}
+
+#wrapper .dimfull2 {
+  position: absolute;
+  z-index: 998;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: none;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blank.png) repeat;
+}
+
+/*--------------------------------------------------
+			 팝업
+--------------------------------------------------*/
+.compopup2 {
+  border: 3px solid #515560;
+  position: relative;
+  background: #fff;
+}
+
+.compopup2 .pop_ttl {
+  height: 30px;
+  padding-left: 11px;
+  background: #515560;
+  font-size: 12px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.compopup2 .pop_cnt {
+  padding: 22px 20px 17px 19px;
+}
+
+.compopup2 .popClose {
+  position: absolute;
+  right: 11px;
+  top: 9px;
+}
+
+.compopup2 .popClose img {
+  vertical-align: top;
+}
+
+.compopup2 .botbtn {
+  padding-top: 10px;
+}
+
+.grade_type {
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.grade_type > li {
+  margin: 0 0 0 10px;
+  float: left;
+  display: inline;
+  font-size: 12px;
+  line-height: 16px;
+  color: #858585;
+}
+
+.grade_type > li:first-child {
+  margin-left: 0;
+}
+
+.elemGuide_popup {
+  position: relative;
+  background: #fff;
+}
+
+.elemGuide_popup .pop_ttl {
+  height: 69px;
+  padding-left: 42px;
+  position: relative;
+  font-size: 24px;
+  line-height: 69px;
+  color: #fff;
+  font-weight: bold;
+  background: #515560 url(https://www.zocbo.com/ZocboElem/images/sub/bg_elemG_top.gif) repeat-x 0 100%;
+}
+
+.elemGuide_popup .pop_cnt {
+  padding: 40px 35px 49px 44px;
+  border: 1px solid #dedede;
+  border-top: none;
+  display: none;
+}
+
+.pop_cntul {
+  width: 690px;
+  margin: 0 auto;
+}
+
+.pop_cntul > li {
+  margin-top: 50px;
+}
+
+.pop_cntul > li:first-child {
+  margin-top: 0;
+}
+
+.pop_cntul > li .ttl {
+  font-size: 22px;
+  line-height: 25px;
+  color: #333;
+  font-weight: bold;
+}
+
+.pop_cntul > li .desc {
+  margin-top: 9px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #717274;
+}
+
+.pop_cntul > li .desc_cntA {
+  margin-top: 17px;
+}
+
+.pop_cntul > li .desc_cntA img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.elemG_tab {
+  position: absolute;
+  right: 0;
+  top: 27px;
+  z-index: 99;
+}
+
+.elemG_tab > li {
+  width: 93px;
+  float: left;
+  margin-left: 1px;
+}
+
+.elemG_tab > li:first-child {
+  margin-left: 0;
+}
+
+.elemG_tab > li > a {
+  width: 93px;
+  height: 40px;
+  display: block;
+  border-bottom: 2px solid #fe697e;
+  font-size: 18px;
+  line-height: 42px;
+  color: #fff;
+  text-align: center;
+  background: #363940;
+  font-weight: normal;
+}
+
+.elemG_tab > li.on > a {
+  width: 89px;
+  height: 47px;
+  line-height: 46px;
+  margin-top: -9px;
+  background: #fff;
+  border: 2px solid #fe697e;
+  border-bottom: 2px solid #fff;
+  color: #fe697e;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------
+			 리뉴얼 팝업
+--------------------------------------------------*/
+.rTGPopdiv {
+  margin-left: -735px;
+  position: absolute;
+  left: 50% !important;
+  top: 480px;
+  z-index: 99;
+}
+
+.rTGPopdiv_Ther {
+  top: 34px;
+}
+
+.rTGPopdiv_Ther.subRP {
+  top: 0;
+}
+
+.rTGPopdiv > div {
+  margin-top: 13px;
+}
+
+.rTGPopdiv > div:first-child {
+  margin-top: 0;
+}
+
+/*.rTGPopdiv .rTGPopupWrap {
+	-webkit-animation:joinGift2 0.8s infinite ease-in-out; animation:joinGift 0.8s infinite ease-in-out;
+}*/
+.rTGPopupWrap.hakPop {
+  position: absolute;
+  left: 175px;
+  top: 480px;
+  z-index: 99;
+  -webkit-animation: joinGift2 0.8s infinite ease-in-out;
+  animation: joinGift 0.8s infinite ease-in-out;
+}
+
+.rTGPopupWrap.zbElemPop {
+  position: absolute;
+  left: 175px;
+  top: 27px;
+  z-index: 99;
+  -webkit-animation: joinGift2 0.8s infinite ease-in-out;
+  animation: joinGift 0.8s infinite ease-in-out;
+}
+
+.rTGPopupWrap > div {
+  position: relative;
+}
+
+.rTGPopupWrap > div .lyClose {
+  position: absolute;
+  right: 8px;
+  bottom: -4px;
+}
+
+.rTGPopupWrap > div .todayLDiv {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  font-family: 'Dotum', 'Arial', sans-serif;
+  font-size: 11px;
+  line-height: 13px;
+  color: #979797;
+  letter-spacing: -1px;
+  word-spacing: 0;
+}
+
+.rTGPopupWrap > div .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.rTGPopupWrap > div .todayLDiv label {
+  display: inline-block;
+  margin: 5px 0 0 13px;
+  height: 13px;
+  line-height: 13px;
+  padding-left: 19px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+  cursor: pointer;
+}
+
+.rTGPopupWrap > div .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+/*--------------------------------------------------
+			 공지팝업
+--------------------------------------------------*/
+.cTypePopdiv {
+  position: absolute;
+  left: 175px;
+  top: 480px;
+  z-index: 99;
+}
+
+.cTypePopdiv > div {
+  margin-top: 10px;
+}
+
+.cTypePopdiv > div:first-child {
+  margin-top: 0;
+}
+
+.mType.noticePop {
+  width: 202px !important;
+}
+
+.cType.noticePop {
+  -webkit-animation: joinGift2 0.8s infinite ease-in-out;
+  animation: joinGift 0.8s infinite ease-in-out;
+}
+
+.cType.hakPop {
+  position: absolute;
+  left: 175px;
+  top: 480px;
+  z-index: 99;
+  -webkit-animation: joinGift2 0.8s infinite ease-in-out;
+  animation: joinGift 0.8s infinite ease-in-out;
+}
+
+.cType.zbElemPop {
+  position: absolute;
+  left: 175px;
+  top: 27px;
+  z-index: 99;
+  -webkit-animation: joinGift2 0.8s infinite ease-in-out;
+  animation: joinGift 0.8s infinite ease-in-out;
+}
+
+.cType > div {
+  position: relative;
+}
+
+.cType > div .lyClose {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.cType > div .todayLDiv {
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  text-align: center;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  word-spacing: 0;
+}
+
+.cType > div .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.cType > div .todayLDiv label {
+  display: inline-block;
+  height: 13px;
+  padding-left: 19px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_Blue.jpg) no-repeat left top;
+  font-size: 11px;
+  line-height: 13px;
+  color: #3d6a92;
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+
+.cType > div .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+.wColorPop.cType > div .todayLDiv label {
+  color: #fff;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_BR.jpg) no-repeat left top;
+}
+
+/*--------------------------------------------------
+			 비밀번호 변경팝업
+--------------------------------------------------*/
+.pwchgPopupWrap {
+  width: 464px;
+  height: 509px;
+  margin-left: -232px;
+  position: absolute;
+  left: 50%;
+  top: 99px;
+  z-index: 9999;
+}
+
+.pwchgPopupDiv {
+  width: 464px;
+  height: 509px;
+  position: relative;
+}
+
+.day30none {
+  width: 231px;
+  height: 61px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+}
+
+.pwchgPopupClose {
+  width: 233px;
+  height: 61px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+}
+
+.pwchgdimfix {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 9997;
+  opacity: 0.5;
+  filter: Alpha(opacity=50);
+  background: #000;
+  display: none;
+}
+
+/*--------------------------------------------------
+			 바로테스트 체험 팝업
+--------------------------------------------------*/
+.baroTEPop > div .todayLDiv label {
+  color: #000;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+}
+
+/*--------------------------------------------------
+			 학평 팝업
+--------------------------------------------------*/
+.hakPop > div .todayLDiv label {
+  color: #445e7b;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+}
+
+/*--------------------------------------------------
+			 이용권 구매 팝업
+--------------------------------------------------*/
+.settlementPop.cType {
+  position: absolute;
+  left: 175px;
+  top: 50px;
+  z-index: 99;
+}
+
+.settlementPop > div .todayLDiv label {
+  color: #fff;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_BR.jpg) no-repeat left top;
+}
+
+.cTypePop.settlementPop > div .todayLDiv label {
+  color: #000;
+}
+
+/*--------------------------------------------------
+			 임시점검팝업
+--------------------------------------------------*/
+.temporaryPop {
+  width: 404px;
+  height: 369px;
+  margin: 0 0 0 105px;
+  position: absolute;
+  left: 50%;
+  top: 29px;
+  z-index: 999;
+}
+
+.temporaryPop .tpPcnt {
+  width: 398px;
+  height: 363px;
+  position: relative;
+  border: 3px solid #00aeef;
+  background: #fff;
+}
+
+.temporaryPop .tpPcnt .lyClose {
+  position: absolute;
+  right: 14px;
+  top: 11px;
+}
+
+.temporaryPop .tpPcnt .tpP_txtA {
+  width: 316px;
+  padding-top: 54px;
+  margin: 0 auto;
+}
+
+.temporaryPop .tpPcnt .tpP_txtA .ttl {
+  font-size: 28px;
+  padding-bottom: 10px;
+  color: #00aeef;
+  line-height: 34px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 400;
+  border-bottom: 1px solid #c7c7c7;
+  text-align: center;
+}
+
+.temporaryPop .tpPcnt .tpP_txtA .desclist {
+  margin-top: 28px;
+}
+
+.temporaryPop .tpPcnt .tpP_txtA .desclist > li {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666;
+  text-align: center;
+}
+
+.temporaryPop .tpPcnt .tpP_txtA .desclist > li:first-child {
+  margin-top: 0;
+}
+
+.temporaryPop .tpPcnt .tpP_txtA .desclist > li.todayli {
+  margin-top: 31px;
+}
+
+/*--------------------------------------------------
+			 추석연휴팝업
+--------------------------------------------------*/
+.chsPopupWrap {
+  width: 258px;
+  margin-left: 299px;
+  position: absolute;
+  left: 50%;
+  top: 38px;
+  z-index: 999;
+}
+
+.chsPopupWrap .chsPopupDiv {
+  position: relative;
+}
+
+.chsPopupWrap .btn_chs {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 314px;
+  text-align: center;
+}
+
+.chsPopupWrap .btn_chs > a {
+  width: 145px;
+  height: 32px;
+  background: #141a2b;
+  border: 1px solid #fff;
+  font-size: 13px;
+  line-height: 32px;
+  color: #fff !important;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 400;
+}
+
+.chsPopupCnt .bot_chsPopupClose {
+  width: 258px;
+  height: 30px;
+  background: #cbcbcb;
+}
+
+.chsPopupCnt .bot_chsPopupClose .todayLDivlist {
+  overflow: hidden;
+}
+
+.chsPopupCnt .bot_chsPopupClose .todayLDivlist > li {
+  float: right;
+}
+
+.chsPopupCnt .bot_chsPopupClose .todayLDivlist > li:first-child {
+  padding-left: 20px;
+  float: left;
+}
+
+.chsPopupWrap .chsPopupDiv .top_chsPopupClose {
+  position: absolute;
+  right: 0;
+  top: -25px;
+}
+
+.chsPopupWrap > div .todayLDivlist input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.chsPopupWrap > div .todayLDivlist label {
+  display: inline-block;
+  height: 30px;
+  padding-left: 16px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/close_SEPopup2.jpg) no-repeat left 8px;
+  font-size: 11px;
+  line-height: 30px;
+  color: #000;
+  letter-spacing: -1px;
+  word-spacing: 0;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------
+			 족보가이드 팝업
+--------------------------------------------------*/
+.settlementPop.cType.ZGPop {
+  margin-left: 540px;
+  left: 50%;
+}
+
+/*--------------------------------------------------
+			 식스팩 팝업
+--------------------------------------------------*/
+.sixpackPopupWrap {
+  width: 676px;
+  height: 713px;
+  display: none;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  z-index: 9999;
+}
+
+.sixpackPopupDiv {
+  width: 676px;
+  height: 713px;
+  position: relative;
+}
+
+.sixpackPopupDiv .moreBtn {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 643px;
+  text-align: center;
+}
+
+.sixpackPopupDiv .lyClose {
+  position: absolute;
+  right: 26px;
+  top: 23px;
+}
+
+.sixpackPopupDiv .todayLDiv {
+  position: absolute;
+  left: 32px;
+  bottom: 33px;
+}
+
+.sixpackPopupDiv .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.sixpackPopupDiv .todayLDiv label {
+  display: inline-block;
+  height: 13px;
+  color: #fff;
+  padding-left: 19px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+  cursor: pointer;
+}
+
+.sixpackPopupDiv .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+/*--------------------------------------------------
+			 응원하자 중간고사 팝업
+--------------------------------------------------*/
+.cheerE_popWrap {
+  width: 540px;
+  height: 677px;
+  margin-left: -270px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 9999;
+}
+
+.cheerE_popDiv {
+  width: 540px;
+  height: 677px;
+  position: relative;
+}
+
+.cheerE_popDiv .moreBtn > a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+}
+
+.cheerE_popDiv .lyClose {
+  position: absolute;
+  right: 23px;
+  bottom: 15px;
+}
+
+.cheerE_popDiv .todayLDiv {
+  position: absolute;
+  left: 28px;
+  bottom: 15px;
+}
+
+.cheerE_popDiv .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.cheerE_popDiv .todayLDiv label {
+  display: inline-block;
+  height: 13px;
+  color: #c0c1c2;
+  padding-left: 19px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+  cursor: pointer;
+}
+
+.cheerE_popDiv .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+/*--------------------------------------------------
+			 수능 팝업
+--------------------------------------------------*/
+.sat2021_popWrap {
+  width: 380px;
+  height: 495px;
+  margin-left: -180px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 269px;
+  z-index: 9999;
+}
+
+.sat2021_popDiv {
+  width: 380px;
+  height: 495px;
+  position: relative;
+}
+
+.sat2021_popDiv .corona19Btn > a {
+  position: absolute;
+  left: 163px;
+  bottom: 47px;
+}
+
+.sat2021_popDiv .lyClose {
+  position: absolute;
+  right: 6px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.sat2021_popDiv .todayLDiv {
+  position: absolute;
+  left: 28px;
+  bottom: 15px;
+}
+
+.sat2021_popDiv .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.sat2021_popDiv .todayLDiv label {
+  display: inline-block;
+  height: 13px;
+  color: #000;
+  padding-left: 19px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+  cursor: pointer;
+}
+
+.sat2021_popDiv .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+.dimfixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/*--------------------------------------------------
+			 코로나19 팝업
+--------------------------------------------------*/
+.corona19_popWrap {
+  width: 580px;
+  height: 815px;
+  margin-left: -290px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 99px;
+  z-index: 9999;
+}
+
+.corona19_popDiv {
+  width: 580px;
+  height: 815px;
+  position: relative;
+}
+
+.corona19_popDiv .corona19Btn > a {
+  position: absolute;
+  left: 163px;
+  bottom: 47px;
+}
+
+.corona19_popDiv .lyClose {
+  position: absolute;
+  right: 23px;
+}
+
+.corona19_popDiv .todayLDiv {
+  position: absolute;
+  left: 28px;
+  bottom: 15px;
+}
+
+.corona19_popDiv .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.corona19_popDiv .todayLDiv label {
+  display: inline-block;
+  height: 13px;
+  color: #000;
+  padding-left: 19px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+  cursor: pointer;
+}
+
+.corona19_popDiv .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+/*--------------------------------------------------
+			 첫결재 팝업
+--------------------------------------------------*/
+.popbgWrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1001;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blank.png) repeat;
+}
+
+.allBACkpopWrap {
+  width: 494px;
+  height: 512px;
+  margin: -272px 0 0 -247px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 9999;
+}
+
+.allBACk_popDiv .lyClose {
+  position: absolute;
+  right: -27px;
+  top: -27px;
+}
+
+.allBACk_popDiv .todayLDiv {
+  height: 22px;
+  padding: 10px 5px 0 191px;
+  background: #9a0bc8;
+}
+
+.allBACkpop1Wrap .allBACk_popDiv .todayLDiv {
+  height: 22px;
+  padding: 10px 5px 0 191px;
+  background: #0014d8;
+}
+
+.allBACk_popDiv .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.allBACk_popDiv .todayLDiv label {
+  display: inline-block;
+  height: 13px;
+  color: #fff;
+  padding-left: 19px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+  cursor: pointer;
+}
+
+.allBACk_popDiv .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+.dimfullPop {
+  position: absolute;
+  z-index: 1001;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: none;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blank.png) repeat;
+}
+
+/*--------------------------------------------------
+			 역시 족보닷컴 팝업
+--------------------------------------------------*/
+.antiPopupWrap {
+  width: 638px;
+  height: 635px;
+  margin-left: -319px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  z-index: 9999;
+}
+
+.antiPopupDiv {
+  width: 638px;
+  height: 635px;
+  position: relative;
+}
+
+.antiPopupDiv .moreBtn {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 643px;
+  text-align: center;
+}
+
+.antiPopupDiv .lyClose {
+  position: absolute;
+  right: 26px;
+  top: 23px;
+}
+
+.antiPopupDiv .todayLDiv {
+  position: absolute;
+  left: 23px;
+  bottom: 20px;
+}
+
+.antiPopupDiv .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.antiPopupDiv .todayLDiv label {
+  display: inline-block;
+  height: 13px;
+  color: #fff;
+  padding-left: 19px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+  cursor: pointer;
+}
+
+.antiPopupDiv .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+/*--------------------------------------------------
+			 역시 족보닷컴 팝업
+--------------------------------------------------*/
+.quickzocboPopWrap {
+  width: 857px;
+  height: 496px;
+  margin-left: -429px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  z-index: 9999;
+}
+
+.quickzocboPopDiv {
+  width: 857px;
+  height: 496px;
+  position: relative;
+}
+
+.quickzocboPopDiv .moreBtn {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 643px;
+  text-align: center;
+}
+
+.quickzocboPopDiv .lyClose {
+  position: absolute;
+  right: 26px;
+  top: 23px;
+}
+
+.quickzocboPopDiv .todayLDiv {
+  position: absolute;
+  left: 23px;
+  bottom: 20px;
+}
+
+.quickzocboPopDiv .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.quickzocboPopDiv .todayLDiv label {
+  display: inline-block;
+  height: 13px;
+  color: #fff;
+  padding-left: 19px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+  cursor: pointer;
+}
+
+.quickzocboPopDiv .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+/*--------------------------------------------------
+			내신 관리본부 긴급지원팝업
+--------------------------------------------------*/
+.emergencyPopupWrap {
+  width: 609px;
+  height: 584px;
+  margin-left: -305px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: -54px;
+  z-index: 9999;
+}
+
+.emergencyPopupDiv {
+  width: 609px;
+  height: 584px;
+  position: relative;
+}
+
+.emergencyPopupDiv .moreBtn {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 643px;
+  text-align: center;
+}
+
+.emergencyPopupDiv .lyClose {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.quickzocboPopDiv .todayLDiv {
+  position: absolute;
+  left: 23px;
+  bottom: 20px;
+}
+
+.emergencyPopupDiv .todayLDiv {
+  position: absolute;
+  right: 34px;
+  bottom: 10px;
+}
+
+.emergencyPopupDiv .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.emergencyPopupDiv .todayLDiv label {
+  display: inline-block;
+  height: 13px;
+  color: #fff;
+  padding-left: 19px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_h13_gray.jpg) no-repeat left top;
+  cursor: pointer;
+}
+
+.emergencyPopupDiv .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+/*--------------------------------------------------
+			 수학 학교별 기출족보 팝업
+--------------------------------------------------*/
+.methTpopname {
+  width: 857px;
+  display: none;
+  margin-top: -150px;
+  position: absolute;
+  z-index: 9999;
+}
+
+.methTpopname .cnt {
+  position: relative;
+}
+
+.methTpopname .pop_Close {
+  position: absolute;
+  right: 26px;
+  top: 23px;
+}
+
+/*--------------------------------------------------
+			 고객지원 Z마켓_환불안내 팝업
+--------------------------------------------------*/
+.zpaybackPopup {
+  width: 580px;
+  padding: 0 40px 0 40px;
+  background: #fff;
+}
+
+.zpaybackPopup .z_endPopCnt {
+  width: 100%;
+  position: relative;
+}
+
+.zpaybackPopup .z_endPopCnt .pop_head {
+  padding: 0;
+}
+
+.zpaybackPopup .z_endPopCnt .pop_head .ttl {
+  font-size: 18px;
+  line-height: 72px;
+  color: #282e38;
+  letter-spacing: -0.05em;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+}
+
+.zpaybackPopup .z_endPopCnt .pop_body {
+  padding: 0 0 40px 0;
+  border-top: 1px solid #d8d8d8;
+}
+
+.zpaybackPopup .paybacklist {
+  padding: 0;
+  margin: 0;
+}
+
+.zpaybackPopup .paybacklist caption {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.zpaybackPopup .paybacklist li {
+  padding-top: 23px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #555;
+  letter-spacing: -0.05em;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  text-align: center;
+  list-style: none;
+  text-align: left;
+  font-weight: 400;
+  word-spacing: 0;
+}
+
+.zpaybackPopup .paybacklist li em {
+  color: #de1c1c;
+  text-decoration: underline;
+  font-style: normal;
+}
+
+.zpaybackPopup .paybacklist li .paybackinfotxt {
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.paybacklist li .paybackinfotxt span {
+  color: #de1c1c;
+}
+
+.paybackdl {
+  border: 1px solid #e0e0e0;
+  border-collapse: collapse;
+}
+
+.zpaybackPopup .paybackdl tbody th,
+.zpaybackPopup .paybackdl tbody tr td {
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  border-left: none;
+  font-weight: 500;
+}
+
+.zpaybackPopup .paybackdl tbody th {
+  padding-left: 28px;
+  font-size: 16px;
+  height: 50px;
+  background: #f1f1f1;
+  text-align: left;
+  color: #000;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+.zpaybackPopup .paybackdl tbody tr td {
+  padding: 9px 20px 9px 0;
+  font-size: 16px;
+  color: #000;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  word-break: break-all;
+  text-align: right;
+}
+
+.zpaybackPopup .pb_noticelist li .zepGap {
+  padding-left: 8px;
+}
+
+.zpaybackPopup .pb_noticbtn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.zpaybackPopup .pb_noticbtn .btnCom {
+  width: 247px;
+  height: 45px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 15px;
+  line-height: 47px;
+  color: #fff !important;
+  position: relative;
+  display: inline-block;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  background: #417edc;
+  border: 1px solid #417edc;
+  text-decoration: none;
+}
+
+.zpaybackPopup .pb_noticbtn .btnCom:hover {
+  width: 247px;
+  height: 45px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 15px;
+  line-height: 47px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  background: #417edc;
+  border: 1px solid #417edc;
+  text-decoration: none;
+}
+
+.zpaybackPopup .pb_noticbtn .btnCom span {
+  position: relative;
+  z-index: 10;
+}
+
+/*--------------------------------------------------
+			 분기결제 팝업
+--------------------------------------------------*/
+.paybranchPopCom {
+  position: absolute;
+  left: 50%;
+  top: 99px;
+  z-index: 1001;
+}
+
+.paybranchPopCom .paybranchPopCnt {
+  position: relative;
+}
+
+.nopayPop_student,
+.nopayPop_parents {
+  width: 627px;
+  height: 710px;
+  margin-left: -314px;
+}
+
+.nopayPop_teacher {
+  width: 587px;
+  height: 630px;
+  margin-left: -294px;
+}
+
+.payPop_sp46 {
+  margin-left: -314px;
+}
+
+.payPop_sp6 {
+  margin-left: -314px;
+}
+
+.payPop_sp12 {
+  margin-left: -314px;
+}
+
+.payPop_t46 {
+  margin-left: -294px;
+}
+
+.payPop_t6 {
+  margin-left: -294px;
+}
+
+.payPop_t12 {
+  margin-left: -294px;
+}
+
+.payPop_tp1 {
+  margin-left: -314px;
+}
+
+.payPop_tp2 {
+  margin-left: -314px;
+}
+
+.nopayPop_student .paybranchPopCnt {
+  width: 627px;
+  height: 710px;
+  background: url(/images/pc/zocbo/event/paybranch/nopayPop_student.jpg) no-repeat;
+}
+
+.nopayPop_parents .paybranchPopCnt {
+  width: 627px;
+  height: 710px;
+  background: url(/images/pc/zocbo/event/paybranch/nopayPop_parents.jpg) no-repeat;
+}
+
+.nopayPop_teacher .paybranchPopCnt {
+  width: 587px;
+  height: 630px;
+  background: url(/images/pc/zocbo/event/paybranch/nopayPop_teacher.jpg) no-repeat;
+}
+
+.payPop_sp46 .paybranchPopCnt {
+  width: 627px;
+  height: 650px;
+  background: url(/images/pc/zocbo/event/paybranch/payPop_sp46.jpg) no-repeat;
+}
+
+.payPop_sp6 .paybranchPopCnt {
+  width: 627px;
+  height: 650px;
+  background: url(/images/pc/zocbo/event/paybranch/payPop_sp6.jpg) no-repeat;
+}
+
+.payPop_sp12 .paybranchPopCnt {
+  width: 627px;
+  height: 650px;
+  background: url(/images/pc/zocbo/event/paybranch/payPop_sp12.jpg) no-repeat;
+}
+
+.payPop_t46 .paybranchPopCnt {
+  width: 587px;
+  height: 640px;
+  background: url(/images/pc/zocbo/event/paybranch/payPop_t46.jpg) no-repeat;
+}
+
+.payPop_t6 .paybranchPopCnt {
+  width: 587px;
+  height: 640px;
+  background: url(/images/pc/zocbo/event/paybranch/payPop_t6.jpg) no-repeat;
+}
+
+.payPop_t12 .paybranchPopCnt {
+  width: 587px;
+  height: 640px;
+  background: url(/images/pc/zocbo/event/paybranch/payPop_t12.jpg) no-repeat;
+}
+
+.payPop_tp1 .paybranchPopCnt {
+  width: 627px;
+  height: 690px;
+  background: url(/images/pc/zocbo/event/paybranch/payPop_tp1.jpg) no-repeat;
+}
+
+.payPop_tp2 .paybranchPopCnt {
+  width: 587px;
+  height: 664px;
+  background: url(/images/pc/zocbo/event/paybranch/payPop_tp2.jpg) no-repeat;
+}
+
+.paybranchPopCom .paybranchPopCnt .bot_chsPopupClose {
+  width: 258px;
+  height: 30px;
+  background: #cbcbcb;
+}
+
+.paybranchPopCom .paybranchPopCnt .bot_chsPopupClose {
+  width: 258px;
+  height: 30px;
+  background: #cbcbcb;
+}
+
+.paybranchPopCom .paybranchPopCnt .bot_chsPopupClose .todayLDivlist {
+  overflow: hidden;
+}
+
+.paybranchPopCom .paybranchPopCnt .bot_chsPopupClose .todayLDivlist > li {
+  float: right;
+}
+
+.paybranchPopCom .paybranchPopCnt .bot_chsPopupClose .todayLDivlist > li:first-child {
+  padding-left: 20px;
+  float: left;
+}
+
+.paybranchPopCom .paybranchPopCnt .chsPopupDiv .top_chsPopupClose {
+  position: absolute;
+  right: 0;
+  top: -25px;
+}
+
+.paybranchPopCom .todayLDiv {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -34px;
+}
+
+.paybranchPopCom .todayLDivCnt {
+  height: 34px;
+  background: #ebc200;
+  position: relative;
+}
+
+.paybranchPopCom.paybranchPopComTp2 .todayLDivCnt {
+  height: 34px;
+  background: #d7acca;
+  position: relative;
+}
+
+.paybranchPopCom .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.paybranchPopCom .todayLDiv label {
+  margin: 8px 0 0 15px;
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 400;
+  padding-left: 19px;
+  letter-spacing: -1px;
+  background: url(/images/pc/zocbo/event/paybranch/chbox_pbh15_white.png) no-repeat left 50%;
+  cursor: pointer;
+}
+
+.paybranchPopCom .todayLDiv input[type="checkbox"]:checked + label {
+  background-position: left bottom;
+}
+
+.paybranchPopCom .close_pbPopup {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 11px;
+  bottom: -25px;
+  background: url(/images/pc/zocbo/event/paybranch/close_pbPopup.png) no-repeat;
+}
+
+.paybranchPopCom .linkpb {
+  width: 336px;
+  height: 58px;
+  position: absolute;
+  left: 146px;
+  bottom: 42px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+  z-index: 9;
+}
+
+.paybranchPopTp2 .linkpb {
+  width: 346px;
+  height: 58px;
+  position: absolute;
+  left: 121px;
+  bottom: 32px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+  z-index: 9;
+}
+
+.payPop_tp1 .linkpb {
+  width: 336px;
+  height: 58px;
+  position: absolute;
+  left: 146px;
+  bottom: 49px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+  z-index: 9;
+}
+
+.paybranchPopComTp2 .linkpb {
+  width: 346px;
+  height: 60px;
+  position: absolute;
+  left: 121px;
+  bottom: 35px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+  z-index: 9;
+}
+
+/*--------------------------------------------------
+			 회원정보 변경 팝업
+--------------------------------------------------*/
+.mbpdim {
+  position: fixed;
+  z-index: 9999;
+  background-color: #000;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.7;
+  filter: Alpha(opacity=40);
+}
+
+.memberPopC {
+  width: 616px;
+  min-height: 543px;
+  margin: 60px 0 0 -308px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 9999;
+  background: #0e3068;
+  border: 1px solid #022051;
+}
+
+.memberPopC .mbpccnt {
+  padding: 29px 0 46px 0;
+  position: relative;
+}
+
+.memberPopC .closepop {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+}
+
+.memberPopC .mbpccnt .ttl {
+  margin-bottom: 25px;
+  font-size: 30px;
+  color: #fff;
+  line-height: 38px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.memberPopC .mbpccnt .ttl .tdcoration {
+  position: relative;
+  font-weight: 500;
+}
+
+.memberPopC .mbpccnt .ttl .tdcoration:before {
+  width: 100%;
+  height: 1px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  border-bottom: 1px solid #fff;
+  z-index: 9;
+}
+
+.memberPopC .mbpccnt .ttl .c_e3ff4a {
+  color: #e3ff4a;
+}
+
+.chldTablist {
+  width: 524px;
+  margin: 0 auto 17px auto;
+}
+
+.chldTablist > li {
+  width: 50%;
+  float: left;
+}
+
+.chldTablist.tp2 > li {
+  width: 33.33%;
+}
+
+.chldTablist > li > a {
+  height: 41px;
+  display: block;
+  background: #011e4f;
+  border: 1px solid #00163b;
+  border-left: 1px solid #052966;
+  font-size: 19px;
+  color: #8aa1c9;
+  line-height: 43px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.chldTablist > li.on > a {
+  background: #e3ff4a;
+  color: #00163a;
+  border: 1px solid #e3ff4a;
+  border-left: none;
+}
+
+.chldTablist > li:first-child > a {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+}
+
+.chldTablist > li:last-child > a {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+}
+
+.cntmainlist {
+  width: 530px;
+  margin: 0 auto;
+}
+
+.cntmainlist > li {
+  width: 262px;
+  min-height: 322px;
+  margin-left: 2px;
+  float: left;
+  background: #f4fcff;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-bottom: 3px solid #030f32;
+}
+
+.cntmainlist > li:first-child {
+  margin-left: 0;
+}
+
+.mbbtnCheck {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.mbbtnCheck a {
+  width: 181px;
+  height: 50px;
+  display: inline-block;
+  font-size: 23px;
+  line-height: 52px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  color: #002562;
+  background: #fff;
+  border: 1px solid #030f32;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+.memberPopC .leftcnt {
+  width: 208px;
+  margin: 0 auto;
+}
+
+.memberPopC .leftcnt .sbttl {
+  margin-top: 29px;
+  text-align: center;
+}
+
+.memberPopC .leftcnt .sbico {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.memberPopC .leftcnt .sbtxt {
+  width: 208px;
+  margin: 31px auto 20px auto;
+  position: relative;
+  font-size: 22px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  color: #04216b;
+  background: #fff;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.memberPopC .leftcnt .sbtxt:before {
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  border-bottom: 2px solid #04216b;
+  z-index: 9;
+}
+
+.memberPopC .rightcnt {
+  width: 204px;
+  margin: 0 auto;
+}
+
+.memberPopC .rightcnt .sbttl {
+  margin-top: 29px;
+  position: relative;
+  text-align: center;
+}
+
+.memberPopC .rightcnt .sbttl:before {
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+  border-bottom: 1px solid #1c1c1c;
+  z-index: 9;
+}
+
+.sbgdlist {
+  margin-top: 18px;
+}
+
+.sbgdlist > li {
+  padding: 22px 0 29px 0;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/dashed10.gif) repeat-x left top;
+}
+
+.sbgdlist.high {
+  margin-top: 14px;
+}
+
+.sbgdlist.high > li {
+  padding: 15px 0 19px 0;
+}
+
+.sbgdlist > li:first-child {
+  background: none;
+}
+
+.sbgdlist.elem > li .chkGradeDiv {
+  float: left;
+}
+
+.sbgdlist.elem > li .chkGradeDiv:last-child {
+  float: right;
+}
+
+.sbgdlist.elem > li {
+  *zoom: 1;
+}
+
+.sbgdlist.elem > li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.sbgdlist.elem .chkGradeDiv label {
+  padding-left: 32px;
+}
+
+.sbgdlist .chkGradeDiv {
+  position: relative;
+  text-align: center;
+}
+
+.chkGradeDiv input[type="radio"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.chkGradeDiv label {
+  display: inline-block;
+  height: 29px;
+  padding-left: 37px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_w34h29.gif) no-repeat left top;
+  background-position: left bottom;
+  font-size: 25px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  line-height: 29px;
+  color: #031b43;
+  letter-spacing: -2px;
+  cursor: pointer;
+}
+
+.chkGradeDiv input[type="radio"]:checked + label {
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_w34h29on.gif) no-repeat left top;
+  background-position: left bottom;
+  color: #0222c7;
+}
+
+.bottomdayArea {
+  margin-top: -16px;
+  height: 42px;
+  background: #0431c3;
+}
+
+.bottomdayArea .chkBotDiv {
+  margin: 13px 28px 0 0;
+  float: right;
+  position: relative;
+}
+
+.bottomdayArea .chkBotDiv input[type="radio"],
+.bottomdayArea .chkBotDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.bottomdayArea .chkBotDiv label {
+  display: inline-block;
+  height: 17px;
+  padding-left: 29px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_w22h17.gif) no-repeat left top;
+  background-position: left bottom;
+  font-size: 17px;
+  font-family: "Malgun Gothic", "맑은 고딕", Dotum, "돋움", sans-serif;
+  font-weight: bold;
+  line-height: 16px;
+  color: #bdcdff;
+  cursor: pointer;
+}
+
+.bottomdayArea .chkBotDiv input[type="checkbox"]:checked + label {
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_w22h17on.gif) no-repeat left top;
+  background-position: left bottom;
+}
+
+.memberPopC.stype2 {
+  width: 706px;
+}
+
+.thcntmainlist > li {
+  width: 648px;
+  padding: 25px 0 25px 0;
+  margin: 4px auto 0 auto;
+  background: #f4fcff;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-bottom: 3px solid #030f32;
+}
+
+.thcntmainlist > li:first-child {
+  margin-top: 0;
+}
+
+.thcntmainlist > li dl {
+  margin: 0 0 0 39px;
+  display: table;
+}
+
+.thcntmainlist > li dl > dt {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.thcntmainlist > li dl > dd {
+  padding-left: 32px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.thcntmainlist > li dl > dd > ul {
+  margin-top: 8px;
+}
+
+.thcntmainlist > li dl > dd > ul:first-child {
+  margin-top: 0;
+}
+
+.thcntmainlist > li dl > dd > ul > li {
+  margin-left: 4px;
+  float: left;
+}
+
+.thcntmainlist > li dl > dd > ul > li:first-child {
+  margin-left: 0;
+}
+
+.thcntmainlist > li dl > dd button {
+  min-width: 40px;
+  height: 38px;
+  padding: 0 20px 0 20px;
+  font-size: 19px;
+  color: #0e3068;
+  line-height: 38px;
+  font-weight: 500;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  background: #fff;
+  border-radius: 19px;
+  border: 1px solid #0e3068;
+  cursor: pointer;
+}
+
+.thcntmainlist > li dl > dd button.on {
+  background: #0030cd;
+  color: #fff;
+}
+
+/*--------------------------------------------------
+			 학교 검색 팝업
+--------------------------------------------------*/
+.popComdim {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popComdim button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  overflow: visible;
+  cursor: pointer;
+  line-height: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.addrPopCom.popCom {
+  width: 100%;
+  max-width: 500px;
+  height: 480px;
+  margin: -240px auto 0 -250px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #fff;
+  z-index: 99;
+}
+
+.popWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.popHeader {
+  padding: 19px 0 16px 0;
+  background: #edf2f7;
+  border-bottom: 1px solid #c5cfda;
+}
+
+.poplogo {
+  margin-bottom: 17px;
+  text-align: center;
+}
+
+.post_search {
+  padding-right: 25px;
+  margin: 0 26px 0 25px;
+  position: relative;
+}
+
+.post_search input {
+  width: 100%;
+  height: 37px;
+  border: 2px solid #004aad;
+  padding: 0 11px 0 11px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #212121;
+  font-weight: 500;
+}
+
+.post_search .btn_search {
+  position: absolute;
+  right: 1px;
+  top: 2px;
+  width: 36px;
+  height: 37px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn_search .img_post {
+  display: block;
+  width: 16px;
+  height: 21px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/ico_schLook.png) no-repeat;
+  margin: 1px 14px 0 5px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.exaddtxt {
+  padding: 12px 0 0 26px;
+}
+
+.btnPopClose > a {
+  width: 100%;
+  height: 48px;
+  display: block;
+  background: #4c627f;
+  font-size: 16px;
+  line-height: 48px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  text-align: center;
+}
+
+.popFooter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.schgdinfotxt {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #3d5371;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.icoPopClose {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.noSch {
+  width: 100%;
+  height: 285px;
+  display: table;
+}
+
+.noSchtxt {
+  font-size: 16px;
+  color: #98a6b8;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.listresultA {
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 52px;
+  color: #1a1a1a;
+  font-weight: bold;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  border-bottom: 1px solid #c5cfda;
+  font-weight: 500;
+}
+
+.listresultA span {
+  color: #0031e4;
+}
+
+.overflowArea {
+  height: 280px;
+  overflow-y: auto;
+}
+
+.schresultlist > li {
+  border-bottom: 1px solid #c5cfda;
+}
+
+.schresultlist > li {
+  padding: 20px 0 20px 27px;
+  position: relative;
+}
+
+.schresultlist > li .schtableWrap {
+  width: 100%;
+  display: table;
+}
+
+.schresultlist > li .schtableWrap > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.schresultlist > li a {
+  font-size: 15px;
+  line-height: 23px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 400;
+}
+
+.schresultlist > li .leftArea {
+  width: 80%;
+}
+
+.schresultlist > li .leftArea .txtTopA > a {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.schresultlist > li .leftArea .txtbotA > a {
+  color: #1a1a1a;
+}
+
+.schresultlist > li .rightArea {
+  text-align: center;
+}
+
+.schresultlist2 > li {
+  border-bottom: 1px solid #c5cfda;
+}
+
+.schresultlist2 > li {
+  padding: 15px 0 15px 27px;
+  position: relative;
+}
+
+.schresultlist2 > li > dl {
+  width: 100%;
+  display: table;
+}
+
+.schresultlist2 > li > dl > dt,
+.schresultlist2 > li > dl > dd {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 15px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+.schresultlist2 > li > dl > dt {
+  width: 100px;
+  color: #1a1a1a;
+}
+
+.schresultlist2 > li > dl > dd {
+  color: #1a1a1a;
+}
+
+.schresultlist2 > li > dl > dd input {
+  width: 88%;
+  height: 31px;
+  padding: 0 10px 0 10px;
+  border: 1px solid #9ea6b0;
+}
+
+.btnPopipt {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btnPopipt > a {
+  width: 92%;
+  height: 46px;
+  display: inline-block;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-size: 16px;
+  line-height: 46px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  background: #226bcd;
+  border: 1px solid #0a52b3;
+}
+
+/*--------------------------------------------------
+			초등사이트 이용권 구매 안내 팝업
+--------------------------------------------------*/
+.z_endPopup {
+  width: 500px;
+  margin-left: -250px;
+  position: absolute;
+  left: 50%;
+  top: 36px;
+}
+
+.z_endPopCnt {
+  width: 100%;
+  position: relative;
+}
+
+.z_endPopup .close_zpop {
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------
+			 중간고사 대비 up로드 팝업
+--------------------------------------------------*/
+.f_tablist > li {
+  height: 45px;
+  float: left;
+}
+
+.f_tablist > li > a {
+  width: 107px;
+  height: 43px;
+  background: #393a47;
+  display: block;
+  border: 1px solid #0d0d0d;
+  border-left: none;
+  font-size: 14px;
+  line-height: 43px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+.f_tablist > li:hover > a,
+.f_tablist > li.on > a {
+  background: #fff;
+  color: #464646;
+}
+
+.f_tablist > li:first-child > a {
+  width: 108px;
+  border-left: 1px solid #0d0d0d;
+}
+
+.new_upload .upload_3 {
+  word-spacing: 0;
+}
+
+.f_Htablist > li > a {
+  width: 124px;
+}
+
+.f_Htablist > li:first-child > a {
+  width: 131px;
+}
+
+/*--------------------------------------------------
+			 레이어팝업
+--------------------------------------------------*/
+.layer_open {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.com_Wpop {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1002;
+}
+
+.comPopup {
+  border: 1px solid #3f3f3f;
+  position: relative;
+}
+
+.comPopup .pop_header {
+  width: 100%;
+  height: 49px;
+  background: #3f3f3f;
+}
+
+.comPopup .pop_header .ttl {
+  padding-left: 21px;
+  font-size: 15px;
+  line-height: 52px;
+  color: #fff;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 400;
+}
+
+.comPopup .pop_desc {
+  padding: 7px 0 8px 21px;
+  background: #3579d4;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.comPopup .pop_desc_bot {
+  padding: 7px 0 8px 21px;
+  background: #3579d4;
+  font-size: 11px;
+  line-height: 18px;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+.comPopup .pop_cnt {
+  padding: 20px 22px 27px 22px;
+  background: #fff;
+}
+
+.comPopup .pop_cnt .pop_cnt_ttl {
+  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3579d4;
+  font-weight: bold;
+}
+
+.comPopup .popClose {
+  position: absolute;
+  right: 18px;
+  top: 19px;
+}
+
+.com_Wpop .infotable {
+  margin-bottom: 0;
+}
+
+.com_Wpop .infotable thead th {
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+.com_Wpop .infotable td {
+  padding: 5px 12px 5px 12px;
+  letter-spacing: -1px;
+}
+
+.tl_left12 {
+  text-align: left !important;
+  padding-left: 12px !important;
+}
+
+.pop_comlist > li {
+  margin-top: 20px;
+}
+
+.pop_comlist > li:first-child {
+  margin-top: 0px;
+}
+
+.pop_comlist > li .ttl {
+  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3579d4;
+  font-weight: bold;
+}
+
+.layer-open {
+  overflow: hidden;
+}
+
+.dimfull2 {
+  position: absolute;
+  z-index: 1001;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: none;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blank.png) repeat;
+}
+
+/*--------------------------------------------------
+			 로그인 팝업
+--------------------------------------------------*/
+.thGg td {
+  background: #d0dcea;
+}
+
+/*--------------------------------------------------
+			 로그인 팝업
+--------------------------------------------------*/
+.loginpopname {
+  width: 476px;
+}
+
+.logttl {
+  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3579d4;
+  font-weight: bold;
+}
+
+.logForm {
+  width: 339px;
+  margin: 0 auto;
+}
+
+.lgpbox {
+  width: 339px;
+  height: 95px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.lgpbox li.fcom {
+  width: 225px;
+  height: 42px;
+  padding: 0 0 0 0;
+  border: 1px solid #e5e5e5;
+  background: #f7f7f7;
+  position: absolute;
+}
+
+.lgpbox .fcom input {
+  width: 187px;
+  height: 100%;
+  padding: 0 19px 0 19px;
+  position: relative;
+  z-index: 3;
+  background: #f7f7f7;
+  border: none;
+  font-size: 12px;
+  line-height: 46px;
+  color: #a8a8a8;
+}
+
+.lgpbox .f01 {
+  left: 0;
+  top: 0;
+}
+
+.lgpbox .f02 {
+  left: 0;
+  top: 53px;
+}
+
+.lgpbox .f03 {
+  width: 100px;
+  height: 95px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid #515560;
+}
+
+.lgpbox .f03 input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #515560;
+  font-size: 12px;
+  line-height: 95px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.lbl_in {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  z-index: 2;
+  background: #fff;
+  color: #666;
+  font-size: 12px;
+  line-height: 19px;
+  cursor: text;
+}
+
+.idsave {
+  margin-bottom: 15px;
+  display: table;
+  position: relative;
+}
+
+.idsave > li {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 7px 0 7px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;
+  background: url(/images/pc/zocbo/zocbo_rn/common/f_bar1x10.gif) no-repeat 0 2px;
+}
+
+.idsave > li > a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;
+}
+
+.idsave > li > a:hover {
+  text-decoration: underline;
+}
+
+.idsave > li:first-child {
+  padding-left: 0;
+  background: none;
+}
+
+.idsave .inputCheckBox {
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+.logA_joinBox .desc {
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;
+  text-align: center;
+}
+
+.loginpopname .botbtn {
+  height: 43px;
+  line-height: 46px;
+}
+
+/*--------------------------------------------------
+			 이용권현황 팝업
+--------------------------------------------------*/
+.usepopname {
+  width: 700px;
+  height: 598px;
+}
+
+.usepopname .ico_extinct {
+  vertical-align: middle;
+}
+
+.usepopname .pop_cnt {
+  height: 500px;
+  overflow: auto;
+}
+
+/*--------------------------------------------------
+			 회원등급 팝업
+--------------------------------------------------*/
+.ratingpopname {
+  width: 476px;
+}
+
+/*--------------------------------------------------
+			 학원등급 팝업
+--------------------------------------------------*/
+.Gradepopname {
+  width: 530px;
+}
+
+/*--------------------------------------------------
+			 마일리지 팝업
+--------------------------------------------------*/
+.mileagepopname {
+  width: 476px;
+}
+
+.mmlist {
+  height: 140px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border: 1px solid #dedede;
+  display: table;
+  text-align: center;
+}
+
+.mmlist > li {
+  width: 120px;
+  height: 140px;
+  display: table-cell;
+  vertical-align: top;
+  border-left: 1px solid #dedede;
+}
+
+.mmlist > li:first-child {
+  border-left: none;
+}
+
+.mmlist > li.mml1 {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_mge1.gif) no-repeat center 16px;
+}
+
+.mmlist > li.mml2 {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_mge2.gif) no-repeat center 16px;
+}
+
+.mmlist > li.mml3 {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_mge3.gif) no-repeat center 16px;
+}
+
+.mmlist > li.mml4 {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_mge4.gif) no-repeat center 16px;
+}
+
+.mmlist > li.mml5 {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_mge5.gif) no-repeat center 16px;
+}
+
+.mmlist > li .txtA {
+  padding-top: 57px;
+  text-align: center;
+}
+
+.mmlist > li .txtA .ttl {
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+
+.mmlist > li .txtA .desc {
+  font-size: 12px;
+  line-height: 18px;
+  color: #3f3f3f;
+  letter-spacing: -1px;
+}
+
+/*--------------------------------------------------
+			 알림 팝업
+--------------------------------------------------*/
+.alrmpopname {
+  width: 476px;
+}
+
+.comPopup .pop_cnt.alrmcnt {
+  height: 440px;
+  padding: 0 !important;
+  overflow: auto;
+}
+
+.alrmlist > li {
+  height: 85px;
+  border-bottom: 1px solid #dadada;
+  overflow: hidden;
+  background: #fff;
+}
+
+.alrmlist > li > dl {
+  display: table;
+}
+
+.alrmlist > li > dl > dt {
+  width: 73px;
+  height: 85px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.alrmlist > li > dl > dd {
+  width: 374px;
+  height: 85px;
+  padding-right: 10px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.alrmlist > li > dl > dd .day {
+  font-size: 12px;
+  line-height: 18px;
+  color: #3579d4;
+  font-weight: bold;
+}
+
+.alrmlist > li > dl > dd .desc {
+  font-size: 12px;
+  line-height: 18px;
+  color: #3f3f3f;
+}
+
+.alrmlist > li.on {
+  background: #f9f9f9;
+}
+
+.alrmlist > li.on > dl > dd .day {
+  color: #3f3f3f;
+  font-weight: normal;
+}
+
+.alrmlist > li.note > dl > dt {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_alrm_note.gif) no-repeat center center;
+}
+
+.alrmlist > li.coupon > dl > dt {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_alrm_coupon.gif) no-repeat center center;
+}
+
+.alrmlist > li.notice > dl > dt {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_alrm_notice.gif) no-repeat center center;
+}
+
+.alrmlist > li.note.on > dl > dt {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_alrm_noteon.gif) no-repeat center center;
+}
+
+.alrmlist > li.coupon.on > dl > dt {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_alrm_couponon.gif) no-repeat center center;
+}
+
+.alrmlist > li.notice.on > dl > dt {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/ico_alrm_noticeon.gif) no-repeat center center;
+}
+
+.alrmlist > li .nodata_desc {
+  text-align: center;
+  line-height: 85px;
+}
+
+/*--------------------------------------------------
+			 D-day 등록 팝업
+--------------------------------------------------*/
+.loginAfter > li.ddayM {
+  line-height: 53px;
+}
+
+.ddaymenu > li {
+  float: left;
+  margin-left: 10px;
+}
+
+.ddaymenu > li:first-child {
+  margin-left: 0;
+}
+
+.ddaymenu .txt {
+  font-size: 15px;
+  line-height: 59px;
+  color: #1a1a1a;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  word-spacing: 0;
+}
+
+.ddaymenu .ddayOption {
+  min-width: 71px;
+  min-height: 18px;
+  margin-top: 17px;
+  display: block;
+  background: #1a1a1a;
+  font-size: 13px;
+  line-height: 23px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  word-spacing: 0;
+}
+
+.ddayM_Afrer .txt .ddayNumb {
+  color: #e92210;
+}
+
+.ddayM_Afrer .txt2 {
+  color: #0d51a6;
+}
+
+.ddaymenu .ddayOptionW {
+  height: 20px;
+  padding: 0 10px 0 10px;
+  margin-top: 17px;
+  background: #ffffff;
+  border: 1px solid #b3b3b3;
+  text-align: center;
+  font-size: 12px;
+  color: #666 !important;
+  line-height: 22px;
+  vertical-align: top;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+}
+
+.ddaypopname {
+  width: 293px;
+}
+
+.ddaypopname .ui-widget.ui-widget-content {
+  width: 222px;
+}
+
+.ddaypopname .ui-datepicker table {
+  font-size: 12px;
+}
+
+.ddaypopname .pop_cnt {
+  padding: 25px 33px 32px 33px;
+}
+
+.ddaytxtArea {
+  margin-bottom: 19px;
+}
+
+.ddaytxtArea .txtttl {
+  font-size: 17px;
+  line-height: 25px;
+  color: #343434;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  word-spacing: 0;
+}
+
+.ddaytxtArea .int {
+  width: 213px !important;
+  height: 28px;
+  margin-bottom: 5px;
+  line-height: 31px;
+}
+
+.ddaytxtArea label {
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+}
+
+.ddayCalendar {
+  width: 225px;
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.ddayBtn {
+  text-align: center;
+}
+
+.ddayBtn .btnCom {
+  min-width: 25px;
+  height: 30px;
+  margin-left: 1px;
+  font-size: 13px;
+  line-height: 32px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: normal;
+}
+
+.ddayBtn .btnCom:first-child {
+  margin-left: 0;
+}
+
+.ddayBtn .btnCom.btnBlack {
+  border: 1px solid #515560;
+}
+
+/*--------------------------------------------------
+			 바로테스트 팝업
+--------------------------------------------------*/
+#ResultArea {
+  width: 936px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#NoteArea {
+  width: 936px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.baro_descul {
+  margin-bottom: 25px;
+}
+
+.baro_descul > li {
+  font-size: 12px;
+  line-height: 20px;
+  color: #666;
+}
+
+.barotestReport {
+  width: 936px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#topArea {
+  border-bottom: 2px solid #737780;
+}
+
+.rightBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*--------------------------------------------------
+			 족보이용권 팝업
+--------------------------------------------------*/
+.useBuygpopname {
+  width: 476px;
+}
+
+/*--------------------------------------------------
+			 중등활용가이드 팝업
+--------------------------------------------------*/
+.midGdpopname {
+  width: 1020px;
+  margin-top: -300px;
+}
+
+.pop_conUL > li.gdtype1 {
+  height: 242px;
+  background: #f9f9f9;
+}
+
+.pop_conUL > li.gdtype2 {
+  padding: 20px 0 52px 0;
+  background: #fff;
+}
+
+.pop_conUL .ttl {
+  padding: 27px 0 0 76px;
+}
+
+.pop_conUL > li.gdtype2 .ttl {
+  padding: 0 0 0 76px;
+}
+
+.pop_conUL .desc {
+  padding: 20px 0 0 46px;
+}
+
+.pop_conUL .cont {
+  padding: 18px 0 0 76px;
+}
+
+.pop_conUL > li.gdtype2 .cont {
+  padding: 25px 0 0 76px;
+}
+
+.pop_conUL .info_tip {
+  padding: 9px 0 0 40px;
+}
+
+/*--------------------------------------------------
+			 족보 컨텐츠 신청하기 팝업
+--------------------------------------------------*/
+.memberpopname .comPopup {
+  border: none;
+}
+
+.mb_cnt {
+  padding: 22px 0 30px 0;
+  text-align: center;
+}
+
+.mb_cnt .mb_info_ttl {
+  margin-bottom: 10px;
+  font-size: 39px;
+  line-height: 43px;
+  color: #f74966;
+  font-weight: bold;
+  letter-spacing: -3px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.mb_cnt .mb_ttl {
+  margin-bottom: 28px;
+  font-size: 40px;
+  line-height: 48px;
+  color: #202531;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.mb_cnt .mb_ttl strong {
+  letter-spacing: -3px;
+}
+
+.mb_cnt .mb_desc {
+  margin-bottom: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+
+.mb_type {
+  width: 325px;
+  margin: 0 auto 0 auto;
+}
+
+.mb_type .mb_type_Top {
+  width: 100%;
+  height: 5px;
+  background: #fff url(/images/pc/zocbo/zocbo_rn/common/bg_mbtop.gif) no-repeat;
+}
+
+.mb_type .mb_type_Mid {
+  width: 323px;
+  padding: 13px 0 13px 0;
+  border-left: 1px solid #3f3f3f;
+  border-right: 1px solid #3f3f3f;
+  background: #fff;
+}
+
+.mb_type .mb_type_Bot {
+  width: 100%;
+  height: 5px;
+  background: #fff url(/images/pc/zocbo/zocbo_rn/common/bg_mbbot.gif) no-repeat;
+}
+
+.mb_type_list {
+  padding-left: 18px;
+  text-align: left;
+}
+
+.mb_type_list > li {
+  width: 118px;
+  height: 24px;
+  padding-left: 34px;
+  margin: 0 0 6px 0;
+  float: left;
+  background: url(/images/pc/zocbo/zocbo_rn/common/ico_mbtype.gif) no-repeat;
+  font-size: 12px;
+  line-height: 27px;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+
+.mb_SlectArea {
+  width: 394px;
+  margin: 29px auto 0 auto;
+}
+
+/*--------------------------------------------------
+	영상팝업
+--------------------------------------------------*/
+.vodPopup {
+  margin-left: 508px;
+  position: absolute;
+  left: 50%;
+  top: 291px;
+}
+
+#vodPopupWrap {
+  width: 935px;
+  height: 525px;
+  display: none;
+  position: absolute;
+  border: 1px solid #040104;
+  z-index: 1001;
+}
+
+#vodPopupWrap #player {
+  display: block;
+}
+
+#vodPopupWrap .vodPopupinner {
+  position: relative;
+}
+
+#vodPopupWrap .vodPopupinner .vodPopupclose {
+  position: absolute;
+  top: -1px;
+  right: -27px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("/images/pc/zocbo/zocbo_rn/common/popup/close_vodPopup.gif") no-repeat 0 0;
+  text-indent: -999em;
+  background-size: 20px 20px;
+}
+
+/*--------------------------------------------------
+			 오답노트, 바로테스트 팝업 리뉴얼
+--------------------------------------------------*/
+#zocbo_wrap .rn_pop_gdcom {
+  padding: 0 21px 17px 21px;
+}
+
+#zocbo_wrap .barotestinfo.rn_pop_gdcom {
+  right: -5px;
+  top: 45px;
+}
+
+#zocbo_wrap .wrongNotebook.rn_pop_gdcom {
+  left: auto;
+  right: 114px;
+  top: 45px;
+}
+
+#zocbo_wrap .rn_pop_gdcom.pop_gdcom {
+  width: 370px;
+  left: auto;
+}
+
+.rn_pop_gdcom .wronginfo_cnt {
+  padding: 14px 0 0 0;
+}
+
+.rn_pop_gdcom .wronginfo_cnt .ttl {
+  margin-bottom: 5px;
+}
+
+#zocbo_wrap .pop_gdcom .arrowup {
+  position: absolute;
+  left: auto;
+  right: 13px;
+  top: -15px;
+}
+
+#zocbo_wrap .rn_pop_gdcom .wronginfo_cnt .ttlArea .ttl {
+  padding-left: 0;
+  background: none;
+}
+
+#zocbo_wrap .rn_pop_gdcom .wronginfo_cnt .ttlArea {
+  padding-left: 25px;
+}
+
+#zocbo_wrap .barotestinfo.rn_pop_gdcom .wronginfo_cnt .ttlArea {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/icon_barotest.gif) no-repeat 0 4px;
+}
+
+#zocbo_wrap .wrongNotebook.rn_pop_gdcom .wronginfo_cnt .ttlArea {
+  padding-left: 25px;
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/icon_WrongNotebook.gif) no-repeat 0 4px;
+}
+
+#zocbo_wrap .barotestinfo {
+  border: 1px solid #7d75d9;
+}
+
+#zocbo_wrap .wrongNotebook {
+  height: auto;
+  border: 1px solid #67c0e6;
+}
+
+#zocbo_wrap .barotestinfo.rn_pop_gdcom .arrowup {
+  width: 11px;
+  height: 7px;
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/arrow_baroTestInfo.gif) no-repeat;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: -7px;
+}
+
+#zocbo_wrap .wrongNotebook.rn_pop_gdcom .arrowup {
+  width: 11px;
+  height: 7px;
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/arrow_WrongNotebook.gif) no-repeat;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: -7px;
+}
+
+#zocbo_wrap .barotestinfo span {
+  color: #7d75d9;
+}
+
+#zocbo_wrap .wrongNotebook span {
+  color: #3a9cc6;
+}
+
+/*--------------------------------------------------
+			 오답노트, 바로테스트 팝업 리뉴얼2
+--------------------------------------------------*/
+.baroWrap {
+  position: relative;
+}
+
+.baroTopfixed {
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+  border-bottom: 3px solid #333;
+}
+
+.baroTopCnt {
+  position: relative;
+}
+
+.baroLogo {
+  position: absolute;
+  left: 25px;
+  top: 10px;
+}
+
+.baroTtlimg {
+  padding-top: 16px;
+  text-align: center;
+}
+
+.baroClock {
+  position: absolute;
+  right: 105px;
+  top: 16px;
+}
+
+.baroPrint {
+  position: absolute;
+  right: 45px;
+  top: 16px;
+}
+
+.baroRfixed {
+  width: 218px;
+  position: fixed;
+  right: 0;
+  top: 58px;
+  bottom: 0;
+}
+
+.baroCnt {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  overflow: auto;
+}
+
+.bRCM {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 45px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.bRCMCnt {
+  height: 100%;
+  position: relative;
+  z-indeX: 99;
+}
+
+.bdLine {
+  width: 36px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-indeX: 98;
+  background: #f3f3f3;
+}
+
+.bRCT,
+.bRCF {
+  width: 100%;
+  height: 45px;
+  background: #1081de;
+  display: table;
+  line-height: 100%;
+  text-align: center;
+}
+
+.bRCT a,
+.bRCF a {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.bRCF {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/*--------------------------------------------------
+			정회원 전환 레이어팝업
+--------------------------------------------------*/
+.zocbo_RmbrPopupWrap {
+  width: 835px;
+  margin-left: -419px;
+  min-height: 1006px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  background: #fff;
+  border: 1px solid #000;
+  z-index: 9998;
+}
+
+.zocbo_RmbrPopup {
+  padding: 41px 50px 46px 50px;
+  position: relative;
+}
+
+.zocbo_RmbrPopup .ttl {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.zocbo_RmbrPopup .infobox {
+  margin-bottom: 27px;
+}
+
+.zocbo_Rmblist > li {
+  margin-top: 30px;
+}
+
+.zocbo_Rmblist > li:first-child {
+  margin-top: 0;
+}
+
+.formTable.rmbTable tbody th {
+  font-size: 18px;
+  color: #4272d2;
+}
+
+.formTable.rmbTable tbody td.seleinputtxt {
+  font-size: 18px;
+  color: #010101;
+}
+
+.zocbo_RmbrPopupWrap .botbtn {
+  padding-top: 30px;
+}
+
+.zocbo_RmbrPopupWrap .botbtn > a {
+  vertical-align: top;
+}
+
+.zocbo_RmbrPopupWrap .botbtn > a.btnBlack_tp {
+  width: 264px;
+}
+
+.rmbinfoBox {
+  width: 100%;
+  height: 163px;
+  margin-top: 26px;
+  background: #f9f9f9;
+}
+
+.rmbinfoBox .cnt {
+  padding: 20px 0 20px 44px;
+}
+
+.rmbinfoBox .cnt .subttl {
+  margin-bottom: 13px;
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+  text-align: left;
+}
+
+.rmbinfoBox .cnt .rmbinfoBoxinfolist > li {
+  font-size: 12px;
+  line-height: 18px;
+  color: #7b7b7b;
+}
+
+.closeRmbpop {
+  position: absolute;
+  right: 22px;
+  top: 20px;
+}
+
+.dimfullcop {
+  position: absolute;
+  z-index: 1001;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blank.png) repeat;
+}
+
+.zocbo_RmbrPopupWrap .coupon-chk-area {
+  width: auto;
+  margin: 28px 0 0 0;
+}
+
+.coupon-provision-table-div {
+  margin-top: 30px;
+}
+
+.coupon-provision-table {
+  border: 1px solid #CCC;
+}
+
+.coupon-provision-table .last {
+  border-right: none !important;
+}
+
+.coupon-provision-table .last {
+  border-right: none !important;
+}
+
+.coupon-provision-table .td-left {
+  text-align: left !important;
+}
+
+.coupon-provision-table thead th {
+  font-size: 12px;
+  height: 28px;
+  background: #ECECEC;
+  text-align: center;
+  color: #000;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.coupon-provision-table tbody tr td {
+  padding: 10px 10px 10px 10px;
+  font-size: 12px;
+  color: #000;
+  line-height: 16px;
+  border-right: 1px solid #ccc;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  word-break: break-all;
+  text-align: center;
+}
+
+/*--------------------------------------------------
+			 바로테스트 5건 무료 팝업
+--------------------------------------------------*/
+.baro5freepopup {
+  width: 650px;
+  height: 320px;
+  margin-left: -486px;
+  position: absolute;
+  left: 50%;
+  top: 52px;
+}
+
+.baro5freepopup .cnt {
+  position: relative;
+}
+
+.baro5freepopup .cnt .baro5freeclose {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+}
+
+.baro5freepopup .cnt .baro5freeQ {
+  position: absolute;
+  right: 130px;
+  bottom: 43px;
+}
+
+/*--------------------------------------------------
+			제3자 제공에 대한 동의[선택] 팝업
+--------------------------------------------------*/
+.agreement-pop {
+  width: 393px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  z-index: 10001;
+}
+
+.agreement-com-popup {
+  border: 1px solid #3f3f3f;
+  position: relative;
+}
+
+.agreement-com-popup .pop_header {
+  width: 100%;
+  height: 60px;
+  background: #3f3f3f;
+}
+
+.agreement-com-popup .pop_header .ttl {
+  padding-left: 21px;
+  font-size: 15px;
+  line-height: 60px;
+  color: #fff;
+  font-family: 'NanumBarunGothic', Sans-Serif;
+}
+
+.agreement-com-popup .pop_cnt {
+  padding: 20px 22px 1.5em 22px;
+  background: #fff;
+}
+
+.agreement-com-popup .pop_cnt .pop_cnt_ttl {
+  margin-bottom: 17px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3579d4;
+  font-weight: bold;
+}
+
+.agreement-com-popup .popClose {
+  position: absolute;
+  right: 18px;
+  top: 19px;
+}
+
+.affiliateBox2 {
+  height: 215px;
+  overflow-y: auto;
+}
+
+.info-list > li {
+  margin-top: 4px;
+}
+
+.info-list > li:first-child {
+  margin-top: 0;
+}
+
+.info-list > li dl {
+  border: 1px solid #CCC;
+}
+
+.info-list > li dl dt {
+  height: 24px;
+  background: #ECECEC;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.info-list > li dl dd {
+  padding: 10px 0 10px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+}
+
+.info-essential {
+  font-size: 11px;
+  line-height: 15px;
+  color: #000;
+}
+
+.gab8 {
+  padding-left: 8px;
+}
+
+button.pop-close-button {
+  margin: 1em auto 0 auto;
+  display: block;
+  vertical-align: middle;
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 22px;
+  background: #282E38;
+  color: #fff;
+  font-size: 14px;
+}
+
+.recArglistsub > li {
+  margin-top: 7px;
+}
+
+.recArglistsub > li:first-child {
+  margin-top: 0;
+}
+
+.recArglistsub > li .recAtbttl {
+  font-weight: 700;
+}
+
+.recArglistsub > li .recAtbtxt {
+  margin-top: 7px;
+  line-height: 20px;
+}
+
+.recArglistsub > li .recAtbtxtPlL5 > li {
+  margin-top: 7px;
+}
+
+.recArglistsub > li .recAtbtxt:first-child {
+  margin-top: 0;
+}
+
+/*--------------------------------------------------
+			1학기 기말고사 결제 프로모션 팝업
+--------------------------------------------------*/
+.oneth-pop:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9990;
+}
+
+.onethFinalPopWrap {
+  width: 560px;
+  margin-left: -280px;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  z-index: 10001;
+}
+
+.onethFinalPopWrap .cnt {
+  width: 100%;
+  position: relative;
+}
+
+.onethFinalPopWrap .cnt .bottodayArea {
+  height: 46px;
+  background: #d0d0d0;
+  position: relative;
+}
+
+.close_growthareacouponPop {
+  position: absolute;
+  right: 18px;
+  top: 15px;
+}
+
+.onethFinalPopWrap .todayLDiv {
+  width: 100%;
+  padding-left: 19px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 46px;
+  color: #000;
+  letter-spacing: -1px;
+  word-spacing: 0;
+}
+
+.onethFinalPopWrap .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.onethFinalPopWrap .todayLDiv label {
+  display: inline-block;
+  height: 46px;
+  padding-left: 22px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_w15h15.jpg) no-repeat left center;
+  cursor: pointer;
+}
+
+.onethFinalPopWrap .todayLDiv input[type="checkbox"]:checked + label {
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_w15h15.jpg) no-repeat left center;
+}
+
+.onethFinalPopWrap .gw-link {
+  width: 232px;
+  height: 45px;
+  position: absolute;
+  background: url(/images/pc/zocbo/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+}
+
+.parent_onethpop .gw-link {
+  left: 153px;
+  top: 454px;
+}
+
+.lecturer_onethpop .gw-link {
+  left: 153px;
+  top: 703px;
+}
+
+/*--------------------------------------------------
+			구매 버튼 클릭 시 팝업
+--------------------------------------------------*/
+.purchase-popup.ui-layer-popup .layer-popup-content {
+  width: 650px;
+}
+
+.purchase-popup.ui-layer-popup .layer-popup-content {
+  min-height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.purchase-popup.ui-layer-popup .body {
+  padding-bottom: 0;
+  overflow: hidden;
+  max-height: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.purchase-popup.ui-layer-popup .body .info-wrap {
+  padding-bottom: 16px;
+  -webkit-box-flex: 1;
+      -ms-flex: auto 0 0px;
+          flex: auto 0 0;
+}
+
+.purchase-popup.ui-layer-popup .body .info-wrap .info-text {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.purchase-popup.ui-layer-popup .body .info-desc-text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.015em;
+  color: #000;
+}
+
+.purchase-popup.ui-layer-popup .body .info-wrap .info-text strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.purchase-popup.ui-layer-popup .body .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100% - 222px);
+}
+
+.purchase-popup.ui-layer-popup .body .cancellation-info {
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: auto 0 0px;
+          flex: auto 0 0;
+}
+
+.purchase-popup.ui-layer-popup .body .cancellation-info .block {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.015em;
+  color: #8B2A2A;
+  height: auto;
+}
+
+.purchase-popup.ui-layer-popup .body .cancellation-info p {
+  font-size: 14px;
+  line-height: 32px;
+  height: 32px;
+  letter-spacing: -0.015em;
+  color: #4B4B4B;
+  vertical-align: top;
+}
+
+.purchase-popup.ui-layer-popup .body .cancellation-info button {
+  float: right;
+}
+
+.purchase-popup.ui-layer-popup h2 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.info-cnt-box {
+  border: 1px solid #d9dfe3;
+}
+
+.info-cnt-box > ul {
+  padding: 20px 15px 20px 15px;
+}
+
+.info-cnt-box > ul > li {
+  margin-top: 30px;
+}
+
+.info-cnt-box > ul > li:first-child {
+  margin-top: 0;
+}
+
+.info-cnt-box > ul > li p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.info-cnt-box > ul > li p strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.purchase-popup.ui-layer-popup .footer {
+  padding-top: 15px;
+}
+
+.purchase-popup.ui-layer-popup .footer .btn + .btn {
+  margin-left: 10px;
+}
+
+/*--------------------------------------------------
+			회원전환팝업 
+--------------------------------------------------*/
+.ui-layer-popup.conversion-popup {
+  position: initial;
+}
+
+.ui-layer-popup.conversion-popup:before {
+  position: fixed;
+  z-index: 999;
+}
+
+.ui-layer-popup.conversion-popup .layer-popup-content {
+  width: 700px;
+  top: 40px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 10000;
+}
+
+.conversion-popup .layer-popup-content {
+  min-height: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #3F3F3F;
+}
+
+.conversion-popup h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.conversion-popup .header {
+  padding-left: 20px;
+  background-color: #3F3F3F;
+}
+
+.ui-layer-popup.conversion-popup .header h1 {
+  font-weight: 300;
+}
+
+.conversion-popup .body {
+  padding: 0 20px 20px 20px;
+  overflow: hidden;
+  max-height: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conversion-popup .body .info-wrap {
+  width: 522px;
+  padding-bottom: 20px flex auto 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.conversion-popup .body .info-wrap .conversion-visualimg {
+  margin: 4px 0 15px 0;
+  text-align: center;
+}
+
+.conversion-popup .body .info-wrap .info-text {
+  font-size: 26px;
+  line-height: 33px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0;
+  color: #000;
+  font-family: "Spoqa Han Sans Neo", Sans-Serif;
+}
+
+.conversion-popup .body .info-wrap .info-text strong {
+  color: #4272D2;
+}
+
+.conversion-popup .body .info-wrap .info-desc {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  word-spacing: 0;
+  color: #000;
+  font-family: "Spoqa Han Sans Neo", Sans-Serif;
+}
+
+.conversion-popup .body .info-wrap .info-desc span {
+  color: #4272D2;
+}
+
+.conversion-popup .body .info-wrap .password-conversion-ttl {
+  margin: 20px auto 0 auto;
+  position: relative;
+}
+
+.conversion-popup .body .info-wrap .password-conversion-ttl:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -16px;
+}
+
+.conversion-popup .body .info-wrap .password-conversion-ttl .top-text {
+  width: 345px;
+  margin: 0 auto 5px auto;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  background: #fff;
+  text-align: center;
+  color: #000;
+  font-family: "Spoqa Han Sans Neo", Sans-Serif;
+  position: relative;
+}
+
+.conversion-popup .body .info-wrap .password-conversion-ttl .top-desc {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #7D7D7D;
+  font-family: "Spoqa Han Sans Neo", Sans-Serif;
+}
+
+.conversion-popup .content1 {
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+
+.conversion-popup .content1 .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.conversion-popup .content1 h2 {
+  font-family: "Spoqa Han Sans Neo", Sans-Serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.conversion-popup .content1 h2 p {
+  font-family: "Spoqa Han Sans Neo", Sans-Serif;
+  font-size: 14px;
+  color: #396bc1;
+  line-height: 21px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.conversion-popup .content1 .warning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+
+.conversion-popup .content1 p.warning {
+  font-size: 14px;
+  line-height: 18px;
+  color: #E33626;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.conversion-popup .content1 input[type=text], .content1 input[type=password] {
+  height: 38px;
+  border: 1px solid #666;
+  padding: 0 10px;
+  font-size: 17px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: "Spoqa Han Sans Neo", Sans-Serif;
+  width: 100%;
+  color: #000;
+}
+
+.conversion-popup .content1 input[type=text]::-webkit-input-placeholder, .content1 input[type=password]::-webkit-input-placeholder {
+  color: #dcdcdc;
+}
+
+.conversion-popup .content1 input[type=text]:-ms-input-placeholder, .content1 input[type=password]:-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+.conversion-popup .content1 input[type=text]::-ms-input-placeholder, .content1 input[type=password]::-ms-input-placeholder {
+  color: #dcdcdc;
+}
+
+.conversion-popup .content1 input[type=text]::placeholder, .content1 input[type=password]::placeholder {
+  color: #dcdcdc;
+}
+
+.conversion-popup .conversion-agreement {
+  margin-top: 25px;
+}
+
+.conversion-popup .conversion-agreement > * {
+  text-align: left;
+}
+
+.recArgTxt {
+  position: relative;
+}
+
+.recArgTxt input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.recArgTxt input[type="checkbox"]:checked + label {
+  background: url(/images/pc/zocbo/zocbo_rn/common/radio_h24on.png) no-repeat 0 50%;
+}
+
+.recArgTxt input[type="checkbox"]:disabled + label {
+  background: url(/images/pc/zocbo/zocbo_rn/common/radio_h24.png) no-repeat 0 50%;
+}
+
+.recArgTxt {
+  font-size: 21px;
+  color: #1a1a1a;
+  line-height: 24px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+}
+
+.recArgTxt.recArgTxtALL label {
+  font-weight: 600;
+}
+
+.recArgTxt label {
+  display: inline-block;
+  height: 24px;
+  padding-left: 30px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/radio_h24.png) no-repeat 0 50%;
+  background-size: 24px auto;
+  font-size: 17px;
+  color: #1a1a1a;
+  line-height: 24px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  word-break: break-all;
+  cursor: pointer;
+}
+
+.recArglist > li {
+  margin-top: 12px;
+  position: relative;
+}
+
+.recArglist > li.list-authentication {
+  margin-top: 46px;
+}
+
+.recArglist > li.list-authentication .recArgTxt {
+  margin-bottom: 14px;
+}
+
+.recArglist > li .look-pop {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  color: #396BC1;
+  line-height: 21px;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.recArglist {
+  margin-top: 16px;
+}
+
+.recArglist > li:first-child {
+  margin-top: 0;
+}
+
+.recArgBox {
+  height: 205px;
+  padding: 5% 5% 5% 5%;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+}
+
+.recArgBox .recArglist {
+  line-height: 20px;
+}
+
+.recArgBox .recArglist > li div {
+  line-height: 20px;
+}
+
+.recArglist > li .desc-infotxt {
+  padding-left: 30px;
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #396BC1;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+}
+
+.checkbox-wrap {
+  font-size: 0;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.checkbox-wrap span {
+  margin-left: 39px;
+  position: relative;
+}
+
+.checkbox-wrap span:first-child {
+  margin-left: 0;
+}
+
+.conversion-popup .footer .btn {
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000;
+  font-weight: 300;
+  border: none;
+}
+
+.conversion-popup .footer .btn:first-child {
+  margin-left: 0;
+}
+
+.conversion-popup .footer .btn-white {
+  background: #fff;
+  border-top: 1px solid #000;
+}
+
+.conversion-popup .footer .btn-black {
+  background: #515560;
+  color: #fff;
+  border-top: 1px solid #515560;
+}
+
+.conversion-popup.ui-layer-popup .footer {
+  padding: 0;
+}
+
+/*--------------------------------------------------
+			만료회원 재결제 팝업 
+--------------------------------------------------*/
+.ui-layer-popup.payTimePop {
+  display: block;
+  position: absolute;
+}
+
+.ui-layer-popup.payTimePop:before {
+  position: fixed;
+}
+
+.ui-layer-popup.payTimePop .layer-popup-content {
+  top: 100px;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+}
+
+.payTimePop .bottodayArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d0d0d0;
+  height: 47px;
+  padding: 0 21px 0 25px;
+}
+
+.payTimePop .bottodayArea .checkbox {
+  position: relative;
+}
+
+.payTimePop .bottodayArea .checkbox input {
+  width: 15px;
+  height: 15px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.payTimePop .bottodayArea {
+  height: 46px;
+  background: #d0d0d0;
+  position: relative;
+}
+
+.payTimePop .todayLDiv {
+  width: 100%;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #000;
+  letter-spacing: -1px;
+  word-spacing: 0;
+}
+
+.payTimePop .todayLDiv input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.payTimePop .todayLDiv label {
+  padding-left: 22px;
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_w15h15.jpg) no-repeat left center;
+  cursor: pointer;
+  letter-spacing: 0;
+}
+
+.payTimePop .todayLDiv input[type="checkbox"]:checked + label {
+  background: url(/images/pc/zocbo/zocbo_rn/common/popup/chbox_w15h15.jpg) no-repeat left center;
+}
+
+.payTimePop .bottodayArea .btn-close {
+  display: block;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  text-indent: -9999px;
+  background: url("/images/pc/zocbo/event/check_attendance_2208/spr-attendance.png") -50px 0 no-repeat;
+}
+
+.pay-time-golink {
+  position: absolute;
+  background: url(/images/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+}
+
+.payTimePop_7 .pay-time-golink {
+  width: 305px;
+  height: 50px;
+  left: 118px;
+  top: 566px;
+}
+
+.payTimePop_end .pay-time-golink {
+  width: 380px;
+  height: 60px;
+  left: 88px;
+  top: 496px;
+}
+
+.payTimePop_end2 .pay-time-golink {
+  width: 406px;
+  height: 60px;
+  left: 75px;
+  top: 496px;
+}
+
+.payTimePop_end3 .pay-time-golink {
+  width: 406px;
+  height: 60px;
+  left: 75px;
+  top: 461px;
+}
+
+.payTimePop .close-pop-time {
+  position: absolute;
+  right: 26px;
+  top: 21px;
+}
+
+.period-end-popmid .pay-time-golink {
+  width: 305px;
+  height: 50px;
+  left: 118px;
+  top: 513px;
+}
+
+.period-end-pophigh .pay-time-golink {
+  width: 305px;
+  height: 50px;
+  left: 118px;
+  top: 513px;
+}
+
+#skytabpopup {
+  .nctn {
+    .imgA {
+      display:none;
+    }
+  }
+}
+
+/*# sourceMappingURL=zocbo_style_popup.css.map */

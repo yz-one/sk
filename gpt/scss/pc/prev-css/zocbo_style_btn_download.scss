@@ -1,0 +1,502 @@
+@charset "UTF-8";
+/* 다운로드 초, 중, 고, 선생, 팝업// */
+.dwn_list {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  font-size: 0;
+  position:relative;
+  .guide-info-bubble {
+    &:before {
+      display: block;
+      content: '';
+      width: 17px;
+      height: 19px;
+      background: url(/images/pc/zocbo/zocbo_rn/sub/arrow-guide-info-bubble.png) 0 0 no-repeat;
+      position:absolute;
+      left:-17px;
+      top:50%;
+      transform: translateY(-50%);
+  }
+    min-width:210px;
+    min-height:80px;
+    position:absolute;
+    right:-236px;
+    top:-23px;
+    box-sizing: border-box;
+    border:1px solid #bdc3cf;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index:99;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+    .txt-guide-info-bubble {
+      padding:12px 0 0 22px;
+      font-size:13px;
+      line-height: 160%;
+      color:#000;
+      font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+      font-weight: 400;
+      text-align:left;
+    }
+    .desc-guide-info-bubble {
+      padding:3px 0 0 22px;
+      font-size:12px;
+      line-height: 130%;
+      color:#343434;
+      font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+      font-weight: 400;
+      text-align:left;
+      span {
+        color:#4272D2;
+      }
+    }
+    .close-guide-info-bubble {
+      width:12px;
+      height:12px;
+      position:absolute;
+      right:10px;
+      top:10px;
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 6.75L0.75 12L0 11.25L5.25 6L0 0.75L0.75 0L6 5.25L11.25 0L12 0.75L6.75 6L12 11.25L11.25 12L6 6.75Z' fill='%23515560'/%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+.dwn_list > div {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin-left: 11px;
+}
+
+.dwn_list > div:first-child {
+  margin-left: 0;
+}
+
+.dwn_list > div .dwn_select {
+  margin-right: 3px;
+}
+
+.dwn_list a.dwn {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-decoration: none !important;
+}
+
+.dwn_list .dwn {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  position: relative;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 400;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.dwn_list .dwn2 {
+  width: 67px;
+}
+
+.dwn_list .dwn3 {
+  width: 56px;
+}
+
+.dwn_list .dwn81 {
+  width: 81px;
+}
+
+.dwn_list .dwn85 {
+  width: 85px;
+}
+
+.dwn_list .dwn_tp_black {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_black.gif) no-repeat;
+}
+
+.dwn_list .dwn_tp_blue {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_blue.gif) no-repeat;
+}
+
+.dwn_list .dwn_tp_Mblue {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_Mblue.gif) no-repeat;
+}
+
+.dwn_list .dwn_tp_MblueGreen {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_MblueGreen.gif) no-repeat;
+}
+
+.dwn_list .dwn_tp_red {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_red.gif) no-repeat;
+}
+
+.dwn_list .dwn_tp_black34 {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_black34.png) no-repeat;
+}
+
+.dwn_list .dwn_tp_pink {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_pink.gif) no-repeat;
+}
+
+.dwn_list .dwn_tp_purple {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_purple.gif) no-repeat;
+}
+
+.rn_itemlist .dwn_list .dwn_tp_purple {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_purple55.gif) no-repeat;
+}
+
+.dwn_list .dnw_tp_skyblue {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_skyblue.gif) no-repeat;
+}
+
+.dwn_list .dnw_tp_HavelockBlue {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_havelockblue.gif) no-repeat;
+}
+
+.dwn_list .dwn81.dwn_tp_purple {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_purple81.gif) no-repeat;
+}
+
+.dwn_list .dwn85.dwn_tp_blue {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_blue85.gif) no-repeat;
+}
+
+.dwn_list .dwn85.dwn_tp_red {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_red85.gif) no-repeat;
+}
+
+.dwn_list .dwn81.dwn_tp_black {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_black81.gif) no-repeat;
+}
+
+.dwn_list .dwn81.dwn_tp_green {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_green81.gif) no-repeat;
+  border-right: 1px solid #7AAC63;
+}
+
+.dwn_sbj {
+  width: 100%;
+  height: 19px;
+  display: block;
+  font-size: 11px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  word-spacing: 0;
+}
+
+.dwn_pay {
+  width: 100%;
+  height: 14px;
+  display: block;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+  word-spacing: 0;
+}
+
+.dwn_list .dwn_tp_black .dwn_pay {
+  color: #7aac63;
+}
+
+.dwn_list .dwn_tp_green .dwn_pay {
+  color: #7AAC63;
+}
+
+.dwn_list .dwn_tp_blue .dwn_pay {
+  color: #4388c9;
+}
+
+.dwn_list .dwn_tp_Mblue .dwn_pay {
+  color: #647ecf;
+}
+
+.dwn_list .dwn_tp_MblueGreen .dwn_pay {
+  color: #65c3e1;
+}
+
+.dwn_list .dwn_tp_red .dwn_pay {
+  color: #e33626;
+}
+
+.dwn_list .dwn_tp_pink .dwn_pay {
+  color: #ff4f88;
+}
+
+.dwn_list .dwn_tp_purple .dwn_pay {
+  color: #7d75d9;
+}
+
+.dwn_list .dnw_tp_skyblue .dwn_pay {
+  color: #5fc6e2;
+}
+
+.dwn_list .dnw_tp_HavelockBlue .dwn_pay {
+  color: #647ecf;
+}
+
+.dwnchklist {
+  font-size: 0;
+}
+
+.dwnchklist > div {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin-left: 11px;
+}
+
+.dwnchklist > div:first-child {
+  margin-left: 0;
+}
+
+.dwnchklist a.dwn {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-decoration: none !important;
+}
+
+.dwnchklist .dwn {
+  width: 49px;
+  height: 34px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.dwnchklist .dwn_tp_black {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_blackchk.png) no-repeat;
+}
+
+.dwnchklist .dwn_tp_blue {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_bluechk.png) no-repeat;
+}
+
+.dwnchklist .dwn_tp_red {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_redchk.png) no-repeat;
+}
+
+.dwnchklist.chkon .dwn_tp_black {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_blackchkon.png) no-repeat;
+}
+
+.dwnchklist.chkon .dwn_tp_blue {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_bluechkon.png) no-repeat;
+}
+
+.dwnchklist.chkon .dwn_tp_red {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_dnw_redchkon.png) no-repeat;
+}
+
+.dwnchklist .dwn_sbj {
+  margin-left: 7px;
+}
+
+.dwnchklist .dwn_pay {
+  margin-left: 7px;
+}
+
+/* //다운로드 초, 중, 고, 선생, 팝업 */
+/* 다운로드 버튼 신규 2021-10-21// */
+.tableStyle3 tbody tr td.board_line td {
+  vertical-align: top;
+}
+
+.tableStyle3 tbody tr td.board_line a:hover {
+  text-decoration: none;
+}
+
+.btn-download {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 100%;
+}
+
+.btn-download span,
+.btn-download a {
+  display: inline-block;
+  text-decoration: none !important;
+}
+
+.btn-download span > span,
+.btn-download a > span {
+  display: block;
+}
+
+.btn-download.w-auto .dwn_sbj,
+.btn-download.w-auto .dwn_pay {
+  width: auto;
+}
+
+.btn-download.w-auto .dwn_sbj {
+  padding: 0 7px;
+}
+
+.btn-download .dwn_sbj {
+  width: 34px;
+  height: 18px;
+}
+
+.btn-download .dwn_pay {
+  height: 14px;
+  width: 32px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.btn-download-hwp .dwn_sbj {
+  background-color: #4289c9;
+}
+
+.btn-download-hwp .dwn_pay {
+  color: #4289c9;
+  border-color: #4289c9;
+}
+
+.btn-download-pdf .dwn_sbj {
+  background-color: #e33626;
+}
+
+.btn-download-pdf .dwn_pay {
+  color: #e33626;
+  border-color: #e33626;
+}
+
+.btn-download-scan .dwn_sbj {
+  background-color: #7aac63;
+}
+
+.btn-download-scan .dwn_pay {
+  color: #7aac63;
+  border-color: #7aac63;
+}
+
+.btn-download-baro {
+  display: block;
+  width: 80px;
+}
+
+.btn-download-baro .dwn_sbj {
+  background-color: #7d75d9;
+  width: 80px;
+  height: 18px;
+}
+
+.btn-download-baro .dwn_pay {
+  color: #7d75d9;
+  border-color: #7d75d9;
+  height: 14px;
+  width: 78px;
+}
+
+.btn-download-mov {
+  display: block;
+  width: 80px;
+}
+
+.btn-download-mov .dwn_sbj {
+  background-color: #5fc6e2;
+  width: 80px;
+  height: 18px;
+}
+
+.btn-download-mov .dwn_pay {
+  color: #5fc6e2;
+  border-color: #5fc6e2;
+  height: 14px;
+  width: 78px;
+}
+
+.check-result {
+  width: 78px;
+  font-size: 15px;
+  height: 32px;
+  line-height: 32px;
+  background: #ffffff;
+  border: 1px solid #b2bacd;
+  text-align: center;
+  color: #666;
+  font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+  font-weight: 500;
+}
+
+/* 체크박스 */
+.btn-download.checkbox {
+  position: relative;
+  padding-left: 15px;
+}
+
+.btn-download.checkbox:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/btn-download-checkbox.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -10px;
+}
+
+.btn-download.checkbox.active:before {
+  background-position: 0 bottom;
+}
+
+/* 재 다운로드 */
+.btn-download-hwp.gray .dwn_sbj,
+.btn-download-pdf.gray .dwn_sbj,
+.btn-download-scan.gray .dwn_sbj {
+  background-color: #b4b4b4;
+}
+
+.btn-download-hwp.gray .dwn_pay,
+.btn-download-pdf.gray .dwn_pay,
+.btn-download-scan.gray .dwn_pay {
+  border-color: #b4b4b4;
+  position: relative;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+.btn-download-hwp.gray .dwn_pay:before,
+.btn-download-pdf.gray .dwn_pay:before,
+.btn-download-scan.gray .dwn_pay:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+  background: url("/images/pc/zocbo/zocbo_rn/common/icon-redownload.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.btn-download .dwn81 .dwn_sbj,
+.btn-download .dwn85 .dwn_sbj {
+  width: 80px;
+}
+
+.btn-download .dwn81 .dwn_pay,
+.btn-download .dwn85 .dwn_pay {
+  width: 78px;
+}
+
+.btn-download.checkbox {
+  color: #000;
+}
+
+/* //다운로드 버튼 신규 2021-10-21 */
+/*# sourceMappingURL=zocbo_style_btn_download.css.map */

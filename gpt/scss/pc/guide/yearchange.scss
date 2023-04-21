@@ -1,0 +1,560 @@
+@charset "euc-kr";
+
+/*--------------------------------------------------
+			 공통 
+--------------------------------------------------*/
+.aWzvisual .zGdinner {
+	width: 1019px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.aWzCnt {
+	position: relative;
+	overflow: hidden;
+}
+
+.pxsection {
+	position: relative;
+}
+
+.pxsection .pxinner {
+	width: 1019px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.aWzCnt.mid .pxsection .ttl {
+	padding-top: 131px;
+	margin-bottom: 23px;
+	text-align: center;
+}
+
+.aWzCnt.mid .pxsection .previewBtn {
+	margin-bottom: 48px;
+	text-align: center;
+}
+
+.rTGPopdiv.anyway {
+	left: 217px;
+	top: 803px;
+}
+
+/*--------------------------------------------------
+			섹션bg영역
+-------------------------------------------------*/
+.pxsection1 {
+	width: 100%;
+	height: 706px;
+	background:#ffde59 url(/images/pc/guide/yearChange/bg_yCh1.jpg) no-repeat center top;
+}
+
+.pxsection2 {
+	width: 100%;
+	height: 723px;
+	background: url(/images/pc/guide/yearChange/bg_yCh2.jpg) no-repeat center top;
+	position:relative;
+}
+
+.pxsection2::before {
+	width: 100%;
+	height: 723px;
+	content: '';
+	background: url(/images/pc/guide/yearChange/bg_yCh2BA.jpg) repeat-x;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index:-1;
+}
+
+.pxsection3 {
+	width: 100%;
+	height: 677px;
+	background: #fff;
+}
+
+.pxsection4 {
+	width: 100%;
+	padding-bottom: 106px;
+	background: url(/images/pc/guide/yearChange/bg_yCh4.jpg) repeat;
+}
+
+.pxsection5 {
+	width: 100%;
+	height: 301px;
+	background: #f6f6f6;
+}
+
+/*--------------------------------------------------
+			비쥬얼
+-------------------------------------------------*/
+.pxsection1 .pxinner {
+	height: 100%;
+}
+
+.pxsection1 .main_M {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.pxsection1 .main_L {
+	position: absolute;
+	left: 0;
+	top: 250px;
+	opacity: 0;
+	z-index: 1
+}
+
+.pxsection1 .main_R {
+	position: absolute;
+	right: 0;
+	top: 52px;
+	opacity: 0;
+	z-index: 1
+}
+
+.pxsection1 .main_vtxt {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	z-index: 1;
+	text-align: center;
+}
+
+.pxsection1 .s1_box {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	z-index: 1
+}
+
+.pxsection1 .s1_txt3 {
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	opacity: 0;
+	z-index: 5
+}
+
+.flip-in-y {
+	-webkit-animation: flip-in-y 1s;
+	animation: flip-in-y 1s
+}
+
+@keyframes flip-in-y {
+	0% {
+		transform: perspective(500px) rotateY(50deg);
+		opacity: .2;
+	}
+
+	30% {
+		transform: perspective(500px) rotateY(-30deg);
+	}
+
+	45% {
+		transform: perspective(500px) rotateY(30deg);
+	}
+
+	65% {
+		transform: perspective(500px) rotateY(-20deg);
+	}
+
+	100% {
+		transform: perspective(500px) rotateY(0deg);
+	}
+}
+
+@-webkit-keyframes flip-in-y {
+	0% {
+		transform: perspective(500px) rotateY(50deg);
+		opacity: .2;
+	}
+
+	30% {
+		transform: perspective(500px) rotateY(-30deg);
+	}
+
+	45% {
+		transform: perspective(500px) rotateY(30deg);
+	}
+
+	65% {
+		transform: perspective(500px) rotateY(-20deg);
+	}
+
+	100% {
+		transform: perspective(500px) rotateY(0deg);
+	}
+}
+
+.auGnavWrap {
+	margin-left: 529px;
+	position: absolute;
+	left: 50%;
+	top: 208px;
+	z-index: 9;
+}
+
+.auGnavWrap.zfixed {
+	position: fixed;
+	/* margin-top:-108px; top:50%; */
+}
+
+/*--------------------------------------------------
+			변경 서비스 안내 사항!
+-------------------------------------------------*/
+.pxsection2 .ttl {
+	padding-top: 51px;
+	text-align: center;
+}
+
+.pxsection2 .rchGide {
+	text-align: center;
+}
+
+.botBtn {
+	font-size: 0;
+	text-align: center;
+}
+
+.botBtn>a {
+	margin-left: 10px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+
+.botBtn>a:first-child {
+	margin-left: 0;
+}
+
+.targetMark {
+	position: absolute;
+	top: 63px;
+	left: -20px;
+}
+
+/*--------------------------------------------------
+			변경 서비스 진행 방법!
+-------------------------------------------------*/
+.pxsection3 .ttl {
+	padding-top: 68px;
+	text-align: center;
+}
+
+.pxsection3 .stepWay {
+	width: 860px;
+	margin: 36px auto 0 auto;
+	position: relative;
+}
+
+.pxsection3 .stepWay .stepli {
+	position: absolute;
+}
+
+.pxsection3 .stepWay .stepli1 {
+	left: 0;
+	top: 0px;
+}
+
+.pxsection3 .stepWay .stepli2 {
+	left: 310px;
+	top: 0px;
+	opacity: 1;
+	z-index: 1
+}
+
+.pxsection3 .stepWay .stepli3 {
+	left: 618px;
+	top: 0;
+	opacity: 1;
+	z-index: 1
+}
+
+.pxsection3 .stepWay .stepli1_arrow {
+	left: 242px;
+	top: 99px;
+	opacity: 1;
+	z-index: 1
+}
+
+.pxsection3 .stepWay .stepli2_arrow {
+	left: 551px;
+	top: 99px;
+	opacity: 1;
+	z-index: 1
+}
+
+.pxsection3 .stepptxt {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 275px;
+	font-size: 20px;
+	font-family: 'Roboto', 'Noto Sans Korean', sans-serif;
+	font-weight: 400;
+	letter-spacing: -0.025em;
+	text-align: center;
+}
+
+/*--------------------------------------------------
+			학년변경 신청하기
+-------------------------------------------------*/
+.pxsection4 .ttl {
+	padding-top: 71px;
+	margin-bottom: 32px;
+	text-align: center;
+}
+
+.useBoxWrap {
+	width: 778px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.useBoxWrap .useBox {
+	-moz-box-shadow: 10px 10px 7px #cec9c0;
+	-webkit-box-shadow: 10px 10px 7px #cec9c0;
+	box-shadow: 10px 10px 7px #cec9c0;
+}
+
+.useBoxWrap .useBoxL {
+	width: 381px;
+	min-height: 228px;
+	background: #fff;
+	float: left;
+}
+
+.useBoxWrap .useBoxR {
+	width: 381px;
+	min-height: 228px;
+	float: left;
+	position: relative;
+	left: 0px;
+	top: 0;
+	background: #382f22 url(/images/pc/guide/yearChange/bg_useBoxR.jpg) no-repeat;
+	opacity: 0;
+	z-index: 1
+}
+
+.arrow_useB {
+	margin-top: -53px;
+	position: absolute;
+	left: 350px;
+	top: 50%;
+	opacity: 0;
+	z-index: 1
+}
+
+.pxsection4 .btn_useBox {
+	margin-top: 55px;
+	text-align: center;
+}
+
+.pxsection4 .subttl {
+	padding-top: 38px;
+	text-align: center;
+}
+
+.useBlist {
+	width: 293px;
+	padding: 0 0 25px 51px;
+	margin: 10px 0 0 0;
+	position: relative;
+}
+
+.useBoxR .useBlist {}
+
+.useBlist>li {
+	padding: 23px 0 18px 0;
+	background: url(/images/pc/guide/yearChange/dashed1x10.png) no-repeat;
+}
+
+.useBoxR .useBlist>li {
+	padding-left: 15px;
+	background: url(/images/pc/guide/yearChange/dashed1x10tp2.png) no-repeat;
+}
+
+.useBlist>li:first-child {
+	background: none;
+}
+
+
+/* 체크,라디오박스 */
+.useBlist>li input[type="checkbox"] {
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	border: 0 none;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+.useBlist>li label {
+	display: inline-block;
+	min-height: 20px;
+	padding-left: 30px;
+	background: url(/images/pc/guide/yearChange/ioc_useBchbox.png) no-repeat 0 50%;
+	font-size: 14px;
+	line-height: 18px;
+	color: #343434;
+	letter-spacing: -1px;
+	cursor: pointer;
+}
+
+.useBlist>li input[type="checkbox"]:checked+label {
+	background: url(/images/pc/guide/yearChange/ioc_useBchboxOn.png) no-repeat 0 50%;
+}
+
+.useBlist>li input[type="checkbox"]:disabled+label {
+	background: url(/images/pc/guide/yearChange/ioc_useBchbox.png) no-repeat 0 50%;
+}
+
+.useBlist>li span {
+	display: block;
+}
+
+.useBlist>li span em.icoArea {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 3px;
+}
+
+.useBlist>li span em.tColor {
+	color: #d46401;
+}
+
+.useBlist>li span.txtTop {
+	font-size: 22px;
+	line-height: 30px;
+	color: #3a2f22;
+	font-family: 'NanumBarunGothicBold', Sans-Serif;
+	word-spacing: 0;
+}
+
+.useBlist>li span.txtBot {
+	font-size: 20px;
+	line-height: 30px;
+	color: #5e4f3c;
+	font-family: 'NanumBarunGothic', Sans-Serif;
+	word-spacing: 0;
+}
+
+.useBoxR .useBlist>li span.txtTop {
+	color: #fff;
+}
+
+.useBoxR .useBlist>li span.txtBot {
+	color: #f3c9a4;
+}
+
+.useBoxR .useBlist>li span em.tColor {
+	color: #ffb452;
+}
+
+.useBtxt {
+	padding: 30px 0 42px 0;
+	font-size: 22px;
+	line-height: 30px;
+	color: #74706a;
+	font-family: 'Nanum Gothic', Sans-Serif;
+	word-spacing: 0;
+	text-align: center;
+}
+
+.useBoxR .useBtxt {
+	color: #a79f94;
+}
+
+
+.golink-popup {
+	width: 390px;
+	height: 410px;
+	margin: 0 0 0 408px;
+	position: absolute;
+	left: 50%;
+	top: 107px;
+	z-index: 99;
+}
+
+.golink-popup .golink-popup-contents {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.golinkpopup-Button {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(/images/pc/zocbo/zocbo_rn/common/blankRn.png) repeat;
+	z-index: 9;
+}
+
+.golink-pro {
+	width: 270px;
+	height: 44px;
+	left: 61px;
+	top: 133px;
+}
+
+.golink-pretest2022a {
+	width: 270px;
+	height: 44px;
+	left: 61px;
+	top: 336px;
+}
+
+.closepopup {
+	width: 22px;
+	height: 22px;
+	left: auto;
+	right: 9px;
+	top: 9px;
+}
+
+/*--------------------------------------------------
+			 IE8 only
+--------------------------------------------------*/
+@media \0screen {
+	.useBlist>li input[type="checkbox"] {
+		width: auto;
+		height: auto;
+		padding: 0;
+		border: 0 none;
+		margin: 0;
+		position: static;
+		left: 0;
+		top: 0;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+	}
+
+	.useBlist>li label {
+		padding-left: 0;
+		display: inline-block;
+		background: none;
+		font-size: 11px;
+		line-height: 13px;
+		letter-spacing: -1px;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+}
+
+/*--------------------------------------------------
+			학년변경 신청하기
+-------------------------------------------------*/
+.info_ychuse {
+	padding: 69px 0 0 162px;
+}

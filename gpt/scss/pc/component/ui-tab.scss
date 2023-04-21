@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+// 탭
+.ui-tab {
+    &-nav {
+        button {
+
+        }
+    }
+    &-content {
+        &-wrap {
+            > div[class^="ui-tab-content"] {
+                display: none;
+                &.active {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// 옛날 탭
+.comtab {
+    background: url(/images/pc/zocbo/zocbo_rn/sub/common/bg_comtab.gif) repeat-x 0 100%;
+    display: flex;
+    &.my-etest {
+        li {
+            a {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+.comtab:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.comtab>li {
+    flex: 0px 1 1;
+}
+
+.comtab>li>a {
+    height: 41px;
+    padding: 0;
+    background: #f9f9f9;
+    display: block;
+    border: 1px solid #ccc;
+    border-left: none;
+    font-size: 14px;
+    line-height: 41px;
+    color: #343434;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    text-align: center;
+}
+
+.comtab>li>a.w78 {
+    width: 78.1px;
+}
+
+.comtab>li.on>a {
+    background: #3579d4;
+    color: #fff;
+    border: 1px solid #3579d4;
+    border-left: none;
+}
+
+.comtab>li:first-child>a {
+    border-left: 1px solid #ccc;
+}
+
+.comtab>li.on:first-child>a {
+    border-left: 1px solid #3579d4;
+}
+
+.termTab>li {
+    width: 509px;
+}
+
+.termTab>li>a {
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    border-bottom: none;
+}
+
+.termTab>li.on>a {
+    border-bottom: none;
+}
+
+.top_comtab {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.top_comtab .comtab>li>a {
+    width: 123px;
+    padding: 0;
+    text-align: center;
+}
+
+.terms_prvBox {
+    height: 550px;
+    overflow: auto;
+    display: none;
+    position: relative;
+}
+
+.termsCnt {
+    position: relative;
+}
+
+.termsCnt .existingBox {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.termsCnt .existingBox select {
+    padding: 10px 10px 10px 10px;
+    height: auto;
+}
+
+.comtab_dtb>li {
+    float: left;
+    display: table;
+}
+
+.comtab_dtb>li>a {
+    height: 60px;
+    padding: 0 15px 0 16px;
+    display: table-cell;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-bottom: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #343434;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    word-spacing: 0;
+}
+
+.comtab_dtb>li.on>a {
+    background: #3579d4;
+    color: #fff;
+    border: 1px solid #3579d4;
+    border-left: none;
+}
+
+.comtab_dtb>li:first-child>a {
+    border-left: 1px solid #ccc;
+}
+
+.comtab_dtb>li.on:first-child>a {
+    border-left: 1px solid #3579d4;
+}
+
+.my_tBoopod_tab {
+    margin-bottom: 31px;
+}
+
+.my_tBoopod_tab .comtab>li>a {
+    cursor: default;
+}
+
+.my_tBoopod_tab .comtab>li.on>a {
+    background: #5468bb;
+}

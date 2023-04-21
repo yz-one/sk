@@ -1,0 +1,265 @@
+@charset "utf-8";
+// 레이아웃
+.ui-form-group {
+    display: flex;
+    align-items: center;
+    > .ui-form {
+        &-select, &-check-group, &-check-inline, &-check[type=checkbox], &-check[type=radio], &-text, &-text-group {
+            margin-right: 10px;
+        }
+    }
+    &.space-between {
+        justify-content: space-between;
+        > div {
+            display: flex;
+            align-items: center;
+            > .ui-form {
+                &-select, &-check-group, &-check-inline, &-check[type=checkbox], &-check[type=radio], &-text, &-text-group {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+// 폼 공통
+*[class^="ui-form"],
+.ui-form-calendar>input {
+    font-size: 12px;
+    color: #666;
+    box-sizing: border-box;
+    vertical-align: middle;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+input {
+
+    &[type=text],
+    &[type=password] {
+
+        &[class^="ui-form"],
+        .ui-form-calendar>input {
+            line-height: 30px;
+            padding: 0 10px;
+            border: 1px solid #c2c2c2;
+        }
+    }
+}
+
+.ui-form {
+
+    /* 텍스트 */
+    &-text {
+        height: 32px;
+
+        &-group {
+            display: flex;
+
+            input {
+
+                &[type=text],
+                &[type=password] {
+
+                    &+input[type=text],
+                    &+input[type=password] {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* 체크, 라디오 */
+    &-check {
+        width: 16px;
+        height: 16px;
+        border: 1px solid #c2c2c2;
+        border-radius: 0;
+        display: inline-block;
+
+        &[type=checkbox],
+        &[type=radio] {
+            bottom: 0;
+            margin: 0;
+            border: 1px solid #c2c2c2;
+        }
+
+        &[type=checkbox] {
+            &:checked {
+                background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 6.86449L2.30365 5.56084L5.21958 8.47678L11.6964 2L13 3.29904L5.21958 11.0841L1 6.86449Z' fill='%230075FF'/%3E%3C/svg%3E%0A");
+            }
+        }
+
+        &[type=radio] {
+            border-radius: 50%;
+
+            &:checked {
+                border: 5px solid #0075FF;
+            }
+        }
+
+        &-inline {
+            display: inline-flex;
+            align-items: center;
+
+            label {
+                color: #333;
+                font-size: 12px;
+                line-height: 16px;
+                display: inline-block;
+                margin-left: 5px;
+            }
+        }
+
+        &-group {
+            display: flex;
+            align-items: center;
+            background: transparent;
+
+            &>input+&>input {
+                // margin-left: 10px;
+            }
+
+            &>input {
+                &+input {
+
+                    &[type=checkbox],
+                    &[type=radio] {
+                        margin-left: 10px;
+                    }
+                }
+
+                &+.ui-form-check-inline {
+                    margin-left: 10px;
+                }
+            }
+
+            &>.ui-form-check-inline {
+                &+input {
+
+                    &[type=checkbox],
+                    &[type=radio] {
+                        margin-left: 10px;
+                    }
+                }
+
+                &+.ui-form-check-inline {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    /* 셀렉트 */
+    &-select {
+        display: block;
+        width: auto;
+        height: 32px;
+        padding: 0 30px 0 10px;
+        background: #fff url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1L5 5L1 1' stroke='%23666666' stroke-width='2'/%3E%3C/svg%3E%0A") no-repeat;
+        background-position: right 10px center;
+        background-size: 10px 7px;
+        border: 1px solid #d4d4d4;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        box-sizing: border-box;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    /* 검색 버튼 인풋 */
+    &-input-search {
+        position: relative;
+        width: 100%;
+        input {
+            width: 100%;
+        }
+        button {
+            display: block;
+            width: 24px !important;
+            height: 24px;
+            @include spr-privatelesson-mask(-50px);
+            @include ti;
+            @include posa-tr (50%, 10px);
+            transform: translateY(-50%);
+            background-color: var(--gray-50);
+            color: var(--gray-100);
+        }
+        &:hover {
+            input {
+                border-color: var(--main-70);
+            }
+            button {
+                background-color: var(--main-70);
+            }
+        }
+    }
+
+    /* 캘린더 */
+    &-datepicker {
+        display: flex;
+        align-items: center;
+        > button {
+            margin-left: 10px;
+        }
+        &-input {
+            @include ct;
+            width: 27px;
+            height: 25px;
+            margin-left: 10px;
+            background-image: url("data:image/svg+xml,%3Csvg width='27' height='26' viewBox='0 0 27 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_15_34)'%3E%3Cpath d='M23.8529 2.8614H23.8009V1.8963C23.7957 1.12628 23.1673 0.5 22.3831 0.5C21.599 0.5 20.9706 1.12628 20.9706 1.8963V2.8614H5.93076V1.8963C5.93076 1.12628 5.29717 0.5 4.51818 0.5C3.73918 0.5 3.1056 1.12628 3.1056 1.8963V2.8614C1.40739 2.88706 0 4.1807 0 5.83368V22.5226C0 24.1858 1.42816 25.4949 3.14714 25.4949H23.8529C25.5666 25.4949 26.9948 24.1858 27 22.5226V5.83368C27 4.17043 25.5666 2.8614 23.8529 2.8614V2.8614ZM22.0144 1.8963C22.0144 1.69097 22.1806 1.52669 22.3883 1.52669C22.5961 1.52669 22.7623 1.69097 22.7623 1.8963V5.11499C22.7623 5.32033 22.5961 5.4846 22.3883 5.4846C22.1806 5.4846 22.0144 5.32033 22.0144 5.11499V1.8963V1.8963ZM4.14945 1.8963C4.14945 1.69097 4.31564 1.52669 4.52337 1.52669C4.7311 1.52669 4.89729 1.69097 4.89729 1.8963V5.11499C4.89729 5.32033 4.7311 5.4846 4.52337 5.4846C4.31564 5.4846 4.14945 5.32033 4.14945 5.11499V1.8963V1.8963ZM25.9613 22.5226C25.9613 23.5749 25.0369 24.4682 23.8529 24.4682H3.14714C1.96307 24.4682 1.04385 23.5749 1.03866 22.5226V9.03183H25.9613V22.5226ZM25.9613 8.00513H1.03866V5.83368C1.03866 4.79158 1.9423 3.91376 3.1056 3.89322V5.12012C3.1056 5.89014 3.73918 6.51643 4.51818 6.51643C5.29717 6.51643 5.93076 5.89014 5.93076 5.12012V3.89322H20.9706V5.12012C20.9706 5.89014 21.6042 6.51643 22.3831 6.51643C23.1621 6.51643 23.7957 5.89014 23.7957 5.12012V3.89322H23.8477C25.0317 3.89322 25.9561 4.78645 25.9561 5.83881V8.01027L25.9613 8.00513ZM3.48471 22.2402H4.8869C4.99077 22.2402 5.07905 22.1581 5.07905 22.0503V20.6643C5.07905 20.5616 4.99077 20.4743 4.8869 20.4743H3.48471C3.38084 20.4743 3.29256 20.5565 3.29256 20.6643V22.0503C3.29256 22.153 3.37565 22.2402 3.48471 22.2402ZM3.48471 17.3994H4.8869C4.99077 17.3994 5.07905 17.3172 5.07905 17.2094V15.8234C5.07905 15.7207 4.99077 15.6335 4.8869 15.6335H3.48471C3.38084 15.6335 3.29256 15.7156 3.29256 15.8234V17.2094C3.29256 17.3121 3.37565 17.3994 3.48471 17.3994ZM3.48471 12.5431H4.8869C4.99077 12.5431 5.07905 12.461 5.07905 12.3532V10.9671C5.07905 10.8645 4.99077 10.7772 4.8869 10.7772H3.48471C3.38084 10.7772 3.29256 10.8593 3.29256 10.9671V12.3532C3.29256 12.4559 3.37565 12.5431 3.48471 12.5431ZM9.52972 20.4743H8.12752C8.02366 20.4743 7.93537 20.5565 7.93537 20.6643V22.0503C7.93537 22.153 8.01846 22.2402 8.12752 22.2402H9.52972C9.63358 22.2402 9.72187 22.1581 9.72187 22.0503V20.6643C9.72187 20.5616 9.63358 20.4743 9.52972 20.4743ZM8.12752 12.5431H9.52972C9.63358 12.5431 9.72187 12.461 9.72187 12.3532V10.9671C9.72187 10.8645 9.63358 10.7772 9.52972 10.7772H8.12752C8.02366 10.7772 7.93537 10.8593 7.93537 10.9671V12.3532C7.93537 12.4559 8.01846 12.5431 8.12752 12.5431ZM23.453 15.6335H22.0508C21.9469 15.6335 21.8586 15.7156 21.8586 15.8234V17.2094C21.8586 17.3121 21.9469 17.3994 22.0508 17.3994H23.453C23.5568 17.3994 23.6451 17.3172 23.6451 17.2094V15.8234C23.6451 15.7207 23.562 15.6335 23.453 15.6335ZM12.7703 12.5431H14.1725C14.2764 12.5431 14.3647 12.461 14.3647 12.3532V10.9671C14.3647 10.8645 14.2816 10.7772 14.1725 10.7772H12.7703C12.6665 10.7772 12.5782 10.8593 12.5782 10.9671V12.3532C12.5782 12.4559 12.6665 12.5431 12.7703 12.5431ZM17.4132 22.2402H18.8153C18.9192 22.2402 19.0075 22.1581 19.0075 22.0503V20.6643C19.0075 20.5616 18.9244 20.4743 18.8153 20.4743H17.4132C17.3093 20.4743 17.221 20.5565 17.221 20.6643V22.0503C17.221 22.153 17.3093 22.2402 17.4132 22.2402ZM17.4132 17.3994H18.8153C18.9192 17.3994 19.0075 17.3172 19.0075 17.2094V15.8234C19.0075 15.7207 18.9244 15.6335 18.8153 15.6335H17.4132C17.3093 15.6335 17.221 15.7156 17.221 15.8234V17.2094C17.221 17.3121 17.3093 17.3994 17.4132 17.3994ZM17.4132 12.5431H18.8153C18.9192 12.5431 19.0075 12.461 19.0075 12.3532V10.9671C19.0075 10.8645 18.9244 10.7772 18.8153 10.7772H17.4132C17.3093 10.7772 17.221 10.8593 17.221 10.9671V12.3532C17.221 12.4559 17.3093 12.5431 17.4132 12.5431ZM7.51471 18.2823H10.0594C10.1997 18.2823 10.3295 18.231 10.4282 18.1335C10.5268 18.0359 10.5788 17.9076 10.5788 17.769V15.2536C10.5788 15.1201 10.5216 14.9867 10.4282 14.8891C10.3295 14.7916 10.1997 14.7402 10.0594 14.7402H7.51471C7.37969 14.7402 7.24466 14.7967 7.14599 14.8891C7.04732 14.9867 6.99538 15.1201 6.99538 15.2536V17.769C6.99538 17.9076 7.05251 18.0359 7.14599 18.1335C7.24466 18.231 7.37449 18.2823 7.51471 18.2823V18.2823ZM8.03404 15.7669H9.5401V17.2556H8.03404V15.7669V15.7669ZM22.0352 12.5483H23.4374C23.5413 12.5483 23.6295 12.4661 23.6295 12.3583V10.9723C23.6295 10.8696 23.5465 10.7823 23.4374 10.7823H22.0352C21.9313 10.7823 21.843 10.8645 21.843 10.9723V12.3583C21.843 12.461 21.9261 12.5483 22.0352 12.5483ZM12.7703 22.2454H14.1725C14.2764 22.2454 14.3647 22.1632 14.3647 22.0554V20.6694C14.3647 20.5667 14.2816 20.4795 14.1725 20.4795H12.7703C12.6665 20.4795 12.5782 20.5616 12.5782 20.6694V22.0554C12.5782 22.1581 12.6665 22.2454 12.7703 22.2454ZM12.7703 17.4045H14.1725C14.2764 17.4045 14.3647 17.3224 14.3647 17.2146V15.8285C14.3647 15.7259 14.2816 15.6386 14.1725 15.6386H12.7703C12.6665 15.6386 12.5782 15.7207 12.5782 15.8285V17.2146C12.5782 17.3172 12.6665 17.4045 12.7703 17.4045Z' fill='%23404040'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_15_34'%3E%3Crect width='27' height='25' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            width: 27px;
+            height: 25px;
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+
+        &-group {
+            display: flex;
+            align-items: center;
+
+            span {
+                margin: 0 10px;
+                font-size: 18px;
+                color: #666;
+            }
+        }
+    }
+
+    /* 텍스트 삭제 버튼 */
+    // &-input-del {
+    //     position: relative;
+    //     width: 100%;
+    //     input {
+    //         width: 100%;
+    //     }
+    //     button {
+    //         display: none;
+    //         width: 18px !important;
+    //         height: 18px;
+    //         @include spr-sign-bg(-200px, -50px);
+    //         @include ti;
+    //         @include posa-tr (50%, 12px);
+    //         transform: translateY(-50%);
+    //     }
+    // }
+
+    /* 남은 시간 */
+    // &-input-limit {
+    //     position: relative;
+    //     span {
+    //         display: inline-block;
+    //         color: var(--red-100);
+    //         @include textcp;
+    //         @include posa-tr (50%, 12px);
+    //         transform: translateY(-50%);
+    //     }
+    // }
+}

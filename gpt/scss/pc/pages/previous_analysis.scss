@@ -1,0 +1,475 @@
+
+$spoqa : 'Spoqa Han Sans Neo',
+Sans-Serif;
+
+.pxsec-wrap * {
+    box-sizing: border-box;
+}
+
+.previous-analysis-header {
+    width:740px;
+    position:fixed;
+    left:50%;
+    top:0;
+    padding-top:20px;
+    margin:0 auto 0 -370px;  
+    background:#fff;
+    box-sizing: border-box;
+    z-index:99;
+
+    .previous-analysis-title {
+        height:55px;
+        position:relative;
+        background-color:#fff;
+        border:1px solid #1B5080;
+        border-top-right-radius:20px;
+    
+        &:before {
+            content: "";
+            width: 740px;
+            height: 5px;
+            background-color:#C6C9D8;
+            position:absolute;
+            left:-1px;
+            bottom:-6px;
+        }
+    }
+    
+}
+
+.previous-analysis-title>div {
+    height:55px;
+    float:left;
+
+    &.left-area {
+        width:182px;
+        border-right:1px solid #1B5080;
+
+        .left-top {
+            padding:2px 0 2px 0;
+            font-family: $spoqa;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color:#1B5080;
+            text-align: center;
+        }
+
+        .left-bot {
+            padding:8px 0 8px 0;
+            background-color:#1B5080;
+            font-family: $spoqa;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color:#fff;
+            text-align: center;
+        }
+    }
+
+    &.right-area {
+        width:555px;
+        font-family: $spoqa;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 55px;
+        color:#1B5080;
+        text-align: center;
+    }
+}
+
+.pxsec-wrap {
+    width:740px;
+    padding-bottom:25px;
+    margin:152px auto 0 auto;  
+    position:relative;
+    top:0;
+    .notice {
+        text-align: right;
+        &:before,
+        span {
+            font-size: 14px;
+            display: inline-block;
+            line-height: 16px;
+            color: #1b5080;
+            vertical-align: top;
+        }
+        &:before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: url(/images/zocbomid/zocboexam/spr-previous-analysis.png) -150px 0 no-repeat;
+            margin-right: 5px;
+        }
+    }
+}
+
+.pdGAB {
+    top:50px;
+}
+
+.fixed {
+    padding-top:80px;
+    margin-left: -370px;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    z-index:99;
+    background-color:#fff;
+}
+
+#hschtopmenu {
+    margin-top:25px;
+
+    .tab-ycprl {
+        font-size:0; 
+        li {
+            height: 30px;
+            line-height: 30px;
+            display: inline-block;
+    
+            &:nth-child(1) {
+                width:240px;
+            }
+        
+            &:nth-child(2) {
+                width:200px;
+            }
+        
+            &:nth-child(3) {
+                width:150px;
+            }
+        
+            &:nth-child(4) {
+                width:150px;
+            }
+    
+            &:last-child {
+                a {
+                    &:before {
+                        content: "";
+                        width: auto;
+                        height: auto;
+                        background-color:#707070;
+                        position:absolute;
+                        right:0;
+                        top:0;
+                    }
+                }
+            }
+
+            a {
+                position:relative;
+                display:block;
+                background-color:#EFEFF1;
+                font-family: $spoqa;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 30px;
+                color:#000;
+                text-align:center;
+            
+                &:before {
+                    content: "";
+                    width: 1px;
+                    height: 12px;
+                    background-color:#707070;
+                    position:absolute;
+                    right:0;
+                    top:9px;
+                }
+    
+                &.on {
+                    background-color:#1B5080;
+                    color:#fff;
+                    &:before {
+                        content: "";
+                        width: auto;
+                        height: auto;
+                        background-color:#707070;
+                        position:absolute;
+                        right:0;
+                        top:0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section {
+    margin-bottom:30px;
+    h3 {
+        margin-bottom:25px;
+        padding-left:38px;
+        font-family: $spoqa;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color:#000;
+        position:relative;
+
+        span {
+            width:28px;
+            height:28px;
+            position:absolute;
+            left:0;
+            top:0;
+            background-color:#1B5080;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color:#fff;
+            text-align:center;
+        }
+
+        &:before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color:#1B5080;
+            position:absolute;
+            left:0;
+            bottom:0;
+        }
+    }
+
+    h4 {
+        margin-bottom:10px;
+        font-family: $spoqa;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color:#3997A8;
+    }
+} 
+
+.section1 {
+    margin-top:20px;
+    .section-graph {
+        // height:181px; 
+        // background-color:#C4C4C4; 
+        color:#000; 
+        display:flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+}
+
+.section2 {
+    margin-top:20px;
+    .section-graph {
+        // height:181px; 
+        // background-color:#C4C4C4; 
+        color:#000; 
+        display:flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+}
+
+.section4 {
+    h4 {
+        margin-top: 10px;
+    }
+}
+
+.this-content {
+    margin-bottom:25px;
+    display: flex;
+    flex-shrink: 1;
+    align-items: stretch;
+    grid-auto-flow: column;
+
+    div {
+        width:350px;
+        position:relative;
+
+        &.right-graph {
+            margin-left:40px;
+            // background-color:#C4C4C4; 
+            color:#000; 
+            display:flex; 
+            justify-content: center; 
+            align-items: center;
+
+            &:before {
+                content: "";
+                width: 1px;
+                height: 100%;
+                border-left: 1px dashed #CCC;
+                position:absolute;
+                left:-19px;
+                top:0;
+            }
+        }
+    }
+}
+
+.dan-ttl {
+    width:100%;
+    height:30px;
+    padding-left:15px;
+    font-family: $spoqa;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color:#fff;
+    background-color:#3997A8;
+}
+
+.previous-analysis-table {
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.previous-analysis-table thead th {
+	font-size: 14px;
+	height: 30px;
+	background: #3997A8;
+	text-align: center;
+	color: #fff;
+    font-weight:bold;
+	font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+    border-right:1px solid #D8E8EB;
+}
+
+.previous-analysis-table.line-ver2 thead th {
+    background: #D2F2F8;
+    color:#1B5080;
+}
+
+.previous-analysis-table.line-ver2 tbody tr:nth-child(2n) td {
+    background-color:#fff;
+}
+
+.previous-analysis-table thead th.last,
+.previous-analysis-table tbody tr td.last {
+	border-right:none;
+}
+
+.previous-analysis-table tbody tr th {
+    height:22px;
+	font-size: 12px;
+    line-height:22px;
+	color: #000;
+    text-align: center;
+	font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+    background: #F9F9F9;
+    border-top: 1px solid #dcdcdc;
+    border-right:1px solid #D8E8EB;
+	word-break: break-all;
+}
+
+.previous-analysis-table tbody tr td {
+    height:22px;
+	font-size: 12px;
+    line-height:22px;
+	color: #000;
+    text-align: center;
+	font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+    background-color:#fff;
+    border-top: 1px solid #dcdcdc;
+    border-right:1px solid #D8E8EB;
+	word-break: break-all;
+
+    &.td-left {
+        text-align:left;
+        padding-left:10px;
+    }
+}
+
+.previous-analysis-table tbody tr:nth-child(2n) td {
+    background-color:#F7FAFB;
+}
+
+.infomation-box {
+    min-height:104px;
+    background-color:#F9F9F9;
+    border-radius: 0px 0px 10px 10px;
+    border:1px solid #3997A8;
+    margin-top: -1px;
+}
+
+.infomation-box ul {
+    padding:25px 0 25px 25px;
+    li {
+        margin-top:6px;
+        padding-left:30px;
+        padding-right: 20px;
+        word-break: keep-all;
+        position:relative;
+        font-size: 14px;
+        line-height:19px;
+        color: #000;
+        font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+
+        &:before {
+            content: "";
+            width: 20px;
+            height: 9px;
+            background: url(/images/zocbomid/zocboexam/spr-previous-analysis.png) -50px 0 no-repeat;
+            position:absolute;
+            left:0;
+            top:6px;
+        }
+
+        &:first-child {
+            margin-top:0;
+        }
+    }
+}
+
+.infomation-box ul>li.zocbopick {
+    padding-left: 94px;
+    padding-right: 20px;
+    margin-top: 10px;
+    line-height:23px;
+    font-weight:bold;
+
+    &:before {
+        content: "";
+        display: block;
+        background: none;
+    }
+}
+
+.infomation-box ul>li.zocbopick>div {
+    display:inline-block;
+    vertical-align:top;
+    word-break: keep-all;
+
+    .color-3997A8 {
+        color: #3997A8;
+    }
+}
+
+.infomation-box ul>li.zocbopick .zocbopick-label {
+   width:84px;
+   height:23px;
+   padding-left:29px;
+   margin-right:10px;
+   background:#802AF1;
+   border-radius: 8px 8px 0 8px;
+   position:relative;
+   font-family: $spoqa;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 23px;
+   color:#fff;
+   @include posa-tl();
+
+   &:before {
+        content: "";
+        width: 21px;
+        height: 20px;
+        background: url(/images/zocbomid/zocboexam/spr-previous-analysis.png) -100px 0 no-repeat;
+        position:absolute;
+        left:2px;
+        top:2px;
+    }
+}
+
+.decebox {
+    margin-top: 30px;
+}

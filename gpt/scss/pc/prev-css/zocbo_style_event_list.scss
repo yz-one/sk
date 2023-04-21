@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/* 이벤트 리스트 0923 수정// */
+.event_melist {
+    font-size: 0;
+}
+
+.event_melist>li {
+    width: 245px;
+    margin: 0 38px 15px 0;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+}
+
+.event_melist>li a {
+    display: block;
+    position: relative;
+}
+
+.event_melist>li a>img {
+    width: 245px;
+    height: 245px;
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+}
+
+.event_melist>li a p {
+    padding-left: 2px;
+}
+
+.event_melist>li a p strong,
+.event_melist>li a p span {
+    display: block;
+    font-weight: 400;
+    text-align: left;
+}
+
+.event_melist>li a p strong {
+    margin-bottom: 3px;
+    font-size: 20px;
+    color: #262626;
+    line-height: 32px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 400;
+}
+
+.event_melist>li a p span {
+    font-size: 16px;
+    color: #808080;
+    line-height: 21px;
+    text-align: left;
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 300;
+    word-spacing: 0;
+}
+
+.event_melist>li a .label {
+    display: block;
+    min-width: 105px;
+    height: 35px;
+    line-height: 35px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: -0.025em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    z-index: 1;
+    border-radius: 0;
+}
+
+.event_melist>li a .label.end {
+    background-color: #747474;
+}
+
+.event_melist>li:hover {
+    -webkit-animation: bounce 1s;
+    animation: bounce 1s;
+}
+
+.event_melist>li.last {
+    margin-right: 0;
+}
+
+.evtMain {
+    .event_melist {
+        li {
+            margin: 0 13px 36px 0;
+
+            &:nth-child(3n+0) {
+                margin: 0 13px 36px 0;
+            }
+
+            &:nth-child(4n+0) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.zGdMain {
+    .event_melist {
+        li {
+            margin: 0 38px 15px 0;
+
+            &:nth-child(3n+0) {
+                margin-right: 0 !important;
+            }
+
+            &:nth-child(4n+0) {
+                margin: 0 38px 15px 0;
+            }
+        }
+    }
+}
+
+.event_melist>li:nth-child(3n+0) {
+    margin-right: 0;
+}
+
+.event_melist>li:nth-child(4n+0) {
+    margin: 0 38px 15px 0;
+}
+
+.event_melist>li .evtEnd {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.event_melist>li .ico_listNew {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding-left: 3px;
+    vertical-align: top;
+    line-height: 27px;
+}
+
+/* 배포 후 삭제할 영역// */
+.event_melist>li a {
+    display: inline-block;
+}
+
+.event_melist>li .evtimgA {
+    width: 245px;
+    height: 245px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.event_melist>li .evtTxtA {
+    padding-left: 2px;
+}
+
+.event_melist>li .evtTxtA .evtTttl,
+.event_melist>li .evtTxtA .evtTtxt {
+    text-align: left;
+}
+
+.event_melist>li .evtTxtA .evtTttl>a {
+    margin-bottom: 3px;
+    font-size: 20px;
+    color: #262626;
+    line-height: 32px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 300;
+}
+
+.event_melist>li .evtTxtA .evtTtxt>a {
+    font-size: 16px;
+    color: #808080;
+    line-height: 21px;
+    text-align: left;
+    font-family: 'Spoqa Han Sans Neo';
+    font-weight: 100;
+    word-spacing: 0;
+}
+
+/* //배포 후 삭제할 영역 */
+/* //이벤트 리스트 0923 수정 */
+/*# sourceMappingURL=zocbo_style_event_list.css.map */

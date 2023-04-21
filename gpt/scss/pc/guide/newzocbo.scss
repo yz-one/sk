@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+/* 공통 */
+@import "../base/fonts.scss";
+@import "../../common/abstracts/mixin.scss",
+        "../../common/abstracts/var.scss";
+@import "../abstracts/mixin.scss",
+        "../abstracts/var.scss";
+
+        /* noto sans kr */
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 100;
+    src: url(/fonts/NotoSansKr/NotoSansKR-Thin.woff2) format('woff2'),
+    url(/fonts/NotoSansKr/NotoSansKR-Thin.woff) format('woff'),
+    url(/fonts/NotoSansKr/NotoSansKR-Thin.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/NotoSansKr/NotoSansKR-Light.woff) format('woff'),
+    url(/fonts/NotoSansKr/NotoSansKR-Light.woff2) format('woff2'),
+    url(/fonts/NotoSansKr/NotoSansKR-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 350;
+    src: url(/fonts/NotoSansKr/NotoSansKR-DemiLight.woff) format('woff'),
+    url(/fonts/NotoSansKr/NotoSansKR-DemiLight.woff2) format('woff2'),
+    url(/fonts/NotoSansKr/NotoSansKR-DemiLight.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/NotoSansKr/NotoSansKR-Regular.woff) format('woff'),
+    url(/fonts/NotoSansKr/NotoSansKR-Regular.woff2) format('woff2'),
+    url(/fonts/NotoSansKr/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/NotoSansKr/NotoSansKR-Medium.woff) format('woff'),
+    url(/fonts/NotoSansKr/NotoSansKR-Medium.woff2) format('woff2'),
+    url(/fonts/NotoSansKr/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/NotoSansKr/NotoSansKR-Bold.woff) format('woff'),
+    url(/fonts/NotoSansKr/NotoSansKR-Bold.woff2) format('woff2'),
+    url(/fonts/NotoSansKr/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight: 900;
+    src: url(/fonts/NotoSansKr/NotoSansKR-Black.woff) format('woff'),
+    url(/fonts/NotoSansKr/NotoSansKR-Black.woff2) format('woff2'),
+    url(/fonts/NotoSansKr/NotoSansKR-Black.otf) format('opentype');
+}
+
+section {
+    position: relative;
+    text-align: center;
+    font-family: $noto;
+
+    .inner {
+        width: 1020px;
+        margin: 0 auto;
+        position: relative;
+
+        .top-desc {
+            padding-bottom: 22px;
+            font-size: 24px;
+            line-height: 25px;
+            color: #0048ff;
+            font-family: $noto;
+            font-weight: 700;
+            word-spacing: 0;
+        }
+
+        h2 {
+            padding-bottom: 40px;
+            font-size: 48px;
+            line-height: 50px;
+            color: #000;
+            font-family: $noto;
+            font-weight: 900;
+            word-spacing: 0;
+        }
+
+        .bot-desc {
+            padding-bottom: 11px;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000;
+            font-family: $noto;
+            font-weight: 500;
+            word-spacing: 0;
+        }
+
+        .cnt {
+            margin-top: 50px;
+            position: relative;
+        }
+    }
+
+    -webkit-keyframes sdb05 {
+        0% {
+            -webkit-transform: rotate(0) translate(0, 0);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: rotate(0) translate(0, 20px);
+            opacity: 0;
+        }
+    }
+
+    @keyframes sdb05 {
+        0% {
+            transform: rotate(0) translate(0, 0);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: rotate(0) translate(0, 20px);
+            opacity: 0;
+        }
+    }
+
+    &.section {
+        &1 {
+            background-image: url(/images/pc/guide/newzocbo/bg_top-visual.jpg);
+            background-repeat: repeat-x;
+            background-position: center top;
+            height: 757px;
+
+            .arrow-down {
+                margin-left: -33px;
+                position: absolute;
+                left: 50%;
+                bottom: 59px;
+                -webkit-animation: sdb05 1.3s infinite;
+                animation: sdb05 1.3s infinite;
+            }
+        }
+
+        &2 {
+            background-image: url(/images/pc/guide/newzocbo/bg-type1.jpg);
+            background-repeat: repeat-x;
+            background-position: center top;
+            height: 986px;
+
+            .inner {
+                padding-top: 61px;
+            }
+        }
+
+        &3 {
+            background-color: #ffec9c;
+            height: 883px;
+
+            .inner {
+                padding-top: 61px;
+
+                .cnt {
+                    margin-top: 40px;
+
+                    .btn-element {
+                        margin-right: 13px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        &4 {
+            background-color: #96db96;
+            height: 966px;
+
+            .inner {
+                padding-top: 63px;
+
+                h2 {
+                    padding-bottom: 50px;
+                }
+
+                .cnt {
+                    margin-top: 70px;
+                }
+            }
+        }
+
+        &5 {
+            background-image: url(/images/pc/guide/newzocbo/bg-type2.jpg);
+            background-repeat: repeat-x;
+            background-position: center top;
+            height: 982px;
+
+            .inner {
+                height: 921px;
+                padding-top: 61px;
+                background-image: url(/images/pc/guide/newzocbo/sec5img.jpg);
+                background-repeat: no-repeat;
+                background-position: center bottom;
+
+                .btn-element {
+                    margin: 48px 60px 0 0;
+                    text-align: right;
+                }
+            }
+        }
+
+        &6 {
+            background-image: url(/images/pc/guide/newzocbo/bg-type1.jpg);
+            background-repeat: repeat-x;
+            background-position: center top;
+            height: 984px;
+
+            .inner {
+                padding-top: 61px;
+
+                h2 {
+                    padding-bottom: 34px;
+                    line-height: 60px;
+                }
+
+                .cnt {
+                    margin-top: 40px;
+
+                    .btn-element {
+                        margin-right: 73px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+        &7 {
+            background-color: #fff2b9;
+            height: 556px;
+
+            .inner {
+                padding-top: 135px;
+
+                h2 {
+                    padding-bottom: 48px;
+                }
+
+                .btn-element {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

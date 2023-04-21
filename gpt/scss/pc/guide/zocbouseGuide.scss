@@ -1,0 +1,588 @@
+@charset "utf-8";
+
+/* 공통 */
+@import "../base/fonts.scss";
+@import "../../common/abstracts/mixin.scss",
+"../../common/abstracts/var.scss";
+@import "../abstracts/mixin.scss",
+"../abstracts/var.scss";
+
+/*--------------------------------------------------
+			 공통 
+--------------------------------------------------*/
+.zocbouseGuide {
+    width: 100%;
+    min-width: 1020px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section {
+    position: relative;
+}
+
+.px_inner {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ttl_pxprm1th {
+    text-align: center;
+}
+
+.px_inner .pxyCprlCnt {
+    text-align: center;
+    position: relative;
+}
+
+.pbpdim {
+    position: absolute;
+    z-index: 99;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: none;
+    background: url(/images/pc/guide/zocbouseGuide/pbpdim.png) repeat;
+}
+
+/*-------------------------------------------------
+			섹션bg영역
+-------------------------------------------------*/
+.pxsection {
+    position: relative;
+}
+
+.pxsection .ttl {
+    text-align: center;
+}
+
+.pxsection .cnt {
+    position: relative;
+}
+
+.pxsection1 {
+    height: 569px;
+}
+
+.pxsection1 .px1bg {
+    width: 100%;
+    height: 569px;
+    background: url(/images/pc/guide/zocbouseGuide/topbg_zocbouseGuide.jpg) repeat-x center top;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(1.05);
+    transition: all 3s;
+}
+
+.pxsection1.on1 .px1bg {
+    transform: scale(1);
+}
+
+.pxsection2 {
+    height: 699px;
+    background: #fff;
+}
+
+.pxsection3 {
+    height: 1167px;
+    background: #1c78af;
+}
+
+.pxsection4 {
+    padding: 119px 0 50px 0;
+    background: #dceffd;
+}
+
+.pxsection5 {
+    height: 1116px;
+    background: #2d4d86;
+}
+
+/*-------------------------------------------------
+			리모트
+-------------------------------------------------*/
+.auGnavWrap {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+.auGnavWrap.zfixed {
+    position: fixed;
+    /* margin-top:-108px; top:50%; */
+}
+
+.auGnavWrap .auGnavlist {
+    width: 184px;
+    border: 1px solid #212121;
+}
+
+.auGnavWrap .auGnavlist>li.li1 a {
+    height: 64px;
+    background: #212121;
+    font-size: 18px;
+    line-height: 64px;
+    color: #a1d7fa;
+}
+
+.auGnavWrap .auGnavlist>li a {
+    width: 100%;
+    height: 50px;
+    display: block;
+    border-top: 1px solid #408ebc;
+    background: #1c78af;
+    font-size: 17px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Noto Sans Korean', Sans-Serif;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.auGnavWrap .auGnavlist>li:first-child a {
+    border-top: none;
+}
+
+/*-------------------------------------------------
+			비쥬얼
+-------------------------------------------------*/
+.zugvu_el img {
+    vertical-align: top;
+}
+
+.zugvu_el {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.zugvu_el1 {
+    margin: 0 auto 0 -310px;
+    left: 50%;
+    top: 76px;
+    overflow: hidden;
+}
+
+.zugvu_el2 {
+    top: 135px;
+    text-align: center;
+    transform: scale(0.0);
+}
+
+.zugvu_el3 {
+    top: 271px;
+    text-align: center;
+}
+
+.zugvu_el4 {
+    top: 402px;
+    text-align: center;
+}
+
+.zugvu_el5 {
+    top: 276px;
+    text-align: center;
+}
+
+.zugvu_el6 {
+    top: 443px;
+    text-align: center;
+}
+
+/*-------------------------------------------------
+			족보닷컴 콘텐츠
+-------------------------------------------------*/
+.pxsection2 .px_inner {
+    height: 699px;
+}
+
+.pxsection2 .ttl {
+    padding-top: 75px;
+}
+
+.pxsection2 .data-date {
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+}
+
+.rpoint {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: rotateY(180deg);
+}
+
+.rpoint1 {
+    left: 23px;
+}
+
+.rpoint2 {
+    left: 249px;
+}
+
+.rpoint3 {
+    left: 498px;
+}
+
+.rpoint4 {
+    left: 747px;
+}
+
+.rpointBot {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 98px;
+    text-align: center;
+}
+
+/*-------------------------------------------------
+			족보 콘텐츠 이용 정석
+-------------------------------------------------*/
+.pxsection3 .ttl {
+    padding-top: 109px;
+    margin-bottom: 59px;
+}
+
+.useguideBox .ttl_ugBox {
+    padding: 32px 0 28px 0;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.useguideBox .ugBox {
+    height: 626px;
+    background: #fff;
+    position: relative;
+}
+
+.useguideBox .ugBox .arrow_ugBox {
+    width: 0px;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    overflow: hidden;
+}
+
+.useguideBox .ugBox .ugBoxCnt {
+    position: absolute;
+}
+
+.useguideBox .ugBox .ugBoxCnt1 {
+    left: 112px;
+    top: 337px;
+}
+
+.useguideBox .ugBox .ugBoxCnt2 {
+    left: 279px;
+    top: 296px;
+}
+
+.useguideBox .ugBox .ugBoxCnt3 {
+    left: 444px;
+    top: 256px;
+}
+
+.useguideBox .ugBox .ugBoxCnt4 {
+    left: 607px;
+    top: 215px;
+}
+
+.useguideBox .ugBox .ugBoxCnt5 {
+    left: 777px;
+    top: 174px;
+}
+
+.useguideBox .ugBox .ugBoxtxt {
+    position: absolute;
+}
+
+.useguideBox .ugBox .ugBoxtxt1 {
+    left: 123px;
+    top: 502px;
+}
+
+.useguideBox .ugBox .ugBoxtxt2 {
+    left: 284px;
+    top: 460px;
+}
+
+.useguideBox .ugBox .ugBoxtxt3 {
+    left: 447px;
+    top: 420px;
+}
+
+.useguideBox .ugBox .ugBoxtxt4 {
+    left: 618px;
+    top: 380px;
+}
+
+.useguideBox .ugBox .ugBoxtxt5 {
+    left: 755px;
+    top: 338px;
+}
+
+.useguideBox .ugBox .ugBoxchk {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: scale(0.0);
+}
+
+.useguideBox .ugBox .ugBoxchk1 {
+    left: 83px;
+    top: 173px;
+}
+
+.useguideBox .ugBox .ugBoxchk2 {
+    left: 273px;
+    top: 75px;
+}
+
+.useguideBox .ugBox .ugBoxchk3 {
+    left: 754px;
+    top: 37px;
+}
+
+/*-------------------------------------------------
+			족보 문항 콘텐츠
+-------------------------------------------------*/
+.pxsection4 .ttl {
+    margin-bottom: 65px;
+}
+
+.zpclist {
+    width: 100%;
+    height: 76px;
+    display: table;
+    font-size: 0;
+    text-align: center;
+}
+
+.zpclist>li {
+    width: 340px;
+    height: 76px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.zpclist>li>a {
+    height: 100%;
+    display: block;
+    background: #fff;
+    border: 1px solid #999;
+    border-left: none;
+    font-size: 22px;
+    color: #3b3b3b;
+    line-height: 76px;
+    text-align: center;
+    font-family: 'Noto Sans Korean', Sans-Serif;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.zpclist>li>a.on {
+    background: #34373d;
+    border: 1px solid #34373d;
+    border-left: none;
+    color: #fff;
+}
+
+.zpclist>li:first-child>a.on {
+    border-left: 1px solid #34373d;
+}
+
+.zpclist>li:first-child>a {
+    border-left: 1px solid #999;
+    ;
+}
+
+.zpcBox {
+    padding: 62px 0 26px 0;
+    background: #fff;
+    display: none;
+}
+
+.bg_botshdow {
+    height: 34px;
+    background: url(/images/pc/guide/zocbouseGuide/bg_botshdow.png) no-repeat left bottom;
+}
+
+.zpcBlist {
+    width: 937px;
+    margin: 0 auto;
+}
+
+.zpcBlist>li {
+    margin-top: 55px;
+    position: relative;
+}
+
+.zpcBlist>li:first-child {
+    margin-top: 0;
+}
+
+.zpcBlist>li .btn_sampleLook {
+    position: absolute;
+    right: 12px;
+    top: -8px;
+}
+
+.zpcBlist>li .step_post {
+    position: absolute;
+    right: 35px;
+    top: 319px;
+}
+
+/*-------------------------------------------------
+			2020 과목별 특화 콘텐츠 커리큘럼
+-------------------------------------------------*/
+.pxsection5 .ttl {
+    padding-top: 105px;
+    margin-bottom: 91px;
+}
+
+.cnt_cullist {
+    width: 780px;
+    margin: 0 auto;
+}
+
+.cnt_cullist>li {
+    margin-top: 35px;
+}
+
+.cnt_cullist>li:first-child {
+    margin-top: 0;
+}
+
+.cnt_cullist>li .ttl_cullist {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.icoArea {
+    position: absolute;
+    right: 23px;
+    top: 9px;
+}
+
+.icoArea>li {
+    float: left;
+    margin-left: 7px;
+}
+
+.icoArea>li:first-child {
+    margin-left: 0;
+}
+
+.cullist {
+    font-size: 0;
+    text-align: center;
+}
+
+.cullist>li {
+    height: 278px;
+    margin-left: 25px;
+    display: inline-block;
+    vertical-align: top;
+    transition: all 0.2s;
+}
+
+.cullist>li:hover {
+    margin-top: -10px;
+}
+
+.cullist>li:first-child {
+    margin-left: 0;
+}
+
+.cullist>li.kr {
+    width: 243px;
+}
+
+.cullist>li.eng {
+    width: 243px;
+}
+
+.cullist>li.meth {
+    width: 244px;
+}
+
+.cullist.mid>li.kr {
+    width: 243px;
+    background: url(/images/pc/guide/zocbouseGuide/midecullist_KR.gif) no-repeat;
+}
+
+.cullist.mid>li.eng {
+    width: 243px;
+    background: url(/images/pc/guide/zocbouseGuide/midecullist_ENG.gif) no-repeat;
+}
+
+.cullist.mid>li.meth {
+    width: 244px;
+    background: url(/images/pc/guide/zocbouseGuide/midecullist_meth.gif) no-repeat;
+}
+
+.cullist.high>li.kr {
+    width: 243px;
+    background: url(/images/pc/guide/zocbouseGuide/highecullist_KR.gif) no-repeat;
+}
+
+.cullist.high>li.eng {
+    width: 243px;
+    background: url(/images/pc/guide/zocbouseGuide/highecullist_ENG.gif) no-repeat;
+}
+
+.cullist.high>li.meth {
+    width: 244px;
+    background: url(/images/pc/guide/zocbouseGuide/highecullist_meth.gif) no-repeat;
+}
+
+.cullistLinklist {
+    margin: 161px 0 0 19px;
+}
+
+.cullistLinklist>li {
+    width: 205px;
+    height: 38px;
+    margin-top: 8px;
+}
+
+.cullistLinklist>li:first-chiild {
+    margin-top: 0;
+}
+
+.cullistLinklist>li>a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 17px;
+    color: #fff;
+    line-height: 38px;
+    font-family: 'Noto Sans Korean', Sans-Serif;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    text-align: left;
+    text-indent: 18px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.cullist.mid .cullistLinklist>li>a {
+    background: #883db3 url(/images/pc/guide/zocbouseGuide/arrow_cullistLink.png) no-repeat 183px 11px;
+}
+
+.cullist.high .cullistLinklist>li>a {
+    background: #1c69c7 url(/images/pc/guide/zocbouseGuide/arrow_cullistLink.png) no-repeat 183px 11px;
+    ;
+}

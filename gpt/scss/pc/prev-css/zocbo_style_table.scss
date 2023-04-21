@@ -1,0 +1,1840 @@
+@charset "UTF-8";
+/*--------------------------------------------------
+			 table style
+--------------------------------------------------*/
+.brdTnone {
+  border-top: none !important;
+}
+
+.brdLnone {
+  border-left: none !important;
+}
+
+.brdRnone {
+  border-right: none !important;
+}
+
+.inputStyle {
+  height: 20px;
+  padding: 0 7px;
+  border: 1px solid #dfdfdf;
+  line-height: 20px;
+  font-size: 11px;
+  color: #666;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+#wrapper .tableStyle1 {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#wrapper .tableStyle1 th,
+.tableStyle1 td {
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+#wrapper table {
+  width: 100%;
+}
+
+#wrapper .tableStyle1 a {
+  color: #343434;
+}
+
+#wrapper .tableStyle1 thead th {
+  font-size: 15px;
+  height: 50px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #dcdcdc;
+  text-align: center;
+  color: #7e7e7e;
+}
+
+#wrapper .tableStyle1 thead th.last {
+  background: none;
+}
+
+#wrapper .tableStyle1 .td_left {
+  padding-left: 10px;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#wrapper .tableStyle1 .td_left2 {
+  padding-left: 10px;
+  text-align: left;
+}
+
+#wrapper .tableStyle1 .td_left a {
+  color: #343434;
+}
+
+#wrapper .tableStyle1 .td_left a:hover,
+#wrapper .tableStyle1 .td_left2 a:hover {
+  color: #343434;
+  text-decoration: underline;
+}
+
+#wrapper .tableStyle1 .txtword {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#wrapper .tableStyle1 .priceimpo {
+  font-weight: bold;
+  color: #4893c6;
+}
+
+#wrapper .tableStyle1 tbody tr:last-child td {
+  background: none;
+  border-bottom: none;
+}
+
+#wrapper .tableStyle1 tbody tr td {
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #dcdcdc;
+  text-align: center;
+  font-size: 14px;
+  color: #343434;
+  line-height: 23px;
+}
+
+#wrapper .tableStyle1_pb tbody tr td {
+  padding: 18px 0 18px 0;
+}
+
+#wrapper .vdo_thumb {
+  width: 122px;
+  height: 122px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  line-height: 122px;
+  border: 1px solid #dadada;
+}
+
+#wrapper .vdo_thumb img {
+  width: 80%;
+  vertical-align: middle;
+}
+
+#wrapper .tableStyle_view {
+  border-top: 2px solid #d6d6d6;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+#wrapper .tableStyle_view th {
+  padding: 11px 0 15px 25px;
+  color: #666;
+  border-bottom: 1px solid #e1e1e1;
+  background: #f4f4f4;
+  text-align: center;
+  font-size: 12px;
+  text-align: left;
+}
+
+#wrapper .tableStyle_view tbody td {
+  padding: 11px 20px 15px 24px;
+  font-size: 12px;
+  color: #666;
+  border-bottom: 1px solid #e1e1e1;
+  line-height: 16px;
+}
+
+#wrapper .tableStyle_view tr.last_tr th,
+.tableStyle_view tbody tr.last_tr td {
+  border-bottom: none;
+}
+
+#wrapper .tableStyle_view td {
+  vertical-align: top;
+}
+
+#wrapper .table_cmtwrite {
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+#wrapper .table_cmtwrite tr:first-child th,
+.table_cmtwrite tr:first-child td {
+  border-top: none;
+}
+
+#wrapper .table_cmtwrite th {
+  padding: 10px 0 10px 8px;
+  border-top: 1px solid #dcdcdc;
+  font-size: 12px;
+  color: #6565;
+  line-height: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+#wrapper .table_cmtwrite td {
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #dcdcdc;
+  font-size: 12px;
+  color: #6565;
+  line-height: 15px;
+}
+
+.access_impo_table {
+  margin-bottom: 28px;
+  border-top: 1px solid #e6e9ee;
+}
+
+.access_impo_table th {
+  padding: 13px 0 16px 0;
+  border-left: 1px solid #e6e9ee;
+  border-right: 1px solid #e6e9ee;
+  border-bottom: 1px solid #e6e9ee;
+  background: #f8f8f8;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+  font-weight: normal;
+}
+
+.access_impo_table td {
+  padding: 13px 0 16px 0;
+  font-size: 13px;
+  color: #333;
+  border-bottom: 1px solid #e6e9ee;
+  line-height: 16px;
+  border-right: 1px solid #e6e9ee;
+  text-align: center;
+}
+
+.access_impo_table td.ttl_bgColor {
+  background: #f8f8f8;
+}
+
+.access_impo_table tr.gabType2 td {
+  padding: 18px 0 21px 0;
+}
+
+.sbj_table {
+  width: 100%;
+  border: 1px solid #dfe0e6;
+  border-collapse: collapse;
+}
+
+.sbj_table td {
+  padding: 7px 0 9px 0;
+  font-size: 12px;
+  color: #383838;
+  background: #f9f9fa;
+  border-bottom: 1px solid #dfe0e6;
+  line-height: 16px;
+  border-right: 1px solid #dfe0e6;
+  text-align: center;
+}
+
+.wrongNote {
+  cursor: pointer;
+}
+
+.wronginfo {
+  width: 319px;
+  height: 136px;
+  display: none;
+  position: absolute;
+  right: -34px;
+  top: 51px;
+  border: 1px solid #fd7079;
+  background: #fff;
+}
+
+.wronginfo_cnt {
+  padding: 26px 0 0 26px;
+  position: relative;
+}
+
+.wronginfo_cnt .ttl {
+  height: 24px;
+  padding-left: 37px;
+  margin-bottom: 12px;
+  background: url(https://www.zocbo.com/ZocboElem/images/sub/icon_infomagnifier.gif) no-repeat;
+  font-size: 16px;
+  line-height: 24px;
+  color: #656565;
+  font-weight: bold;
+}
+
+.wronginfo_cnt .desc {
+  font-size: 12px;
+  line-height: 18px;
+  color: #656565;
+}
+
+.empha_wrong {
+  color: #e85569;
+}
+
+.arrowup {
+  width: 19px;
+  height: 11px;
+  background: url(https://www.zocbo.com/ZocboElem/images/sub/arrowup_wrongpop.gif) no-repeat;
+  position: absolute;
+  right: 50px;
+  top: -11px;
+}
+
+#wrapper .tableStyle3 {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#wrapper .tableStyle3 thead th {
+  font-size: 15px;
+  height: 50px;
+  background: #f9f9f9;
+  text-align: center;
+  color: #343434;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+#wrapper .tableStyle3 thead th.last {
+  background: none;
+}
+
+#wrapper .tableStyle3 tbody tr td {
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #dcdcdc;
+  font-size: 14px;
+  color: #343434;
+  line-height: 23px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  word-break: break-all;
+}
+
+#wrapper .tableStyle3 tbody tr td.exam_txt_3 {
+  font-size: 15px;
+  color: #fff;
+}
+
+#wrapper .tableStyle3 .Nanum_s {
+  font-size: 11px;
+  color: #9c9c9c;
+  line-height: 14px;
+}
+
+#wrapper .tableStyle3 tbody tr td a {
+  font-size: 14px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+#wrapper .tableStyle3 tbody tr td a:hover {
+  text-decoration: underline;
+}
+
+#wrapper .tableStyle3 tbody tr td a.Nanum {
+  font-size: 14px;
+  color: #343434;
+  line-height: 23px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  font-weight: bold;
+}
+
+#wrapper .tableStyle3 .td_left2 {
+  padding-left: 10px;
+  text-align: left;
+}
+
+#wrapper .tableStyle3 .td_left20 {
+  padding-left: 20px;
+  text-align: left;
+}
+
+#wrapper .tableStyle3 .td_left35 {
+  padding-left: 35px;
+  text-align: left;
+}
+
+#wrapper .tableStyle3 tbody tr td table tbody tr td {
+  padding: 0 0 0 0;
+  border: none;
+  word-break: break-all;
+}
+
+#wrapper .tableStyle3 .btnCom {
+  height: 30px;
+  font-size: 12px;
+  line-height: 29px;
+  font-weight: normal;
+}
+
+#wrapper .tableStyle3 .btnCom:hover {
+  text-decoration: none;
+}
+
+#wrapper .tableStyle3 .btn_listA > li {
+  margin-top: 3px;
+}
+
+#wrapper .tableStyle3 .btn_listA > li:first-child {
+  margin-top: 0;
+}
+
+#wrapper .tableStyle3 .bar_new1 {
+  font-size: 13px;
+  height: 31px;
+  background: #a7c3d7;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+}
+
+#wrapper .tableStyle3 tbody td select {
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  padding: 0 0 0 10px !important;
+  border: 1px solid #d4d4d4;
+  color: #666;
+  font-size: 12px;
+  line-height: 36px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+#wrapper .tableStyle3tp1 tbody tr td {
+  font-size: 12px;
+  color: #666c;
+  line-height: 22px;
+}
+
+.tbpdT20 tbody tr td {
+  padding: 20px 0 20px 0;
+}
+
+.plus_Dbox {
+  margin-bottom: 30px;
+}
+
+.plus_Dbox .vdoArea #divPlayerFore {
+  width: 671px;
+  height: 450px;
+}
+
+.plus_Dbox .vdoArea #divPlayerLayer {
+  width: 671px;
+  height: 450px;
+  display: none;
+}
+
+.plus_Dbox .vdoDtail_info {
+  width: 619px;
+  padding: 22px 25px 25px 25px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-top: none;
+}
+
+.plus_Dbox .vdoDtail_info .top_ttl {
+  margin-bottom: 17px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.vdoDtail_info_list {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 9px;
+  font-size: 0;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.vdoDtail_info_list > li {
+  padding-right: 28px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 39px;
+  color: #666;
+}
+
+.vdoDtail_teacher_infolist {
+  font-size: 0;
+}
+
+.vdoDtail_teacher_infolist > li {
+  padding-right: 56px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+}
+
+.vdoDtail_teacher_infolist > li .ttl {
+  font-size: 12px;
+  line-height: 20px;
+  color: #666;
+  font-weight: bold;
+}
+
+.vdoDtail_teacher_infolist > li .desc {
+  font-size: 12px;
+  line-height: 21px;
+  color: #666;
+  letter-spacing: -1px;
+}
+
+.vdoSelectArea {
+  padding: 23px 0 0 0;
+  margin-top: 10px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.vdoS_list {
+  width: 100%;
+  display: table;
+}
+
+.vdoS_list > li {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.vdoS_list > li:first-child {
+  text-align: left;
+}
+
+.vdoS_list .total_price {
+  font-size: 18px;
+  color: #343434;
+  line-height: 23px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+/*--------------------------------------------------
+			 table style
+--------------------------------------------------*/
+.brdTnone {
+  border-top: none !important;
+}
+
+.brdLnone {
+  border-left: none !important;
+}
+
+.brdRnone {
+  border-right: none !important;
+}
+
+.inputStyle {
+  height: 20px;
+  padding: 0 7px;
+  border: 1px solid #dfdfdf;
+  line-height: 20px;
+  font-size: 11px;
+  color: #666;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+#zocbo_wrap .tableStyle1 {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+#zocbo_wrap .tableStyle1 th,
+.tableStyle1 td {
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+/*--------------------------------------------------
+			 테이블 스타일 초기화
+--------------------------------------------------*/
+.viewtable_price {
+  table-layout: fixed;
+}
+
+table img {
+  height: auto;
+  max-width: 100%;
+}
+
+.tableStyle1 {
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  table-layout: fixed;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.tableStyle1 tr th,
+table tr td {
+  padding: 0;
+}
+
+.tableStyle1 th {
+  word-wrap: break-word;
+}
+
+.tableStyle1 td {
+  word-wrap: break-word;
+}
+
+.tableStyle1 tbody tr td a {
+  font-size: 14px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.tableStyle1 tbody tr td a:hover {
+  text-decoration: underline;
+}
+
+.tableStyle1 {
+  width: 100%;
+}
+
+.tableStyle1 a {
+  color: #343434;
+}
+
+.tableStyle1 thead th {
+  font-size: 15px;
+  height: 50px;
+  background: #f9f9f9;
+  text-align: center;
+  color: #7e7e7e;
+}
+
+.tableStyle1 thead th.last {
+  background: none;
+}
+
+.tableStyle1 .td_left {
+  padding-left: 10px;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tableStyle1 .td_left2 {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.tableStyle1 .td_left a {
+  color: #343434;
+}
+
+.tableStyle1 .td_left a:hover,
+.tableStyle1 .td_left2 a:hover {
+  color: #343434;
+  text-decoration: underline;
+}
+
+.tableStyle1 .txtword {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tableStyle1 .priceimpo {
+  font-weight: bold;
+  color: #4893c6;
+}
+
+.tableStyle1 td {
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #d8d8d8;
+  text-align: center;
+  font-size: 14px;
+  color: #343434;
+  line-height: 23px;
+}
+
+.tableStyle1 tbody tr td table {
+  padding: 0;
+}
+
+.tableStyle1_pb tbody tr td {
+  padding: 18px 0 18px 0;
+}
+
+.listtxtA .infotxt {
+  font-size: 11px;
+  color: #9c9c9c;
+  line-height: 14px;
+}
+
+.listtxtA .infotxt span {
+  padding-left: 6px;
+}
+
+.listtxtA .infodesc a {
+  font-size: 14px;
+  color: #343434;
+  line-height: 23px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  font-weight: bold;
+}
+
+.tableStyle1 .btnCom {
+  height: 30px;
+  font-size: 12px;
+  line-height: 29px;
+  font-weight: normal;
+}
+
+.tableStyle1 .btnCom:hover {
+  text-decoration: none;
+}
+
+table.boardnew {
+  border-top: 1px solid #d8d8d8;
+}
+
+table.boardnew th {
+  font-size: 15px;
+  height: 50px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #d8d8d8;
+  text-align: center;
+  color: #7e7e7e;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.tableStyle2 {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.tableStyle2 thead th {
+  font-size: 15px;
+  height: 50px;
+  background: #f9f9f9;
+  text-align: center;
+  color: #7e7e7e;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.tableStyle2 thead th.last {
+  background: none;
+}
+
+.tableStyle2 tbody tr td {
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #dcdcdc;
+  font-size: 14px;
+  color: #343434;
+  line-height: 23px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.tableStyle2 tbody tr td a {
+  font-size: 14px;
+}
+
+.tableStyle2 .td_left2 {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.tableStyle2 .td_left20 {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.tableStyle2 tbody tr td table tbody tr td {
+  padding: 0 0 0 10px;
+  border: none;
+}
+
+.tableStyle2 .btnCom {
+  height: 30px;
+  font-size: 12px;
+  line-height: 29px;
+  font-weight: normal;
+}
+
+.tableStyle2 .btnCom:hover {
+  text-decoration: none;
+}
+
+.tableStyle3 {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.tableStyle3 thead th {
+  font-size: 14px;
+  height: 50px;
+  background: #f9f9f9;
+  text-align: center;
+  color: #343434;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.tableStyle3 thead th.last {
+  background: none;
+}
+
+.tableStyle3 tbody tr td {
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #dcdcdc;
+  font-size: 13px;
+  color: #343434;
+  line-height: 23px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  word-break: break-all;
+}
+
+.tableStyle3 tbody tr.bg-prev-exam td {
+  background-color: #eef4fc;
+}
+
+.tableStyle3 tbody tr.bg-prev-exam .text-prev-exam {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  cursor: default;
+  margin-top: -10px;
+}
+
+.tableStyle3 tbody tr.bg-prev-exam td .btn-download-pdf .dwn_pay {
+  background-color: #fff;
+}
+
+.rn_itemlist .tableStyle3 .Nanum_s {
+  font-size: 12px;
+}
+
+.tableStyle3 tbody tr td.exam_txt_3 {
+  font-size: 15px;
+  color: #fff;
+}
+
+.tableStyle3 .Nanum_s {
+  font-size: 11px;
+  color: #9c9c9c;
+  line-height: 14px;
+}
+
+.tableStyle3 tbody tr td a {
+  font-size: 14px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.tableStyle3 tbody tr td a.top_customer_font {
+  font-size: 12px;
+}
+
+.tableStyle3 tbody tr td a:hover {
+  text-decoration: underline;
+}
+
+.tableStyle3 tbody tr td a.Nanum {
+  font-size: 14px;
+  color: #343434;
+  line-height: 23px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  font-weight: bold;
+}
+
+.tableStyle3 .td_left2 {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.tableStyle3 .td_left10 {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.tableStyle3 .td_left15 {
+  padding-left: 15px;
+  text-align: left;
+}
+
+.tableStyle3 .td_left20 {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.tableStyle3 .td_left30 {
+  padding-left: 30px;
+  text-align: left;
+}
+
+.tableStyle3 .td_left35 {
+  padding-left: 35px;
+  text-align: left;
+}
+
+.tableStyle3 .td_left40 {
+  padding-left: 40px;
+  text-align: left;
+}
+
+.tableStyle3 tbody tr td table tbody tr td {
+  padding: 0 0 0 0;
+  border: none;
+  word-break: break-all;
+}
+
+.tableStyle3 .btnCom {
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.tableStyle3 .btnCom.btn-prev-exam {
+  background-color: #515560;
+  color: #fff !important;
+  border-color: #515560;
+}
+
+.tableStyle3 .btnCom:hover {
+  text-decoration: none;
+}
+
+.tableStyle3 .btn_listA > li {
+  margin-top: 3px;
+}
+
+.tableStyle3 .btn_listA > li:first-child {
+  margin-top: 0;
+}
+
+.tableStyle3 .bar_new1 {
+  font-size: 13px;
+  height: 31px;
+  background: #a7c3d7;
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+}
+
+.tableStyle3 tbody td select {
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  padding: 0 0 0 10px !important;
+  border: 1px solid #d4d4d4;
+  color: #666;
+  font-size: 12px;
+  line-height: 36px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.tableStyle3tp1 tbody tr td {
+  font-size: 12px;
+  color: #666c;
+  line-height: 22px;
+}
+
+.tbpdT20 tbody tr td {
+  padding: 20px 0 20px 0;
+}
+
+.plus_Dbox {
+  margin-bottom: 30px;
+}
+
+.plus_Dbox .vdoArea #divPlayerFore {
+  width: 671px;
+  height: 450px;
+}
+
+.plus_Dbox .vdoArea #divPlayerLayer {
+  width: 671px;
+  height: 450px;
+  display: none;
+}
+
+.plus_Dbox .vdoDtail_info {
+  width: 619px;
+  padding: 22px 25px 25px 25px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-top: none;
+}
+
+.plus_Dbox .vdoDtail_info .top_ttl {
+  margin-bottom: 17px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.vdoDtail_info_list {
+  width: 100%;
+  height: 36px;
+  margin-bottom: 9px;
+  font-size: 0;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.vdoDtail_info_list > li {
+  padding-right: 28px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 39px;
+  color: #666;
+}
+
+.vdoDtail_teacher_infolist {
+  font-size: 0;
+}
+
+.vdoDtail_teacher_infolist > li {
+  padding-right: 56px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+}
+
+.vdoDtail_teacher_infolist > li .ttl {
+  font-size: 12px;
+  line-height: 20px;
+  color: #666;
+  font-weight: bold;
+}
+
+.vdoDtail_teacher_infolist > li .desc {
+  font-size: 12px;
+  line-height: 21px;
+  color: #666;
+  letter-spacing: -1px;
+}
+
+.vdoSelectArea {
+  padding: 23px 0 0 0;
+  margin-top: 10px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.vdoS_list {
+  width: 100%;
+  display: table;
+}
+
+.vdoS_list > li {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.vdoS_list > li:first-child {
+  text-align: left;
+}
+
+.vdoS_list .total_price {
+  font-size: 18px;
+  color: #343434;
+  line-height: 23px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+/*--------------------------------------------------
+			 입력폼테이블
+--------------------------------------------------*/
+.formTable {
+  width: 100%;
+  border-top: 1px solid #d8d8d8;
+  border-collapse: collapse;
+  word-wrap: break-word;
+}
+
+.formTable thead th {
+  padding: 10px 0 10px 0;
+  color: #343434;
+  border-bottom: 1px solid #d8d8d8;
+  background: #f9f9f9;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  font-weight: bold;
+}
+
+.formTable tbody th {
+  padding: 10px 0 10px 20px;
+  color: #343434;
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  background: #f9f9f9;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  font-weight: bold;
+}
+
+.formTable tbody th .empha {
+  width: 6px;
+  height: 5px;
+  margin: 0 13px 0 0;
+  padding: 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.formTable tbody th .empha img {
+  display: block;
+  margin: -2px 0 0 0;
+}
+
+.formTable tbody td {
+  padding: 10px 20px 10px 20px;
+  font-size: 12px;
+  line-height: 23px;
+  color: #666;
+  border-bottom: 1px solid #d8d8d8;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.formTable tbody td.c_info {
+  padding: 0;
+}
+
+.formTable tbody td.tdBox {
+  padding: 6px 15px;
+}
+
+.formTable tbody td select {
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  padding: 0 0 0 10px !important;
+  border: 1px solid #d4d4d4;
+  color: #666;
+  font-size: 12px;
+  line-height: 36px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.formTable tbody td textarea {
+  padding: 10px;
+  border: 1px solid #d4d4d4;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  color: #000;
+}
+
+.sj textarea {
+  height: 92px;
+}
+
+.formTable tbody td textarea.taComment {
+  width: 801px;
+  height: 375px;
+  font-size: 12px;
+  line-height: 1.6;
+  font-family: Dotum, AppleGothic, Sans-serif;
+}
+
+.formTable tbody td textarea.taComment.placeholder {
+  color: #000;
+}
+
+/* IE10 이상을 위한 css */
+.formTable tbody td textarea.taComment::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+}
+.formTable tbody td textarea.taComment:-ms-input-placeholder {
+  color: #000;
+  opacity: 1;
+  /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+}
+.formTable tbody td textarea.taComment::-ms-input-placeholder {
+  color: #000;
+  opacity: 1;
+  /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+}
+.formTable tbody td textarea.taComment::placeholder {
+  color: #000;
+  opacity: 1;
+  /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+}
+
+.formTable tbody td textarea.taComment::-webkit-input-placeholder {
+  color: #000;
+}
+
+/* IE */
+.formTable tbody td textarea.taComment:-ms-input-placeholder {
+  color: #000;
+}
+
+/* Firefox */
+.formTable tbody td textarea.taComment:-mos-input-placeholder {
+  color: #000;
+}
+
+.formTable tbody td .infoTxt {
+  display: block;
+  padding-top: 5px;
+  font-size: 11px;
+}
+
+.formTable tbody td .infoTxt2 {
+  padding-top: 5px;
+  font-size: 11px;
+}
+
+.formTable tbody td .cmt {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 12px;
+  color: #858585;
+}
+
+.formTable tbody td .botcmt {
+  margin: 10px 0 0 0;
+  overflow: hidden;
+}
+
+.formTable tbody td .botcmt > li:first-child {
+  margin: 0 0 0 0;
+}
+
+.formTable tbody td .botcmt > li {
+  margin: 0 0 0 10px;
+  float: left;
+  display: inline;
+  font-size: 12px;
+  line-height: 16px;
+  color: #858585;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.formTable tbody td .botcmt2 > li {
+  line-height: 28px;
+}
+
+.formTable tbody tr td > table tbody tr td {
+  padding: 10px 0 10px 0;
+  border-bottom: 0;
+}
+
+.formTable tbody tr td.table_pdnone > table tbody tr td {
+  padding: 0;
+  border-bottom: 0;
+}
+
+.formTable .formTablein tbody td {
+  padding: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.text_scope > li {
+  margin-top: 5px;
+}
+
+.text_scope > li:first-child {
+  margin-top: 0;
+}
+
+.text_scope > li span {
+  margin-right: 5px;
+}
+
+.nm_Area .flArea {
+  margin-top: 5px;
+  font-size: 0;
+}
+
+.nm_Area .flArea:first-child {
+  margin: 0;
+}
+
+.nm_Area .flArea > li {
+  margin: 0 5px 0 0;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  font-size: 12px;
+  line-height: 32px;
+  color: #666;
+  vertical-align: middle;
+}
+
+.nm_Area .flAreatxt > li {
+  line-height: 20px;
+}
+
+.nm_Area .flArea8 > li {
+  margin: 0 8px 0 0;
+}
+
+.nm_Area .flArea5 > li {
+  margin: 0 5px 0 0;
+}
+
+.nm_Area .flArea15 > li {
+  margin: 0 15px 0 0;
+}
+
+.nm_Area .flArea > li select,
+.nm_Area .flArea_tp1 > li select {
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  padding: 0 0 0 10px !important;
+  border: 1px solid #d4d4d4;
+  color: #666;
+  font-size: 12px;
+  line-height: 36px;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.add-desc {
+  position: relative;
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.add-desc:before {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  margin-top: -1px;
+  background-color: #666;
+}
+
+.add-desc > a {
+  color: #3579d4;
+  font-weight: bold;
+}
+
+.nm_Area .flArea_tp1 {
+  margin-top: 5px;
+  *zoom: 1;
+}
+
+.nm_Area .flArea_tp1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nm_Area .flArea_tp1:first-child {
+  margin: 0;
+}
+
+.nm_Area .flArea_tp1 > li {
+  margin: 0 5px 0 0;
+  float: left;
+  font-size: 12px;
+  line-height: 32px;
+  color: #666;
+  vertical-align: top;
+}
+
+.dashbar img {
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.fl > li {
+  position: relative;
+  margin: 0 0 0 10px;
+  float: left;
+  display: inline;
+  line-height: 36px;
+}
+
+.fltp2 > li {
+  margin: 0 0 0 25px;
+}
+
+.flchbox > li {
+  margin: 0 0 0 20px;
+  line-height: normal;
+}
+
+.formTable .btnWtp {
+  height: 30px;
+  font-size: 12px;
+  line-height: 34px;
+  font-weight: normal;
+  color: #666;
+}
+
+.formTable .btnBlack {
+  height: 32px;
+  line-height: 35px;
+}
+
+.tableStyle3_line {
+  width: 100%;
+}
+
+.tableStyle3_line thead th {
+  border-right: 1px solid #dcdcdc;
+  color: #343434;
+}
+
+.tableStyle3_line tbody tr td {
+  padding: 20px 25px 20px 25px;
+  border-right: 1px solid #dcdcdc;
+  vertical-align: top;
+}
+
+/*--------------------------------------------------
+			 .tableStyle3 추가
+--------------------------------------------------*/
+.tableStyle3 .mEGBtn .btnCom {
+  height: 30px;
+  line-height: 30px;
+}
+
+.tableStyle3 .mEGBtn .btnCom:hover {
+  background: #515560;
+  border: 1px solid #515560;
+  color: #fff !important;
+}
+
+.tableStyle3 .mEGBtn .btn_mEGbasic {
+  background: #fbfae5;
+}
+
+/* 기초 */
+.tableStyle3 .mEGBtn .btn_mEGFoundation {
+  background: #def1e7;
+}
+
+/* 기본 */
+.tableStyle3 .mEGBtn .btn_mEGSevere {
+  background: #f1e8de;
+}
+
+/* 심화 */
+.tableStyle3 .mEGBtn .btn_mEGCompletion {
+  background: #deeaf1;
+}
+
+/* 완성 */
+.tableStyle3 tbody tr td table.mEG_info_list,
+.tableStyle3 tbody tr td table.mEG_dwn_list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableStyle3 tbody tr td table.mEG_info_list td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.tableStyle3 tbody tr td table.mEG_dwn_list td {
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+
+.tableStyle3 tbody tr td table.mEG_dwn_list td.td_left2 {
+  padding-left: 25px;
+  text-align: left;
+}
+
+.tableStyle3 tbody tr td table.mEG_dwn_list td.td_right {
+  text-align: right;
+}
+
+.tableStyle3 tbody tr td.link_UnitBoxFtd {
+  padding: 0;
+  position: relative;
+  border-top: none;
+}
+
+.tableStyle3 tbody tr.no_schArea td {
+  padding: 30px 0 30px 0;
+}
+
+.tableStyle3 tbody tr td.mEG_dwn_listWTD {
+  width: 487px;
+  padding-right: 15px;
+}
+
+/*--------------------------------------------------
+			 회원가입 일반 테이블
+--------------------------------------------------*/
+.join_nmTable {
+  width: 100%;
+  border-top: 1px solid #d8d8d8;
+}
+
+.join_nmTable thead th {
+  padding: 10px 0 10px 0;
+  color: #343434;
+  border-bottom: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  background: #f9f9f9;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.join_nmTable tbody td {
+  padding: 10px 0 10px 0;
+  font-size: 12px;
+  line-height: 23px;
+  color: #666;
+  border-bottom: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+/*--------------------------------------------------
+			 뷰테이블
+--------------------------------------------------*/
+.viewtable {
+  border-top: 1px solid #d8d8d8;
+  word-wrap: break-word;
+}
+
+.viewtable tbody th {
+  padding: 15px 0 17px 24px;
+  color: #343434;
+  border-bottom: 1px solid #dcdcdc;
+  background: #f9f9f9;
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.viewtable tbody td {
+  padding: 11px 20px 14px 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #343434;
+  border-bottom: 1px solid #dcdcdc;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.viewtable tbody td table td {
+  padding: 0;
+  border-bottom: none;
+}
+
+.viewtable .bgleft {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bar2x14.gif) no-repeat 0 50%;
+}
+
+.view_top_infolist {
+  text-align: right;
+  font-size: 0;
+}
+
+.view_top_infolist > li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.pay_top_subject {
+  font-size: 18px;
+}
+
+.total_txt {
+  font-size: 18px;
+  color: #f74966;
+}
+
+.vote_result > td {
+  background: #f9f9f9;
+}
+
+.viewtable tbody td table td.grf_area {
+  padding: 13px 0 13px 0;
+}
+
+.viewtable tbody td table tr.vote_result_grf_area td {
+  line-height: 0 !important;
+  font-size: 12px;
+  color: #666666;
+  letter-spacing: 0px;
+  word-spacing: -4px;
+  font-weight: bold;
+}
+
+.grf_numb {
+  color: #666 !important;
+  font-weight: normal !important;
+}
+
+/*--------------------------------------------------
+			 결제테이블
+--------------------------------------------------*/
+.viewtable_price {
+  border-top: 1px solid #d8d8d8;
+  word-wrap: break-word;
+}
+
+.viewtable_price tbody th {
+  padding: 11px 20px 14px 20px;
+  color: #343434;
+  border-bottom: 1px solid #dcdcdc;
+  background: #f9f9f9;
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  word-wrap: break-word;
+}
+
+.viewtable_price tbody td {
+  padding: 11px 20px 14px 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #343434;
+  border-bottom: 1px solid #dcdcdc;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  word-wrap: break-word;
+}
+
+.viewtable_price tbody td table td {
+  padding: 0;
+  border-bottom: none;
+}
+
+.viewtable_price .bgleft {
+  background: url(/images/pc/zocbo/zocbo_rn/sub/common/bar2x14.gif) no-repeat 0 50%;
+}
+
+/*--------------------------------------------------
+			 쓰기테이블
+--------------------------------------------------*/
+.writeTable {
+  border-top: 1px solid #d8d8d8;
+}
+
+.writeTable tbody th {
+  padding: 10px 0 10px 25px;
+  color: #343434;
+  border-right: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  background: #f9f9f9;
+  text-align: left;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+  font-weight: bold;
+}
+
+.writeTable tbody td {
+  padding: 10px 20px 10px 20px;
+  font-size: 12px;
+  line-height: 23px;
+  color: #666;
+  border-bottom: 1px solid #dcdcdc;
+  font-family: 'Malgun Gothic', Verdana, Helvetica, Sans-Serif;
+}
+
+.writeTable textarea {
+  border: 1px solid #c2c2c2;
+}
+
+/*--------------------------------------------------
+			 마일리지 안내 정보테이블
+--------------------------------------------------*/
+.infotable {
+  border-bottom: 1px solid #c2c3c5;
+}
+
+.infotable thead th {
+  padding: 5px 15px 5px 15px;
+  background: #ccddf4;
+  border: 1px solid #c2c3c5;
+  border-bottom: none;
+  border-left: none;
+  font-size: 13px;
+  color: #3f3f3f;
+  font-weight: bold;
+  text-align: left;
+}
+
+.infotable td {
+  padding: 5px 15px 5px 15px;
+  font-size: 11px;
+  line-height: 16px;
+  color: #696969;
+  border: 1px solid #c2c3c5;
+  border-left: none;
+  border-bottom: none;
+}
+
+/*--------------------------------------------------
+			 마일리지 안내 정보테이블
+--------------------------------------------------*/
+.slectTable {
+  border-bottom: 1px solid #c2c3c5;
+}
+
+.slectTable thead th {
+  padding: 11px 15px 9px 15px;
+  background: #ccddf4;
+  border: 1px solid #c2c3c5;
+  border-bottom: none;
+  border-left: none;
+  font-size: 12px;
+  color: #3f3f3f;
+  font-weight: bold;
+  text-align: left;
+}
+
+.slectTable tbody th {
+  padding: 11px 15px 9px 15px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3f3f3f;
+  border: 1px solid #c2c3c5;
+  border-left: none;
+  border-bottom: none;
+  font-weight: normal;
+}
+
+.slectTable td {
+  padding: 11px 15px 9px 15px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3f3f3f;
+  border: 1px solid #c2c3c5;
+  border-left: none;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+.bd_left {
+  border-left: 1px solid #c2c3c5 !important;
+}
+
+.progress_desc {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #3f3f3f;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*--------------------------------------------------
+			 오답/불량 신고 안내팝업
+--------------------------------------------------*/
+.wrongPopup {
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.wrongPopup .cnt {
+  width: 450px;
+  margin: 0 0 0 -226px;
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  background: #fff;
+  border: 1px solid #333;
+  z-index: 10000;
+}
+
+.wrongPopup .hdttl {
+  height: 60px;
+  padding: 0 29px 0 20px;
+  background: #3f3f3f;
+  font-size: 17px;
+  color: #fff;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.wrongPopup .ctdesc {
+  margin: 30px 0 0 0;
+  font-size: 15px;
+  color: #000;
+  line-height: 20px;
+  text-align: center;
+}
+
+.wrongPopup .btnA {
+  margin: 30px 0 30px 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.wrongPopup .btnA > a {
+  display: inline-block;
+  margin-left: 10px;
+  width: 150px;
+  height: 28px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  color: #333;
+}
+
+.wrongPopup .btnA > a:nth-child(1) {
+  margin-left: 0;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.wrongPopup .btnA > a:nth-child(2) {
+  background: #333;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.wrongPopup .close-button {
+  position: absolute;
+  right: 21px;
+  top: 20px;
+}
+/*# sourceMappingURL=zocbo_style_table.css.map */

@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/* 공통 */
+@import "../base/fonts.scss";
+@import "../../common/abstracts/mixin.scss",
+        "../../common/abstracts/var.scss";
+@import "../abstracts/mixin.scss",
+        "../abstracts/var.scss";
+
+/*--------------------------------------------------
+			공통
+--------------------------------------------------*/
+.sortable-handler {
+	touch-action: none;
+}
+
+.zocbo_subcntN {
+	width: 100%;
+	min-height: 200px;
+	padding: 0 0 0 0;
+	margin: 0 auto 0 auto;
+	position: relative;
+}
+
+.welcome {
+	width: 100%;
+	overflow: hidden;
+}
+
+.screenWrap {
+	width: 100%;
+	min-width: 1333px;
+	height: 100%;
+	position: relative;
+}
+
+.px_cnts {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.px_cont {
+	width: 1019px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.px_cont .px_ttlA {
+	padding: 0 0 0 307px;
+}
+
+.top_medal {
+	margin: 0 0 0 -506px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+}
+
+.btn_px {
+	text-align: center;
+}
+
+/*--------------------------------------------------
+			섹션배경
+--------------------------------------------------*/
+#px_screen1 {
+	height: 100%;
+	background: #b8e1e3;
+}
+
+#px_screen2 {
+	background: #e5f4f5;
+}
+
+#px_screen3 {
+	background: #fff;
+}
+
+#px_screen4 {
+	background: #e5f4f5;
+}
+
+#px_screen5 {
+	background: #fff;
+}
+
+#px_screen6 {
+	background: #e5f4f5;
+}
+
+/*--------------------------------------------------
+			네이게이션
+--------------------------------------------------*/
+.wr_nav {
+	position: fixed;
+	right: 62px;
+	top: 330px;
+	z-index: 9999;
+}
+
+.wr_nav li {
+	margin-top: 15px;
+}
+
+.wr_nav li:first-child {
+	margin-top: 0;
+}
+
+.wr_nav li a span {
+	display: block;
+	width: 19px;
+	height: 18px;
+	background: url('/images/pc/guide/newMember/ico_hitnavi.png') no-repeat center top;
+	-webkit-transition: height 0.4s ease-in-out;
+	-webkit-transition: height 0.4s ease-in-out;
+	transition: height 0.4s ease-in-out;
+}
+
+.wr_nav li.list_nav1.on a span {
+	height: 226px;
+	background: url('/images/pc/guide/newMember/ico_hitnavi1on.png') no-repeat center top;
+}
+
+.wr_nav li.list_nav2.on a span {
+	height: 172px;
+	background: url('/images/pc/guide/newMember/ico_hitnavi2on.png') no-repeat center top;
+}
+
+.wr_nav li.list_nav3.on a span {
+	height: 150px;
+	background: url('/images/pc/guide/newMember/ico_hitnavi3on.png') no-repeat center top;
+}
+
+.wr_nav li.list_nav4.on a span {
+	height: 140px;
+	background: url('/images/pc/guide/newMember/ico_hitnavi4on.png') no-repeat center top;
+}
+
+.wr_nav li.list_nav5.on a span {
+	height: 115px;
+	background: url('/images/pc/guide/newMember/ico_hitnavi5on.png') no-repeat center top;
+}
+
+.wr_nav li.list_nav6.on a span {
+	height: 129px;
+	background: url('/images/pc/guide/newMember/ico_hitnavi6on.png') no-repeat center top;
+}
+
+
+/*--------------------------------------------------
+			비주얼
+--------------------------------------------------*/
+.vs_Celem {
+	width: 1157px;
+	height: 585px;
+	margin: -293px 0 0 -579px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+
+/*--------------------------------------------------
+			내신 대비의 대명사
+--------------------------------------------------*/
+#px_screen2 .px_cont {
+	margin: -369px 0 0 -510px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+/*--------------------------------------------------
+			압도적인 클래스
+--------------------------------------------------*/
+#px_screen3 .px_cont {
+	margin: -340px 0 0 -510px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+/*--------------------------------------------------
+			놀라운 적중률
+--------------------------------------------------*/
+#px_screen4 .px_cont {
+	margin: -368px 0 0 -541px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+/*--------------------------------------------------
+			명예의 전당
+--------------------------------------------------*/
+#px_screen5 .px_cont {
+	margin: -368px 0 0 -541px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.pxhn_Rwrap {
+	width: 919px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.pxhn_list {
+	width: 919px;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.pxhn_list>li {
+	width: 919px;
+	height: auto;
+	float: left;
+	overflow: hidden;
+}
+
+.pxhn_list>li img {
+	margin: 0 auto;
+}
+
+.pxhn_Rwrap .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	width: 100%;
+	text-align: center;
+}
+
+.pxhn_Rwrap .bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	padding-top: 8px;
+	position: inherit;
+}
+
+.pxhn_Rwrap .bx-wrapper .bx-pager.bx-default-pager a {
+	width: 18px;
+	height: 18px;
+	background: url(/images/pc/guide/newMember/rollpager.png) no-repeat;
+}
+
+.pxhn_Rwrap .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.pxhn_Rwrap .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: url(/images/pc/guide/newMember/rollpager_on.png) no-repeat;
+}
+
+/*--------------------------------------------------
+			신규가입 혜택
+--------------------------------------------------*/
+#px_screen6 .px_cont {
+	margin: -351px 0 0 -541px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}

@@ -1,0 +1,296 @@
+@charset "utf-8";
+@mixin spr-footer($l: 0, $t: 0) {
+    background: url(/images/pc/common/spr-footer.png) $l $t no-repeat;
+}
+
+footer {
+    * {
+        box-sizing: border-box;
+    }
+
+    .inner {
+        width: 1020px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:after {
+            @include clearfix;
+        }
+    }
+
+    .top {
+        display: flex;
+        width: 100%;
+        min-width: 1020px;
+        height: 157px;
+        background-color: #f1f1f1;
+        padding: 0;
+        .inner {
+            align-items: center;
+            > div {
+                flex: 0px 1 1 ;
+            }
+        }
+        .cs-center {
+            display: flex;
+            align-items: center;
+            &:before {
+                @include ct;
+                width: 64px;
+                height: 64px;
+                @include spr-footer(0, -50px);
+                margin-right: 15px;
+            }
+            p {
+                strong,
+                span {
+                    display: block;
+                }
+
+                strong {
+                    font-family: $spoqa;
+                    font-weight: 400;
+                    color: #353339;
+                    font-size: 26px;
+                    letter-spacing: -0.075em;
+                    line-height: 32px;
+
+                    em {
+                        font-size: 32px;
+                    }
+                }
+                span {
+                    color: #666;
+                    font-size: 13px;
+                    line-height: 17px;
+                    font-weight: bold;
+                    font-family: $malgun;
+                }
+            }
+        }
+        .link {
+            @mixin footer-top-icon($n, $l) {
+                &.#{$n} {
+                    &:before {
+                        background-position-x: #{$l};
+                    }
+                }
+            }
+            display: flex;
+            justify-content: flex-end;
+            a {
+                position: relative;
+                width: 48px;
+                padding-bottom: 22px;
+                &:hover {
+                        -webkit-animation: bounce 1s;
+                        animation: bounce 1s;
+                    }
+                & + a {
+                    margin-left: 30px;
+                }
+                &:before {
+                    @include ct;
+                    width: 48px;
+                    height: 48px;
+                    @include spr-footer();
+                    margin-bottom: 5px;
+                }
+                span {
+                    display: block;
+                    font-family: $malgun;
+                    white-space: nowrap;
+                    font-size: 13px;
+                    font-weight: bold;
+                    text-align: center;
+                    letter-spacing: -0.075em;
+                    color: #666;
+                    line-height: 17px;
+                    @include posa-bl(0,50%);
+                    transform: translateX(-50%);
+                }
+                @include footer-top-icon('faq', 0px);
+                @include footer-top-icon('qna', -50px);
+                @include footer-top-icon('remote', -100px);
+                @include footer-top-icon('program', -150px);
+                @include footer-top-icon('publisher', -200px);
+                @include footer-top-icon('campaign', -250px);
+                @include footer-top-icon('change', -300px);
+                @include footer-top-icon('partnership', -350px);
+            }
+        }
+    }
+
+    .bottom {
+        height: 189px;
+        background: #282e38;
+        .inner {
+            align-items: flex-start;
+        }
+        .left {
+            display: flex;
+            padding-top: 40px;
+            h1 {
+                a {
+                    display: block;
+                    width: 120px;
+                    height: 46px;
+                    @include spr-footer(-100px, -50px);
+                    @include ti;
+                    margin-right: 74px;
+                }
+            }
+            > div {
+                display: flex;
+                flex-direction: column;
+                .link {
+                    margin-bottom: 10px;
+                    a {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #a1a1a1;
+                        position: relative;
+                        & + a {
+                            margin-left: 6px;
+                            padding-left: 7px;
+                            &:before {
+                                @include ct;
+                                width: 1px;
+                                height: 10px;
+                                background-color: #a1a1a1;
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                margin-top: -5px;
+                            }
+                        }
+                        strong {
+                            color: #81a9dc;
+                        }
+                    }
+                }
+                p {
+                    font-size: 12px;
+                    color: #a1a1a1;
+                    line-height: 18px;
+                    a {
+                        color: #a1a1a1;
+                    }
+                }
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 44px;
+            .social {
+                display: flex;
+                margin-bottom: 17px;
+                a, button {
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    @include spr-footer(-450px);
+                    @include ti;
+                    & + a, button {
+                        margin-left: 16px;
+                    }
+                    &.btn-facebook {
+                        background-position-x: -500px;
+                    }
+                    &.btn-blog {
+                        background-position-x: -550px;
+                    }
+                }
+            }
+            .btn-isms {
+                display: block;
+                width: 102px;
+                height: 48px;
+                @include spr-footer(-250px, -50px);
+                @include ti;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// footer .bottom {
+//     width: 100%;
+//     min-height: 189px;
+//     background: #282e38;
+// }
+
+// footer .bottom .inner {
+//     padding-left: 261px;
+//     padding-top: 45px;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+
+// footer .bottom .ismsA {
+//     position: absolute;
+//     top: 52px;
+//     right: -11px;
+// }
+
+// footer .bottom h1 {
+//     position: absolute;
+//     top: 40px;
+//     left: 0;
+// }
+
+// footer .bottom h1 a {
+//     display: block;
+// }
+
+// footer .bottom .link {
+//     font-size: 0;
+//     margin-bottom: 10px;
+// }
+
+// footer .bottom .link a {
+//     display: inline-block;
+//     font-size: 12px;
+//     color: #a1a1a1;
+//     position: relative;
+// }
+
+// footer .bottom .link a strong {
+//     color: #81a9dc;
+// }
+
+// footer .bottom .link a+a {
+//     margin-left: 6px;
+//     padding-left: 7px;
+// }
+
+// footer .bottom .link a+a:before {
+//     content: '';
+//     display: block;
+//     width: 1px;
+//     height: 10px;
+//     background-color: #a1a1a1;
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     margin-top: -5px;
+// }
+
+// footer .bottom p {
+//     font-size: 12px;
+//     color: #a1a1a1;
+//     line-height: 18px;
+// }
+
+// footer .bottom p a {
+//     color: #a1a1a1;
+// }

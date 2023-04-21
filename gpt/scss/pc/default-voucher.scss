@@ -1,0 +1,76 @@
+@charset 'utf-8';
+/* abstracts */
+@import
+    'abstracts/var.scss',
+    'abstracts/mixin.scss',
+    '../common/abstracts/mixin.scss',
+    '../common/abstracts/var.scss';
+    
+/* base */
+@import
+    'base/fonts.scss';
+
+/* ui 공통 */
+/* ui layout */
+@import "layout/ui-group.scss";
+
+/* form */
+@import "component/ui-form.scss";
+
+/* button */
+@import "component/ui-button.scss";
+
+/* tab */
+@import "component/ui-tab.scss";
+
+/* accordion */
+@import "component/ui-accordion.scss";
+
+/* fixed menu */
+@import "component/ui-fixed-menu.scss";
+
+/* slider */
+// @import "component/slider.scss";
+    
+/* header */
+@import "layout/header-personal.scss";
+// @import "layout/header.scss";
+
+/* layout */
+@import "prev-css/zocbo_style_layout.scss";
+
+/* footer */
+@import "prev-css/zocbo_style_footer.scss";
+
+/* quick */
+@import "prev-css/zocbo_style_quick.scss";
+/* button */
+@import "prev-css/zocbo_style_button.scss";
+/* lnb */
+@import "prev-css/zocbo_style_lnb.scss";
+/* table */
+@import "prev-css/zocbo_style_table.scss";
+/* btn_download */
+@import "prev-css/zocbo_style_btn_download.scss";
+/* event_melist */
+@import "prev-css/zocbo_style_event_list.scss";
+/* popup */
+@import "layout/layer-popup.scss";
+@import "prev-css/zocbo_style_popup.scss";
+/* 이전 */
+@import "prev-css/zocbo_style_before.scss";
+
+/* 이용권 */
+// @import "pages/voucher.scss";
+@import "pages/voucher-2023.scss";
+
+@import "component/label.scss";
+
+/* zocbo_style */
+@import "prev-css/zocbo_style.scss";
+
+/* 프로 리스트 */
+@import "layout/pro-content-list.scss";
+
+/* prev scan */
+@import "pages/prev-scan.scss";

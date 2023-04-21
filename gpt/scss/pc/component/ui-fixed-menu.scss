@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// 고정 메뉴
+.ui-fixed-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 100;
+    @include posa-tl();
+    &.position-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        .inner {
+        }
+    }
+    .inner {
+        width: 1020px;
+        margin: 0 auto;
+        display: flex;
+        button {
+            flex: auto 1 0;
+        }
+    }
+}

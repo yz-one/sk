@@ -1,0 +1,417 @@
+@charset "utf-8";
+/* abstracts */
+@import '../abstracts/var.scss',
+        '../abstracts/mixin.scss',
+        '../../common/abstracts/mixin.scss',
+        '../../common/abstracts/var.scss';
+
+/*--------------------------------------------------
+			 클린센터
+--------------------------------------------------*/
+#zocbo_wrap {
+    &.cleancenter {
+
+        .cleancenter-infocoment {
+            padding-bottom: 35px;
+            margin-top: 35px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000;
+        }
+
+        .cleancenter-contents * {
+            box-sizing: border-box;
+        }
+
+        .cleancenter-contents {
+            padding-top: 35px;
+            border-top: 1px solid #D8D8D8;
+        }
+
+        .cleancenter-contents>li {
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+        .cleancenter-contents>li .ttl-cleancenter {
+            margin-bottom: 20px;
+            font-size: 21px;
+            line-height: 30px;
+            color: #000;
+            font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+            font-weight: 400;
+        }
+
+        .cleancenter-contents>li .desc-cleancenter {
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000;
+        }
+
+        .cleancenter-contents>li .desc-cleancenter.strong {
+            font-weight: bold;
+        }
+
+        .cleancenter-contents>li .bot-text {
+            margin-top: 19px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000;
+        }
+
+        .first-box {
+            width: 100%;
+            height: 190px;
+            border: 1px solid #707070;
+            font-size: 0;
+        }
+
+        .first-box>li {
+            width: 50%;
+            display: inline-block;
+            margin: 0 0 15px 0;
+            height: 161px;
+            border-left: 1px dashed #707070;
+            text-align: center;
+        }
+
+        .first-box>li:nth-child(1) {
+            border-left: none;
+            background: url(/images/pc/zocbo/zocbo_rn/sub/common/service-criteria2.svg) no-repeat center 19px;
+        }
+
+        .first-box>li:nth-child(2) {
+            background: url(/images/pc/zocbo/zocbo_rn/sub/common/service-criteria3.svg) no-repeat center 19px;
+        }
+
+        .first-box>li>p {
+            padding-top: 115px;
+            font-size: 12px;
+            line-height: 16px;
+            color: #000;
+        }
+
+        .cleancenter-contents .first-desc {
+            position: absolute;
+            right: 0;
+            bottom: -29px;
+        }
+
+        .cleancenter-contents .first-desc>a {
+            font-size: 14px;
+            line-height: 18px;
+            color: #5184DF;
+            font-weight: bold;
+            border-bottom: 1px solid #5184DF;
+        }
+
+        .cleancenter-table {
+            border: 1px solid #707070;
+            border-bottom: none;
+        }
+
+        .cleancenter-table tbody tr th,
+        .cleancenter-table tbody tr td {
+            padding: 18px 0 18px 0;
+            border-bottom: 1px solid #707070;
+            font-size: 12px;
+            line-height: 16px;
+            color: #000;
+            word-break: break-all;
+            font-weight: normal;
+        }
+
+        .cleancenter-table tbody tr th {
+            text-align: center;
+        }
+
+        .cleancenter-table tbody tr td {
+            padding-left: 20px;
+            border-left: 1px solid #707070;
+        }
+
+        .cleancenter-table .clan-emphasis {
+            background: #F3FDFF;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .cleancenter-table .down-file {
+            padding-left: 3px;
+            color: #5184DF;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .btn-wrap {
+            text-align: center;
+            margin-bottom: 35px;
+
+            button,
+            a {
+                display: inline-block;
+                height: 44px;
+                line-height: 42px;
+                padding: 0 22px;
+                font-family: "Spoqa Han Sans Neo", sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                color: #fff;
+                background-color: #5184DF;
+                border: 1px solid #5184DF;
+            }
+        }
+
+        .cleancenter-contents-infomation {
+            padding-top: 35px;
+            border-top: 1px solid #D8D8D8;
+        }
+
+        .cleancenter-contents-infomation>li {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000;
+        }
+
+        .cleancenter-contents-infomation>li:first-child {
+            margin-top: 0;
+        }
+
+        .cleancenter-contents-infomation>li a {
+            color: #5184DF;
+            font-weight: bold;
+            border-bottom: 1px solid #5184DF;
+        }
+
+        .cleancenter-contents-infomation>li .linkgo-inquiry {
+            border-bottom: 1px solid #000;
+            color: #000;
+            font-weight: bold;
+        }
+
+        #fraudulent-user {
+            h3 {
+                font-family: $spoqa;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 160%;
+                color: #266bbd;
+                text-align: center;
+                padding: 30px 10px;
+                background: #FFFFFF;
+                border-width: 1px 1px 0px 1px;
+                border-style: solid;
+                border-color: #BBC9DE;
+            }
+
+            .info {
+                padding: 26px 20px 26px 179px;
+                background: #F0F6FA;
+                border-width: 0px 1px 1px 1px;
+                border-style: solid;
+                border-color: #BBC9DE;
+                position: relative;
+                margin-bottom: 20px;
+
+                &:before {
+                    @include ct;
+                    width: 78px;
+                    height: 70px;
+                    background: url('/images/pc/zocbo/common/spr-cleancenter.png') 0 0 no-repeat;
+                    @include posa-tl(50%, 57px);
+                    margin-top: -35px;
+                }
+
+                p {
+                    font-family: $spoqa;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: -0.005em;
+                    color: #222222;
+
+                    a {
+                        font-family: $spoqa;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: -0.005em;
+                        color: #3579D4;
+                        vertical-align: top;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .user-detail {
+                border-top: 2px solid #DB7777;
+                table-layout: fixed;
+                border-collapse: collapse;
+                width: 100%;
+                margin-bottom: 12px;
+
+                th,
+                td {
+                    border: 1px solid #DB7777;
+                    text-align: left;
+                    padding: 8px 0 8px 20px;
+                }
+
+                th {
+                    border-left: none;
+                    background-color: #ffeded;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: -0.015em;
+                    color: #8B2A2A;
+                }
+
+                td {
+                    border-right: none;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: -0.015em;
+                    color: #222222;
+                }
+            }
+
+            .textarea-wrap {
+                margin-bottom: 20px;
+
+                h4 {
+                    font-family: $spoqa;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: -0.005em;
+                    color: #000000;
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 150px;
+                    font-style: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #666;
+                    display: block;
+                    border: 1px solid #C7C7C7;
+                    padding: 10px 20px;
+                    box-sizing: border-box;
+                }
+            }
+
+            .input-file-wrap {
+                margin-bottom: 30px;
+
+                * {
+                    box-sizing: border-box;
+                }
+
+                h4 {
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 32px;
+                    color: #000000;
+                    vertical-align: top;
+                    margin-right: 10px;
+                    font-family: $spoqa;
+                }
+
+                .input-file {
+                    display: inline-block;
+                    position: relative;
+
+                    .file_input_textbox {
+                        border: none;
+                        border-bottom: 1px solid #515560;
+                        border-radius: 0;
+                        width: 400px;
+                        height: 32px;
+                        margin-right: 10px;
+                    }
+
+                    .filedelete {
+                        display: inline-block;
+                        position: absolute;
+                        left: 357px;
+                        margin-top: 8px;
+                        padding: 0 10px;
+                    }
+                }
+
+                input[type="button"].file_input_button {
+                    padding: 0px 22px;
+                    width: 89px;
+                    height: 32px;
+                    background: #FFFFFF;
+                    border: 1px solid #515560;
+                    border-radius: 0;
+                    color: #515560;
+                    font-family: $spoqa;
+                    font-size: 12px;
+                }
+
+                .file_input_div {
+                    height: 32px;
+                    width: 89px;
+                }
+
+                p {
+                    padding-left: 62px;
+                    color: #888;
+                    font-size: 12px;
+                    line-height: 25px;
+                    letter-spacing: -0.005em;
+                }
+            }
+
+            .input-checkbox-wrap {
+                margin-bottom: 48px;
+
+                .faq_submitchk {
+                    span {
+                        line-height: 20px;
+                        font-size: 14px;
+                    }
+
+                    label {
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: -0.005em;
+                        color: #000000;
+                        vertical-align: top;
+                        display: inline-block;
+                    }
+
+                    button {
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: -0.005em;
+                        color: #3579D4;
+                        vertical-align: top;
+                        margin-left: 10px;
+                        padding-top: 1px;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+
+            .btn-wrap {
+                text-align: center;
+
+                .btn {
+                    width: 130px;
+                    height: 44px;
+                    line-height: 42px;
+                    font-size: 16px;
+                    background-color: #282e38;
+
+                    &.btn-outline {
+                        background-color: #fff;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

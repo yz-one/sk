@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+
+section {
+    position: relative;
+    text-align: center;
+
+    .inner {
+        width: 1020px;
+        margin: 0 auto;
+        position: relative;        
+    }
+    &.section {
+        &1 {        
+            background-image: url(/images/pc/guide/examPreparation/bg_sec1img.png);
+            background-repeat: repeat-x;
+            background-position: center top;
+            height: 557px;
+        }
+        &3 {
+            background: #63e6be;
+            height: 785px;
+            padding-top: 85px;
+            .cnt {
+                margin-left: -32px;                
+                .btna {
+                    display: block;
+                    width: 247px;
+                    height: 47px;
+                    position: absolute; 
+                    bottom: 141px;
+                    left: 281px; 
+                }
+            }
+        }
+        &4 {
+            background-image: url(/images/pc/guide/examPreparation/bg_sec4img.png);
+            background-repeat: no-repeat;
+            background-position: center top;
+            height: 278px;
+            .cnt {
+                padding-top: 97px;
+            }
+        }
+    }
+}
+ 

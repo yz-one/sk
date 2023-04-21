@@ -1,0 +1,224 @@
+#zocbo_wrap {
+    min-width: 1470px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#zocbo_wrap .inner {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#wrapper {
+    min-width: 1273px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#wrapper .inner {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner_rn {
+    width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#zocbo_wrap.sub {
+    min-width: 1470px;
+}
+
+#zocbo_container {
+    position: relative;
+}
+
+#gameplayer iframe {
+    background: #fff;
+}
+
+/*--------------------------------------------------
+			 zocbo_container
+--------------------------------------------------*/
+#zocbo_wrap.intro #zocbo_container {
+    min-height: 250px; 
+}
+
+/*--------------------------------------------------
+			 zocbo_subcnt
+--------------------------------------------------*/
+.zocbo_subcnt {
+    width: 1020px;
+    min-height: 200px;
+    padding: 0 0 100px 0;
+    margin: 34px auto 34px auto;
+    position: relative;
+}
+
+.zocbo_lnbWrap {
+    position: relative;
+    z-index: 10;
+}
+
+#zocbo_lnb {
+    width: 167px;
+    float: left;
+}
+
+#zocbo_lnb h2.tp2 {
+    width: 160px;
+    height: 62px;
+    background: #fff;
+    border: 1px solid #c2c2c2;
+    font-size: 20px;
+    color: #333;
+    line-height: 62px;
+    text-align: center;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+td #zocbo_lnb {
+    margin-top: 34px;
+}
+
+.contents_area {
+  width: 812px !important;
+  float: right;
+  position: relative;
+}
+
+.contents_area2 {
+    width: 1020px;
+    position: relative;
+}
+
+.contents_area3 {
+    width: 670px;
+    margin-left: 31px;
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+
+.con_body {
+  width: 812px;
+  position: relative;
+}
+
+.titleH2 {
+    padding-bottom: 23px;
+    position: relative;
+}
+
+.titleH2 h2 {
+    font-size: 21px;
+    line-height: 24px;
+    color: #343434;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 400;
+}
+
+.titleH2 .desc {
+    margin-top: 13px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #696969;
+}
+
+.sub_ttl {
+    margin-bottom: 25px;
+}
+
+.sub_ttl .ttl {
+    font-size: 16px;
+    line-height: 20px;
+    color: #282e38;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    font-weight: 400;
+}
+
+.sub_ttl .desc {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #696969;
+}
+
+.sub_ttl .desc span {
+    font-weight: bold;
+}
+
+.top_comtab_area {
+    position: relative;
+}
+
+.top_comtab_area .btnCom {
+    height: 30px;
+    line-height: 33px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-weight: normal;
+}
+
+.exclamation_mark {
+    margin-top: -1px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.exclamationPop {
+    width: 147px;
+    height: 90px;
+    display: none;
+    position: absolute;
+    left: 52px;
+    top: 45px;
+    z-index: 99;
+    background: #fff url(/images/pc/zocbo/zocbo_rn/sub/common/bg_exclamation.gif) no-repeat;
+}
+
+.exclamationPop .cnt {
+    position: relative;
+}
+
+.exclamationPop .cnt {
+    padding: 24px 15px 0 15px;
+    position: relative;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+}
+
+.titleH2.rntitleH2 {
+    padding-bottom: 23px;
+    position: relative;
+}
+
+.titleH2.rntitleH2 h2 {
+    font-size: 21px;
+    line-height: 24px;
+    color: #343434;
+    font-family: 'Spoqa Han Sans Neo', Sans-Serif;
+    text-align: center;
+}
+
+.titleH2.rntitleH2 .desc {
+    margin-top: 13px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #696969;
+    text-align: center;
+}
+
+/*# sourceMappingURL=zocbo_style_layout.css.map */
