@@ -4,9 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>gpt step2</title>
+    <link rel="stylesheet" href="css/default.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
 <body>
-    ssssssss
+    <div id="wrapper">
+        <!-- 왼쪽 영역// -->
+        <div class="left">
+            <div class="top">
+                <h1>T Legalnet</h1>
+                <nav>
+                    <a href="#" class="active">표시광고 검토</a>
+                    <a href="#">계약서 작성</a>
+                    <a href="#">법률 질의</a>
+                </nav>
+            </div>
+            <div class="bottom">
+                <div class="user">
+                    Data Soultion팀<br>김찬호 님
+                </div>
+                <div class="ticket-group">
+                    <a href="#" class="active">검토 진행 중인 티켓<em>4</em></a>
+                    <a href="#">검토 완료 티켓<em>12</em></a>
+                    <a href="#">반려된 티켓<em>1</em></a>
+                </div>
+                <button type="button" class="btn-Legalnet">T-Legalnet 가기</button>
+            </div>
+        </div>
+        <!-- //왼쪽 영역 -->
+
+        <!-- 오른쪽 영역// -->
+        <div class="right">
+            <div class="steps">
+                <p class="prev"><span>Step01. 티켓 생성</span></p>
+                <p class="now"><span>Step02. 내용작성</span></p>
+                <p><span>Step03. 법무팀 검토</span></p>
+                <p><span>Step04. 최종완료</span></p>
+            </div>
+
+            <!-- 콘텐츠 영역// -->
+            <div class="content">
+                <div class="content-title">
+                    <h2>
+                        <strong>표시광고 검토</strong>
+                        <span>필요한 법률 검토 영역을 선택해주세요.</span>
+                    </h2>
+                    <div class="content-title-btns">
+                        <button type="button" class="active">검색엔진 배너</button>
+                        <button type="button">광고 포스터</button>
+                        <button type="button">TV 광고</button>
+                        <button type="button">세일즈</button>
+                    </div>
+                </div>
+                <div class="chat-wrap">
+                    <div class="chat-wrap-question">
+                        <div>
+                            <p>검색엔젠 배너 광고</p>
+                        </div>
+                    </div>
+                    <div class="chat-wrap-answer">
+                        <div>
+                            <p>광고 소재를 업로드해주시기 바랍니다.</p>
+                        </div>
+                    </div>
+                    <div class="chat-wrap-question">
+                        <div>
+                            <img src="images/img-temp.png" alt="">
+                        </div>
+                    </div>
+                    <div class="chat-wrap-answer">
+                        <div>
+                            <p>광고 소재에 대한 컴플라이언스 리스크 검토를 진행하였습니다. 검토 결과, 대체로 문제가 없는 것으로 판단됩니다. 그러나 다음 사항들을 고려하여 수정이 필요한 부분이 있는지 확인해주시기 바랍니다.<br>
+                            1. "첫로밍 50%할인"과 같은 할인율 표기는 해당 할인 조건 및 기간을 명확하게 표시해야합니다. 아래는 요청하신 광고 소재와 유사한 검토건 및 사내 가이드라인입니다. 참고 부탁드립니다.</p>
+                            <div class="btn-group">
+                                <button type="button">유사사례</button>
+                                <button type="button">다른 광고 소재</button>
+                                <button type="button">사내가이드</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-wrap-continue">
+                        <div>
+                            <button type="button" class="active">계속대화</button>
+                            <button type="button">검토 종료</button>
+                            <button type="button">검토 종료</button>
+                        </div>
+                    </div>
+                    <div class="chat-wrap-question">
+                        <div>
+                            <p>1번에 대해 컴플라이언스를 준수하는 광고 문구를 제안해줄 수 있을까?<br>
+                                그리고 3번에 대해서는 왜 그렇게 판단했는지 설명해줘.</p>
+                        </div>
+                    </div>
+                    <div class="chat-wrap-answer cs">
+                        <div>
+                            <p>다음과 같은 광고 문구를 대안으로 제시합니다.<br>
+                                첫로밍 혜택으로 여행 경비 아끼기!<br>
+                                이렇게 변경하면 할인율을 구체적으로 언급하지 않는 호전적 광고로 정보를 전달할 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //콘텐츠 영역 -->
+            
+            <div class="chat">
+                <div class="chat-inner">
+                    <textarea name="" id="" cols="30" rows="10">1번에 대해 컴플라이언스를 준수하는 광고 문구를 제안해줄 수 있을까? 그리고 3번에 대해서는 왜 그렇게 판단했는지 설명</textarea>
+                    <div class="btn-group">
+                        <button type="button" class="btn-file">첨부파일</button>
+                        <button type="button" class="btn-image">이미지</button>
+                        <button type="button" class="btn-send">보내기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //오른쪽 영역 -->
+    </div>
 </body>
 </html>

@@ -48,3 +48,20 @@
     -webkit-line-clamp: $line;
     white-space: pre-wrap;
 }
+
+@mixin customscrollbar {
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: #c4c9ce;
+        border-radius: 10px;
+        background-clip: padding-box;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background-color: ebeef1;
+        border-radius: 10px;
+    }
+}
