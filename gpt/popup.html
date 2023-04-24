@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gpt popup</title>
+    <link rel="stylesheet" href="css/default.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- 왼쪽 영역// -->
+        <div class="left">
+            <div class="top">
+                <h1>T Legalnet</h1>
+                <nav>
+                    <a href="#" class="active">표시광고 검토</a>
+                    <a href="#">계약서 작성</a>
+                    <a href="#">법률 질의</a>
+                </nav>
+            </div>
+            <div class="bottom">
+                <div class="user">
+                    Data Soultion팀<br>김찬호 님
+                </div>
+                <div class="ticket-group">
+                    <a href="#" class="active">검토 진행 중인 티켓<em>4</em></a>
+                    <a href="#">검토 완료 티켓<em>12</em></a>
+                    <a href="#">반려된 티켓<em>1</em></a>
+                </div>
+                <button type="button" class="btn-Legalnet">T-Legalnet 가기</button>
+            </div>
+        </div>
+        <!-- //왼쪽 영역 -->
+
+        <!-- 오른쪽 영역// -->
+        <div class="right">
+            <div class="steps">
+                <p class="prev"><span>Step01. 티켓 생성</span></p>
+                <p class="prev"><span>Step02. 내용작성</span></p>
+                <p class="now"><span>Step03. 법무팀 검토</span></p>
+                <p><span>Step04. 최종완료</span></p>
+            </div>
+
+            <!-- 콘텐츠 영역// -->
+            <div class="content">
+                <div class="content-title">
+                    <h2>
+                        <strong>계약서 작성</strong>
+                        <span>필요한 계약서 유형을 선택해주세요.</span>
+                    </h2>
+                    <div class="content-title-btns">
+                        <button type="button">용역/도급 계약</button>
+                        <button type="button">MOU</button>
+                        <button type="button">개인정보 처리방침</button>
+                        <button type="button">유통망 관련 계약</button>
+                        <button type="button" class="active">업무 제휴 계약</button>
+                    </div>
+                </div>
+                <div class="chat-wrap">
+                    <div class="chat-wrap-question">
+                        <div>
+                            <p>업무 제휴 계약서 작성</p>
+                        </div>
+                    </div>
+                    <div class="chat-wrap-answer">
+                        <div>
+                            <p>아래의 내용을 작성해주세요</p>
+                            <div class="contract">
+                                <div class="contract-input">
+                                    <h4>계약 상대방 정보</h4>
+                                    <table>
+                                        <colgroup>
+                                            <col width="130px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>이름</th>
+                                                <td>
+                                                    <div class="row">
+                                                        <input type="text" value="주식회사 프레시코드">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>주소</th>
+                                                <td>
+                                                    <div class="row">
+                                                        <input type="text">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>대표이사</th>
+                                                <td>
+                                                    <div class="row">
+                                                        <input type="text">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>계약 주요 내용</th>
+                                                <td>
+                                                    <div class="row">
+                                                        <input type="text">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>계약 유효 기간</th>
+                                                <td>
+                                                    <div class="row">
+                                                        <input type="text">
+                                                        <span></span>
+                                                        <input type="text">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>계약 체결일</th>
+                                                <td>
+                                                    <div class="row row-group">
+                                                        <input type="text">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button type="button">작성완료</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-wrap-question">
+                        <div>
+                            <p>계약 정보 작성 완료</p>
+                        </div>
+                    </div>
+                    <div class="chat-wrap-answer">
+                        <div>
+                            <p>구독 제휴 표준 계약서 양식에 맞게 계약서 초안을 작성하였습니다.<br>
+                                아래 내용을 검토하시고, 수정이 필요하신 경우 편집한 후 법무 검토 요청 버튼을 눌러주세요.</p>
+                            <div class="contract">
+                                <div class="contract-text">
+                                    <p>
+                                        SK텔레콤주식회사(이하“SKT”라한다) 와 주식회사 프레시코드 (이하 “제휴사”라 하며, “SKT”와 “제휴사”를 총칭할경우 “양사”라한다)는 “”는 “SKT”의 구독 상품 플랫폼(이하“서비스”라한다) 운영 및 이용에 관하여 다음과 같이 계약(이하“본계약”이라한다)을 체결한다.<br>
+                                        제1조 (목적)<br>
+                                        본 계약은 “SKT”와 “제휴사”가 “SKT”의 “서비스”를 통해 공동으로 판매/마케팅함에 있어 필요한 제반 사항 및 양 사의 권리와 의무 등
+                                    </p>
+                                </div>
+                                <button type="button">더보기 및 편집</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-wrap-continue">
+                        <div>
+                            <button type="button" class="active">계약서 다운로드</button>
+                            <button type="button">법무팀 검토 요청</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //콘텐츠 영역 -->
+            
+            <div class="chat">
+                <div class="chat-inner">
+                    <textarea name="" id="" cols="30" rows="10">1번에 대해 컴플라이언스를 준수하는 광고 문구를 제안해줄 수 있을까? 그리고 3번에 대해서는 왜 그렇게 판단했는지 설명</textarea>
+                    <div class="btn-group">
+                        <button type="button" class="btn-file">첨부파일</button>
+                        <button type="button" class="btn-image">이미지</button>
+                        <button type="button" class="btn-send">보내기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //오른쪽 영역 -->
+    </div>
+
+    <!-- 레이어 팝업// -->
+    <div class="ui-popup">
+        <div class="ui-popup-header">
+            <button type="button">닫기</button>
+        </div>
+        <div class="ui-popup-contract-text">
+제19조 (불가항력)
+본 계약의 이행지체 또는 불이행이 천재지변, 전쟁, 폭동, 그와 같은 국가비상사태 하 정부의 강제 조치 등 일방 당사자의 귀책사유 없이 일방 당사자가 제어할 수
+없는 사유(이하 본 조에서 ‘불가항력’이라 한다)에 기인한 것이라면 그것은 본 계약의 위반으로 간주되지 않는다. 불가항력으로 이행지체 또는 불이행에 빠진 당사
+자는 상대방에게 불가항력으로 인한 이행지체 또는 불이행 사실을 통지하여야 하며, 합리적이고 신속한 조치를 취하여 이행지체 사유의 제거 또는 치유에 최선의 
+노력을 기울여야 한다.
+
+제20조 (계약의 해석 및 관할법원)
+① 본 계약에서 정하지 아니한 사항이나 해석상 이의가 있는 경우에는 “양 사”가 서면으로 합의하여 결정한다. 단, 합의가 이루어지지 않은 경우에는 관계법령 및 
+상관례에 따른다.
+② 본 계약에 관하여 분쟁이 발생할 경우 서울중앙지방법원 제1심 법원을 전속관할법원으로 한다.
+
+(별첨 1) 제휴 혜택 및 제공 대가 합의서
+본 계약이 체결된 증거로서 계약서 2부를 작성하여 “SKT”와 “제휴사”가 서명 또는 기명 날인한 후 각각 1부씩 보관한다.
+        </div>
+        <div class="ui-popup-contract-sign">
+            <input type="text" name="" id="" value="2022년 5월 1일" class="input-date" style="width: 120px;">
+            <div class="ui-popup-contract-sign-wrap">
+                <div>
+                    <p>“SKT”</p>
+                    <p>에스케이텔레콤 주식회사</p>
+                    <p>서울시 중구 을지로 65, SK-T타워</p>
+                    <div class="ceo">
+                        <span>대표이사</span>
+                        <strong>유 영 상</strong>
+                        <span>(인)</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" name="" id="" value="“제휴사”" style="width: 70px;">
+                    <input type="text" name="" id="" value="주식회사 프레시코드" style="width: 150px;">
+                    <input type="text" name="" id="" value="서울시 성동구 왕십리로 115, 7층" style="width: 230px;">
+                    <input type="text" name="" id="" value="(성수동1가, 헤이그라운드 서울숲점)" style="width: 250px;">
+                    <div class="ceo">
+                        <span>대표이사</span>
+                        <input type="text" name="" id="" value="정 유 석" style="width: 70px;">
+                        <span>(인)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-popup-footer">
+            <button type="button">취소</button>
+            <button type="button">저장</button>
+        </div>
+    </div>
+    <!-- //레이어 팝업 -->
+</body>
+</html>

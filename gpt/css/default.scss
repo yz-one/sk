@@ -24,7 +24,6 @@ a, button {
     display: flex;
     width: 100%;
     height: 100%;
-    min-width: 1090px;
     > div {
         flex: auto 0 0;
     }
@@ -173,6 +172,7 @@ a, button {
         display: flex;
         flex-direction: column;
         flex: auto 1 1;
+        width: 1090px;
         > div {
             flex: auto 0 0;
         }
@@ -242,10 +242,13 @@ a, button {
             height: calc(100% - 230px);
             background-color: #1b2438;
             overflow-y: auto;
+            overflow-x: hidden;
             @include customscrollbar;
             &-title {
+                width: 1090px;
                 border-bottom: 1px solid #070E1F;
-                padding: 30px 300px 30px 400px;
+                padding: 30px 0;
+                margin: 0 auto;
                 h2 {
                     display: flex;
                     align-items: flex-end;
@@ -295,19 +298,24 @@ a, button {
                 flex-direction: column;
                 &-question, &-answer {
                     display: flex;
-                    padding: 23px 300px 23px 400px;
-                    &:before {
-                        @include ct;
-                        flex: auto 0 0;
-                        width: 34px;
-                        height: 34px;
-                        background-repeat: no-repeat;
-                        background-position: 0 0;
-                        margin-right: 36px;
-                    }
+                    width: 100%;
+                    min-width: 1090px;
+                    padding: 23px 0;
                     > div {
-                        width: 100%;
+                        position: relative;
+                        width: 1090px;
+                        margin: 0 auto;
                         padding: 4px 0;
+                        &:before {
+                            @include ct;
+                            flex: auto 0 0;
+                            width: 34px;
+                            height: 34px;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            margin-right: 36px;
+                            @include posa-tl(0, -70px)
+                        }
                         p {
                             font-size: 16px;
                             line-height: 1.75;
@@ -333,16 +341,20 @@ a, button {
                     }
                 }
                 &-question {
-                    &:before {
-                        background-image: url(../images/icon-chat-question.png);
+                    > div {
+                        &:before {
+                            background-image: url(../images/icon-chat-question.png);
+                        }
                     }
                 }
                 &-answer {
                     font-size: 16px;
                     color: #e0e4ef;
                     background-color: #394561;
-                    &:before {
-                        background-image: url(../images/icon-chat-answer.png);
+                    > div {
+                        &:before {
+                            background-image: url(../images/icon-chat-answer.png);
+                        }
                     }
                     &.cs {
                         &:before {
@@ -351,6 +363,7 @@ a, button {
                     }
                     .contract {
                         width: 100%;
+                        margin-top: 26px;
                         &-input {
                             border-radius: 10px;
                             border: solid 1px #21293b;
@@ -419,7 +432,7 @@ a, button {
                             border: solid 1px #21293b;
                             background-color: #2e364a;
                             padding: 23px 30px;
-                            margin-top: 26px;
+                            
                             p {
                                 font-size: 16px;
                                 line-height: 1.88;
@@ -577,6 +590,132 @@ a, button {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.ui-popup {
+    display: flex;
+    flex-direction: column;
+    width: 1090px;
+    height: 700px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    > div {
+        flex: auto 0 0;
+    }
+    &-header {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+        button {
+            display: block;
+            width: 15px;
+            height: 14px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14'%3E%3Cpath fill-rule='evenodd' fill='%2321293B' d='m9.2 7.003 4.526 4.526a1.201 1.201 0 0 1-1.697 1.697L7.503 8.7l-4.525 4.526a1.201 1.201 0 0 1-1.697-1.697l4.525-4.526-4.525-4.525A1.2 1.2 0 1 1 2.978.781l4.525 4.525L12.029.781a1.2 1.2 0 1 1 1.697 1.697L9.2 7.003z'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-color: transparent;
+            border: none;
+            @include ti;
+        }
+    }
+    &-contract {
+        &-text {
+            padding: 0 40px;
+            height: 360px;
+            white-space: pre-line;
+            font-size: 14px;
+            line-height: 200%;
+            overflow-y: auto;
+            overflow-x: hidden;
+            @include customscrollbar;
+        }
+        &-sign {
+            height: 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 23px;
+            input {
+                height: 20px;
+                line-height: 18px;
+                font-size: 15px;
+                color: #1a2236;
+                padding: 2px 7px 3px 5px;
+                border: solid 1px #c9c9c9;
+                background-color: #e6e6e6;
+                &.input-date {
+                    width: 120px;
+                    margin-bottom: 30px;
+                }
+            }
+            > input {
+                display: block;
+            }
+            &-wrap {
+                display: flex;
+                width: 100%;
+                > div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50%;
+                    p {
+                        font-size: 15px;
+                        line-height: 2.13;
+                        color: #1a2236;
+                    }
+                    input {
+                        display: block;
+                        text-align: center;
+                        & + input {
+                            margin-top: 3px;
+                        }
+                    }
+                    .ceo {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        span, strong {
+                            display: block;
+                            font-size: 15px;
+                            line-height: 1.87;
+                            color: #1a2236;
+                            font-weight: 400;
+                        }
+                        strong, input {
+                            margin: 0 20px 0 38px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        a, button {
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+            color: #e0e4ef;
+            border-radius: 10px;
+            background-color: #384155;
+            border: none;
+            &:first-child {
+                background-color: #6d7586;
+                margin-right: 10px;
             }
         }
     }
