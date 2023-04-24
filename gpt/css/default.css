@@ -229,7 +229,7 @@ a, button { cursor: pointer; }
 
 .ui-popup-contract-sign > input { display: block; }
 
-.ui-popup-contract-sign-wrap { display: flex; width: 100%; }
+.ui-popup-contract-sign-wrap { display: flex; width: 610px; }
 
 .ui-popup-contract-sign-wrap > div { display: flex; flex-direction: column; align-items: center; width: 50%; }
 
