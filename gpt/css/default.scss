@@ -245,10 +245,13 @@ a, button {
             overflow-x: hidden;
             @include customscrollbar;
             &-title {
-                width: 1090px;
+                width: 100%;
                 border-bottom: 1px solid #070E1F;
-                padding: 30px 0;
-                margin: 0 auto;
+                &-inner {
+                    width: 1090px;
+                    padding: 30px 0;
+                    margin: 0 auto;
+                }
                 h2 {
                     display: flex;
                     align-items: flex-end;
@@ -272,7 +275,7 @@ a, button {
                         margin-left: 20px;
                     }
                 }
-                &-btns {
+                .content-title-btns {
                     display: flex;
                     margin-top: 30px;
                     a, button {
@@ -305,7 +308,7 @@ a, button {
                         position: relative;
                         width: 1090px;
                         margin: 0 auto;
-                        padding: 4px 0;
+                        padding: 4px 0 4px 70px;
                         &:before {
                             @include ct;
                             flex: auto 0 0;
@@ -314,7 +317,7 @@ a, button {
                             background-repeat: no-repeat;
                             background-position: 0 0;
                             margin-right: 36px;
-                            @include posa-tl(0, -70px)
+                            @include posa-tl();
                         }
                         p {
                             font-size: 16px;
