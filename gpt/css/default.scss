@@ -396,7 +396,7 @@ a, button {
                                         display: flex;
                                         align-items: center;
                                         > * {
-                                            float: auto 1 1;
+                                            flex: auto 1 1;
                                         }
                                         input {
                                             width: 100%;
@@ -419,6 +419,22 @@ a, button {
                                                 width: 10px;
                                                 height: 1px;
                                                 background-color: #b4bdd1;
+                                            }
+                                        }
+                                        .calendar {
+                                            width: 100%;
+                                            position: relative;
+                                            button {
+                                                display: block;
+                                                width: 34px;
+                                                height: 34px;
+                                                background: url(../images/icon-calendar.png) 50% 50% no-repeat;
+                                                @include ti;
+                                                background-color: transparent;
+                                                border: none;
+                                                @include posa-tr;
+                                                padding: 0;
+                                                margin: 0;
                                             }
                                         }
                                         &-group {

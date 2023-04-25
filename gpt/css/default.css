@@ -143,13 +143,17 @@ a, button { cursor: pointer; }
 
 #wrapper .right .content .chat-wrap-answer .contract-input table td .row { display: flex; align-items: center; }
 
-#wrapper .right .content .chat-wrap-answer .contract-input table td .row > * { float: auto 1 1; }
+#wrapper .right .content .chat-wrap-answer .contract-input table td .row > * { flex: auto 1 1; }
 
 #wrapper .right .content .chat-wrap-answer .contract-input table td .row input { width: 100%; height: 36px; line-height: 34px; font-size: 16px; color: #b3bcd0; border: solid 1px #485166; background-color: #3c4559; padding-left: 20px; }
 
 #wrapper .right .content .chat-wrap-answer .contract-input table td .row span { display: flex; flex: 30px 0 0; align-items: center; justify-content: center; width: 30px; }
 
 #wrapper .right .content .chat-wrap-answer .contract-input table td .row span:before { content: ''; display: block; width: 10px; height: 1px; background-color: #b4bdd1; }
+
+#wrapper .right .content .chat-wrap-answer .contract-input table td .row .calendar { width: 100%; position: relative; }
+
+#wrapper .right .content .chat-wrap-answer .contract-input table td .row .calendar button { display: block; width: 34px; height: 34px; background: url(../images/icon-calendar.png) 50% 50% no-repeat; text-indent: -9999px; overflow: hidden; background-color: transparent; border: none; position: absolute; top: 0; right: 0; padding: 0; margin: 0; }
 
 #wrapper .right .content .chat-wrap-answer .contract-input table td .row-group input { width: 279px; }
 
