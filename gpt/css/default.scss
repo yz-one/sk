@@ -541,14 +541,16 @@ a, button {
                 display: flex;
                 width: 1090px;
                 height: 90px;
-                padding: 17px 31px 17px 15px;
+                padding: 17px 31px 17px 867px;
                 border-radius: 8px;
                 border: solid 1px #1c2028;
                 background-color: #2e364a;
                 margin: 0 auto;
+                position: relative;
                 textarea {
                     display: block;
-                    height: 100%;
+                    width: 852px;
+                    height: 54px;
                     flex: 0px 1 1;
                     font-size: 16px;
                     line-height: 1.75;
@@ -558,6 +560,9 @@ a, button {
                     background-color: #2e364a;
                     padding: 17px 31px 17px 15px;
                     resize: none;
+                    position: absolute;
+                    bottom: 17px;
+                    left: 15px;
                     @include customscrollbar;
                 }
                 .btn-group {

@@ -183,9 +183,9 @@ a, button { cursor: pointer; }
 
 #wrapper .right .chat { display: flex; height: 150px; width: 100%; background-color: #21293b; display: flex; align-items: center; justify-content: center; border-top: 1px solid #181f2f; }
 
-#wrapper .right .chat-inner { display: flex; width: 1090px; height: 90px; padding: 17px 31px 17px 15px; border-radius: 8px; border: solid 1px #1c2028; background-color: #2e364a; margin: 0 auto; }
+#wrapper .right .chat-inner { display: flex; width: 1090px; height: 90px; padding: 17px 31px 17px 867px; border-radius: 8px; border: solid 1px #1c2028; background-color: #2e364a; margin: 0 auto; position: relative; }
 
-#wrapper .right .chat-inner textarea { display: block; height: 100%; flex: 0px 1 1; font-size: 16px; line-height: 1.75; color: #bac3d6; border-radius: 5px; border: solid 1px #4b5570; background-color: #2e364a; padding: 17px 31px 17px 15px; resize: none; }
+#wrapper .right .chat-inner textarea { display: block; width: 852px; height: 54px; flex: 0px 1 1; font-size: 16px; line-height: 1.75; color: #bac3d6; border-radius: 5px; border: solid 1px #4b5570; background-color: #2e364a; padding: 17px 31px 17px 15px; resize: none; position: absolute; bottom: 17px; left: 15px; }
 
 #wrapper .right .chat-inner textarea::-webkit-scrollbar { width: 6px; }
 
