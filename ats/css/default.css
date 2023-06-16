@@ -1,0 +1,101 @@
+@font-face { font-family: 'Moebius'; font-weight: 400; src: url("../fonts/MoebiusKorea/Moebius_Regular_kor.eot"), url("../fonts/MoebiusKorea/Moebius_Regular_eng.eot"); src: local("Moebius"), url("../fonts/MoebiusKorea/Moebius_Regular_kor.woff") format("woff"), url("../fonts/MoebiusKorea/Moebius_Regular_eng.woff") format("woff"), url("../fonts/MoebiusKorea/Moebius_Regular_kor.ttf") format("truetype"), url("../fonts/MoebiusKorea/Moebius_Regular_eng.ttf") format("truetype"); }
+
+@font-face { font-family: 'Moebius'; font-weight: 700; src: url("../fonts/MoebiusKorea/Moebius_Bold_kor.eot"), url("../fonts/MoebiusKorea/Moebius_Bold_eng.eot"); src: local("Moebius"), url("../fonts/MoebiusKorea/Moebius_Bold_kor.woff") format("woff"), url("../fonts/MoebiusKorea/Moebius_Bold_eng.woff") format("woff"), url("../fonts/MoebiusKorea/Moebius_Bold_kor.ttf") format("truetype"), url("../fonts/MoebiusKorea/Moebius_Bold_eng.ttf") format("truetype"); }
+
+html, body { width: 100%; height: 100%; }
+
+body { min-width: 1440px; }
+
+* { padding: 0; margin: 0; font-family: "Moebius"; text-decoration: none; box-sizing: border-box; }
+
+a, button { background: none; border: none; }
+
+header { display: flex; align-items: center; justify-content: space-between; height: 88px; padding-left: 20px; }
+
+header h1 { display: flex; align-items: center; text-indent: -9999px; overflow: hidden; margin-right: 34px; }
+
+header h1:before { content: ''; display: block; width: 28px; height: 22px; background: url(../images/bi.png) 0 0 no-repeat; margin-right: 9px; margin-top: -10px; }
+
+header h1:after { content: ''; display: block; width: 312px; height: 20px; background: url(../images/analytics-and-targeting-suite-3-0.png) 0 0 no-repeat; }
+
+header .left { display: flex; align-items: center; }
+
+header .left nav { display: flex; align-items: center; }
+
+header .left nav a, header .left nav button { display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #999; font-weight: 400; font-family: "Moebius"; }
+
+header .left nav a + a, header .left nav a button, header .left nav button + a, header .left nav button button { margin-left: 10px; }
+
+header .left nav a + a:before, header .left nav a button:before, header .left nav button + a:before, header .left nav button button:before { content: ''; display: block; width: 1px; height: 10px; background-color: #E1E1E1; margin-right: 10px; }
+
+header .left nav a:hover, header .left nav a.active, header .left nav button:hover, header .left nav button.active { color: #6b54dd; }
+
+header .left .header-search { display: flex; align-items: center; width: 450px; height: 40px; border-radius: 20px; border: solid 2px #d9d7e2; background-color: #fff; margin-left: 36px; overflow: hidden; padding: 0 20px; }
+
+header .left .header-search:before { content: ''; display: block; width: 17px; height: 17px; background: url(../images/icon-header-search.png.png) 0 0 no-repeat; margin-right: 16px; }
+
+header .left .header-search input { display: block; width: 100%; height: 100%; border: none; font-size: 12px; }
+
+header .left .header-search input::placeholder { color: #b9b7c1; }
+
+header .right { display: flex; flex-direction: column; align-items: flex-end; justify-content: flex-end; }
+
+header .right .service-select { position: relative; }
+
+header .right .service-select > button { display: flex; align-items: center; justify-content: center; width: 120px; height: 36px; line-height: 36px; text-align: center; border-radius: 4.6px; background-color: #f7f6ff; }
+
+header .right .service-select > button:after { content: ''; display: block; border-color: transparent; border-width: 5px; border-style: solid; border-bottom-width: 2px; border-top: 8px solid #3617ce; margin-left: 7px; }
+
+header .right .service-select-list { display: flex; flex-direction: column; align-items: flex-start; width: 200px; position: absolute; top: 36px; right: 0; padding: 12px 10px; border-radius: 5px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); background-color: #fff; }
+
+a, button { cursor: pointer; }
+
+.ui-popup { display: flex; flex-direction: column; width: 1090px; height: 700px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; }
+
+.ui-popup > div { flex: auto 0 0; }
+
+.ui-popup-header { height: 40px; display: flex; align-items: center; justify-content: flex-end; padding-right: 20px; }
+
+.ui-popup-header button { display: block; width: 15px; height: 14px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14'%3E%3Cpath fill-rule='evenodd' fill='%2321293B' d='m9.2 7.003 4.526 4.526a1.201 1.201 0 0 1-1.697 1.697L7.503 8.7l-4.525 4.526a1.201 1.201 0 0 1-1.697-1.697l4.525-4.526-4.525-4.525A1.2 1.2 0 1 1 2.978.781l4.525 4.525L12.029.781a1.2 1.2 0 1 1 1.697 1.697L9.2 7.003z'/%3E%3C/svg%3E%0A"); background-repeat: no-repeat; background-position: 0 0; background-color: transparent; border: none; text-indent: -9999px; overflow: hidden; }
+
+.ui-popup-contract-text { padding: 0 40px; height: 360px; white-space: pre-line; font-size: 14px; line-height: 200%; overflow-y: auto; overflow-x: hidden; }
+
+.ui-popup-contract-text::-webkit-scrollbar { width: 6px; }
+
+.ui-popup-contract-text::-webkit-scrollbar-thumb { background-color: #c4c9ce; border-radius: 10px; background-clip: padding-box; }
+
+.ui-popup-contract-text::-webkit-scrollbar-track { background-color: ebeef1; border-radius: 10px; }
+
+.ui-popup-contract-sign { height: 230px; display: flex; flex-direction: column; align-items: center; padding-top: 23px; }
+
+.ui-popup-contract-sign input { height: 20px; line-height: 18px; font-size: 15px; color: #1a2236; padding: 2px 7px 3px 5px; border: solid 1px #c9c9c9; background-color: #e6e6e6; }
+
+.ui-popup-contract-sign input.input-date { width: 120px; margin-bottom: 30px; }
+
+.ui-popup-contract-sign > input { display: block; }
+
+.ui-popup-contract-sign-wrap { display: flex; width: 610px; }
+
+.ui-popup-contract-sign-wrap > div { display: flex; flex-direction: column; align-items: center; width: 50%; }
+
+.ui-popup-contract-sign-wrap > div p { font-size: 15px; line-height: 2.13; color: #1a2236; }
+
+.ui-popup-contract-sign-wrap > div input { display: block; text-align: center; }
+
+.ui-popup-contract-sign-wrap > div input + input { margin-top: 3px; }
+
+.ui-popup-contract-sign-wrap > div .ceo { display: flex; justify-content: center; align-items: center; }
+
+.ui-popup-contract-sign-wrap > div .ceo span, .ui-popup-contract-sign-wrap > div .ceo strong { display: block; font-size: 15px; line-height: 1.87; color: #1a2236; font-weight: 400; }
+
+.ui-popup-contract-sign-wrap > div .ceo strong, .ui-popup-contract-sign-wrap > div .ceo input { margin: 0 20px 0 38px; }
+
+.ui-popup-footer { display: flex; align-items: center; justify-content: center; height: 70px; }
+
+.ui-popup-footer a, .ui-popup-footer button { width: 100px; height: 40px; line-height: 40px; font-size: 16px; text-align: center; color: #e0e4ef; border-radius: 10px; background-color: #384155; border: none; }
+
+.ui-popup-footer a:first-child, .ui-popup-footer button:first-child { background-color: #6d7586; margin-right: 10px; }
+
+/* color */
+
+/*# sourceMappingURL=default.css.map */
