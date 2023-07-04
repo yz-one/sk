@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title> test </title>
+    <link rel="stylesheet" href="./test.min.css">
+</head>
+
+<body class="bg-gray" style="overflow-y: hidden;">
+    <div class="console-container">
+        <!-- sidebar -->
+        <div class="console-sidebar">
+            <!-- sidebar menu -->
+            <div class="console-sidebar-menu-area">
+                <!-- 이용 중인 제품 -->
+                <dl class="console-sidebar-menu">
+                    <dt class="console-sidebar-menu-item-title">
+                        <span class="txt">Test</span>
+                    </dt>
+                    <dd>
+                        <!-- depth 1 -->
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="222222">
+                                        <a href="#">222222</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="333333">
+                                        <a href="#">333333</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="444444">
+                                        <a href="#">444444</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="555555">
+                                        <a href="#">555555</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="666666">
+                                        <a href="#">666666</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="777777">
+                                        <a href="#">777777</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="888888">
+                                        <a href="#">888888</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="999999">
+                                        <a href="#">999999</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-accordion-item-dropdown"
+                                        data-sidebar-menu-item-dropdown>
+                                        <a href="#">10101010101010</a>
+                                        <ul class="console-sidebar-menu-item-dropdown-list">
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-1">
+                                                <a href="#">결9-1</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-2">
+                                                <a href="#">9-2</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-accordion-item-dropdown"
+                                        data-sidebar-menu-item-dropdown>
+                                        <a href="#">111111</a>
+                                        <ul class="console-sidebar-menu-item-dropdown-list">
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-1">
+                                                <a href="#">1-1</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-2">
+                                                <a href="#">1-2</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-2">
+                                                <a href="#">1-3</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-2">
+                                                <a href="#">1-4</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="222222">
+                                        <a href="#">222222</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="333333">
+                                        <a href="#">333333</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="444444">
+                                        <a href="#">444444</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="555555">
+                                        <a href="#">555555</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="666666">
+                                        <a href="#">666666</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="777777">
+                                        <a href="#">777777</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="888888">
+                                        <a href="#">888888</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="999999">
+                                        <a href="#">999999</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-accordion-item-dropdown"
+                                        data-sidebar-menu-item-dropdown>
+                                        <a href="#">10101010101010</a>
+                                        <ul class="console-sidebar-menu-item-dropdown-list">
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="11-1">
+                                                <a href="#">결9-1</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="11-2">
+                                                <a href="#">9-2</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="11-2">
+                                                <a href="#">9-3</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="11-2">
+                                                <a href="#">9-4</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-accordion-item-dropdown"
+                                        data-sidebar-menu-item-dropdown>
+                                        <a href="#">111111</a>
+                                        <ul class="console-sidebar-menu-item-dropdown-list">
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-1">
+                                                <a href="#">1-1</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-2">
+                                                <a href="#">1-2</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-2">
+                                                <a href="#">1-3</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-2">
+                                                <a href="#">1-4</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="222222">
+                                        <a href="#">222222</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="333333">
+                                        <a href="#">333333</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="444444">
+                                        <a href="#">444444</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="555555">
+                                        <a href="#">555555</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="666666">
+                                        <a href="#">666666</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="777777">
+                                        <a href="#">777777</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="888888">
+                                        <a href="#">888888</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="999999">
+                                        <a href="#">999999</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-accordion-item-dropdown"
+                                        data-sidebar-menu-item-dropdown>
+                                        <a href="#">10101010101010</a>
+                                        <ul class="console-sidebar-menu-item-dropdown-list">
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="11-1">
+                                                <a href="#">결9-1</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="11-2">
+                                                <a href="#">9-2</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="11-2">
+                                                <a href="#">9-3</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="11-2">
+                                                <a href="#">9-4</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="console-sidebar-menu-item-accordion">
+                            <button type="button" class="console-sidebar-menu-item-accordion-toggle"
+                                data-sidebar-depth2-toggle data-sidebar-tippy>
+                                <span class="txt">aaaaaa</span>
+                            </button>
+                            <!-- depth 2 -->
+                            <div class="depth2">
+                                <div class="border"></div>
+                                <ul class="console-sidebar-menu-item-accordion-list">
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="111111">
+                                        <a href="#">111111</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="222222">
+                                        <a href="#">222222</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="333333">
+                                        <a href="#">333333</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="444444">
+                                        <a href="#">444444</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="555555">
+                                        <a href="#">555555</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="666666">
+                                        <a href="#">666666</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="777777">
+                                        <a href="#">777777</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="888888">
+                                        <a href="#">888888</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-dropdown-item" data-sidebar-menu-item="999999">
+                                        <a href="#">999999</a>
+                                        <button type="button" class="btn-pin"></button>
+                                    </li>
+                                    <li class="console-sidebar-menu-item-accordion-item-dropdown"
+                                        data-sidebar-menu-item-dropdown>
+                                        <a href="#">10101010101010</a>
+                                        <ul class="console-sidebar-menu-item-dropdown-list">
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-1">
+                                                <a href="#">결9-1</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                            <li class="console-sidebar-menu-item-dropdown-item"
+                                                data-sidebar-menu-item="10-2">
+                                                <a href="#">9-2</a>
+                                                <button type="button" class="btn-pin"></button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+
+            </div>
+        </div>
+        <!-- 접기/펴기 버튼 -->
+        <button type="button" class="console-sidebar-btn-fold-toggle"></button>
+    </div>
+    <!-- top nav -->
+    </div>
+    <script>
+        const dataSidebarDepth2Toggle = document.querySelectorAll('[data-sidebar-depth2-toggle]');
+        dataSidebarDepth2Toggle && dataSidebarDepth2Toggle.forEach(element => {
+            element.addEventListener('click', function () {
+                dataSidebarDepth2Toggle.forEach(el => {
+                    if (el === element) return;
+                    el.classList.remove('active');
+                    el.parentNode.classList.remove('active');
+                });
+                if (!element.nextElementSibling) return;
+                if (!element.nextElementSibling.querySelector('ul').childNodes.length) return;
+                element.classList.toggle('active');
+                element.parentNode.classList.toggle('active');
+                element.parentNode.querySelector('.depth2').style.top = element.getBoundingClientRect()
+                    .top + 'px';
+            });
+        });
+    </script>
+</body>
+
+</html>
