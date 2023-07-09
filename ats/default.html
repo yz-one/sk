@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
     <link rel="stylesheet" href="css/default.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -48,13 +49,170 @@
             <div class="max-reach">
                 <strong>최대도달범위  / 명</strong>
                 <p>
-                    <span>6,976,071</span>
-                    <em>46,071</em>
+                    <span><i class="ui-label type-a">A</i>6,976,071</span>
+                    <span><i class="ui-label type-b">B</i>46,071</span>
                 </p>
             </div>
         </div>
     </header>
-    <aside></aside>
-    <main></main>
+
+    <div id="container">
+        <aside id="lnb">
+            <button type="button" class="lnb-all-filter">전체필터보기</button>
+
+            <nav>
+                <div class="lnb-depth1">
+                    <button type="button">MNO</button>
+                </div>
+                <div class="lnb-depth1">
+                    <button type="button">앱/웹 Usage</button>
+                </div>
+                <div class="lnb-depth1">
+                    <button type="button">통화 Usage</button>
+                </div>
+                <div class="lnb-depth1">
+                    <button type="button">위치/이동특성</button>
+                </div>
+                <div class="lnb-depth1">
+                    <button type="button" class="has-submenu">예측모델</button>
+                
+                    <div class="lnb-depth2">
+                        <button type="button">고객</button>
+                        <div class="lnb-depth3">
+                            <div>
+                                <a href="#">서비스 상태</a>
+                                <a href="#">가입일자</a>
+                                <a href="#">회선 유지 기간</a>
+                                <a href="#">개인정보 활용 동의</a>
+                                <a href="#">정보광고 수신 동의</a>
+                                <a href="#">SMS 수신거부 여부</a>
+                                <a href="#">SKT 통합동의 여부</a>
+                                <a href="#">가입 유형</a>
+                            </div>
+                            <div>
+                                <a href="#">약정유형</a>
+                                <a href="#">잔여요금약정개월수</a>
+                                <a href="#">잔여선택약정개월수</a>
+                                <a href="#">선택약정개월수</a>
+                                <a href="#">번호이동후 통신사</a>
+                                <a href="#">번호이동전 통신사</a>
+                                <a href="#">NW 세대구분</a>
+                                <a href="#">관리영업 조직</a>
+                            </div>
+                            <div>
+                                <a href="#">개통영업 조직</a>
+                                <a href="#">청구서 발행 유형</a>
+                                <a href="#">청구금액 납부 방법</a>
+                                <a href="#">전전월 ARPU</a>
+                                <a href="#">시니어 컨텐츠 소비 성향</a>
+                                <a href="#">OK캐쉬백 서비스 회원여부</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lnb-depth2">
+                        <button type="button">회선</button>
+                        <div class="lnb-depth3">
+                            <div>
+                                <a href="#">서비스 상태</a>
+                                <a href="#">가입일자</a>
+                                <a href="#">회선 유지 기간</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lnb-depth2">
+                        <button type="button">단말</button>
+                        <div class="lnb-depth3">
+                            <div>
+                                <a href="#">서비스 상태</a>
+                                <a href="#">가입일자</a>
+                                <a href="#">회선 유지 기간</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lnb-depth1">
+                    <button type="button">SK 브로드밴드</button>
+                </div>
+                <div class="lnb-depth1">
+                    <button type="button">SK플래닛</button>
+                </div>
+                <div class="lnb-depth1">
+                    <button type="button">11번가</button>
+                </div>
+            </nav>
+            
+            <div class="aside-info">
+                <p>분석대상(개인정보활용동의)</p>
+
+                <p>
+                    전체회선 : <span>17,465,679(57.32%)</span><br>
+                    개인회선 : <span>17,045,202(69.17%)</span>
+                </p>
+
+                <p>데이터 기준일 <span>2023.06.11</span></p>
+
+                <p>데이터 집계기간<br>
+                    <div class="aside-info-tooltip">
+                        <i></i>
+                        <dl class="aside-info-tooltip-content">
+                            <dt>집계 대상 데이터</dt>
+                            <dd>앱/웹 Usage</dd>
+                            <dd>통화 Usage</dd>
+                            <dd>위치/이동특성</dd>
+                            <dd>11번가</dd>
+                        </dl>
+                    </div>
+                </p>
+
+                <p><em>2023.05.12 ~ 2023.06.11</em></p>
+            </div>
+        </aside>
+
+        <script>
+            $(document).ready(function(){
+                $('#lnb .lnb-depth2 > a, #lnb .lnb-depth2 > button').on('mouseenter', function(){
+                    var thisPosTop = $(this).offset().top;
+                    console.log(thisPosTop);
+                    $(this).next().css({
+                        'top': thisPosTop,
+                    });
+                    $('#lnb .lnb-depth2 > a, #lnb .lnb-depth2 > button').removeClass('active');
+                    $(this).addClass('active');
+                });
+                $('.lnb-depth3').on('mouseleave', function(){
+                    $('#lnb .lnb-depth2 > a, #lnb .lnb-depth2 > button').removeClass('active');
+                });
+                $('#lnb .lnb-depth1 > a, #lnb .lnb-depth1 > button').on('mouseenter', function(){
+                    $('#lnb .lnb-depth2 > a, #lnb .lnb-depth2 > button').removeClass('active');
+                });
+            });
+            
+        </script>
+
+        <main></main>
+    </div>
+
+    <div id="right-panel" style="display: none;">
+        <div class="right-panel-top">
+            <div class="left-tree">
+                <div class="header">
+                    <div class="title">
+                        <h2>
+                            <span>최대도달범위-명 / 추출회선비율</span>
+                            <strong>27,593,406 / 59.26%</strong>
+                        </h2>
+                        <div class="btn-wrap">
+                            <button type="button">초기화</button>
+                            <button type="button">시계열</button>
+                            <button type="button">다운로드</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel-bottom"></div>
+    </div>
 </body>
 </html>
