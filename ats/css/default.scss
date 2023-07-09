@@ -295,8 +295,10 @@ header {
 #lnb {
     width: 200px;
     height: 100%;
+    padding-bottom: 123px;
     @include customscrollbar;
     overflow-y: auto;
+    border-right: 1px solid #d8d8dc;
     @mixin lnb-btn {
         display: flex;
         align-items: center;
@@ -389,6 +391,7 @@ header {
                 background-color: #fff;
                 border-radius: 5px;
                 box-shadow: 0 0 0 1px #ccc, 0 0 0 2px #b6a9f5, 0px 1px 8px 0 rgba(0, 0, 0, 0.2);
+                z-index: 1;
                 &:before {
                     @include ct;
                     width: 20px;
@@ -427,6 +430,9 @@ header {
             line-height: 17px;
             text-align: left;
             color: #888;
+            &:first-child {
+                margin-bottom: 4px;
+            }
             span, em {
                 display: inline;
                 color: #9284d8;
@@ -435,6 +441,67 @@ header {
                 display: block;
                 font-size: 11px;
                 font-style: normal;
+            }
+        }
+        .reference-date {
+            margin: 10px 0;
+        }
+        &-tooltip {
+            margin-left: 4px;
+            &-wrap {
+                display: flex;
+                align-items: center;
+                &:hover, &.active {
+                    .aside-info-tooltip-content {
+                        display: block;
+                    }
+                }
+                p {
+                    margin-bottom: 0 !important;
+                }
+            }
+            &-content {
+                display: none;
+                @include posa-bl(50px, 120px);
+                border-radius: 5px;
+                border: solid 1px #ccc;
+                background-color: rgba(68, 70, 74, .9);
+                padding: 11px 20px;
+                dt, dd {
+                    display: flex;
+                    align-items: center;
+                    white-space: nowrap;
+                    color: #fff;
+                    font-size: 12px;
+                    line-height: 24px;
+                    &:before {
+                        @include ct;
+                        margin-right: 9px;
+                    }
+                }
+                dt {
+                    &:before {
+                        width: 9px;
+                        height: 9px;
+                        background: url(/ats/images/icon-aside-tooltip-dt.png) 0 0 no-repeat;
+                    }
+                }
+                dd {
+                    padding-left: 2px;
+                    &:before {
+                        width: 4px;
+                        height: 4px;
+                        background-color: #999;
+                        border-radius: 50%;
+                        margin-right: 12px;
+                    }
+                }
+            }
+            i {
+                display: block;
+                width: 13px;
+                height: 13px;
+                background: url(/ats/images/icon-aside-tooltip.png) 0 0 no-repeat;
             }
         }
     }
