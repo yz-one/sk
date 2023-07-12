@@ -235,7 +235,6 @@ header {
 #lnb {
   width: 200px;
   height: 100%;
-  padding-bottom: 123px;
   overflow-y: auto;
   border-right: 1px solid #d8d8dc; }
   #lnb::-webkit-scrollbar {
@@ -303,6 +302,10 @@ header {
       top: 50%;
       right: 20px;
       transform: translateY(-50%); }
+    #lnb .lnb-depth1 > a.has-submenu.active ~ .lnb-depth2, #lnb .lnb-depth1 > button.has-submenu.active ~ .lnb-depth2 {
+      display: block; }
+    #lnb .lnb-depth1 > a.has-submenu ~ .lnb-depth2, #lnb .lnb-depth1 > button.has-submenu ~ .lnb-depth2 {
+      display: none; }
     #lnb .lnb-depth1 > a:hover, #lnb .lnb-depth1 > a.active, #lnb .lnb-depth1 > button:hover, #lnb .lnb-depth1 > button.active {
       color: #3617ce;
       background-color: #f7f6ff; }
@@ -332,8 +335,6 @@ header {
         #lnb .lnb-depth2 > a:hover:before, #lnb .lnb-depth2 > a.active:before, #lnb .lnb-depth2 > button:hover:before, #lnb .lnb-depth2 > button.active:before {
           background-color: #3617ce;
           border-color: #3617ce; }
-        #lnb .lnb-depth2 > a:hover + .lnb-depth3, #lnb .lnb-depth2 > a.active + .lnb-depth3, #lnb .lnb-depth2 > button:hover + .lnb-depth3, #lnb .lnb-depth2 > button.active + .lnb-depth3 {
-          display: table; }
   #lnb .lnb-depth3 {
     display: none;
     position: absolute;
@@ -369,6 +370,12 @@ header {
         #lnb .lnb-depth3 > div a:hover, #lnb .lnb-depth3 > div button:hover {
           color: #6b54dd;
           background-color: #f7f6ff; }
+    #lnb .lnb-depth3-opener > a:hover + .lnb-depth3, #lnb .lnb-depth3-opener > a.active + .lnb-depth3, #lnb .lnb-depth3-opener > button:hover + .lnb-depth3, #lnb .lnb-depth3-opener > button.active + .lnb-depth3 {
+      display: table; }
+    #lnb .lnb-depth3-opener.align-bottom > a + .lnb-depth3, #lnb .lnb-depth3-opener.align-bottom > button + .lnb-depth3 {
+      transform: translateY(-30%); }
+      #lnb .lnb-depth3-opener.align-bottom > a + .lnb-depth3:before, #lnb .lnb-depth3-opener.align-bottom > button + .lnb-depth3:before {
+        top: 40%; }
   #lnb .aside-info {
     padding: 20px 0 20px 20px; }
     #lnb .aside-info p {
@@ -399,7 +406,6 @@ header {
       #lnb .aside-info-tooltip-content {
         display: none;
         position: absolute;
-        bottom: 50px;
         left: 120px;
         border-radius: 5px;
         border: solid 1px #ccc;

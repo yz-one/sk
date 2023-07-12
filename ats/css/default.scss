@@ -295,7 +295,6 @@ header {
 #lnb {
     width: 200px;
     height: 100%;
-    padding-bottom: 123px;
     @include customscrollbar;
     overflow-y: auto;
     border-right: 1px solid #d8d8dc;
@@ -345,6 +344,14 @@ header {
                             @include posa-tr(50%, 20px);
                             transform: translateY(-50%);
                         }
+                        &.active {
+                            & ~ .lnb-depth2 {
+                                display: block;
+                            }
+                        }
+                        & ~ .lnb-depth2 {
+                            display: none;
+                        }
                     }
                     &:hover, &.active {
                         color: #3617ce;
@@ -379,13 +386,11 @@ header {
                             background-color: #3617ce;
                             border-color: #3617ce;
                         }
-                        & + .lnb-depth3 {
-                            display: table;
-                        }
+                        
                     }
                 }
             }
-            &3 {
+            &3 { 
                 display: none;
                 @include posa-tl(0, 180px);
                 background-color: #fff;
@@ -417,6 +422,26 @@ header {
                         &:hover {
                             color: #6b54dd;
                             background-color: #f7f6ff;
+                        }
+                    }
+                }
+                &-opener {
+                    > a, > button {
+                        
+                        &:hover, &.active {
+                            & + .lnb-depth3 {
+                                display: table;
+                            }
+                        }
+                    }
+                    &.align-bottom {
+                        > a, > button {
+                            & + .lnb-depth3 {
+                                transform: translateY(-30%);
+                                &:before {
+                                    top: 40%;
+                                }
+                            }
                         }
                     }
                 }
@@ -462,7 +487,8 @@ header {
             }
             &-content {
                 display: none;
-                @include posa-bl(50px, 120px);
+                position: absolute;
+                left: 120px;
                 border-radius: 5px;
                 border: solid 1px #ccc;
                 background-color: rgba(68, 70, 74, .9);
